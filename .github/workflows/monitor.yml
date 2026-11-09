@@ -33,7 +33,7 @@ jobs:
         run: python acquire.py --dir .
 
       - name: Discover official outlook documents
-        run: python discover.py --dir .
+        run: python verify_documents_v2.py --dir .
 
       - name: Verify candidate documents
         run: python verify_documents.py --dir .
