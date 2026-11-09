@@ -33,19 +33,24 @@ jobs:
         run: python acquire.py --dir .
 
       - name: Discover official outlook documents
-        run: python verify_documents_v2.py --dir .
+        run: python discover.py --dir .
 
       - name: Verify candidate documents
-        run: python verify_documents.py --dir .
+        run: python verify_documents_v2.py --dir .
+
+      - name: Select recent outlooks
+        run: python select_outlooks.py --dir .
 
       - name: Commit monitoring and research data
         if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sources.csv acquisition_events.csv document_candidates.csv discovery_checks.csv document_verification.csv
+
+          git add sources.csv acquisition_events.csv document_candidates.csv discovery_checks.csv document_verification.csv outlook_selection.csv outlook_weekly_candidates.csv outlook_monthly_candidates.csv
+
           if ! git diff --cached --quiet; then
-            git commit -m "Update Global Outlook monitoring and verification data"
+            git commit -m "Update Global Outlook research and selection data"
             git push origin HEAD:main
           else
             echo "No research data changes to commit"
@@ -62,5 +67,8 @@ jobs:
             document_candidates.csv
             discovery_checks.csv
             document_verification.csv
+            outlook_selection.csv
+            outlook_weekly_candidates.csv
+            outlook_monthly_candidates.csv
           if-no-files-found: warn
           retention-days: 30
