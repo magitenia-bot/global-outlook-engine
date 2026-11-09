@@ -39,7 +39,7 @@ jobs:
         run: python verify_documents_v2.py --dir .
 
       - name: Select recent outlooks
-        run: python select_outlooks.py --dir .
+        run: python select_outlooks_v2.py --dir .
 
       - name: Commit monitoring and research data
         if: success()
