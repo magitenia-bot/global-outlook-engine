@@ -1,3 +1,4 @@
+
 name: Global Outlook 3.1 - Monitor
 
 on:
@@ -6,7 +7,11 @@ on:
     - cron: '0 */6 * * *'
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: global-outlook-monitor
+  cancel-in-progress: false
 
 jobs:
   monitor:
@@ -16,6 +21,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -24,6 +32,21 @@ jobs:
 
       - name: Run acquisition
         run: python acquire.py --dir .
+
+      - name: Commit monitoring data
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add sources.csv acquisition_events.csv
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Global Outlook monitoring data"
+            git push origin HEAD:main
+          else
+            echo "No monitoring changes to commit"
+          fi
 
       - name: Save monitoring results
         if: always()
