@@ -1,0 +1,37 @@
+name: Global Outlook 3.1 - Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run acquisition
+        run: python acquire.py --dir .
+
+      - name: Save monitoring results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-outlook-results
+          path: |
+            sources.csv
+            acquisition_events.csv
+          if-no-files-found: warn
+          retention-days: 30
