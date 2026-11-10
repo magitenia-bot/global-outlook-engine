@@ -37,7 +37,7 @@ def validate_view(r):
     return (not prev or prev in STANCES) and (not r.get('previous_document_url') or valid_url(r['previous_document_url']))
 
 def render(root):
-    candidates = {f: rows(root / f'outlook_{f}_candidates.csv') for f in ('weekly','monthly','unclassified')}
+    candidates = {f: rows(root / f'outlook_{f}_candidates.csv') for f in ('weekly','monthly','quarterly','strategic','unclassified')}
     review_queue = rows(root / 'view_review_queue.csv')
     evidence = rows(root / 'document_evidence.csv')
     readable_evidence = [r for r in evidence if r.get('fetch_status') == 'html_read' and r.get('text_excerpt')]
@@ -169,9 +169,9 @@ def render(root):
             out.append('<tr><td>'+esc(r.get('institution_name'))+'</td><td>'+link+'</td><td>'+esc((r.get('text_excerpt') or '')[:500])+'</td><td>'+esc(r.get('checked_at_utc'))+'</td></tr>')
         out.append('</tbody></table></div></details>')
     out.append('<h2>Documenti candidati da verificare</h2><p class="muted">Le code seguenti non contribuiscono al consensus.</p>')
-    for freq in ('weekly','monthly','unclassified'):
+    for freq in ('weekly','monthly','quarterly','strategic','unclassified'):
         rs = candidates[freq]
-        out.append('<details><summary><b>'+esc({'weekly':'Settimanali','monthly':'Mensili','unclassified':'Non classificati'}[freq])+'</b> — '+str(len(rs))+' candidati</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Titolo / collegamento</th><th>Data metadata</th><th>Stato</th></tr></thead><tbody>')
+        out.append('<details><summary><b>'+esc({'weekly':'Settimanali','monthly':'Mensili','quarterly':'Trimestrali','strategic':'Strategici / annuali','unclassified':'Non classificati'}[freq])+'</b> — '+str(len(rs))+' candidati</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Titolo / collegamento</th><th>Data metadata</th><th>Stato</th></tr></thead><tbody>')
         for r in rs[:250]:
             url = r.get('final_url') or r.get('candidate_url') or ''
             title = esc((r.get('candidate_title') or 'Documento')[:180])
