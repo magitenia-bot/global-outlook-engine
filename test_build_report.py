@@ -36,6 +36,13 @@ class DashboardTests(unittest.TestCase):
                     "evidence_quote": "Positive equity outlook.",
                 })
 
+    def write_sources(self, count):
+        with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
+            w.writeheader()
+            for n in range(count):
+                w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
+
     def write_approvals(self, count):
         with (self.root / "view_approvals.csv").open("w", newline="", encoding="utf-8") as f:
             fields = ["institution_name", "document_url", "publication_date", "frequency",
@@ -151,13 +158,13 @@ class DashboardTests(unittest.TestCase):
 
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
-        self.write_approvals(2)
+        self.write_sources(2)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         self.assertIn("n.d. — campione insufficiente", html)
         self.assertEqual(html.count("n.d. — campione insufficiente"), 1)
 
-    def test_ai_provisional_views_never_enter_consensus(self):
+    def test_ai_views_require_registered_official_source(self):
         self.write_views(3)
         path = self.root / "validated_views.csv"
         with path.open(newline="", encoding="utf-8") as f:
@@ -178,7 +185,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
-        self.write_approvals(3)
+        self.write_sources(3)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
