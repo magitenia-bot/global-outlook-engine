@@ -21,7 +21,7 @@
   "source_admitted_view_rows": 31,
   "independently_approved_view_rows": 0,
   "independently_approved_institutions": 0,
-  "generated_at_utc": "2026-11-10T20:57:26.995008+00:00",
+  "generated_at_utc": "2026-11-10T21:05:16.640057+00:00",
   "institutions_in_sources": 22,
   "institutions_with_validated_views": 8,
   "validated_view_rows": 31,
@@ -33,10 +33,12 @@
   "candidate_counts": {
     "weekly": 0,
     "monthly": 3,
-    "unclassified": 52
+    "quarterly": 1,
+    "strategic": 1,
+    "unclassified": 50
   },
-  "view_review_queue_rows": 55,
-  "document_evidence_rows": 18,
-  "readable_evidence_rows": 16,
+  "view_review_queue_rows": 57,
+  "document_evidence_rows": 21,
+  "readable_evidence_rows": 19,
   "flows": "n.d."
 }
