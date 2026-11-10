@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Test dashboard consensus safeguards
+        run: python -m unittest -v test_build_report.py
+
       - name: Run acquisition
         run: python acquire.py --dir .
 
