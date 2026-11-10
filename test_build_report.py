@@ -174,7 +174,7 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["validated_view_rows"], 0)
         self.assertEqual(status["provisional_view_rows"], 3)
         self.assertIn("non contribuiscono ai semafori né al consensus", html)
-        self.assertIn("Nessuna view validata", html)
+        self.assertIn("Nessuna view ammessa", html)
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
