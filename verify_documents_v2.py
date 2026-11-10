@@ -23,26 +23,36 @@ GOOD = re.compile(r'outlook|investment views?|weekly|monthly|market (updates?|re
 
 class PageParser(html.parser.HTMLParser):
     def __init__(self):
-        super().__init__(); self.dates=[]; self.jsonld=[]; self.in_json=False; self.buf=[]
+        super().__init__(); self.dates=[]; self.jsonld=[]; self.in_json=False; self.buf=[]; self.in_time=False; self.time_buf=[]
     def handle_starttag(self, tag, attrs):
         a={k.lower():v for k,v in attrs if k}
         if tag.lower() == 'meta':
             k=(a.get('property') or a.get('name') or a.get('itemprop') or '').lower()
             if k in DATE_KEYS and a.get('content'):
                 self.dates.append((k,a['content']))
-        if tag.lower() == 'time' and a.get('datetime'):
-            self.dates.append(('time.datetime',a['datetime']))
+        if tag.lower() == 'time':
+            self.in_time=True; self.time_buf=[]
+            if a.get('datetime'): self.dates.append(('time.datetime',a['datetime']))
         if tag.lower() == 'script' and 'ld+json' in (a.get('type') or '').lower():
             self.in_json=True; self.buf=[]
     def handle_data(self, data):
         if self.in_json: self.buf.append(data)
+        if self.in_time: self.time_buf.append(data)
     def handle_endtag(self, tag):
+        if tag.lower() == 'time' and self.in_time:
+            self.dates.append(('time.text',' '.join(self.time_buf)))
+            self.in_time=False
         if tag.lower() == 'script' and self.in_json:
             self.jsonld.append(''.join(self.buf)); self.in_json=False
 
 def parse_date(value):
     m=re.search(r'(?<!\d)(20\d{2})[-/](\d{1,2})[-/](\d{1,2})(?!\d)',str(value))
-    if not m: return None
+    if not m:
+        m2=re.search(r'(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](20\d{2})(?!\d)',str(value))
+        if not m2: return None
+        day,month,year=map(int,m2.groups())
+        try: return dt.date(year,month,day)
+        except ValueError: return None
     try: return dt.date(*map(int,m.groups()))
     except ValueError: return None
 
@@ -85,12 +95,12 @@ def inspect(url, cutoff, today):
         if priority==2: result='modification_date_only_requires_review'
         elif cutoff<=d<=today: result='metadata_recent_requires_review'
         else: result='metadata_outside_window_or_future_requires_review'
-        return status,final,'html',d.isoformat(),key,result
+        return status,final,'html',('' if priority==2 else d.isoformat()),key,result
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--dir',default='.');p.add_argument('--max-checks',type=int,default=60)
     a=p.parse_args();root=Path(a.dir);today=dt.datetime.now(dt.timezone.utc).date()
-    month=today.month-3;year=today.year
+    month=today.month-2;year=today.year
     while month<=0: month+=12;year-=1
     cutoff=dt.date(year,month,min(today.day,calendar.monthrange(year,month)[1]))
     with (root/'document_candidates.csv').open(newline='',encoding='utf-8-sig') as f: candidates=list(csv.DictReader(f))

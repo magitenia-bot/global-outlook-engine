@@ -72,8 +72,34 @@ def main():
                 target=urllib.parse.urlunparse(parsed._replace(fragment=''))
                 if target in seen or SKIP.search(target): continue
                 seen.add(target)
-                if not KEYWORDS.search(title+' '+parsed.path): continue
-                if not re.search(r'weekly|week(?:ly)?|market recap|market commentary|market directions|market updates?',title+' '+parsed.path,re.I): continue
+                weekly_hint = bool(re.search(r'weekly|week(?:ly)?|market recap|market commentary|market directions|market updates?',title+' '+parsed.path,re.I))
+                article_link = bool(re.search(r'/(?:article|articles|insights|publications)/',parsed.path,re.I))
+                substantive = len(title.strip()) >= 16 and not re.search(r'^(?:read more|more|learn more|download|view all|all insights)
+                rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
+                             'source_page_url':url,'candidate_title':('Weekly market commentary: ' + re.sub(r'\s+',' ',title))[:240],
+                             'candidate_url':target,'publication_date':'','document_verified':'no',
+                             'review_status':'candidate_unverified'})
+                count+=1
+                if count>=80: break
+            checks.append({'checked_at_utc':now,'source_id':sid,'result':'ok','candidate_count':count,'detail':''})
+            print(f'{sid}: {count} candidate links (unverified)',flush=True)
+        except Exception as e:
+            checks.append({'checked_at_utc':now,'source_id':sid,'result':'error','candidate_count':0,'detail':f'{type(e).__name__}: {str(e)[:160]}'})
+            print(f'{sid}: error ({type(e).__name__})',flush=True)
+    fields=['discovered_at_utc','source_id','institution_name','source_page_url','candidate_title','candidate_url','publication_date','document_verified','review_status']
+    # Replace current discovery snapshot, never mutate the historical source registry.
+    with (root/'document_candidates.csv').open('w',newline='',encoding='utf-8') as f:
+        w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
+    with (root/'discovery_checks.csv').open('w',newline='',encoding='utf-8') as f:
+        w=csv.DictWriter(f,fieldnames=['checked_at_utc','source_id','result','candidate_count','detail']); w.writeheader(); w.writerows(checks)
+    print(f'Discovery complete: {len(rows)} unverified candidate links from {len(checks)} sources.',flush=True)
+    print('No publication dates, documents, or investment stances have been verified.',flush=True)
+
+if __name__=='__main__': main()
+,title.strip(),re.I)
+                if not (weekly_hint or (article_link and substantive)): continue
+                if not weekly_hint and parsed.netloc.lower() != urllib.parse.urlparse(final).netloc.lower(): continue
+                if SKIP.search(title): continue
                 rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
                              'source_page_url':url,'candidate_title':re.sub(r'\s+',' ',title)[:240],
                              'candidate_url':target,'publication_date':'','document_verified':'no',
