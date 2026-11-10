@@ -60,7 +60,7 @@ jobs:
 
       - name: Test dashboard consensus safeguards
         if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python -m unittest -v test_build_report.py test_extract_views.py test_collect_document_evidence.py
+        run: python -m unittest -v test_build_report.py test_extract_views.py test_collect_document_evidence.py test_document_pipeline.py
 
       - name: Run acquisition
         if: steps.italy_time.outputs.run_pipeline == 'true'
