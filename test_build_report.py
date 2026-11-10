@@ -36,6 +36,28 @@ class DashboardTests(unittest.TestCase):
                     "evidence_quote": "Positive equity outlook.",
                 })
 
+    def write_approvals(self, count):
+        with (self.root / "view_approvals.csv").open("w", newline="", encoding="utf-8") as f:
+            fields = ["institution_name", "document_url", "publication_date", "frequency",
+                      "asset_class", "stance", "approval_status", "independent_reviewer",
+                      "evidence_checked", "reviewed_at_utc", "review_notes"]
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            for n in range(count):
+                w.writerow({"institution_name": f"Manager {n}",
+                            "document_url": f"https://example.org/outlook/{n}",
+                            "publication_date": "2026-11-01", "frequency": "monthly",
+                            "asset_class": "Equity", "stance": "positive",
+                            "approval_status": "approved", "independent_reviewer": "Independent QA",
+                            "evidence_checked": "yes", "reviewed_at_utc": "2026-11-02T13:00:00+00:00"})
+
+    def test_unapproved_non_ai_reviewer_is_not_validation(self):
+        self.write_views(3)
+        render(self.root)
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertEqual(status["validated_view_rows"], 0)
+        self.assertEqual(status["provisional_view_rows"], 3)
+
     def test_no_validated_views_remains_unavailable(self):
         self.write_views(0)
         render(self.root)
@@ -85,12 +107,13 @@ class DashboardTests(unittest.TestCase):
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         self.assertEqual(status["validated_view_rows"], 0)
-        self.assertEqual(status["provisional_ai_view_rows"], 3)
+        self.assertEqual(status["provisional_view_rows"], 3)
         self.assertIn("in attesa di conferma indipendente", html)
         self.assertIn("Nessuna view validata", html)
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
+        self.write_approvals(3)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
