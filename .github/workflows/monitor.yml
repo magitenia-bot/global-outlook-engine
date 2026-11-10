@@ -3,7 +3,7 @@ name: Global Outlook - Daily Production
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 5,6 * * *'
 
 permissions:
   contents: write
@@ -14,46 +14,73 @@ concurrency:
 
 jobs:
   monitor:
+    # Only one of the two UTC slots corresponds to 07:00 Europe/Rome.
+    if: github.event_name != 'schedule' || (github.event.schedule == '0 5,6 * * *')
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
+      - name: Check Italy local execution hour
+        id: italy_time
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime as dt, os
+          from zoneinfo import ZoneInfo
+          local = dt.datetime.now(ZoneInfo('Europe/Rome'))
+          allowed = os.environ.get('EVENT_NAME') != 'schedule' or local.hour == 7
+          print('run_pipeline=' + ('true' if allowed else 'false'))
+          print('italy_time=' + local.isoformat())
+          PY
+
       - name: Checkout repository
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         uses: actions/checkout@v4
         with:
           ref: main
           persist-credentials: true
 
       - name: Setup Python
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Test dashboard consensus safeguards
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python -m unittest -v test_build_report.py test_extract_views.py test_collect_document_evidence.py
 
       - name: Run acquisition
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python acquire.py --dir .
 
       - name: Discover official outlook documents
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python discover.py --dir .
 
       - name: Verify candidate documents
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python verify_documents_v2.py --dir .
 
       - name: Select recent outlooks
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python select_outlooks_v21.py --dir .
 
       - name: Prepare investment view review queue
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python extract_views.py --dir .
 
       - name: Collect source-linked document excerpts (unverified)
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python collect_document_evidence.py --dir . --max-checks 12
 
       - name: Generate institutional HTML dashboard
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python build_report.py --dir .
 
       - name: Check dashboard and status outputs
+        if: steps.italy_time.outputs.run_pipeline == 'true'
         run: |
           python - <<'PY'
           import json
@@ -68,7 +95,8 @@ jobs:
           PY
 
       - name: Commit monitoring and research data
-        if: success()
+        if: steps.italy_time.outputs.run_pipeline == 'true'
+        if: steps.italy_time.outputs.run_pipeline == 'true' && success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -83,7 +111,8 @@ jobs:
           fi
 
       - name: Save research results
-        if: always()
+        if: steps.italy_time.outputs.run_pipeline == 'true'
+        if: steps.italy_time.outputs.run_pipeline == 'true' && always()
         uses: actions/upload-artifact@v4
         with:
           name: global-outlook-results
