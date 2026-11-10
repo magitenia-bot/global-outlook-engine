@@ -41,6 +41,7 @@ def render(root):
     review_queue = rows(root / 'view_review_queue.csv')
     evidence = rows(root / 'document_evidence.csv')
     readable_evidence = [r for r in evidence if r.get('fetch_status') == 'html_read' and r.get('text_excerpt')]
+    source_registry = rows(root / 'outlook_source_registry.csv')
     raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
     approvals = rows(root / 'view_approvals.csv')
@@ -94,6 +95,14 @@ def render(root):
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view ammesse',str(len(institutions)),'Fonte ufficiale censita o approvazione indipendente'),('Copertura operativa del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
     out.append('<h2>Posizionamenti fuori dall’elenco delle fonti riconosciute</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Verificare date, fonte e testo prima dell’approvazione.</p></div>')
+    out.append('<h2>Registro completo delle fonti istituzionali</h2><p class="muted">Ogni gestore censito compare qui anche senza view strutturate. Data di pubblicazione e data di riferimento del documento sono distinte; n.d. significa non verificata. Le date di pagina non equivalgono a una validazione della view.</p>')
+    if source_registry:
+        out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Documento ufficiale</th><th>Data pubblicazione</th><th>Dati riferiti al</th><th>Stato</th></tr></thead><tbody>')
+        for s in sorted(source_registry, key=lambda r:r.get('institution_name','')):
+            url = s.get('document_url','')
+            link = '<a rel="noopener noreferrer" href="'+esc(url)+'">Apri documento</a>' if valid_url(url) else 'n.d.'
+            out.append('<tr><td>'+esc(s.get('institution_name'))+'</td><td>'+link+'</td><td>'+esc(s.get('publication_date') or 'n.d.')+'</td><td>'+esc(s.get('as_of_date') or 'n.d.')+'</td><td>'+esc(s.get('verification_status'))+'</td></tr>')
+        out.append('</tbody></table></div>')
     if provisional:
         out.append('<details><summary>Consulta le interpretazioni preliminari</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Asset</th><th>Interpretazione IA</th><th>Fonte da verificare</th></tr></thead><tbody>')
         for r in provisional:
@@ -164,7 +173,7 @@ def render(root):
     if invalid: out.append('<p class="notice">'+str(invalid)+' righe di view validate escluse per campi mancanti o formato errato.</p>')
     out.append('</main><footer>Global Outlook 3.1 · Dati di ricerca informativi, non raccomandazioni personalizzate.</footer></body></html>')
     (root/'global_outlook.html').write_text(''.join(out),encoding='utf-8')
-    summary={'source_admitted_view_rows':len(source_admitted),'independently_approved_view_rows':len(approved),'independently_approved_institutions':len(independently_approved_institutions),'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'preliminary_traffic_light_rows':len(prelim_latest),'provisional_view_rows':len(provisional),'provisional_institutions':len(provisional_institutions),'approval_records':len(approvals),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
+    summary={'registered_source_documents':len(source_registry),'sources_with_page_date':sum(1 for s in source_registry if s.get('publication_date') not in ('','n.d.')),'source_admitted_view_rows':len(source_admitted),'independently_approved_view_rows':len(approved),'independently_approved_institutions':len(independently_approved_institutions),'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'preliminary_traffic_light_rows':len(prelim_latest),'provisional_view_rows':len(provisional),'provisional_institutions':len(provisional_institutions),'approval_records':len(approvals),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
     (root/'report_status.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print('Dashboard generated:',summary)
 
