@@ -8,6 +8,11 @@ on:
       - '.github/workflows/monitor.yml'
       - 'test_*.py'
       - 'build_report.py'
+      - 'acquire.py'
+      - 'discover.py'
+      - 'verify_documents_v2.py'
+      - 'select_outlooks_v21.py'
+      - 'extract_views.py'
   schedule:
     - cron: '0 5,6 * * *'
 
@@ -133,6 +138,8 @@ jobs:
             outlook_selection.csv
             outlook_weekly_candidates.csv
             outlook_monthly_candidates.csv
+            outlook_quarterly_candidates.csv
+            outlook_strategic_candidates.csv
             outlook_unclassified_candidates.csv
             global_outlook.html
             report_status.json
