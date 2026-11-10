@@ -9,6 +9,8 @@ import csv
 import datetime as dt
 from pathlib import Path
 
+GENERIC_TITLES = {'i agree', 'accept', 'english', 'italian', 'go deeper', 'more', 'download', 'outlook'}
+
 FIELDS = ['institution_name','document_url','publication_date','frequency','asset_class','proposed_stance','evidence_quote','review_status','source_status','candidate_title','selection_status','checked_at_utc']
 
 def read_csv(path):
@@ -29,6 +31,8 @@ def run(root):
             if not name or not url.startswith('https://'):
                 continue
             key = (name,url,freq)
+            title = (r.get('candidate_title') or '').strip()
+            low_quality = title.casefold() in GENERIC_TITLES or not title
             prior = preserved.get(key, {})
             row = {
                 'institution_name':name,
@@ -39,8 +43,8 @@ def run(root):
                 'proposed_stance':prior.get('proposed_stance',''),
                 'evidence_quote':prior.get('evidence_quote',''),
                 'review_status':prior.get('review_status','pending_source_review'),
-                'source_status':'candidate_not_content_verified',
-                'candidate_title':r.get('candidate_title',''),
+                'source_status':('candidate_low_quality_metadata' if low_quality else 'candidate_not_content_verified'),
+                'candidate_title':title,
                 'selection_status':r.get('selection_status',''),
                 'checked_at_utc':r.get('checked_at_utc') or now,
             }
@@ -51,7 +55,8 @@ def run(root):
             output[key] = {k:row.get(k,'') for k in FIELDS}
     with (root/'view_review_queue.csv').open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=FIELDS);w.writeheader();w.writerows(sorted(output.values(),key=lambda x:(x['institution_name'],x['frequency'],x['document_url'])))
-    print(f'View review queue: {len(output)} records; zero views automatically approved')
+    low_quality_count = sum(r.get('source_status') == 'candidate_low_quality_metadata' for r in output.values())
+    print(f'View review queue: {len(output)} records ({low_quality_count} low-quality metadata); zero views automatically approved')
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--dir',default='.');args=p.parse_args();run(Path(args.dir))
