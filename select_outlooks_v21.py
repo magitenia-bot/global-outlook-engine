@@ -13,6 +13,8 @@ from urllib.parse import urlsplit, unquote
 FIELDS = ['source_id','institution_name','candidate_title','candidate_url','final_url','frequency_bucket','http_status','content_type','metadata_publication_date','date_evidence','date_assessment','relevance_assessment','selection_status','checked_at_utc','review_status']
 WEEKLY = re.compile(r'\b(weekly|week(?:ly)? ahead|week in review|weekly commentary|weekly market|weekly update|weekly recap|weekly outlook)\b', re.I)
 MONTHLY = re.compile(r'\b(monthly|month ahead|investment views|global investment views|monthly outlook|monthly market|monthly commentary)\b', re.I)
+QUARTERLY = re.compile(r'\b(quarterly|quarter|q[1-4]\s*20\d{2}|quarterly outlook|trimestrale)\b', re.I)
+STRATEGIC = re.compile(r'\b(annual|year ahead|long.term|secular|strategic|capital market assumptions|outlook 20\d{2}|investment outlook 20\d{2})\b', re.I)
 TOPIC = re.compile(r'\b(outlook|investment views?|market (?:recap|commentary|updates?|insights?|outlook)|asset allocation|investment strategy|economic (?:outlook|forecast)|macro(?:economic)? outlook|portfolio strategy|capital market assumptions|weekly commentary|weekly update|weekly recap)\b', re.I)
 BAD = re.compile(r'^(?:skip(?: to)?(?: main)? content|skip to navigation|read (?:more|the article)|click here|here|discover more|learn more|insights|investment insights|podcasts?|contact(?: us)?|log(?:in| in)|sign in|privacy(?: policy)?|about us|subscribe|home|logo|cookie(?:s)?|careers|sustainability|enterprise|don.t miss out|market insights overview|all insights|global outlook|investment views)$', re.I)
 BAD_PATH = re.compile(r'/(?:login|signin|privacy|cookies?|careers|contact|subscribe|podcast|about-us)(?:/|$)', re.I)
@@ -32,11 +34,15 @@ def classify(row, today, start):
     relevant = bool(TOPIC.search(text)) and not generic
     # The visible title takes precedence; URL terms are fallback only.
     title_weekly, title_monthly = bool(WEEKLY.search(title)), bool(MONTHLY.search(title))
-    if title_weekly != title_monthly:
+    if QUARTERLY.search(title):
+        bucket = 'quarterly'
+    elif STRATEGIC.search(title) and not title_weekly and not title_monthly:
+        bucket = 'strategic'
+    elif title_weekly != title_monthly:
         bucket = 'weekly' if title_weekly else 'monthly'
     else:
         path_weekly, path_monthly = bool(WEEKLY.search(path)), bool(MONTHLY.search(path))
-        bucket = 'weekly' if path_weekly and not path_monthly else 'monthly' if path_monthly and not path_weekly else 'unclassified'
+        bucket = 'weekly' if path_weekly and not path_monthly else 'monthly' if path_monthly and not path_weekly else 'quarterly' if QUARTERLY.search(path) else 'strategic' if STRATEGIC.search(path) else 'unclassified'
     raw_date = (row.get('metadata_publication_date') or '').strip()
     date_status = 'no_publication_date'
     if raw_date:
@@ -80,7 +86,7 @@ def main():
             writer = csv.DictWriter(handle, fieldnames=FIELDS, extrasaction='ignore')
             writer.writeheader(); writer.writerows(rows)
     write('outlook_selection.csv', results)
-    for frequency in ('weekly','monthly','unclassified'):
+    for frequency in ('weekly','monthly','quarterly','strategic','unclassified'):
         allowed = ('priority_unclassified_review','manual_unclassified_review') if frequency == 'unclassified' else ('priority_manual_review','manual_date_review')
         candidates = [r for r in results if r['frequency_bucket'] == frequency and r['selection_status'] in allowed]
         unique = {}
