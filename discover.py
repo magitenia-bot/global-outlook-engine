@@ -74,7 +74,10 @@ def main():
                 seen.add(target)
                 weekly_hint = bool(re.search(r'weekly|week(?:ly)?|market recap|market commentary|market directions|market updates?',title+' '+parsed.path,re.I))
                 article_link = bool(re.search(r'/(?:article|articles|insights|publications)/',parsed.path,re.I))
-                substantive = len(title.strip()) >= 16 and not re.search(r'^(?:read more|more|learn more|download|view all|all insights)
+                substantive = len(title.strip()) >= 16 and title.strip().casefold() not in ('read more','more','learn more','download','view all','all insights')
+                if not (weekly_hint or (article_link and substantive)): continue
+                if not weekly_hint and parsed.netloc.lower() != urllib.parse.urlparse(final).netloc.lower(): continue
+                if SKIP.search(title): continue
                 rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
                              'source_page_url':url,'candidate_title':('Weekly market commentary: ' + re.sub(r'\s+',' ',title))[:240],
                              'candidate_url':target,'publication_date':'','document_verified':'no',
