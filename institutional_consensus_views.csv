@@ -1,0 +1,13 @@
+institution,asset_class,horizon,stance,publication_date,official_url
+"BlackRock","US equities","tactical 6-12m","neutral","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary"
+"BlackRock","Emerging market equities","tactical 6-12m","positive","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary"
+"BlackRock","Japanese equities","tactical 6-12m","neutral","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary"
+"BlackRock","European equities","tactical 6-12m","neutral","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary"
+"BlackRock","Long US Treasuries","tactical 6-12m","neutral","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary"
+"BlackRock","Short US Treasuries","tactical 6-12m","positive","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary"
+"Amundi","Emerging market equities","long-term","positive","2026-11-09","https://research-center.amundi.com/article/global-investment-views-november-2026"
+"Amundi","Japanese equities","long-term","positive","2026-11-09","https://research-center.amundi.com/article/global-investment-views-november-2026"
+"Amundi","European equities","long-term","positive","2026-11-09","https://research-center.amundi.com/article/global-investment-views-november-2026"
+"Amundi","European equities","tactical 6-12m","neutral","2026-11-09","https://research-center.amundi.com/article/global-investment-views-november-2026"
+"Amundi","Japanese equities","tactical 6-12m","positive","2026-11-09","https://research-center.amundi.com/article/global-investment-views-november-2026"
+"Amundi","Euro investment grade","tactical 6-12m","positive","2026-11-09","https://research-center.amundi.com/article/global-investment-views-november-2026"
