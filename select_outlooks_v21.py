@@ -20,7 +20,7 @@ BAD = re.compile(r'^(?:skip(?: to)?(?: main)? content|skip to navigation|read (?
 BAD_PATH = re.compile(r'/(?:login|signin|privacy|cookies?|careers|contact|subscribe|podcast|about-us)(?:/|$)', re.I)
 
 def cutoff(today):
-    month, year = today.month - 3, today.year
+    month, year = today.month - 2, today.year
     if month <= 0: month, year = month + 12, year - 1
     return dt.date(year, month, min(today.day, calendar.monthrange(year, month)[1]))
 
@@ -48,13 +48,15 @@ def classify(row, today, start):
     if raw_date:
         try:
             parsed = dt.date.fromisoformat(raw_date[:10]) if re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:T.*)?', raw_date) else None
-            date_status = ('within_3_calendar_months_metadata_only' if start <= parsed <= today else 'outside_window_or_future') if parsed else 'invalid_date'
+            date_status = ('within_2_calendar_months_metadata_only' if start <= parsed <= today else 'outside_window_or_future') if parsed else 'invalid_date'
         except ValueError:
             date_status = 'invalid_date'
     status = str(row.get('http_status') or '').strip()
     if status != '200': selection = 'exclude_unreachable'
     elif not relevant: selection = 'exclude_generic_or_unrelated'
     elif date_status == 'outside_window_or_future': selection = 'exclude_outside_window'
+    elif bucket != 'weekly': selection = 'exclude_not_weekly'
+    elif date_status != 'within_2_calendar_months_metadata_only': selection = 'exclude_unconfirmed_publication_date'
     elif bucket == 'unclassified': selection = 'priority_unclassified_review' if date_status == 'within_3_calendar_months_metadata_only' else 'manual_unclassified_review'
     elif date_status == 'within_3_calendar_months_metadata_only': selection = 'priority_manual_review'
     else: selection = 'manual_date_review'
@@ -87,7 +89,7 @@ def main():
             writer.writeheader(); writer.writerows(rows)
     write('outlook_selection.csv', results)
     for frequency in ('weekly','monthly','quarterly','strategic','unclassified'):
-        allowed = ('priority_unclassified_review','manual_unclassified_review') if frequency == 'unclassified' else ('priority_manual_review','manual_date_review')
+        allowed = ('priority_manual_review',) if frequency == 'weekly' else ()
         candidates = [r for r in results if r['frequency_bucket'] == frequency and r['selection_status'] in allowed]
         unique = {}
         for row in candidates:

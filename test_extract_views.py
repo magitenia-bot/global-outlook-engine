@@ -10,7 +10,7 @@ class QueueTests(unittest.TestCase):
     def test_generic_titles_flagged_without_approving_views(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
-            with (root / "outlook_unclassified_candidates.csv").open("w", newline="", encoding="utf-8") as f:
+            with (root / "outlook_weekly_candidates.csv").open("w", newline="", encoding="utf-8") as f:
                 writer = csv.DictWriter(f, fieldnames=["institution_name", "candidate_url", "candidate_title"])
                 writer.writeheader()
                 writer.writerow({"institution_name": "Manager A", "candidate_url": "https://example.org/a", "candidate_title": "I agree"})

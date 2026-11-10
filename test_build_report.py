@@ -1,5 +1,6 @@
 """Regression checks for conservative consensus and HTML rendering."""
 import csv
+import datetime as dt
 import json
 import tempfile
 import unittest
@@ -27,11 +28,11 @@ class DashboardTests(unittest.TestCase):
                 writer.writerow({
                     "institution_name": f"Manager {n}",
                     "document_url": f"https://example.org/outlook/{n}",
-                    "publication_date": "2026-11-01",
-                    "frequency": "monthly",
+                    "publication_date": dt.datetime.now(dt.timezone.utc).date().isoformat(),
+                    "frequency": "weekly",
                     "asset_class": "Equity",
                     "stance": "positive",
-                    "reviewed_at_utc": "2026-11-02T12:00:00+00:00",
+                    "reviewed_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
                     "reviewer": "QA reviewer",
                     "evidence_quote": "Positive equity outlook.",
                 })

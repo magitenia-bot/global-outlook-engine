@@ -24,7 +24,7 @@ def run(root):
     old = read_csv(root / 'view_review_queue.csv')
     preserved = {(r.get('institution_name',''),r.get('document_url',''),r.get('frequency','')):r for r in old}
     output = {}
-    for freq in ('weekly','monthly','quarterly','strategic','unclassified'):
+    for freq in ('weekly',):
         for r in read_csv(root / f'outlook_{freq}_candidates.csv'):
             url = (r.get('final_url') or r.get('candidate_url') or '').strip()
             name = (r.get('institution_name') or '').strip()
@@ -49,10 +49,6 @@ def run(root):
                 'checked_at_utc':r.get('checked_at_utc') or now,
             }
             output[key]=row
-    # Retain previous reviewer work even if candidate falls out of rolling window.
-    for key,row in preserved.items():
-        if key not in output:
-            output[key] = {k:row.get(k,'') for k in FIELDS}
     with (root/'view_review_queue.csv').open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=FIELDS);w.writeheader();w.writerows(sorted(output.values(),key=lambda x:(x['institution_name'],x['frequency'],x['document_url'])))
     low_quality_count = sum(r.get('source_status') == 'candidate_low_quality_metadata' for r in output.values())
