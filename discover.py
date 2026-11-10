@@ -49,6 +49,15 @@ def main():
         sid=s.get('source_id',''); url=s.get('source_url','').strip()
         if s.get('status','active').lower()!='active': continue
         try:
+            # A registered official PDF is itself a document candidate, not an HTML listing.
+            if urllib.parse.urlsplit(url).path.lower().endswith('.pdf'):
+                rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
+                             'source_page_url':url,'candidate_title':s.get('source_name','') or 'Official PDF outlook',
+                             'candidate_url':url,'publication_date':'','document_verified':'no',
+                             'review_status':'candidate_pdf_unverified'})
+                checks.append({'checked_at_utc':now,'source_id':sid,'result':'pdf_candidate','candidate_count':1,'detail':'Direct PDF: pending verification'})
+                print(f'{sid}: direct PDF candidate (unverified)',flush=True)
+                continue
             page,final=fetch(url); parser=Links(); parser.feed(page)
             seen=set(); count=0
             for href,title in parser.links:

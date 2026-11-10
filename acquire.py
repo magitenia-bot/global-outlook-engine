@@ -42,6 +42,15 @@ def main():
    with urllib.request.urlopen(req,timeout=a.timeout) as resp:
     event['http_status']=str(resp.status);raw=resp.read(2_000_000)
     typ=resp.headers.get('Content-Type','')
+   if 'pdf' in typ.lower() or s['source_url'].lower().split('?')[0].endswith('.pdf'):
+    digest=hashlib.sha256(raw).hexdigest();event['content_hash']=digest
+    event['result']='changed_requires_review' if previous and previous!=digest else ('unchanged' if previous else 'baseline_requires_review')
+    event['candidate_links_json']=json.dumps([{'text':s.get('source_name','Official PDF'),'href':s['source_url']}],ensure_ascii=False)
+    s['last_content_hash']=digest;s['last_success_at_utc']=now;s['last_result']=event['result']
+    s['last_checked_at_utc']=now;history.append(event)
+    print(s['source_id'],event['result'],'(PDF source)')
+    time.sleep(1)
+    continue
    if 'html' not in typ.lower():raise ValueError('Unexpected content type: '+typ)
    parser=Extract();parser.feed(raw.decode('utf-8',errors='replace'))
    normalized=re.sub(r'\s+',' ',' '.join(parser.words)).strip()
