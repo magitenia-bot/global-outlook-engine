@@ -51,6 +51,30 @@ class DashboardTests(unittest.TestCase):
                             "approval_status": "approved", "independent_reviewer": "Independent QA",
                             "evidence_checked": "yes", "reviewed_at_utc": "2026-11-02T13:00:00+00:00"})
 
+    def test_official_registered_source_is_operationally_admitted(self):
+        self.write_views(3)
+        with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
+            w.writeheader()
+            for n in range(3):
+                w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
+        render(self.root)
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertEqual(status["source_admitted_view_rows"], 3)
+        self.assertEqual(status["independently_approved_view_rows"], 0)
+        self.assertEqual(status["validated_view_rows"], 3)
+
+    def test_unrecognized_domain_is_not_admitted(self):
+        self.write_views(1)
+        with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
+            w.writeheader()
+            w.writerow({"institution_name": "Manager 0", "source_url": "https://notexample.org/research", "status": "active"})
+        render(self.root)
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertEqual(status["source_admitted_view_rows"], 0)
+        self.assertEqual(status["provisional_view_rows"], 1)
+
     def test_unapproved_non_ai_reviewer_is_not_validation(self):
         self.write_views(3)
         render(self.root)
