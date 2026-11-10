@@ -55,10 +55,8 @@ def classify(row, today, start):
     if status != '200': selection = 'exclude_unreachable'
     elif not relevant: selection = 'exclude_generic_or_unrelated'
     elif date_status == 'outside_window_or_future': selection = 'exclude_outside_window'
-    elif bucket != 'weekly': selection = 'exclude_not_weekly'
-    elif date_status != 'within_2_calendar_months_metadata_only': selection = 'exclude_unconfirmed_publication_date'
-    elif bucket == 'unclassified': selection = 'priority_unclassified_review' if date_status == 'within_3_calendar_months_metadata_only' else 'manual_unclassified_review'
-    elif date_status == 'within_3_calendar_months_metadata_only': selection = 'priority_manual_review'
+    elif bucket == 'unclassified': selection = 'manual_unclassified_review'
+    elif date_status != 'within_2_calendar_months_metadata_only': selection = 'manual_date_review'
     else: selection = 'manual_date_review'
     result = {key: row.get(key, '') for key in FIELDS}
     result.update(frequency_bucket=bucket, date_assessment=date_status,
