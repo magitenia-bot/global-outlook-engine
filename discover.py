@@ -47,7 +47,7 @@ def main():
     rows=[]; checks=[]
     for s in sources:
         sid=s.get('source_id',''); url=s.get('source_url','').strip()
-        if s.get('status','active').lower()!='active': continue
+        if s.get('status','active').lower()!='active' or s.get('frequency','').strip().lower() != 'weekly': continue
         try:
             # A registered official PDF is itself a document candidate, not an HTML listing.
             if urllib.parse.urlsplit(url).path.lower().endswith('.pdf'):
@@ -59,6 +59,12 @@ def main():
                 print(f'{sid}: direct PDF candidate (unverified)',flush=True)
                 continue
             page,final=fetch(url); parser=Links(); parser.feed(page)
+            # Official weekly landing pages can themselves contain the current edition.
+            # Their publication date must still be verified downstream.
+            rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
+                         'source_page_url':url,'candidate_title':s.get('source_name','') or 'Weekly outlook',
+                         'candidate_url':final,'publication_date':'','document_verified':'no',
+                         'review_status':'weekly_source_page_unverified'})
             seen=set(); count=0
             for href,title in parser.links:
                 target=urllib.parse.urljoin(final,href.strip()); parsed=urllib.parse.urlparse(target)
@@ -67,6 +73,7 @@ def main():
                 if target in seen or SKIP.search(target): continue
                 seen.add(target)
                 if not KEYWORDS.search(title+' '+parsed.path): continue
+                if not re.search(r'weekly|week(?:ly)?|market recap|market commentary',title+' '+parsed.path,re.I): continue
                 rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
                              'source_page_url':url,'candidate_title':re.sub(r'\s+',' ',title)[:240],
                              'candidate_url':target,'publication_date':'','document_verified':'no',
