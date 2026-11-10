@@ -44,6 +44,25 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("Nessuna view validata", html)
         self.assertEqual(status["validated_view_rows"], 0)
 
+    def test_unverified_excerpts_are_visible_but_not_validated(self):
+        self.write_views(0)
+        fields = ["institution_name", "document_url", "candidate_title", "publication_date",
+                  "checked_at_utc", "fetch_status", "page_title", "page_description",
+                  "text_excerpt", "evidence_status"]
+        with (self.root / "document_evidence.csv").open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            w.writerow({"institution_name": "Manager A", "document_url": "https://example.org/outlook",
+                        "fetch_status": "html_read", "page_title": "Investment outlook",
+                        "text_excerpt": "Research text for verification."})
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertIn("Research text for verification.", html)
+        self.assertIn("NON rappresentano view validate", html)
+        self.assertEqual(status["readable_evidence_rows"], 1)
+        self.assertEqual(status["validated_view_rows"], 0)
+
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
         render(self.root)
