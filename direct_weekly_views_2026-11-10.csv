@@ -1,0 +1,5 @@
+institution,publication_date,document_url,topic,qualitative_signal,paraphrased_evidence,classification,verification_status
+"Amundi","2026-10-26","https://research-center.amundi.com/article/dividends-shine-tech-cools","Equity dividend sectors","positive_selective","Preference for cash-returning businesses and attractively valued dividend sectors","thematic_preference_not_overweight","official_article_read"
+"Amundi","2026-10-26","https://research-center.amundi.com/article/dividends-shine-tech-cools","Equity AI technology","selective_caution","Investors demand clarity on cash generation from AI capex","caution_not_underweight","official_article_read"
+"Amundi","2026-11-02","https://research-center.amundi.com/article/central-banks-action-through-inaction","US monetary policy","hawkish_risk","Fed left door open to December hike","macro_not_portfolio_stance","official_article_read"
+"Amundi","2026-10-19","https://research-center.amundi.com/article/lights-and-shadows-imf","Global inflation","upside_risk","AI spending and energy pressures may sustain inflation","macro_not_portfolio_stance","official_article_read"
