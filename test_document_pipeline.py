@@ -30,10 +30,10 @@ class ClassificationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             with (root/'sources.csv').open('w',newline='',encoding='utf-8') as f:
-                w=csv.DictWriter(f,fieldnames=['source_id','institution_name','source_name','source_url','status'])
+                w=csv.DictWriter(f,fieldnames=['source_id','institution_name','source_name','source_url','status','frequency'])
                 w.writeheader()
                 w.writerow({'source_id':'pdf-1','institution_name':'Example Manager','source_name':'2026 Investment Outlook',
-                            'source_url':'https://example.org/outlook.pdf','status':'active'})
+                            'source_url':'https://example.org/outlook.pdf','status':'active','frequency':'weekly'})
             with patch('sys.argv',['discover.py','--dir',d]):
                 discovery_main()
             with (root/'document_candidates.csv').open(newline='',encoding='utf-8') as f:
