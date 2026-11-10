@@ -36,20 +36,12 @@ class DashboardTests(unittest.TestCase):
                     "evidence_quote": "Positive equity outlook.",
                 })
 
-    def write_approvals(self, count):
-        with (self.root / "view_approvals.csv").open("w", newline="", encoding="utf-8") as f:
-            fields = ["institution_name", "document_url", "publication_date", "frequency",
-                      "asset_class", "stance", "approval_status", "independent_reviewer",
-                      "evidence_checked", "reviewed_at_utc", "review_notes"]
-            w = csv.DictWriter(f, fieldnames=fields)
+    def write_sources(self, count):
+        with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
             w.writeheader()
             for n in range(count):
-                w.writerow({"institution_name": f"Manager {n}",
-                            "document_url": f"https://example.org/outlook/{n}",
-                            "publication_date": "2026-11-01", "frequency": "monthly",
-                            "asset_class": "Equity", "stance": "positive",
-                            "approval_status": "approved", "independent_reviewer": "Independent QA",
-                            "evidence_checked": "yes", "reviewed_at_utc": "2026-11-02T13:00:00+00:00"})
+                w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
 
     def test_official_registered_source_is_operationally_admitted(self):
         self.write_views(3)
@@ -61,7 +53,7 @@ class DashboardTests(unittest.TestCase):
         render(self.root)
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
         self.assertEqual(status["source_admitted_view_rows"], 3)
-        self.assertEqual(status["independently_approved_view_rows"], 0)
+        self.assertNotIn("independently_approved_view_rows", status)
         self.assertEqual(status["validated_view_rows"], 3)
 
     def test_unrecognized_domain_is_not_admitted(self):
@@ -151,13 +143,13 @@ class DashboardTests(unittest.TestCase):
 
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
-        self.write_approvals(2)
+        self.write_sources(2)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         self.assertIn("n.d. — campione insufficiente", html)
         self.assertEqual(html.count("n.d. — campione insufficiente"), 1)
 
-    def test_ai_provisional_views_never_enter_consensus(self):
+    def test_ai_views_require_registered_official_source(self):
         self.write_views(3)
         path = self.root / "validated_views.csv"
         with path.open(newline="", encoding="utf-8") as f:
@@ -178,7 +170,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
-        self.write_approvals(3)
+        self.write_sources(3)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
