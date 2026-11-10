@@ -102,6 +102,17 @@ def render(root):
     else:
         out.append('<div class="panel">Nessuna posizione esplicita disponibile nel periodo.</div>')
     out.append('<p class="muted">Le osservazioni tematiche non sono trasformate in sovrappesi o sottopesi. Questo registro di ricerca non aumenta il KPI delle view ammesse né contribuisce al consensus.</p>')
+    # Broader research register: accept qualitative, macro, tactical and strategic views.
+    # Distinguish them from homogeneous allocation consensus; never invent weights.
+    broad = [r for r in rows(root / 'expanded_official_outlooks.csv') if valid_url(r.get('official_url', ''))]
+    out.append('<h2>Outlook istituzionali — tutte le tipologie di view</h2><p class="muted">Incluse analisi settimanali, mensili, trimestrali e strategiche, anche qualitative e macroeconomiche. La data originale e la frequenza sono visibili. Questo registro non richiede un sovrappeso esplicito e non altera il consensus quantitativo.</p>')
+    if broad:
+        out.append('<div class="scroll"><table><thead><tr><th>Istituzione</th><th>Data</th><th>Orizzonte</th><th>Area</th><th>View documentata</th><th>Fonte</th></tr></thead><tbody>')
+        for r in sorted(broad, key=lambda x:(x.get('institution',''),x.get('asset_class',''))):
+            out.append('<tr><td>'+esc(r.get('institution'))+'</td><td>'+esc(r.get('publication_date') or 'n.d.')+'</td><td>'+esc(r.get('frequency') or 'n.d.')+'</td><td>'+esc(r.get('asset_class'))+'</td><td>'+esc(r.get('view_summary'))+'</td><td><a rel="noopener noreferrer" href="'+esc(r['official_url'])+'">Documento</a></td></tr>')
+        out.append('</tbody></table></div>')
+    else:
+        out.append('<div class="panel">Nessuna view documentata ancora disponibile.</div>')
     out.append('<h2>Posizionamenti fuori dall’elenco delle fonti riconosciute</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Controllare date, fonte e testo prima di utilizzare i dati.</p></div>')
     out.append('<h2>Copertura delle view strutturate</h2><div class="panel"><strong>'+str(len(institutions))+' / '+str(len(source_institutions))+' gestori ('+str(coverage_percent)+'%)</strong><p>La presenza nel registro fonti non equivale a una view analizzata. Le istituzioni seguenti sono censite ma non contribuiscono ancora alle matrici operative.</p>')
     if missing_view_institutions:
