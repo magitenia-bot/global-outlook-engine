@@ -93,6 +93,10 @@ jobs:
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python collect_document_evidence.py --dir . --max-checks 12
 
+      - name: Extract topic-linked evidence (unverified)
+        if: steps.italy_time.outputs.run_pipeline == 'true'
+        run: python analyze_evidence.py --dir .
+
       - name: Generate institutional HTML dashboard
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python build_report.py --dir .
@@ -152,5 +156,6 @@ jobs:
             report_status.json
             view_review_queue.csv
             document_evidence.csv
+            document_topic_evidence.csv
           if-no-files-found: warn
           retention-days: 30
