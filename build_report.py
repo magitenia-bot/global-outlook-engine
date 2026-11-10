@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 
 VIEW_FIELDS = ['institution_name','document_url','publication_date','frequency','asset_class','stance','reviewed_at_utc','reviewer','evidence_quote','previous_stance','previous_document_url']
 STANCES = {'positive': 1, 'neutral': 0, 'negative': -1}
-FREQUENCIES = {'weekly', 'monthly', 'quarterly'}
+FREQUENCIES = {'weekly'}
 
 def rows(path):
     if not path.exists(): return []
@@ -40,9 +40,12 @@ def render(root):
     candidates = {f: rows(root / f'outlook_{f}_candidates.csv') for f in ('weekly','monthly','quarterly','strategic','unclassified')}
     review_queue = rows(root / 'view_review_queue.csv')
     evidence = rows(root / 'document_evidence.csv')
-    readable_evidence = [r for r in evidence if r.get('fetch_status') == 'html_read' and r.get('text_excerpt')]
+    readable_evidence = [r for r in evidence if r.get('fetch_status') in ('html_read','pdf_read') and r.get('text_excerpt') and any(q.get('document_url') == r.get('document_url') for q in review_queue)]
     source_registry = rows(root / 'outlook_source_registry.csv')
-    raw_views = rows(root / 'validated_views.csv')
+    today_date = dt.datetime.now(dt.timezone.utc).date()
+    from select_outlooks_v21 import cutoff
+    start_date = cutoff(today_date)
+    raw_views = [r for r in rows(root / 'validated_views.csv') if r.get('frequency') == 'weekly' and start_date.isoformat() <= (r.get('publication_date') or '') <= today_date.isoformat()]
     admissible = [r for r in raw_views if validate_view(r)]
     # Source-based admission: an official source listed for the SAME institution
     # is sufficient for the operational matrix; this does NOT prove interpretation accuracy.
@@ -80,9 +83,10 @@ def render(root):
     for r in latest.values(): by_asset[(r['frequency'],r['asset_class'])].append(r)
     esc = safe
     style = '''body{margin:0;background:#f3f6fa;color:#14243a;font:15px system-ui,-apple-system,sans-serif}header{background:#0c2340;color:white;padding:30px max(20px,calc((100% - 1100px)/2))}main{max-width:1100px;margin:auto;padding:22px}h1{margin:0 0 7px}h2{margin-top:30px}p{line-height:1.5}.muted{color:#65758a}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.kpi,.panel{background:white;border:1px solid #dce3ec;border-radius:12px;padding:18px}.kpi strong{display:block;font-size:28px;margin:5px 0}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;background:white}th,td{border-bottom:1px solid #e5eaf0;padding:12px;text-align:left;vertical-align:top}th{background:#e9eef5}a{color:#0a568d;overflow-wrap:anywhere}.tag{border-radius:30px;padding:4px 10px;display:inline-block;font-size:12px;background:#e6eaf0}.pos{background:#daf4e5}.neu{background:#fff1c7}.neg{background:#ffe0df}.notice{border-left:4px solid #b57b00;padding:12px 16px;background:#fff8e6}details{margin:8px 0;background:white;padding:12px;border-radius:8px}footer{padding:28px;color:#65758a}'''
-    out = ['<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Global Outlook 3.1</title><style>'+style+'</style></head><body>', '<header><h1>Global Investment Outlook 3.1</h1><div>Research Intelligence · Dashboard istituzionale</div><small>Generato '+esc(today.strftime('%Y-%m-%d %H:%M UTC'))+'</small></header><main>']
+    out = ['<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Global Outlook — Settimanali ultimi due mesi</title><style>'+style+'</style></head><body>', '<header><h1>Global Investment Outlook — Settimanali ultimi due mesi</h1><div>Research Intelligence · Dashboard istituzionale</div><small>Generato '+esc(today.strftime('%Y-%m-%d %H:%M UTC'))+'</small></header><main>']
     out.append('<div class="notice"><b>Regola operativa:</b> le interpretazioni associate a domini ufficiali attivi del medesimo gestore, censiti in sources.csv, sono ammesse automaticamente ai semafori e al consensus. <b>Ammissione da fonte riconosciuta NON significa verifica della correttezza della view:</b> date, attribuzioni e parafrasi potrebbero richiedere controlli ulteriori. Flussi finanziari: n.d.</div>')
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view ammesse',str(len(institutions)),'Fonte ufficiale censita'),('Copertura operativa del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
+    out.append('<p class="notice">Perimetro: esclusivamente outlook settimanali pubblicati dal '+esc(start_date.isoformat())+' al '+esc(today_date.isoformat())+'. Documenti privi di data di pubblicazione non ammessi automaticamente.</p>')
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
     out.append('<h2>Posizionamenti fuori dall’elenco delle fonti riconosciute</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Controllare date, fonte e testo prima di utilizzare i dati.</p></div>')
     out.append('<h2>Copertura delle view strutturate</h2><div class="panel"><strong>'+str(len(institutions))+' / '+str(len(source_institutions))+' gestori ('+str(coverage_percent)+'%)</strong><p>La presenza nel registro fonti non equivale a una view analizzata. Le istituzioni seguenti sono censite ma non contribuiscono ancora alle matrici operative.</p>')
@@ -123,7 +127,7 @@ def render(root):
     else:
         out.append('<div class="panel">n.d. — Nessuna interpretazione preliminare disponibile.</div>')
     out.append('<h2>Consensus operativo da fonti riconosciute e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
-    for frequency in ('weekly','monthly','quarterly'):
+    for frequency in ('weekly',):
         out.append('<h3>'+{'weekly':'Settimanale','monthly':'Mensile','quarterly':'Trimestrale'}[frequency]+'</h3>')
         keys = sorted(k for k in by_asset if k[0]==frequency)
         if not keys: out.append('<div class="panel">n.d. — Nessuna view ammessa disponibile per questa frequenza.</div>'); continue
@@ -157,7 +161,7 @@ def render(root):
             out.append('<tr><td>'+esc(r.get('institution_name'))+'</td><td>'+link+'</td><td>'+esc((r.get('text_excerpt') or '')[:500])+'</td><td>'+esc(r.get('checked_at_utc'))+'</td></tr>')
         out.append('</tbody></table></div></details>')
     out.append('<h2>Documenti candidati da verificare</h2><p class="muted">Le code seguenti non contribuiscono al consensus.</p>')
-    for freq in ('weekly','monthly','quarterly','strategic','unclassified'):
+    for freq in ('weekly',):
         rs = candidates[freq]
         out.append('<details><summary><b>'+esc({'weekly':'Settimanali','monthly':'Mensili','quarterly':'Trimestrali','strategic':'Strategici / annuali','unclassified':'Non classificati'}[freq])+'</b> — '+str(len(rs))+' candidati</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Titolo / collegamento</th><th>Data metadata</th><th>Stato</th></tr></thead><tbody>')
         for r in rs[:250]:
