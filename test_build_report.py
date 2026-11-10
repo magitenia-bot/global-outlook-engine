@@ -70,6 +70,25 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("n.d. — campione insufficiente", html)
         self.assertEqual(html.count("n.d. — campione insufficiente"), 1)
 
+    def test_ai_provisional_views_never_enter_consensus(self):
+        self.write_views(3)
+        path = self.root / "validated_views.csv"
+        with path.open(newline="", encoding="utf-8") as f:
+            rs = list(csv.DictReader(f))
+        for r in rs:
+            r["reviewer"] = "ChatGPT - verifica assistita da IA, non revisione umana"
+        with path.open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=rs[0].keys())
+            w.writeheader()
+            w.writerows(rs)
+        render(self.root)
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        self.assertEqual(status["validated_view_rows"], 0)
+        self.assertEqual(status["provisional_ai_view_rows"], 3)
+        self.assertIn("in attesa di conferma indipendente", html)
+        self.assertIn("Nessuna view validata", html)
+
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
         render(self.root)
