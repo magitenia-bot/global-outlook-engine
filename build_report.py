@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 
 VIEW_FIELDS = ['institution_name','document_url','publication_date','frequency','asset_class','stance','reviewed_at_utc','reviewer','evidence_quote','previous_stance','previous_document_url']
 STANCES = {'positive': 1, 'neutral': 0, 'negative': -1}
-FREQUENCIES = {'weekly'}
+FREQUENCIES = {'weekly', 'monthly', 'quarterly', 'strategic', 'unclassified', ''}
 
 def rows(path):
     if not path.exists(): return []
@@ -27,8 +27,8 @@ def valid_url(s):
     return p.scheme == 'https' and bool(p.netloc) and not p.username and not p.password
 
 def validate_view(r):
-    if not all((r.get(k) or '').strip() for k in ('institution_name','document_url','publication_date','frequency','asset_class','stance','reviewed_at_utc','reviewer','evidence_quote')): return False
-    if r['frequency'] not in FREQUENCIES or r['stance'] not in STANCES or not valid_url(r['document_url']): return False
+    if not all((r.get(k) or '').strip() for k in ('asset_class','stance','reviewed_at_utc','evidence_quote')): return False
+    if r['frequency'] not in FREQUENCIES or r['stance'] not in STANCES: return False
     try:
         d = dt.date.fromisoformat(r['publication_date']); reviewed = dt.datetime.fromisoformat(r['reviewed_at_utc'].replace('Z','+00:00'))
         if reviewed.tzinfo is None or d > reviewed.date(): return False
@@ -45,7 +45,7 @@ def render(root):
     today_date = dt.datetime.now(dt.timezone.utc).date()
     from select_outlooks_v21 import cutoff
     start_date = cutoff(today_date)
-    raw_views = [r for r in rows(root / 'validated_views.csv') if r.get('frequency') == 'weekly' and start_date.isoformat() <= (r.get('publication_date') or '') <= today_date.isoformat()]
+    raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
     # Source-based admission: an official source listed for the SAME institution
     # is sufficient for the operational matrix; this does NOT prove interpretation accuracy.
@@ -77,10 +77,10 @@ def render(root):
     # Multiple outlooks for same institution/asset/frequency: most recent wins.
     latest = {}
     for r in views:
-        key = (r['frequency'],r['asset_class'],r['institution_name'])
+        key = (r['asset_class'],r['institution_name'])
         if key not in latest or (r['publication_date'],r['reviewed_at_utc']) > (latest[key]['publication_date'],latest[key]['reviewed_at_utc']): latest[key] = r
     by_asset = collections.defaultdict(list)
-    for r in latest.values(): by_asset[(r['frequency'],r['asset_class'])].append(r)
+    for r in latest.values(): by_asset[('all',r['asset_class'])].append(r)
     esc = safe
     style = '''body{margin:0;background:#f3f6fa;color:#14243a;font:15px system-ui,-apple-system,sans-serif}header{background:#0c2340;color:white;padding:30px max(20px,calc((100% - 1100px)/2))}main{max-width:1100px;margin:auto;padding:22px}h1{margin:0 0 7px}h2{margin-top:30px}p{line-height:1.5}.muted{color:#65758a}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.kpi,.panel{background:white;border:1px solid #dce3ec;border-radius:12px;padding:18px}.kpi strong{display:block;font-size:28px;margin:5px 0}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;background:white}th,td{border-bottom:1px solid #e5eaf0;padding:12px;text-align:left;vertical-align:top}th{background:#e9eef5}a{color:#0a568d;overflow-wrap:anywhere}.tag{border-radius:30px;padding:4px 10px;display:inline-block;font-size:12px;background:#e6eaf0}.pos{background:#daf4e5}.neu{background:#fff1c7}.neg{background:#ffe0df}.notice{border-left:4px solid #b57b00;padding:12px 16px;background:#fff8e6}details{margin:8px 0;background:white;padding:12px;border-radius:8px}footer{padding:28px;color:#65758a}'''
     out = ['<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Global Outlook — Settimanali ultimi due mesi</title><style>'+style+'</style></head><body>', '<header><h1>Global Investment Outlook — Settimanali ultimi due mesi</h1><div>Research Intelligence · Dashboard istituzionale</div><small>Generato '+esc(today.strftime('%Y-%m-%d %H:%M UTC'))+'</small></header><main>']

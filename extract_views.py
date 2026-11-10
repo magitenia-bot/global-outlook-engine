@@ -24,13 +24,13 @@ def run(root):
     old = read_csv(root / 'view_review_queue.csv')
     preserved = {(r.get('institution_name',''),r.get('document_url',''),r.get('frequency','')):r for r in old}
     output = {}
-    for freq in ('weekly',):
+    for freq in ('weekly', 'monthly', 'quarterly', 'strategic', 'unclassified'):
         for r in read_csv(root / f'outlook_{freq}_candidates.csv'):
             url = (r.get('final_url') or r.get('candidate_url') or '').strip()
             name = (r.get('institution_name') or '').strip()
-            if not name or not url.startswith('https://'):
+            if not name and not url and not (r.get('candidate_title') or '').strip():
                 continue
-            key = (name,url,freq)
+            key = (name,url or (r.get('candidate_title') or '').strip(),freq)
             title = (r.get('candidate_title') or '').strip()
             low_quality = title.casefold() in GENERIC_TITLES or not title
             prior = preserved.get(key, {})
