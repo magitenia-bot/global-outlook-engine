@@ -1,0 +1,4 @@
+source_name,source_type,region,source_url,coverage,extraction_policy,status
+"Morningstar Global","secondary_research","Global","https://www.morningstar.com/","Asset manager interviews, outlooks, fund and investment research","Attribute manager quotes to named manager; Morningstar analyst views to Morningstar Research; no rating-to-view conversion","registered"
+"Morningstar Italia","secondary_research","Italy and Europe","https://www.morningstar.it/","Italian market outlooks, manager interviews and analysis","Capture attributed manager views, source dates and classification evidence when accessible","registered"
+"Morningstar Manager Research","research_provider","Global","https://www.morningstar.com/","Manager Research and qualitative fund/manager analysis","Do not count ratings as directional asset-class views; classify only explicit outlook statements","registered"
