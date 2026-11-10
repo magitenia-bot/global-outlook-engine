@@ -43,21 +43,6 @@ class DashboardTests(unittest.TestCase):
             for n in range(count):
                 w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
 
-    def write_approvals(self, count):
-        with (self.root / "view_approvals.csv").open("w", newline="", encoding="utf-8") as f:
-            fields = ["institution_name", "document_url", "publication_date", "frequency",
-                      "asset_class", "stance", "approval_status", "independent_reviewer",
-                      "evidence_checked", "reviewed_at_utc", "review_notes"]
-            w = csv.DictWriter(f, fieldnames=fields)
-            w.writeheader()
-            for n in range(count):
-                w.writerow({"institution_name": f"Manager {n}",
-                            "document_url": f"https://example.org/outlook/{n}",
-                            "publication_date": "2026-11-01", "frequency": "monthly",
-                            "asset_class": "Equity", "stance": "positive",
-                            "approval_status": "approved", "independent_reviewer": "Independent QA",
-                            "evidence_checked": "yes", "reviewed_at_utc": "2026-11-02T13:00:00+00:00"})
-
     def test_official_registered_source_is_operationally_admitted(self):
         self.write_views(3)
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
