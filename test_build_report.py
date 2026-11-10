@@ -58,6 +58,17 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["validated_view_rows"], 0)
         self.assertEqual(status["provisional_view_rows"], 3)
 
+    def test_preliminary_semaphores_visible_without_claiming_validation(self):
+        self.write_views(2)
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertIn("Matrice esplorativa", html)
+        self.assertIn("Positivo (preliminare)", html)
+        self.assertIn("NON verificati", html)
+        self.assertEqual(status["preliminary_traffic_light_rows"], 2)
+        self.assertEqual(status["validated_view_rows"], 0)
+
     def test_no_validated_views_remains_unavailable(self):
         self.write_views(0)
         render(self.root)

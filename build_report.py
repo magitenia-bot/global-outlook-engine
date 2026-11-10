@@ -74,7 +74,7 @@ def render(root):
     esc = safe
     style = '''body{margin:0;background:#f3f6fa;color:#14243a;font:15px system-ui,-apple-system,sans-serif}header{background:#0c2340;color:white;padding:30px max(20px,calc((100% - 1100px)/2))}main{max-width:1100px;margin:auto;padding:22px}h1{margin:0 0 7px}h2{margin-top:30px}p{line-height:1.5}.muted{color:#65758a}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.kpi,.panel{background:white;border:1px solid #dce3ec;border-radius:12px;padding:18px}.kpi strong{display:block;font-size:28px;margin:5px 0}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;background:white}th,td{border-bottom:1px solid #e5eaf0;padding:12px;text-align:left;vertical-align:top}th{background:#e9eef5}a{color:#0a568d;overflow-wrap:anywhere}.tag{border-radius:30px;padding:4px 10px;display:inline-block;font-size:12px;background:#e6eaf0}.pos{background:#daf4e5}.neu{background:#fff1c7}.neg{background:#ffe0df}.notice{border-left:4px solid #b57b00;padding:12px 16px;background:#fff8e6}details{margin:8px 0;background:white;padding:12px;border-radius:8px}footer{padding:28px;color:#65758a}'''
     out = ['<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Global Outlook 3.1</title><style>'+style+'</style></head><body>', '<header><h1>Global Investment Outlook 3.1</h1><div>Research Intelligence · Dashboard istituzionale</div><small>Generato '+esc(today.strftime('%Y-%m-%d %H:%M UTC'))+'</small></header><main>']
-    out.append('<div class="notice"><b>Regola di validazione:</b> i documenti individuati automaticamente sono candidati, non view certificate. Le interpretazioni non approvate sono preliminari ed escluse dal consensus; solo view con approvazione indipendente registrata in view_approvals.csv contribuiscono ai semafori. I semafori sono calcolati esclusivamente dalle righe approvate in <code>validated_views.csv</code>. I flussi finanziari non sono disponibili da queste fonti: n.d.</div>')
+    out.append('<div class="notice"><b>Regola di validazione:</b> i documenti individuati automaticamente sono candidati, non view certificate. Le interpretazioni non approvate sono preliminari ed escluse dal consensus; solo view con approvazione indipendente registrata in view_approvals.csv contribuiscono ai semafori. I semafori validati sono calcolati soltanto dalle righe con approvazione indipendente; i semafori esplorativi preliminari sono mostrati separatamente e non entrano nel consensus. I flussi finanziari non sono disponibili da queste fonti: n.d.</div>')
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view validate',str(len(institutions)),'Con evidenza e revisore dichiarato'),('Copertura del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
     out.append('<h2>Posizionamenti preliminari — in attesa di conferma indipendente</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono view validate e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Verificare date, fonte e testo prima dell’approvazione.</p></div>')
@@ -85,6 +85,22 @@ def render(root):
             link='<a rel="noopener noreferrer" href="'+esc(url)+'">Apri fonte</a>' if valid_url(url) else 'n.d.'
             out.append('<tr><td>'+esc(r['institution_name'])+'</td><td>'+esc(r['asset_class'])+'</td><td>'+esc(r['stance'])+' — '+esc(r['evidence_quote'])+'</td><td>'+link+'</td></tr>')
         out.append('</tbody></table></div></details>')
+    # Preliminary traffic lights are useful for exploration but never presented as verified.
+    # A preliminary descriptive distribution is not an institutional consensus.
+    prelim_latest = {}
+    for r in provisional:
+        k = (r['frequency'], r['asset_class'], r['institution_name'])
+        if k not in prelim_latest or (r['publication_date'], r['reviewed_at_utc']) > (prelim_latest[k]['publication_date'], prelim_latest[k]['reviewed_at_utc']):
+            prelim_latest[k] = r
+    out.append('<h2>Matrice esplorativa — semafori NON verificati</h2><p class="notice">Le seguenti indicazioni sono interpretazioni preliminari, NON view verificate automaticamente né validate indipendentemente. Le motivazioni disponibili sono parafrasi e non prove testuali controllate. Nessun consensus viene calcolato su questi dati.</p>')
+    if prelim_latest:
+        out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Asset class</th><th>Frequenza dichiarata</th><th>Semaforo preliminare</th><th>Fonte da controllare</th></tr></thead><tbody>')
+        for r in sorted(prelim_latest.values(), key=lambda x: (x['institution_name'], x['asset_class'])):
+            label, css = {'positive': ('Positivo', 'pos'), 'neutral': ('Neutrale', 'neu'), 'negative': ('Negativo', 'neg')}[r['stance']]
+            out.append('<tr><td>'+esc(r['institution_name'])+'</td><td>'+esc(r['asset_class'])+'</td><td>'+esc(r['frequency'])+'</td><td><span class="tag '+css+'">'+label+' (preliminare)</span></td><td><a rel="noopener noreferrer" href="'+esc(r['document_url'])+'">Verifica fonte</a></td></tr>')
+        out.append('</tbody></table></div>')
+    else:
+        out.append('<div class="panel">n.d. — Nessuna interpretazione preliminare disponibile.</div>')
     out.append('<h2>Consensus e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
     for frequency in ('weekly','monthly','quarterly'):
         out.append('<h3>'+{'weekly':'Settimanale','monthly':'Mensile','quarterly':'Trimestrale'}[frequency]+'</h3>')
@@ -132,7 +148,7 @@ def render(root):
     if invalid: out.append('<p class="notice">'+str(invalid)+' righe di view validate escluse per campi mancanti o formato errato.</p>')
     out.append('</main><footer>Global Outlook 3.1 · Dati di ricerca informativi, non raccomandazioni personalizzate.</footer></body></html>')
     (root/'global_outlook.html').write_text(''.join(out),encoding='utf-8')
-    summary={'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'provisional_view_rows':len(provisional),'provisional_institutions':len(provisional_institutions),'approval_records':len(approvals),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
+    summary={'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'preliminary_traffic_light_rows':len(prelim_latest),'provisional_view_rows':len(provisional),'provisional_institutions':len(provisional_institutions),'approval_records':len(approvals),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
     (root/'report_status.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print('Dashboard generated:',summary)
 
