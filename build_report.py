@@ -61,7 +61,7 @@ def render(root):
     out.append('<div class="notice"><b>Regola di validazione:</b> i documenti individuati automaticamente sono candidati, non view certificate. I semafori sono calcolati esclusivamente dalle righe approvate in <code>validated_views.csv</code>. I flussi finanziari non sono disponibili da queste fonti: n.d.</div>')
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view validate',str(len(institutions)),'Con evidenza e revisore'),('Copertura del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
-    out.append('<h2>Consensus e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
+    out.append('<h2>Consensus e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
     for frequency in ('weekly','monthly'):
         out.append('<h3>'+('Settimanale' if frequency=='weekly' else 'Mensile')+'</h3>')
         keys = sorted(k for k in by_asset if k[0]==frequency)
@@ -71,6 +71,8 @@ def render(root):
             vs = by_asset[(frequency,asset)]; counts=collections.Counter(r['stance'] for r in vs)
             score=sum(STANCES[r['stance']] for r in vs)/len(vs)
             cls, label = ('pos','Positivo') if score>0 else ('neg','Negativo') if score<0 else ('neu','Neutrale')
+            if len(vs) < 3:
+                cls, label = '', 'n.d. — campione insufficiente'
             out.append('<tr><td>'+esc(asset)+'</td><td>'+str(len(vs))+'</td><td>'+str(counts['positive'])+'</td><td>'+str(counts['neutral'])+'</td><td>'+str(counts['negative'])+'</td><td><span class="tag '+cls+'">'+label+'</span></td></tr>')
         out.append('</tbody></table></div>')
     out.append('<h2>View documentate per gestore</h2>')
