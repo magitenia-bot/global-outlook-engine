@@ -134,6 +134,10 @@ class DashboardTests(unittest.TestCase):
             w.writerow({"institution_name": "Manager A", "document_url": "https://example.org/outlook",
                         "fetch_status": "html_read", "page_title": "Investment outlook",
                         "text_excerpt": "Research text for verification."})
+        with (self.root / "view_review_queue.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["document_url", "frequency", "institution_name"])
+            w.writeheader()
+            w.writerow({"document_url": "https://example.org/outlook", "frequency": "weekly", "institution_name": "Manager A"})
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
