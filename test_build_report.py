@@ -61,7 +61,7 @@ class DashboardTests(unittest.TestCase):
         render(self.root)
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
         self.assertEqual(status["source_admitted_view_rows"], 3)
-        self.assertEqual(status["independently_approved_view_rows"], 0)
+        self.assertNotIn("independently_approved_view_rows", status)
         self.assertEqual(status["validated_view_rows"], 3)
 
     def test_unrecognized_domain_is_not_admitted(self):
