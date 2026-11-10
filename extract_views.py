@@ -24,7 +24,7 @@ def run(root):
     old = read_csv(root / 'view_review_queue.csv')
     preserved = {(r.get('institution_name',''),r.get('document_url',''),r.get('frequency','')):r for r in old}
     output = {}
-    for freq in ('weekly','monthly','unclassified'):
+    for freq in ('weekly','monthly','quarterly','strategic','unclassified'):
         for r in read_csv(root / f'outlook_{freq}_candidates.csv'):
             url = (r.get('final_url') or r.get('candidate_url') or '').strip()
             name = (r.get('institution_name') or '').strip()
