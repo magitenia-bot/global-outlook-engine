@@ -7,6 +7,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
+from document_content import extract_pdf
 
 FIELDS = ["institution_name", "document_url", "candidate_title", "publication_date",
           "checked_at_utc", "fetch_status", "page_title", "page_description",
@@ -88,12 +89,12 @@ def run(root, max_checks=12):
     count = 0
     for r in candidates:
         url = (r.get("document_url") or "").strip()
-        if not url or (r.get("source_status") == "candidate_low_quality_metadata"):
+        if not url or not safe_url(url) or (r.get("source_status") == "candidate_low_quality_metadata"):
             continue
         if count >= max_checks:
             break
         count += 1
-        status, title, desc, excerpt = inspect(url)
+        status, title, desc, excerpt = (extract_pdf(url) if urlsplit(url).path.lower().endswith(".pdf") else inspect(url))
         old[url] = {
             "institution_name": r.get("institution_name", ""),
             "document_url": url,
