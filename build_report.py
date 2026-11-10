@@ -39,6 +39,8 @@ def validate_view(r):
 def render(root):
     candidates = {f: rows(root / f'outlook_{f}_candidates.csv') for f in ('weekly','monthly','unclassified')}
     review_queue = rows(root / 'view_review_queue.csv')
+    evidence = rows(root / 'document_evidence.csv')
+    readable_evidence = [r for r in evidence if r.get('fetch_status') == 'html_read' and r.get('text_excerpt')]
     raw_views = rows(root / 'validated_views.csv')
     views = [r for r in raw_views if validate_view(r)]
     invalid = len(raw_views) - len(views)
@@ -85,6 +87,16 @@ def render(root):
             out.append('<tr><td>'+esc(r['institution_name'])+'</td><td>'+esc(r['frequency'])+'</td><td>'+esc(r['asset_class'])+'</td><td><span class="tag '+{'positive':'pos','neutral':'neu','negative':'neg'}[r['stance']]+'">'+esc(r['stance'])+'</span></td><td>'+arrow+'</td><td><a rel="noopener noreferrer" href="'+esc(r['document_url'])+'">Outlook ufficiale</a><br><small>'+esc(r['publication_date'])+' · '+esc(r['reviewer'])+'</small><br><small>'+esc(r['evidence_quote'])+'</small></td></tr>')
         out.append('</tbody></table></div>')
     out.append('<h2>Investment View Engine — coda di revisione</h2><div class="panel"><b>'+str(len(review_queue))+' documenti in coda</b><p>Il sistema prepara una scheda per ciascun documento candidato. La lettura integrale, la verifica della citazione e l’approvazione della view richiedono revisione: nessuna posizione viene assegnata automaticamente.</p><p><code>view_review_queue.csv</code> contiene i collegamenti e i campi da completare; <code>validated_views.csv</code> è l’unica fonte per i semafori.</p></div>')
+    out.append('<h2>Estratti documentali disponibili</h2><p class="muted">Questi estratti sono acquisiti automaticamente e NON rappresentano view validate. Aprire la fonte primaria per verificare data, contesto e posizionamento.</p>')
+    out.append('<div class="panel"><b>'+str(len(readable_evidence))+' pagine HTML con estratti leggibili</b> su '+str(len(evidence))+' tentativi archiviati.</div>')
+    if readable_evidence:
+        out.append('<details><summary>Consulta gli estratti raccolti</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Documento</th><th>Estratto (non validato)</th><th>Controllato</th></tr></thead><tbody>')
+        for r in sorted(readable_evidence, key=lambda x: x.get('checked_at_utc', ''), reverse=True)[:40]:
+            url = r.get('document_url', '')
+            title = esc(r.get('page_title') or r.get('candidate_title') or 'Fonte')
+            link = '<a rel="noopener noreferrer" href="'+esc(url)+'">'+title+'</a>' if valid_url(url) else title
+            out.append('<tr><td>'+esc(r.get('institution_name'))+'</td><td>'+link+'</td><td>'+esc((r.get('text_excerpt') or '')[:500])+'</td><td>'+esc(r.get('checked_at_utc'))+'</td></tr>')
+        out.append('</tbody></table></div></details>')
     out.append('<h2>Documenti candidati da verificare</h2><p class="muted">Le code seguenti non contribuiscono al consensus.</p>')
     for freq in ('weekly','monthly','unclassified'):
         rs = candidates[freq]
@@ -98,7 +110,7 @@ def render(root):
     if invalid: out.append('<p class="notice">'+str(invalid)+' righe di view validate escluse per campi mancanti o formato errato.</p>')
     out.append('</main><footer>Global Outlook 3.1 · Dati di ricerca informativi, non raccomandazioni personalizzate.</footer></body></html>')
     (root/'global_outlook.html').write_text(''.join(out),encoding='utf-8')
-    summary={'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'flows':'n.d.'}
+    summary={'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
     (root/'report_status.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print('Dashboard generated:',summary)
 
