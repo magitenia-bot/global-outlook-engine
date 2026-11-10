@@ -30,7 +30,7 @@ jobs:
           python-version: '3.12'
 
       - name: Test dashboard consensus safeguards
-        run: python -m unittest -v test_build_report.py test_extract_views.py
+        run: python -m unittest -v test_build_report.py test_extract_views.py test_collect_document_evidence.py
 
       - name: Run acquisition
         run: python acquire.py --dir .
@@ -46,6 +46,9 @@ jobs:
 
       - name: Prepare investment view review queue
         run: python extract_views.py --dir .
+
+      - name: Collect source-linked document excerpts (unverified)
+        run: python collect_document_evidence.py --dir . --max-checks 12
 
       - name: Generate institutional HTML dashboard
         run: python build_report.py --dir .
@@ -83,5 +86,6 @@ jobs:
             global_outlook.html
             report_status.json
             view_review_queue.csv
+            document_evidence.csv
           if-no-files-found: warn
           retention-days: 30
