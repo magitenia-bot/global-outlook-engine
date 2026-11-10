@@ -80,6 +80,8 @@ def render(root):
         source_institutions = {r.get('institution_name','').strip() for v in candidates.values() for r in v if r.get('institution_name','').strip()}
     institutions = {r['institution_name'] for r in views}
     independently_approved_institutions = {r['institution_name'] for r in approved}
+    missing_view_institutions = sorted(source_institutions - institutions)
+    coverage_percent = round(100 * len(institutions) / len(source_institutions), 1) if source_institutions else 0.0
     provisional_institutions = {r['institution_name'] for r in provisional}
     # Multiple outlooks for same institution/asset/frequency: most recent wins.
     latest = {}
@@ -95,6 +97,12 @@ def render(root):
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view ammesse',str(len(institutions)),'Fonte ufficiale censita o approvazione indipendente'),('Copertura operativa del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
     out.append('<h2>Posizionamenti fuori dall’elenco delle fonti riconosciute</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Verificare date, fonte e testo prima dell’approvazione.</p></div>')
+    out.append('<h2>Copertura delle view strutturate</h2><div class="panel"><strong>'+str(len(institutions))+' / '+str(len(source_institutions))+' gestori ('+str(coverage_percent)+'%)</strong><p>La presenza nel registro fonti non equivale a una view analizzata. Le istituzioni seguenti sono censite ma non contribuiscono ancora alle matrici operative.</p>')
+    if missing_view_institutions:
+        out.append('<p>'+', '.join(esc(n) for n in missing_view_institutions)+'</p>')
+    else:
+        out.append('<p>Tutti i gestori censiti hanno almeno una view ammessa.</p>')
+    out.append('</div>')
     out.append('<h2>Registro completo delle fonti istituzionali</h2><p class="muted">Ogni gestore censito compare qui anche senza view strutturate. Data di pubblicazione e data di riferimento del documento sono distinte; n.d. significa non verificata. Le date di pagina non equivalgono a una validazione della view.</p>')
     if source_registry:
         out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Documento ufficiale</th><th>Data pubblicazione</th><th>Dati riferiti al</th><th>Stato</th></tr></thead><tbody>')
@@ -173,7 +181,7 @@ def render(root):
     if invalid: out.append('<p class="notice">'+str(invalid)+' righe di view validate escluse per campi mancanti o formato errato.</p>')
     out.append('</main><footer>Global Outlook 3.1 · Dati di ricerca informativi, non raccomandazioni personalizzate.</footer></body></html>')
     (root/'global_outlook.html').write_text(''.join(out),encoding='utf-8')
-    summary={'registered_source_documents':len(source_registry),'sources_with_page_date':sum(1 for s in source_registry if s.get('publication_date') not in ('','n.d.')),'source_admitted_view_rows':len(source_admitted),'independently_approved_view_rows':len(approved),'independently_approved_institutions':len(independently_approved_institutions),'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'preliminary_traffic_light_rows':len(prelim_latest),'provisional_view_rows':len(provisional),'provisional_institutions':len(provisional_institutions),'approval_records':len(approvals),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
+    summary={'view_coverage_percent':coverage_percent,'institutions_without_views':missing_view_institutions,'registered_source_documents':len(source_registry),'sources_with_page_date':sum(1 for s in source_registry if s.get('publication_date') not in ('','n.d.')),'source_admitted_view_rows':len(source_admitted),'independently_approved_view_rows':len(approved),'independently_approved_institutions':len(independently_approved_institutions),'generated_at_utc':today.isoformat(),'institutions_in_sources':len(source_institutions),'institutions_with_validated_views':len(institutions),'validated_view_rows':len(views),'preliminary_traffic_light_rows':len(prelim_latest),'provisional_view_rows':len(provisional),'provisional_institutions':len(provisional_institutions),'approval_records':len(approvals),'rejected_view_rows':invalid,'candidate_counts':{k:len(v) for k,v in candidates.items()},'view_review_queue_rows':len(review_queue),'document_evidence_rows':len(evidence),'readable_evidence_rows':len(readable_evidence),'flows':'n.d.'}
     (root/'report_status.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print('Dashboard generated:',summary)
 
