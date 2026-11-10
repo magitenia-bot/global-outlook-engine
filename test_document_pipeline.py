@@ -6,6 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 from select_outlooks_v21 import classify
 from discover import main as discovery_main
+from verify_documents_v2 import parse_date, PageParser
 
 class ClassificationTests(unittest.TestCase):
     def classify_title(self, title):
@@ -25,6 +26,15 @@ class ClassificationTests(unittest.TestCase):
 
     def test_weekly(self):
         self.assertEqual(self.classify_title('Weekly market commentary'), 'weekly')
+
+    def test_european_date_parsing(self):
+        self.assertEqual(str(parse_date('10/11/2026')), '2026-11-10')
+        self.assertEqual(str(parse_date('2026-11-09')), '2026-11-09')
+
+    def test_visible_time_tag(self):
+        parser = PageParser()
+        parser.feed('<article><time>10/11/2026</time></article>')
+        self.assertIn(('time.text', '10/11/2026'), parser.dates)
 
     def test_direct_pdf_discovery(self):
         with tempfile.TemporaryDirectory() as d:
