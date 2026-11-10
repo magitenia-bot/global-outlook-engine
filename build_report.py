@@ -102,6 +102,28 @@ def render(root):
     else:
         out.append('<div class="panel">Nessuna posizione esplicita disponibile nel periodo.</div>')
     out.append('<p class="muted">Le osservazioni tematiche non sono trasformate in sovrappesi o sottopesi. Questo registro di ricerca non aumenta il KPI delle view ammesse né contribuisce al consensus.</p>')
+    # Documented cross-manager consensus. Equal weight per manager / asset / horizon.
+    consensus_input = rows(root / 'institutional_consensus_views.csv')
+    eligible = [r for r in consensus_input if r.get('stance') in STANCES and valid_url(r.get('official_url','')) and r.get('institution') and r.get('asset_class') and r.get('horizon')]
+    latest = {}
+    for r in eligible:
+        key=(r['institution'],r['asset_class'],r['horizon'])
+        if key not in latest or (r.get('publication_date') or '') > (latest[key].get('publication_date') or ''): latest[key]=r
+    buckets=collections.defaultdict(list)
+    for r in latest.values(): buckets[(r['asset_class'],r['horizon'])].append(r)
+    out.append('<h2>Consensus istituzionale — campione verificato</h2><p class="muted">Media non ponderata delle posizioni documentate: positivo +1, neutrale 0, negativo -1. Ogni istituzione pesa una volta per asset class e orizzonte. Il campione attuale non rappresenta l’intera industria; le view non direzionali rimangono nel registro integrale sottostante.</p>')
+    out.append('<div class="scroll"><table><thead><tr><th>Asset class</th><th>Orizzonte</th><th>Gestori</th><th>Positivi</th><th>Neutrali</th><th>Negativi</th><th>Consensus (-100/+100)</th></tr></thead><tbody>')
+    if buckets:
+        for (asset,horizon), rr in sorted(buckets.items()):
+            n=len(rr); counts=collections.Counter(r['stance'] for r in rr)
+            score=round(100*(counts['positive']-counts['negative'])/n)
+            out.append('<tr><td>'+esc(asset)+'</td><td>'+esc(horizon)+'</td><td>'+str(n)+'</td><td>'+str(round(100*counts['positive']/n))+'%</td><td>'+str(round(100*counts['neutral']/n))+'%</td><td>'+str(round(100*counts['negative']/n))+'%</td><td>'+('+' if score>0 else '')+str(score)+'</td></tr>')
+    else: out.append('<tr><td colspan="7">n.d. — nessuna posizione comparabile</td></tr>')
+    out.append('</tbody></table></div>')
+    out.append('<details><summary>Fonti individuali del consensus</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Asset class</th><th>Orizzonte</th><th>View</th><th>Data</th><th>Fonte</th></tr></thead><tbody>')
+    for r in sorted(latest.values(),key=lambda r:(r['institution'],r['asset_class'])):
+        out.append('<tr><td>'+esc(r['institution'])+'</td><td>'+esc(r['asset_class'])+'</td><td>'+esc(r['horizon'])+'</td><td>'+esc(r['stance'])+'</td><td>'+esc(r.get('publication_date'))+'</td><td><a href="'+esc(r['official_url'])+'" rel="noopener noreferrer">Outlook</a></td></tr>')
+    out.append('</tbody></table></div></details>')
     # Broader research register: accept qualitative, macro, tactical and strategic views.
     # Distinguish them from homogeneous allocation consensus; never invent weights.
     broad = [r for r in rows(root / 'expanded_official_outlooks.csv') if valid_url(r.get('official_url', ''))]
