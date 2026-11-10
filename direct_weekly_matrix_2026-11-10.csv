@@ -1,0 +1,10 @@
+institution,weekly_publication_date,official_url,asset_or_theme,stance,stance_type,traffic_light,change_arrow_status
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","US equities","neutral","explicit","neutral","no_comparable_previous_issue"
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","Emerging market equities","overweight","explicit","green","no_comparable_previous_issue"
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","Short-term US Treasuries","overweight","explicit","green","no_comparable_previous_issue"
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","Long-term US Treasuries","neutral","explicit","neutral","prior_upgrade_mentioned_but_baseline_unverified"
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","European equities","neutral","explicit","neutral","no_comparable_previous_issue"
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","UK equities","neutral","explicit","neutral","no_comparable_previous_issue"
+"BlackRock","2026-11-09","https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary","Japanese equities","neutral","explicit","neutral","no_comparable_previous_issue"
+"Amundi","2026-11-10","https://www.amundi.com/th-instit/article/post-election-equity-rotation-reshapes-opportunities-beyond-us-technology-and-ai-linked-stocks","US technology concentration","diversification_preferred","thematic","not_applicable","no_explicit_weight"
+"Amundi","2026-11-10","https://www.amundi.com/th-instit/article/post-election-equity-rotation-reshapes-opportunities-beyond-us-technology-and-ai-linked-stocks","Global defensive equities","relative_resilience","market_observation","not_applicable","not_explicit_weight"
