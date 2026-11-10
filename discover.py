@@ -73,13 +73,13 @@ def main():
                 if target in seen or SKIP.search(target): continue
                 seen.add(target)
                 if not KEYWORDS.search(title+' '+parsed.path): continue
-                if not re.search(r'weekly|week(?:ly)?|market recap|market commentary',title+' '+parsed.path,re.I): continue
+                if not re.search(r'weekly|week(?:ly)?|market recap|market commentary|market directions|market updates?',title+' '+parsed.path,re.I): continue
                 rows.append({'discovered_at_utc':now,'source_id':sid,'institution_name':s.get('institution_name',''),
                              'source_page_url':url,'candidate_title':re.sub(r'\s+',' ',title)[:240],
                              'candidate_url':target,'publication_date':'','document_verified':'no',
                              'review_status':'candidate_unverified'})
                 count+=1
-                if count>=40: break
+                if count>=80: break
             checks.append({'checked_at_utc':now,'source_id':sid,'result':'ok','candidate_count':count,'detail':''})
             print(f'{sid}: {count} candidate links (unverified)',flush=True)
         except Exception as e:
