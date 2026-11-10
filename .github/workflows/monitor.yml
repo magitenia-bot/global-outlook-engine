@@ -2,6 +2,10 @@ name: Global Outlook - Daily Production
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monitor.yml'
   schedule:
     - cron: '0 5,6 * * *'
 
