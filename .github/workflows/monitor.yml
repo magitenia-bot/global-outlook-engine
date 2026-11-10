@@ -90,12 +90,13 @@ jobs:
           assert '<!doctype html>' in html.lower(), 'HTML dashboard missing or invalid'
           assert 'validated_view_rows' in status, 'Missing validated view KPI'
           assert 'provisional_view_rows' in status, 'Missing provisional view KPI'
+          assert 'registered_source_documents' in status, 'Missing source registry KPI'
+          assert status['registered_source_documents'] >= status['institutions_in_sources'], 'Incomplete registry coverage'
           assert status['validated_view_rows'] >= 0
           print('Production check passed:', status['validated_view_rows'], 'validated,', status['provisional_view_rows'], 'provisional')
           PY
 
       - name: Commit monitoring and research data
-        if: steps.italy_time.outputs.run_pipeline == 'true'
         if: steps.italy_time.outputs.run_pipeline == 'true' && success()
         run: |
           git config user.name "github-actions[bot]"
@@ -111,13 +112,14 @@ jobs:
           fi
 
       - name: Save research results
-        if: steps.italy_time.outputs.run_pipeline == 'true'
         if: steps.italy_time.outputs.run_pipeline == 'true' && always()
         uses: actions/upload-artifact@v4
         with:
           name: global-outlook-results
           path: |
             sources.csv
+            outlook_source_registry.csv
+            validated_views.csv
             acquisition_events.csv
             document_candidates.csv
             discovery_checks.csv
