@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 
 VIEW_FIELDS = ['institution_name','document_url','publication_date','frequency','asset_class','stance','reviewed_at_utc','reviewer','evidence_quote','previous_stance','previous_document_url']
 STANCES = {'positive': 1, 'neutral': 0, 'negative': -1}
-FREQUENCIES = {'weekly', 'monthly'}
+FREQUENCIES = {'weekly', 'monthly', 'quarterly'}
 
 def rows(path):
     if not path.exists(): return []
@@ -64,8 +64,8 @@ def render(root):
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view validate',str(len(institutions)),'Con evidenza e revisore dichiarato'),('Copertura del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
     out.append('<h2>Consensus e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
-    for frequency in ('weekly','monthly'):
-        out.append('<h3>'+('Settimanale' if frequency=='weekly' else 'Mensile')+'</h3>')
+    for frequency in ('weekly','monthly','quarterly'):
+        out.append('<h3>'+{'weekly':'Settimanale','monthly':'Mensile','quarterly':'Trimestrale'}[frequency]+'</h3>')
         keys = sorted(k for k in by_asset if k[0]==frequency)
         if not keys: out.append('<div class="panel">n.d. — Nessuna view validata disponibile per questa frequenza.</div>'); continue
         out.append('<div class="scroll"><table><thead><tr><th>Asset class</th><th>Gestori</th><th>Positivi</th><th>Neutrali</th><th>Negativi</th><th>Consensus</th></tr></thead><tbody>')
