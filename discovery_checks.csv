@@ -1,12 +1,17 @@
 checked_at_utc,source_id,result,candidate_count,detail
-2026-11-10T21:45:47+00:00,src-blackrock-weekly,ok,6,
-2026-11-10T21:45:47+00:00,src-jpm-weekly,ok,16,
-2026-11-10T21:45:47+00:00,src-trowe-weekly,ok,1,
-2026-11-10T21:45:47+00:00,src-amundi-weekly,ok,12,
-2026-11-10T21:45:47+00:00,src-jpm-weekly-brief,ok,16,
-2026-11-10T21:45:47+00:00,src-jpm-weekly-us,ok,21,
-2026-11-10T21:45:47+00:00,src-blackrock-corporate-weekly,ok,4,
-2026-11-10T21:45:47+00:00,src-bofa-cio-weekly,ok,18,
-2026-11-10T21:45:47+00:00,src-main-weekly,error,0,HTTPError: HTTP Error 429: Too Many Requests
-2026-11-10T21:45:47+00:00,src-amundi-weekly-de,ok,26,
-2026-11-10T21:45:47+00:00,src-amundi-weekly-fr,ok,20,
+2026-11-10T22:20:28+00:00,src-blackrock-weekly,ok,6,
+2026-11-10T22:20:28+00:00,src-jpm-weekly,ok,16,
+2026-11-10T22:20:28+00:00,src-trowe-weekly,ok,1,
+2026-11-10T22:20:28+00:00,src-amundi-weekly,ok,12,
+2026-11-10T22:20:28+00:00,src-jpm-weekly-brief,ok,16,
+2026-11-10T22:20:28+00:00,src-jpm-weekly-us,ok,21,
+2026-11-10T22:20:28+00:00,src-blackrock-corporate-weekly,ok,4,
+2026-11-10T22:20:28+00:00,src-bofa-cio-weekly,ok,18,
+2026-11-10T22:20:28+00:00,src-main-weekly,error,0,HTTPError: HTTP Error 429: Too Many Requests
+2026-11-10T22:20:28+00:00,src-amundi-weekly-de,ok,26,
+2026-11-10T22:20:28+00:00,src-amundi-weekly-fr,ok,20,
+2026-11-10T22:20:28+00:00,src-hsbc-weekly,ok,3,
+2026-11-10T22:20:28+00:00,src-allianz-week-ahead,error,0,"HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Found"
+2026-11-10T22:20:28+00:00,src-fidelity-markets-weekly,ok,11,
