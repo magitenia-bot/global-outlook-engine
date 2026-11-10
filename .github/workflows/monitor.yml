@@ -1,4 +1,4 @@
-name: Global Outlook - Daily Production
+name: Global Outlook - Source Extraction
 
 on:
   workflow_dispatch:
@@ -102,34 +102,13 @@ jobs:
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python propose_stances.py --dir .
 
-      - name: Generate institutional HTML dashboard
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python build_report.py --dir .
-
-      - name: Check dashboard and status outputs
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          status = json.loads(Path('report_status.json').read_text(encoding='utf-8'))
-          html = Path('global_outlook.html').read_text(encoding='utf-8')
-          assert '<!doctype html>' in html.lower(), 'HTML dashboard missing or invalid'
-          assert 'validated_view_rows' in status, 'Missing validated view KPI'
-          assert 'provisional_view_rows' in status, 'Missing provisional view KPI'
-          assert 'registered_source_documents' in status, 'Missing source registry KPI'
-          assert status['registered_source_documents'] >= 0, 'Invalid source registry KPI'
-          assert status['validated_view_rows'] >= 0
-          print('Production check passed:', status['validated_view_rows'], 'validated,', status['provisional_view_rows'], 'provisional')
-          PY
-
       - name: Commit monitoring and research data
         if: steps.italy_time.outputs.run_pipeline == 'true' && success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -- '*.csv' global_outlook.html report_status.json
+          git add -- '*.csv'
 
           if ! git diff --cached --quiet; then
             git commit -m "Update Global Outlook research and selection data"
@@ -138,7 +117,7 @@ jobs:
             echo "No research data changes to commit"
           fi
 
-      - name: Save research results
+      - name: Save extracted research data
         if: steps.italy_time.outputs.run_pipeline == 'true' && always()
         uses: actions/upload-artifact@v4
         with:
@@ -157,8 +136,6 @@ jobs:
             outlook_quarterly_candidates.csv
             outlook_strategic_candidates.csv
             outlook_unclassified_candidates.csv
-            global_outlook.html
-            report_status.json
             view_review_queue.csv
             document_evidence.csv
             document_topic_evidence.csv
