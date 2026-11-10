@@ -127,7 +127,7 @@ class DashboardTests(unittest.TestCase):
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
-        self.assertIn("Nessuna view validata", html)
+        self.assertIn("Nessuna view ammessa", html)
         self.assertEqual(status["validated_view_rows"], 0)
 
     def test_unverified_excerpts_are_visible_but_not_validated(self):
@@ -173,7 +173,7 @@ class DashboardTests(unittest.TestCase):
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         self.assertEqual(status["validated_view_rows"], 0)
         self.assertEqual(status["provisional_view_rows"], 3)
-        self.assertIn("in attesa di conferma indipendente", html)
+        self.assertIn("non contribuiscono ai semafori né al consensus", html)
         self.assertIn("Nessuna view validata", html)
 
     def test_three_managers_produce_consensus(self):
