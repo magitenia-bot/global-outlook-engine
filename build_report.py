@@ -43,7 +43,7 @@ def render(root):
     readable_evidence = [r for r in evidence if r.get('fetch_status') == 'html_read' and r.get('text_excerpt')]
     raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
-    provisional = [r for r in admissible if 'chatgpt' in r.get('reviewer','').lower() or 'ia' in r.get('reviewer','').lower()]
+    provisional = [r for r in admissible if 'chatgpt' in r.get('reviewer','').lower() or 'assistita da ia' in r.get('reviewer','').lower()]
     views = [r for r in admissible if r not in provisional]
     invalid = len(raw_views) - len(admissible)
     today = dt.datetime.now(dt.timezone.utc)
