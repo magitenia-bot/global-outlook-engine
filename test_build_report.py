@@ -91,6 +91,19 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["registered_source_documents"], 2)
         self.assertEqual(status["sources_with_page_date"], 1)
 
+    def test_missing_manager_coverage_is_explicit(self):
+        self.write_views(0)
+        with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["institution_name","source_url","status"])
+            w.writeheader()
+            w.writerow({"institution_name":"Manager without views","source_url":"https://example.org/outlook","status":"active"})
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertIn("Manager without views", html)
+        self.assertEqual(status["view_coverage_percent"], 0.0)
+        self.assertEqual(status["institutions_without_views"], ["Manager without views"])
+
     def test_unapproved_non_ai_reviewer_is_not_validation(self):
         self.write_views(3)
         render(self.root)
