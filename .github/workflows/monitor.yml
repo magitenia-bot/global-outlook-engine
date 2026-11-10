@@ -1,9 +1,9 @@
-name: Global Outlook 3.1 - Monitor
+name: Global Outlook - Daily Production
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 6 * * *'
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repository
@@ -52,6 +52,20 @@ jobs:
 
       - name: Generate institutional HTML dashboard
         run: python build_report.py --dir .
+
+      - name: Check dashboard and status outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          status = json.loads(Path('report_status.json').read_text(encoding='utf-8'))
+          html = Path('global_outlook.html').read_text(encoding='utf-8')
+          assert '<!doctype html>' in html.lower(), 'HTML dashboard missing or invalid'
+          assert 'validated_view_rows' in status, 'Missing validated view KPI'
+          assert 'provisional_view_rows' in status, 'Missing provisional view KPI'
+          assert status['validated_view_rows'] >= 0
+          print('Production check passed:', status['validated_view_rows'], 'validated,', status['provisional_view_rows'], 'provisional')
+          PY
 
       - name: Commit monitoring and research data
         if: success()
