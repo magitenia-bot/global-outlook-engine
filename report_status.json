@@ -21,7 +21,7 @@
   "source_admitted_view_rows": 31,
   "independently_approved_view_rows": 0,
   "independently_approved_institutions": 0,
-  "generated_at_utc": "2026-11-10T21:07:43.504836+00:00",
+  "generated_at_utc": "2026-11-10T21:10:47.971529+00:00",
   "institutions_in_sources": 22,
   "institutions_with_validated_views": 8,
   "validated_view_rows": 31,
@@ -38,7 +38,7 @@
     "unclassified": 50
   },
   "view_review_queue_rows": 57,
-  "document_evidence_rows": 24,
-  "readable_evidence_rows": 22,
+  "document_evidence_rows": 26,
+  "readable_evidence_rows": 23,
   "flows": "n.d."
 }
