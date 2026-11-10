@@ -98,7 +98,7 @@ jobs:
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python analyze_evidence.py --dir .
 
-      - name: Generate low-confidence stance proposals for independent review
+      - name: Generate low-confidence stance proposals for source assessment
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python propose_stances.py --dir .
 
