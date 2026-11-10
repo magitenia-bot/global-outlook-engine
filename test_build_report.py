@@ -44,6 +44,22 @@ class DashboardTests(unittest.TestCase):
             for n in range(count):
                 w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
 
+
+    def test_direct_research_is_separate_from_consensus(self):
+        with (self.root / 'direct_weekly_matrix_2026-11-10.csv').open('w', encoding='utf-8', newline='') as f:
+            w = csv.DictWriter(f, fieldnames=['institution','weekly_publication_date','official_url','asset_or_theme','stance','stance_type','traffic_light','change_arrow_status'])
+            w.writeheader()
+            w.writerow({'institution':'BlackRock','weekly_publication_date':dt.datetime.now(dt.timezone.utc).date().isoformat(),'official_url':'https://www.blackrock.com/weekly','asset_or_theme':'US equities','stance':'neutral','stance_type':'explicit'})
+            w.writerow({'institution':'Amundi','weekly_publication_date':dt.datetime.now(dt.timezone.utc).date().isoformat(),'official_url':'https://www.amundi.com/weekly','asset_or_theme':'AI','stance':'diversification_preferred','stance_type':'thematic'})
+        render(self.root)
+        page = (self.root / 'global_outlook.html').read_text(encoding='utf-8')
+        self.assertIn('Ricerca diretta', page)
+        self.assertIn('BlackRock', page)
+        self.assertIn('Neutrale', page)
+        self.assertNotIn('diversification_preferred', page)
+        status = json.loads((self.root / 'report_status.json').read_text(encoding='utf-8'))
+        self.assertEqual(status['validated_view_rows'], 0)
+
     def test_official_registered_source_is_operationally_admitted(self):
         self.write_views(3)
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:

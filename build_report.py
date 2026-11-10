@@ -88,6 +88,20 @@ def render(root):
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view ammesse',str(len(institutions)),'Fonte ufficiale censita'),('Copertura operativa del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
     out.append('<p class="notice">Perimetro: esclusivamente outlook settimanali pubblicati dal '+esc(start_date.isoformat())+' al '+esc(today_date.isoformat())+'. Documenti privi di data di pubblicazione non ammessi automaticamente.</p>')
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
+    # Human-readable, source-linked direct research is separate from production consensus.
+    direct = rows(root / 'direct_weekly_matrix_2026-11-10.csv')
+    direct = [r for r in direct if r.get('stance_type') == 'explicit' and valid_url(r.get('official_url', '')) and start_date.isoformat() <= r.get('weekly_publication_date', '') <= today_date.isoformat()]
+    out.append('<h2>Ricerca diretta — posizioni esplicite documentate</h2><p class="muted">Analisi separata dal consensus automatico. La data del commento settimanale non equivale necessariamente alla data di modifica della posizione tattica. Le frecce sono n.d. senza un confronto storico omogeneo.</p>')
+    if direct:
+        out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Asset class</th><th>View</th><th>Variazione</th><th>Fonte ufficiale</th></tr></thead><tbody>')
+        labels = {'overweight': ('Sovrappeso', 'pos'), 'neutral': ('Neutrale', 'neu'), 'underweight': ('Sottopeso', 'neg')}
+        for r in sorted(direct, key=lambda x: (x['institution'], x['asset_or_theme'])):
+            label, css = labels.get(r.get('stance'), ('n.d.', ''))
+            out.append('<tr><td>'+esc(r['institution'])+'</td><td>'+esc(r['asset_or_theme'])+'</td><td><span class="tag '+css+'">'+esc(label)+'</span></td><td>n.d.</td><td><a rel="noopener noreferrer" href="'+esc(r['official_url'])+'">Apri fonte</a> · '+esc(r['weekly_publication_date'])+'</td></tr>')
+        out.append('</tbody></table></div>')
+    else:
+        out.append('<div class="panel">Nessuna posizione esplicita disponibile nel periodo.</div>')
+    out.append('<p class="muted">Le osservazioni tematiche non sono trasformate in sovrappesi o sottopesi. Questo registro di ricerca non aumenta il KPI delle view ammesse né contribuisce al consensus.</p>')
     out.append('<h2>Posizionamenti fuori dall’elenco delle fonti riconosciute</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Controllare date, fonte e testo prima di utilizzare i dati.</p></div>')
     out.append('<h2>Copertura delle view strutturate</h2><div class="panel"><strong>'+str(len(institutions))+' / '+str(len(source_institutions))+' gestori ('+str(coverage_percent)+'%)</strong><p>La presenza nel registro fonti non equivale a una view analizzata. Le istituzioni seguenti sono censite ma non contribuiscono ancora alle matrici operative.</p>')
     if missing_view_institutions:
