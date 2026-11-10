@@ -87,6 +87,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
+        self.write_approvals(2)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
         self.assertIn("n.d. — campione insufficiente", html)
