@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/monitor.yml'
+      - 'test_*.py'
+      - 'build_report.py'
   schedule:
     - cron: '0 5,6 * * *'
 
