@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-10T17:33:32.538782+00:00",
+  "generated_at_utc": "2026-11-10T17:54:21.480105+00:00",
   "institutions_in_sources": 20,
   "institutions_with_validated_views": 0,
   "validated_view_rows": 0,
@@ -9,5 +9,6 @@
     "monthly": 3,
     "unclassified": 46
   },
+  "view_review_queue_rows": 49,
   "flows": "n.d."
 }
