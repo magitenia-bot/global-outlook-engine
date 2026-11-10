@@ -75,6 +75,22 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["source_admitted_view_rows"], 0)
         self.assertEqual(status["provisional_view_rows"], 1)
 
+    def test_source_registry_renders_release_dates_and_unknowns(self):
+        self.write_views(0)
+        with (self.root / "outlook_source_registry.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["institution_name","document_url","publication_date","as_of_date","verification_status"])
+            w.writeheader()
+            w.writerow({"institution_name":"Manager A","document_url":"https://example.org/outlook","publication_date":"2026-10-21","as_of_date":"2026-09-30","verification_status":"official_page_date_checked"})
+            w.writerow({"institution_name":"Manager B","document_url":"https://example.org/other","publication_date":"n.d.","as_of_date":"n.d.","verification_status":"official_source_registered_date_not_verified"})
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertIn("2026-10-21", html)
+        self.assertIn("2026-09-30", html)
+        self.assertIn("Manager B", html)
+        self.assertEqual(status["registered_source_documents"], 2)
+        self.assertEqual(status["sources_with_page_date"], 1)
+
     def test_unapproved_non_ai_reviewer_is_not_validation(self):
         self.write_views(3)
         render(self.root)
