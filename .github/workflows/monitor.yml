@@ -41,6 +41,9 @@ jobs:
       - name: Select recent outlooks
         run: python select_outlooks_v21.py --dir .
 
+      - name: Prepare investment view review queue
+        run: python extract_views.py --dir .
+
       - name: Generate institutional HTML dashboard
         run: python build_report.py --dir .
 
@@ -76,5 +79,6 @@ jobs:
             outlook_unclassified_candidates.csv
             global_outlook.html
             report_status.json
+            view_review_queue.csv
           if-no-files-found: warn
           retention-days: 30
