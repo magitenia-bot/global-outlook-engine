@@ -60,9 +60,13 @@ def render(root):
     def recognized(r):
         host = (urlsplit(r['document_url']).hostname or '').lower().rstrip('.')
         return any(host == h or host.endswith('.' + h) for h in official_hosts[r['institution_name']])
-    # Official-source recognition is the sole admission gate; no independent approval workflow.
-    views = [r for r in admissible if recognized(r)]
-    provisional = [r for r in admissible if not recognized(r)]
+    # A matching official domain is NOT a validation of a paraphrased investment stance.
+    # Preserve all AI-reviewed entries as exploratory, regardless of source host.
+    def ai_provisional(r):
+        reviewer = (r.get('reviewer') or '').lower()
+        return 'chatgpt' in reviewer or 'assistita da ia' in reviewer
+    views = [r for r in admissible if recognized(r) and not ai_provisional(r)]
+    provisional = [r for r in admissible if r not in views]
     source_admitted = views
     invalid = len(raw_views) - len(admissible)
     today = dt.datetime.now(dt.timezone.utc)
@@ -80,13 +84,13 @@ def render(root):
         key = (r['asset_class'],r['institution_name'])
         if key not in latest or (r['publication_date'],r['reviewed_at_utc']) > (latest[key]['publication_date'],latest[key]['reviewed_at_utc']): latest[key] = r
     by_asset = collections.defaultdict(list)
-    for r in latest.values(): by_asset[('all',r['asset_class'])].append(r)
+    for r in latest.values(): by_asset[(r['frequency'],r['asset_class'])].append(r)
     esc = safe
     style = '''body{margin:0;background:#f3f6fa;color:#14243a;font:15px system-ui,-apple-system,sans-serif}header{background:#0c2340;color:white;padding:30px max(20px,calc((100% - 1100px)/2))}main{max-width:1100px;margin:auto;padding:22px}h1{margin:0 0 7px}h2{margin-top:30px}p{line-height:1.5}.muted{color:#65758a}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.kpi,.panel{background:white;border:1px solid #dce3ec;border-radius:12px;padding:18px}.kpi strong{display:block;font-size:28px;margin:5px 0}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;background:white}th,td{border-bottom:1px solid #e5eaf0;padding:12px;text-align:left;vertical-align:top}th{background:#e9eef5}a{color:#0a568d;overflow-wrap:anywhere}.tag{border-radius:30px;padding:4px 10px;display:inline-block;font-size:12px;background:#e6eaf0}.pos{background:#daf4e5}.neu{background:#fff1c7}.neg{background:#ffe0df}.notice{border-left:4px solid #b57b00;padding:12px 16px;background:#fff8e6}details{margin:8px 0;background:white;padding:12px;border-radius:8px}footer{padding:28px;color:#65758a}'''
-    out = ['<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Global Outlook — Settimanali ultimi due mesi</title><style>'+style+'</style></head><body>', '<header><h1>Global Investment Outlook — Settimanali ultimi due mesi</h1><div>Research Intelligence · Dashboard istituzionale</div><small>Generato '+esc(today.strftime('%Y-%m-%d %H:%M UTC'))+'</small></header><main>']
-    out.append('<div class="notice"><b>Regola operativa:</b> le interpretazioni associate a domini ufficiali attivi del medesimo gestore, censiti in sources.csv, sono ammesse automaticamente ai semafori e al consensus. <b>Ammissione da fonte riconosciuta NON significa verifica della correttezza della view:</b> date, attribuzioni e parafrasi potrebbero richiedere controlli ulteriori. Flussi finanziari: n.d.</div>')
+    out = ['<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Global Outlook — Ricerca istituzionale globale</title><style>'+style+'</style></head><body>', '<header><h1>Global Investment Outlook — Ricerca istituzionale globale</h1><div>Research Intelligence · Dashboard istituzionale</div><small>Generato '+esc(today.strftime('%Y-%m-%d %H:%M UTC'))+'</small></header><main>']
+    out.append('<div class="notice"><b>Regola operativa:</b> la provenienza da un dominio ufficiale non certifica l'interpretazione. Le view assistite da IA sono mostrate separatamente e non entrano nel consensus. <b>Ammissione da fonte riconosciuta NON significa verifica della correttezza della view:</b> date, attribuzioni e parafrasi potrebbero richiedere controlli ulteriori. Flussi finanziari: n.d.</div>')
     kpis = [('Istituzioni censite',str(len(source_institutions)),'Da sources.csv'),('Gestori con view ammesse',str(len(institutions)),'Fonte ufficiale censita'),('Copertura operativa del censimento',f'{100*len(institutions)/len(source_institutions):.1f}%' if source_institutions else 'n.d.','Non è la copertura del mercato globale'),('Flussi netti','n.d.','Nessuna serie omogenea verificata')]
-    out.append('<p class="notice">Perimetro: esclusivamente outlook settimanali pubblicati dal '+esc(start_date.isoformat())+' al '+esc(today_date.isoformat())+'. Documenti privi di data di pubblicazione non ammessi automaticamente.</p>')
+    out.append('<p class="notice">Monitoraggio prioritario degli outlook recenti dal '+esc(start_date.isoformat())+' al '+esc(today_date.isoformat())+'. Sono incluse anche fonti mensili, trimestrali e strategiche; i documenti senza data rimangono candidati non validati.</p>')
     out.append('<h2>Executive dashboard</h2><section class="kpis">'+''.join('<div class="kpi"><span class="muted">'+esc(k)+'</span><strong>'+esc(v)+'</strong><small>'+esc(note)+'</small></div>' for k,v,note in kpis)+'</section>')
     # Human-readable, source-linked direct research is separate from production consensus.
     direct = rows(root / 'direct_weekly_matrix_2026-11-10.csv')
@@ -105,12 +109,12 @@ def render(root):
     # Documented cross-manager consensus. Equal weight per manager / asset / horizon.
     consensus_input = rows(root / 'institutional_consensus_views.csv')
     eligible = [r for r in consensus_input if r.get('stance') in STANCES and valid_url(r.get('official_url','')) and r.get('institution') and r.get('asset_class') and r.get('horizon')]
-    latest = {}
+    consensus_latest = {}
     for r in eligible:
         key=(r['institution'],r['asset_class'],r['horizon'])
-        if key not in latest or (r.get('publication_date') or '') > (latest[key].get('publication_date') or ''): latest[key]=r
+        if key not in consensus_latest or (r.get('publication_date') or '') > (consensus_latest[key].get('publication_date') or ''): consensus_latest[key]=r
     buckets=collections.defaultdict(list)
-    for r in latest.values(): buckets[(r['asset_class'],r['horizon'])].append(r)
+    for r in consensus_latest.values(): buckets[(r['asset_class'],r['horizon'])].append(r)
     out.append('<h2>Consensus istituzionale — campione verificato</h2><p class="muted">Media non ponderata delle posizioni documentate: positivo +1, neutrale 0, negativo -1. Ogni istituzione pesa una volta per asset class e orizzonte. Il campione attuale non rappresenta l’intera industria; le view non direzionali rimangono nel registro integrale sottostante.</p>')
     out.append('<div class="scroll"><table><thead><tr><th>Asset class</th><th>Orizzonte</th><th>Gestori</th><th>Positivi</th><th>Neutrali</th><th>Negativi</th><th>Consensus (-100/+100)</th></tr></thead><tbody>')
     if buckets:
@@ -121,7 +125,7 @@ def render(root):
     else: out.append('<tr><td colspan="7">n.d. — nessuna posizione comparabile</td></tr>')
     out.append('</tbody></table></div>')
     out.append('<details><summary>Fonti individuali del consensus</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Asset class</th><th>Orizzonte</th><th>View</th><th>Data</th><th>Fonte</th></tr></thead><tbody>')
-    for r in sorted(latest.values(),key=lambda r:(r['institution'],r['asset_class'])):
+    for r in sorted(consensus_latest.values(),key=lambda r:(r['institution'],r['asset_class'])):
         out.append('<tr><td>'+esc(r['institution'])+'</td><td>'+esc(r['asset_class'])+'</td><td>'+esc(r['horizon'])+'</td><td>'+esc(r['stance'])+'</td><td>'+esc(r.get('publication_date'))+'</td><td><a href="'+esc(r['official_url'])+'" rel="noopener noreferrer">Outlook</a></td></tr>')
     out.append('</tbody></table></div></details>')
     # Broader research register: accept qualitative, macro, tactical and strategic views.
@@ -174,8 +178,8 @@ def render(root):
     else:
         out.append('<div class="panel">n.d. — Nessuna interpretazione preliminare disponibile.</div>')
     out.append('<h2>Consensus operativo da fonti riconosciute e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
-    for frequency in ('weekly',):
-        out.append('<h3>'+{'weekly':'Settimanale','monthly':'Mensile','quarterly':'Trimestrale'}[frequency]+'</h3>')
+    for frequency in ('weekly','monthly','quarterly','strategic','unclassified'):
+        out.append('<h3>'+{'weekly':'Settimanale','monthly':'Mensile','quarterly':'Trimestrale','strategic':'Strategico / annuale','unclassified':'Non classificato'}[frequency]+'</h3>')
         keys = sorted(k for k in by_asset if k[0]==frequency)
         if not keys: out.append('<div class="panel">n.d. — Nessuna view ammessa disponibile per questa frequenza.</div>'); continue
         out.append('<div class="scroll"><table><thead><tr><th>Asset class</th><th>Gestori</th><th>Positivi</th><th>Neutrali</th><th>Negativi</th><th>Consensus</th></tr></thead><tbody>')
@@ -188,15 +192,15 @@ def render(root):
             out.append('<tr><td>'+esc(asset)+'</td><td>'+str(len(vs))+'</td><td>'+str(counts['positive'])+'</td><td>'+str(counts['neutral'])+'</td><td>'+str(counts['negative'])+'</td><td><span class="tag '+cls+'">'+label+'</span></td></tr>')
         out.append('</tbody></table></div>')
     out.append('<h2>View ammesse da fonte riconosciuta</h2>')
-    if not latest: out.append('<div class="panel">n.d. — Nessuna view ammessa. Nessun semaforo individuale viene inventato.</div>')
+    if not views: out.append('<div class="panel">n.d. — Nessuna view ammessa. Nessun semaforo individuale viene inventato.</div>')
     else:
         out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Frequenza</th><th>Asset</th><th>View</th><th>Variazione</th><th>Fonte</th></tr></thead><tbody>')
-        for r in sorted(latest.values(),key=lambda r:(r['institution_name'],r['frequency'],r['asset_class'])):
+        for r in sorted(views,key=lambda r:(r['institution_name'],r['frequency'],r['asset_class'])):
             previous = (r.get('previous_stance') or '').strip()
             arrow = '↑' if previous and STANCES[r['stance']]>STANCES[previous] else '↓' if previous and STANCES[r['stance']]<STANCES[previous] else '→' if previous else 'n.d.'
             out.append('<tr><td>'+esc(r['institution_name'])+'</td><td>'+esc(r['frequency'])+'</td><td>'+esc(r['asset_class'])+'</td><td><span class="tag '+{'positive':'pos','neutral':'neu','negative':'neg'}[r['stance']]+'">'+esc(r['stance'])+'</span></td><td>'+arrow+'</td><td><a rel="noopener noreferrer" href="'+esc(r['document_url'])+'">Outlook ufficiale</a><br><small>'+esc(r['publication_date'])+' · '+esc(r['reviewer'])+'</small><br><small>'+esc(r['evidence_quote'])+'</small></td></tr>')
         out.append('</tbody></table></div>')
-    out.append('<h2>Investment View Engine — documenti da analizzare</h2><div class="panel"><b>'+str(len(review_queue))+' documenti candidati</b><p>Il sistema prepara una scheda per ciascun documento candidato. Le view strutturate con fonte ufficiale riconosciuta alimentano i semafori. I candidati senza evidenze sufficienti restano separati; non è prevista alcuna approvazione indipendente.</p><p><code>view_review_queue.csv</code> contiene i collegamenti e i campi da completare; <code>validated_views.csv</code> è l’unica fonte per i semafori.</p></div>')
+    out.append('<h2>Investment View Engine — documenti da analizzare</h2><div class="panel"><b>'+str(len(review_queue))+' documenti candidati</b><p>Il sistema prepara una scheda per ciascun documento candidato. Le view strutturate con fonte ufficiale riconosciuta alimentano i semafori. I candidati senza evidenze sufficienti restano separati; la validazione richiede un controllo indipendente.</p><p><code>view_review_queue.csv</code> contiene i collegamenti e i campi da completare; <code>validated_views.csv</code> è l’unica fonte per i semafori.</p></div>')
     out.append('<h2>Estratti documentali disponibili</h2><p class="muted">Questi estratti sono acquisiti automaticamente e NON rappresentano view validate. Aprire la fonte primaria per verificare data, contesto e posizionamento.</p>')
     out.append('<div class="panel"><b>'+str(len(readable_evidence))+' pagine HTML con estratti leggibili</b> su '+str(len(evidence))+' tentativi archiviati.</div>')
     if readable_evidence:
@@ -208,7 +212,7 @@ def render(root):
             out.append('<tr><td>'+esc(r.get('institution_name'))+'</td><td>'+link+'</td><td>'+esc((r.get('text_excerpt') or '')[:500])+'</td><td>'+esc(r.get('checked_at_utc'))+'</td></tr>')
         out.append('</tbody></table></div></details>')
     out.append('<h2>Documenti candidati da verificare</h2><p class="muted">Le code seguenti non contribuiscono al consensus.</p>')
-    for freq in ('weekly',):
+    for freq in ('weekly','monthly','quarterly','strategic','unclassified'):
         rs = candidates[freq]
         out.append('<details><summary><b>'+esc({'weekly':'Settimanali','monthly':'Mensili','quarterly':'Trimestrali','strategic':'Strategici / annuali','unclassified':'Non classificati'}[freq])+'</b> — '+str(len(rs))+' candidati</summary><div class="scroll"><table><thead><tr><th>Gestore</th><th>Titolo / collegamento</th><th>Data metadata</th><th>Stato</th></tr></thead><tbody>')
         for r in rs[:250]:
