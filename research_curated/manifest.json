@@ -1,0 +1,26 @@
+{
+  "snapshot_date": "2026-11-11",
+  "status": "ChatGPT curated direct-HTML research snapshot; NOT an independently reverified validated-view registry",
+  "dataset_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
+  "rows": 219,
+  "unique_managers": 62,
+  "unique_source_urls": 84,
+  "date_precision": {
+    "day": 161,
+    "month": 51,
+    "year": 7
+  },
+  "method_counts": {
+    "qualitative_or_scenario": 81,
+    "explicit_allocation": 61,
+    "relative_preference": 40,
+    "explicit_stance": 25,
+    "specific_fund": 9,
+    "historical_allocation": 3
+  },
+  "evidence_text_unavailable_in_snapshot": 129,
+  "legacy_validated_views_preserved": true,
+  "html_production": "direct ChatGPT HTML artifact (not hosted by GitHub)",
+  "update_policy": "Read 219-row baseline; discover newer official documents; interpret directly in ChatGPT; only append deduplicated verified/source-grounded observations; keep historical records and label publication date precision. Do not treat data rows as newly verified solely because they are archived.",
+  "source_file_sha256": "a89f03872adbebd692d3e2484b278e6e43a63f4c689b3c7f562ccb4caf25495a"
+}
