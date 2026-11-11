@@ -45,6 +45,8 @@ def render(root):
     today_date = dt.datetime.now(dt.timezone.utc).date()
     from select_outlooks_v21 import cutoff
     start_date = cutoff(today_date)
+    reassessed = rows(root / 'view_reassessment_latest.csv')
+    stance_types = {(r.get('institution_name'), r.get('document_url'), r.get('asset_class')): r.get('position_type', 'n.d.') for r in reassessed}
     raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
     # No human-review gate. Only explicit completed ChatGPT document verification\n    # is eligible for operational matrices; legacy AI summaries stay preliminary.\n    # Evidence is attributed to AI verification, never independent human review.
@@ -164,7 +166,7 @@ def render(root):
         out.append('</tbody></table></div>')
     else:
         out.append('<div class="panel">n.d. — Nessuna interpretazione preliminare disponibile.</div>')
-    out.append('<h2>Consensus operativo da fonti riconosciute e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
+    out.append('<h2>Distribuzione delle view riesaminate e matrici a semaforo</h2><p class="muted">Verde = positivo; giallo = neutrale; rosso = negativo. Il consensus richiede almeno 3 istituzioni indipendenti per asset e frequenza; con meno di 3 la distribuzione è mostrata, ma il segnale resta n.d. Le frecce compaiono soltanto quando è documentata anche una view precedente.</p>')
     for frequency in ('weekly','monthly','quarterly','strategic','unclassified'):
         out.append('<h3>'+{'weekly':'Settimanale','monthly':'Mensile','quarterly':'Trimestrale','strategic':'Strategico / annuale','unclassified':'Non classificato'}[frequency]+'</h3>')
         keys = sorted(k for k in by_asset if k[0]==frequency)
@@ -178,14 +180,14 @@ def render(root):
                 cls, label = '', 'n.d. — campione insufficiente'
             out.append('<tr><td>'+esc(asset)+'</td><td>'+str(len(vs))+'</td><td>'+str(counts['positive'])+'</td><td>'+str(counts['neutral'])+'</td><td>'+str(counts['negative'])+'</td><td><span class="tag '+cls+'">'+label+'</span></td></tr>')
         out.append('</tbody></table></div>')
-    out.append('<h2>View ammesse da fonte riconosciuta</h2>')
+    out.append('<h2>View riesaminate con attribuzione documentale</h2>')
     if not views: out.append('<div class="panel">n.d. — Nessuna view ammessa. Nessun semaforo individuale viene inventato.</div>')
     else:
-        out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Frequenza</th><th>Asset</th><th>View</th><th>Variazione</th><th>Fonte</th></tr></thead><tbody>')
+        out.append('<div class="scroll"><table><thead><tr><th>Gestore</th><th>Frequenza</th><th>Asset</th><th>Tipologia</th><th>View</th><th>Variazione</th><th>Fonte</th></tr></thead><tbody>')
         for r in sorted(views,key=lambda r:(r['institution_name'],r['frequency'],r['asset_class'])):
             previous = (r.get('previous_stance') or '').strip()
             arrow = '↑' if previous and STANCES[r['stance']]>STANCES[previous] else '↓' if previous and STANCES[r['stance']]<STANCES[previous] else '→' if previous else 'n.d.'
-            out.append('<tr><td>'+esc(r['institution_name'])+'</td><td>'+esc(r['frequency'])+'</td><td>'+esc(r['asset_class'])+'</td><td><span class="tag '+{'positive':'pos','neutral':'neu','negative':'neg'}[r['stance']]+'">'+esc(r['stance'])+'</span></td><td>'+arrow+'</td><td><a rel="noopener noreferrer" href="'+esc(r['document_url'])+'">Fonte della view</a><br><small>'+esc(r['publication_date'])+' · '+esc(r['reviewer'])+'</small><br><small>'+esc(r['evidence_quote'])+'</small></td></tr>')
+            out.append('<tr><td>'+esc(r['institution_name'])+'</td><td>'+esc(r['frequency'])+'</td><td>'+esc(r['asset_class'])+'</td><td>'+esc(stance_types.get((r['institution_name'],r['document_url'],r['asset_class']), 'n.d.'))+'</td><td><span class="tag '+{'positive':'pos','neutral':'neu','negative':'neg'}[r['stance']]+'">'+esc(r['stance'])+'</span></td><td>'+arrow+'</td><td><a rel="noopener noreferrer" href="'+esc(r['document_url'])+'">Fonte della view</a><br><small>'+esc(r['publication_date'])+' · '+esc(r['reviewer'])+'</small><br><small>'+esc(r['evidence_quote'])+'</small></td></tr>')
         out.append('</tbody></table></div>')
     out.append('<h2>Investment View Engine — documenti da analizzare</h2><div class="panel"><b>'+str(len(review_queue))+' documenti candidati</b><p>Il sistema prepara una scheda per ciascun documento candidato. Le view entrano nei semafori dopo verifica diretta della pertinenza, attribuzione, interpretazione e tracciabilità, senza filtri esclusivi di fonte ufficiale, accessibilità tecnica o revisione umana. I candidati privi di evidenze sufficienti restano separati.</p><p><code>view_review_queue.csv</code> contiene i collegamenti e i campi da completare; <code>validated_views.csv</code> è l’unica fonte per i semafori.</p></div>')
     out.append('<h2>Estratti documentali disponibili</h2><p class="muted">Questi estratti sono acquisiti automaticamente e NON rappresentano view validate. Aprire la fonte primaria per verificare data, contesto e posizionamento.</p>')
