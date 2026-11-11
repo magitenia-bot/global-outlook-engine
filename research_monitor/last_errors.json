@@ -1,0 +1,33 @@
+{
+  "utc": "2026-11-11T21:43:56.083057+00:00",
+  "issues": [
+    {
+      "manager": "Eurizon Asset Management",
+      "source_url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
+      "category": "redirect_error",
+      "http_code": 302,
+      "message": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    {
+      "manager": "Neuberger Berman",
+      "source_url": "https://www.nb.com/sitecore/content/Neuberger/Neuberger/Home/insights/2026/10/14/article-market-outlook-growing-pains",
+      "category": "throttled",
+      "http_code": 429,
+      "message": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "manager": "Ninety One",
+      "source_url": "https://ninetyone.com/en/insights/2026-investment-views",
+      "category": "access_restricted",
+      "http_code": 403,
+      "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "Nomura Asset Management",
+      "source_url": "https://www.reuters.com/markets/wealth/nomura-asset-counting-japanese-market-enthusiasm-expand-global-business-2026-10-07/",
+      "category": "access_restricted",
+      "http_code": 401,
+      "message": "HTTP Error 401: HTTP Forbidden"
+    }
+  ]
+}
