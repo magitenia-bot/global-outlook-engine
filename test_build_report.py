@@ -131,6 +131,31 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["preliminary_traffic_light_rows"], 2)
         self.assertEqual(status["validated_view_rows"], 0)
 
+    def test_ai_views_are_visible_but_excluded_from_consensus(self):
+        self.write_views(3)
+        path = self.root / "validated_views.csv"
+        with path.open(newline="", encoding="utf-8") as f:
+            records = list(csv.DictReader(f))
+        for r in records:
+            r["reviewer"] = "ChatGPT - verifica assistita da IA"
+        with path.open("w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=records[0].keys())
+            writer.writeheader()
+            writer.writerows(records)
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
+        self.assertEqual(status["validated_view_rows"], 0)
+        self.assertEqual(status["provisional_view_rows"], 3)
+        self.assertIn("Matrice esplorativa", html)
+
+    def test_all_frequency_sections_are_present(self):
+        self.write_views(0)
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        for label in ("Settimanali", "Mensili", "Trimestrali", "Strategici / annuali"):
+            self.assertIn(label, html)
+
     def test_no_validated_views_remains_unavailable(self):
         self.write_views(0)
         render(self.root)
