@@ -87,7 +87,7 @@ def main():
             writer.writeheader(); writer.writerows(rows)
     write('outlook_selection.csv', results)
     for frequency in ('weekly','monthly','quarterly','strategic','unclassified'):
-        allowed = ('priority_manual_review',) if frequency == 'weekly' else ()
+        # Keep all relevant, reachable documents in the review queues, including\n        # undated and older outlooks. Selection is not validation of their stances.\n        allowed = ('manual_date_review', 'manual_unclassified_review')
         candidates = [r for r in results if r['frequency_bucket'] == frequency and r['selection_status'] in allowed]
         unique = {}
         for row in candidates:
