@@ -52,12 +52,9 @@ def classify(row, today, start):
         except ValueError:
             date_status = 'invalid_date'
     status = str(row.get('http_status') or '').strip()
-    if status != '200': selection = 'exclude_unreachable'
-    elif not relevant: selection = 'exclude_generic_or_unrelated'
-    elif date_status == 'outside_window_or_future': selection = 'exclude_outside_window'
-    elif bucket == 'unclassified': selection = 'manual_unclassified_review'
-    elif date_status != 'within_2_calendar_months_metadata_only': selection = 'manual_date_review'
-    else: selection = 'manual_date_review'
+    # Do not discard candidates for HTTP status, title relevance, or generic navigation labels.
+    # Keep diagnostics for downstream review; never promote candidates to validated views.
+    selection = 'manual_unclassified_review' if bucket == 'unclassified' else 'manual_date_review'
     result = {key: row.get(key, '') for key in FIELDS}
     result.update(frequency_bucket=bucket, date_assessment=date_status,
                   relevance_assessment='candidate_relevant_unverified' if relevant else 'generic_or_unrelated',
@@ -87,7 +84,7 @@ def main():
             writer.writeheader(); writer.writerows(rows)
     write('outlook_selection.csv', results)
     for frequency in ('weekly','monthly','quarterly','strategic','unclassified'):
-        # Keep all relevant, reachable documents in the review queues, including\n        # undated and older outlooks. Selection is not validation of their stances.\n        allowed = ('manual_date_review', 'manual_unclassified_review')
+        # Preserve all discovered candidates, including unreachable or generic links.\n        # They remain unverified until reviewed; never imply a successful fetch.\n        allowed = ('manual_date_review', 'manual_unclassified_review')
         candidates = [r for r in results if r['frequency_bucket'] == frequency and r['selection_status'] in allowed]
         unique = {}
         for row in candidates:
