@@ -47,12 +47,12 @@ def render(root):
     start_date = cutoff(today_date)
     raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
-    # No registry membership or active-status gate: discovery and view review are independent.\n    # Official provenance must be established by evidence, not inferred from a domain.\n    # A matching official domain is NOT a validation of a paraphrased investment stance.
+    # No human-review gate. Only explicit completed ChatGPT document verification\n    # is eligible for operational matrices; legacy AI summaries stay preliminary.\n    # Evidence is attributed to AI verification, never independent human review.
     # Preserve all AI-reviewed entries as exploratory, regardless of source host.
     def ai_provisional(r):
         reviewer = (r.get('reviewer') or '').lower()
         return 'chatgpt' in reviewer or 'assistita da ia' in reviewer
-    views = [r for r in admissible if not ai_provisional(r) and 'independent' in (r.get('reviewer') or '').lower()]
+    views = [r for r in admissible if (r.get('reviewer') or '').strip().lower() == 'chatgpt - verifica documentale completata']
     provisional = [r for r in admissible if r not in views]
     source_admitted = views
     invalid = len(raw_views) - len(admissible)
@@ -126,7 +126,7 @@ def render(root):
         out.append('</tbody></table></div>')
     else:
         out.append('<div class="panel">Nessuna view documentata ancora disponibile.</div>')
-    out.append('<h2>Posizionamenti fuori dall’elenco delle fonti riconosciute</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Controllare date, fonte e testo prima di utilizzare i dati.</p></div>')
+    out.append('<h2>Posizionamenti preliminari senza verifica documentale completata</h2><div class="panel"><b>'+str(len(provisional))+' posizionamenti preliminari di '+str(len(provisional_institutions))+' gestori</b><p>Questi posizionamenti non sono ammessi automaticamente e non contribuiscono ai semafori né al consensus. Le descrizioni possono essere parafrasi e non citazioni testuali certificate. Controllare date, fonte e testo prima di utilizzare i dati.</p></div>')
     out.append('<h2>Copertura delle view strutturate</h2><div class="panel"><strong>'+str(len(institutions))+' / '+str(len(source_institutions))+' gestori ('+str(coverage_percent)+'%)</strong><p>La presenza nel registro fonti non equivale a una view analizzata. Le istituzioni seguenti sono censite ma non contribuiscono ancora alle matrici operative.</p>')
     if missing_view_institutions:
         out.append('<p>'+', '.join(esc(n) for n in missing_view_institutions)+'</p>')
