@@ -30,7 +30,12 @@ def validate_view(r):
     if not all((r.get(k) or '').strip() for k in ('asset_class','stance','reviewed_at_utc','evidence_quote')): return False
     if r['frequency'] not in FREQUENCIES or r['stance'] not in STANCES: return False
     try:
-        d = dt.date.fromisoformat(r['publication_date']); reviewed = dt.datetime.fromisoformat(r['reviewed_at_utc'].replace('Z','+00:00'))
+        raw_date = (r.get('publication_date') or '').strip()
+        if len(raw_date) == 4 and raw_date.isdigit(): normalized_date = raw_date + '-01-01'
+        elif len(raw_date) == 7 and raw_date[4] == '-': normalized_date = raw_date + '-01'
+        else: normalized_date = raw_date
+        d = dt.date.fromisoformat(normalized_date)
+        reviewed = dt.datetime.fromisoformat(r['reviewed_at_utc'].replace('Z','+00:00'))
         if reviewed.tzinfo is None or d > reviewed.date(): return False
     except ValueError: return False
     prev = (r.get('previous_stance') or '').strip()
@@ -49,7 +54,9 @@ def render(root):
     stance_types = {(r.get('institution_name'), r.get('document_url'), r.get('asset_class')): r.get('position_type', 'n.d.') for r in reassessed}
     raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
-    # No human-review gate. Only explicit completed ChatGPT document verification\n    # is eligible for operational matrices; legacy AI summaries stay preliminary.\n    # Evidence is attributed to AI verification, never independent human review.
+    # No human-review gate. Only explicit completed ChatGPT document verification
+    # is eligible for operational matrices; legacy AI summaries stay preliminary.
+    # Evidence is attributed to AI verification, never independent human review.
     # Preserve all AI-reviewed entries as exploratory, regardless of source host.
     def ai_provisional(r):
         reviewer = (r.get('reviewer') or '').lower()
@@ -60,7 +67,9 @@ def render(root):
     invalid = len(raw_views) - len(admissible)
     today = dt.datetime.now(dt.timezone.utc)
     all_sources = rows(root / 'sources.csv')
-    source_institutions = {r.get('institution_name','').strip() for r in all_sources if r.get('institution_name','').strip()}\n    source_institutions.update(r.get('institution_name','').strip() for v in candidates.values() for r in v if r.get('institution_name','').strip())\n    source_institutions.update(r.get('institution_name','').strip() for r in raw_views if r.get('institution_name','').strip())
+    source_institutions = {r.get('institution_name','').strip() for r in all_sources if r.get('institution_name','').strip()}
+    source_institutions.update(r.get('institution_name','').strip() for v in candidates.values() for r in v if r.get('institution_name','').strip())
+    source_institutions.update(r.get('institution_name','').strip() for r in raw_views if r.get('institution_name','').strip())
     if not source_institutions:
         source_institutions = {r.get('institution_name','').strip() for v in candidates.values() for r in v if r.get('institution_name','').strip()}
     institutions = {r['institution_name'] for r in views}
