@@ -149,6 +149,15 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["provisional_view_rows"], 3)
         self.assertIn("Matrice esplorativa", html)
 
+    def test_discovery_does_not_exclude_unreachable_or_generic(self):
+        import datetime as dt
+        from select_outlooks_v21 import classify
+        today = dt.date(2026, 11, 11)
+        row = {"candidate_title": "Read more", "candidate_url": "https://example.org/contact",
+               "http_status": "403", "metadata_publication_date": ""}
+        result = classify(row, today, dt.date(2026, 9, 11))
+        self.assertIn(result["selection_status"], ("manual_date_review", "manual_unclassified_review"))
+
     def test_all_frequency_sections_are_present(self):
         self.write_views(0)
         render(self.root)

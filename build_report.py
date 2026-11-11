@@ -47,31 +47,18 @@ def render(root):
     start_date = cutoff(today_date)
     raw_views = rows(root / 'validated_views.csv')
     admissible = [r for r in raw_views if validate_view(r)]
-    # Source-based admission: an official source listed for the SAME institution
-    # is sufficient for the operational matrix; this does NOT prove interpretation accuracy.
-    # Use exact host or its subdomains, never suffix substring matches.
-    official_hosts = collections.defaultdict(set)
-    for s in rows(root / 'sources.csv'):
-        if s.get('status', '').strip().lower() != 'active':
-            continue
-        host = (urlsplit(s.get('source_url', '')).hostname or '').lower().rstrip('.')
-        if host and valid_url(s.get('source_url', '')):
-            official_hosts[s.get('institution_name', '').strip()].add(host)
-    def recognized(r):
-        host = (urlsplit(r['document_url']).hostname or '').lower().rstrip('.')
-        return any(host == h or host.endswith('.' + h) for h in official_hosts[r['institution_name']])
-    # A matching official domain is NOT a validation of a paraphrased investment stance.
+    # No registry membership or active-status gate: discovery and view review are independent.\n    # Official provenance must be established by evidence, not inferred from a domain.\n    # A matching official domain is NOT a validation of a paraphrased investment stance.
     # Preserve all AI-reviewed entries as exploratory, regardless of source host.
     def ai_provisional(r):
         reviewer = (r.get('reviewer') or '').lower()
         return 'chatgpt' in reviewer or 'assistita da ia' in reviewer
-    views = [r for r in admissible if recognized(r) and not ai_provisional(r)]
+    views = [r for r in admissible if not ai_provisional(r) and 'independent' in (r.get('reviewer') or '').lower()]
     provisional = [r for r in admissible if r not in views]
     source_admitted = views
     invalid = len(raw_views) - len(admissible)
     today = dt.datetime.now(dt.timezone.utc)
     all_sources = rows(root / 'sources.csv')
-    source_institutions = {r.get('institution_name','').strip() for r in all_sources if r.get('institution_name','').strip()}
+    source_institutions = {r.get('institution_name','').strip() for r in all_sources if r.get('institution_name','').strip()}\n    source_institutions.update(r.get('institution_name','').strip() for v in candidates.values() for r in v if r.get('institution_name','').strip())\n    source_institutions.update(r.get('institution_name','').strip() for r in raw_views if r.get('institution_name','').strip())
     if not source_institutions:
         source_institutions = {r.get('institution_name','').strip() for v in candidates.values() for r in v if r.get('institution_name','').strip()}
     institutions = {r['institution_name'] for r in views}
