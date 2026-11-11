@@ -74,35 +74,11 @@ jobs:
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python acquire.py --dir .
 
-      - name: Discover official outlook documents
+      - name: Discover candidate outlook links (not verified)
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python discover.py --dir .
 
-      - name: Verify candidate documents
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python verify_documents_v2.py --dir .
-
-      - name: Select recent outlooks
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python select_outlooks_v21.py --dir .
-
-      - name: Prepare investment view review queue
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python extract_views.py --dir .
-
-      - name: Collect source-linked document excerpts (unverified)
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python collect_document_evidence.py --dir . --max-checks 12
-
-      - name: Extract topic-linked evidence (unverified)
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python analyze_evidence.py --dir .
-
-      - name: Generate low-confidence stance proposals for source assessment
-        if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python propose_stances.py --dir .
-
-      - name: Generate updated HTML dashboard and status\n        if: steps.italy_time.outputs.run_pipeline == 'true'\n        run: python build_report.py --dir .\n\n      - name: Commit monitoring and research data
+      # Document verification, source interpretation and stance assignment are\n      # performed by ChatGPT during explicit research sessions, not GitHub Actions.\n      # GitHub stores candidate links, verified research records and historical snapshots.\n\n      - name: Generate updated HTML dashboard and status\n        if: steps.italy_time.outputs.run_pipeline == 'true'\n        run: python build_report.py --dir .\n\n      - name: Commit monitoring and research data
         if: steps.italy_time.outputs.run_pipeline == 'true' && success()
         run: |
           git config user.name "github-actions[bot]"
@@ -117,7 +93,7 @@ jobs:
             echo "No research data changes to commit"
           fi
 
-      - name: Save extracted research data
+      - name: Archive research database and report
         if: steps.italy_time.outputs.run_pipeline == 'true' && always()
         uses: actions/upload-artifact@v4
         with:
