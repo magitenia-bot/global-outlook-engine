@@ -43,8 +43,3 @@ Il repository è attualmente **pubblico**; non caricare dati personali o ricerca
 `build_report.py` rimane un vecchio renderer/test locale, **non usato nella produzione giornaliera**: eseguirlo manualmente può sostituire il report creato da ChatGPT. Invio email e sincronizzazione con il Report Center esterno **non fanno parte di questo workflow** e vanno verificati separatamente.
 
 Nessun sistema automatizzato di lettura può garantire la disponibilità di ogni sito. L'esecuzione ChatGPT resta soggetta alle autorizzazioni del connettore e alla riuscita del servizio di automazione.
-
-
-## Global Macro Cycle Intelligence 1.0
-
-Nuovo modulo macroeconomico separato all'interno di questo stesso repository: [documentazione](macro_cycle/README.md), [dashboard HTML con curve dei rendimenti](macro_cycle/dashboard_macro_cycle.html), [catalogo indicatori](macro_cycle/indicator_catalog.csv), [archivio delle curve](macro_cycle/data/yield_curves.csv). Il workflow `.github/workflows/macro-cycle-collect.yml` acquisisce solo dati grezzi senza modificare il report Global Outlook, le view o gli score; ChatGPT gestisce le interpretazioni e la dashboard. Stato: prima release con curve USA e Giappone del 9–10 novembre 2026; fasi macro non ancora stimate.
