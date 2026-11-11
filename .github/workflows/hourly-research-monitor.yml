@@ -1,5 +1,9 @@
 name: Global Outlook incremental research monitor
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'research_monitor.py'
   schedule:
     - cron: '17 * * * *'
     - cron: '10 3 * * *'
@@ -27,6 +31,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate monitor syntax
+        run: python -m py_compile research_monitor.py
       - name: Monitor public sources and discover outlook candidates
         run: python research_monitor.py
       - name: Commit evidence log and state only when changed
