@@ -6,7 +6,7 @@ on:
       - 'research_monitor.py'
   schedule:
     - cron: '17 */2 * * *'
-    - cron: '10 3 * * *'
+    - cron: '10 2 * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
-      RESEARCH_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || (github.event.schedule == '10 3 * * *' && 'daily' || 'hourly') }}
+      RESEARCH_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || (github.event.schedule == '10 2 * * *' && 'daily' || 'hourly') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
