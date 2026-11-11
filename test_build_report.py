@@ -37,6 +37,17 @@ class DashboardTests(unittest.TestCase):
                     "evidence_quote": "Positive equity outlook.",
                 })
 
+    def mark_independent(self):
+        path = self.root / "validated_views.csv"
+        with path.open(newline="", encoding="utf-8") as f:
+            rs = list(csv.DictReader(f))
+        for r in rs:
+            r["reviewer"] = "Independent research reviewer"
+        with path.open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=rs[0].keys())
+            w.writeheader()
+            w.writerows(rs)
+
     def write_sources(self, count):
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
@@ -198,6 +209,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
+        self.mark_independent()
         self.write_sources(2)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
@@ -225,6 +237,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
+        self.mark_independent()
         self.write_sources(3)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
