@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_type": "manual_pipeline_smoke_test",
+  "phase": "A",
+  "status": "baseline_initialized_no_new_views_verified",
+  "generated_at_utc": "2026-11-11T22:15:04.284Z",
+  "timezone": "Europe/Rome",
+  "current_views_path": "research_curated/current_views.csv",
+  "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
+  "views_before": 219,
+  "views_after": 219,
+  "verified_new_views": 0,
+  "new_views_comment": "No new official documents were fully reviewed in this connectivity/hand-off test; do not interpret newly discovered GitHub candidate records as validated views.",
+  "sources_read_for_new_view_validation": 0,
+  "github_monitor_last_run": {
+    "utc": "2026-11-11T21:46:46.036003+00:00",
+    "mode": "hourly",
+    "registered_managers": 180,
+    "registered_sources": 27,
+    "sources_checked": 27,
+    "new_records": 10,
+    "partial_scans": 8,
+    "errors": 4,
+    "error_categories": {
+      "access_restricted": 2,
+      "throttled": 1,
+      "redirect_error": 1,
+      "other_error": 0
+    },
+    "view_classifications_created": 0
+  },
+  "persistence_verified": true,
+  "historical_files_unchanged": true,
+  "publisher_status": "not_tested_by_phase_A",
+  "ready_for_phase_B": true
+}
