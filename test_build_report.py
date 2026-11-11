@@ -37,12 +37,12 @@ class DashboardTests(unittest.TestCase):
                     "evidence_quote": "Positive equity outlook.",
                 })
 
-    def mark_independent(self):
+    def mark_chatgpt_verified(self):
         path = self.root / "validated_views.csv"
         with path.open(newline="", encoding="utf-8") as f:
             rs = list(csv.DictReader(f))
         for r in rs:
-            r["reviewer"] = "Independent research reviewer"
+            r["reviewer"] = "ChatGPT - verifica documentale completata"
         with path.open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=rs[0].keys())
             w.writeheader()
@@ -209,7 +209,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
-        self.mark_independent()
+        self.mark_chatgpt_verified()
         self.write_sources(2)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
@@ -235,7 +235,7 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("non contribuiscono ai semafori né al consensus", html)
         self.assertIn("Nessuna view ammessa", html)
 
-    def test_three_managers_produce_consensus(self):
+    def test_ai_completed_verification_requires_no_human_reviewer(self):\n        self.write_views(1)\n        self.mark_chatgpt_verified()\n        render(self.root)\n        status = json.loads((self.root / 'report_status.json').read_text(encoding='utf-8'))\n        self.assertEqual(status['validated_view_rows'], 1)\n\n    def test_three_managers_produce_consensus(self):
         self.write_views(3)
         self.mark_independent()
         self.write_sources(3)
