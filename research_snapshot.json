@@ -1,0 +1,1688 @@
+{
+  "generated_at_utc": "2026-11-11T14:34:55.259Z",
+  "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
+  "source_institutions": 100,
+  "sources_total": 116,
+  "sources_active": 116,
+  "source_last_results": {
+    "unchanged": 28,
+    "changed_requires_review": 1,
+    "error": 2,
+    "baseline_requires_review": 2
+  },
+  "source_change_events_last_4d": 50,
+  "source_changes_recent": [
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-10T22:19:31+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-hsbc-weekly",
+      "checked_at_utc": "2026-11-10T22:19:31+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T22:19:31+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T21:44:50+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-fr",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-de",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bofa-cio-weekly",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-corporate-weekly",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly-us",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly-brief",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T21:33:00+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T21:22:28+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-10T21:22:28+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-10T21:18:14+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T21:09:17+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T21:06:05+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-principal-perspectives",
+      "checked_at_utc": "2026-11-10T21:03:32+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-schwab-midyear26",
+      "checked_at_utc": "2026-11-10T20:55:23+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-loomis-oct26",
+      "checked_at_utc": "2026-11-10T20:55:23+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T20:55:23+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T17:52:22+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-10T17:52:22+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-columbia-insights",
+      "checked_at_utc": "2026-11-10T17:31:30+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-10T17:31:30+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-10T17:31:30+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-09T22:23:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-09T22:12:41+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-09T22:10:18+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-09T22:01:01+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-09T21:47:20+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-columbia-insights",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-manulife-quarterly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-gsam-monthly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-ubs-quarterly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-vanguard-forecast",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-statestreet-markets",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-janus-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-franklin-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-capitalgroup-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-schroders-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-pimco-outlook",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-robeco-monthly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly",
+      "checked_at_utc": "2026-11-09T20:23:34+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-monthly",
+      "checked_at_utc": "2026-11-09T19:33:58+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-weekly",
+      "checked_at_utc": "2026-11-09T19:33:58+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    }
+  ],
+  "candidate_documents_total": 157,
+  "candidate_documents_recent": [
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Harvesting gains - the week ahead",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/harvesting-gains-the-week-ahead",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Late cycle volatility - the week ahead",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/late-cycle-volatility-the-week-ahead",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: November breaks seven-month winning streak - the week ahead",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/november-breaks-seven-month-winning-streak-the-week-ahead",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Rate cut roulette - the week ahead",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/rate-cut-roulette-the-week-ahead",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Interest rates in focus - the week ahead",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/interest-rates-in-focus-the-week-ahead",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: FTSE 100 breaks 10,000 - the week ahead",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/ftse-100-breaks-10000-the-week-ahead",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Watch - Week in the markets - 12 January 2026",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/watch-week-in-the-markets-12-january-2026",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Watch - Week in the markets - 19 January 2026",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/watch-week-in-the-markets-19-january-2026",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: 6 reasons the FTSE 100 hit a new record high this week",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/uk/6-reasons-the-ftse-100-hit-a-new-record-high-this-week",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Busy week for nervous investors",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/busy-week-for-nervous-investors",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly market commentary: Watch - Week in the markets - 9 November 2026",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/this-week-in-the-market",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Weekly markets commentary",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "weekly_source_page_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Weekly market commentary: Read the full commentary PDF, 3.58MB",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/-/media/Files/attachments/common/news-and-articles/articles/am-investment-weekly-06-11-26.pdf",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Weekly market commentary: ",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/-/media/images/news-and-articles/articles/investment-weekly-6-november-2026-chart",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Weekly market commentary: Capabilities",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Amundi, gestionnaire engagé",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/amundi-gestionnaire-engage",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Agir concrètement avec son épargne",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/agir-concretement-avec-son-epargne",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Investir de façon responsable",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/investir-de-facon-responsable",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Comprendre l’investissement responsable",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/comprendre-l-investissement-responsable",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Maîtriser la fiscalité de votre PER COL",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/maitriser-la-fiscalite-de-votre-per-col",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Combiner vos PER",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/articuler-per-collectif-et-per-individuel-pour-optimiser-votre-retraite",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Sortir en capital ou en rente",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/choix-de-sortie-en-capital-ou-en-rente-du-per-col",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Alimenter votre PER COL",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/versement-per-col-sources-plafonds-fiscalite",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Comprendre votre PER COL",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/comprendre-comment-preparer-votre-retraite-avec-votre-per-col",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Débloquer votre épargne",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/recuperer-l-argent-de-votre-pee",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Suivre votre épargne",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/consulter-le-solde-de-votre-epargne-salariale",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Arbitrer vos fonds",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/arbitrer-vos-fonds-dans-un-pee-sans-exces",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Choisir vos fonds",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/comment-optimiser-l-allocation-entre-fonds-en-epargne-salariale",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Financer vos projets",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/financer-vos-projets-de-vie-avec-votre-epargne-salariale",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Épargner ou percevoir votre prime ?",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/participation-epargner-ou-percevoir-sa-prime",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Analyser votre performance",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/analyser-la-performance-d-un-fcpe",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Comprendre le FCPE",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/comprendre-le-fcpe",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Définir votre profil d'épargne",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/choisir-un-placement-adapte-son-profil-de-risque",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Comprendre vos primes",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/participation-interessement-et-abondement",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Comprendre vos plans (PEE & PER COL)",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/article/pee-et-per-col-differences-avantages-et-comment-choisir",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Hebdo des Marches",
+      "candidate_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "source_page_url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "weekly_source_page_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Mehr laden",
+      "candidate_url": "https://www.amundi.de/institutional/topics/weekly-market-directions?page=1",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 14/04/2026 | Weekly Market Directions US-Iran Talks and Market Volatility Amundi's Weekly Market Directions examines shifting war realities and markets, highlighting the impact of US-Iran talks on oil, equities and",
+      "candidate_url": "https://www.amundi.de/institutional/article/us-iran-talks-and-market-volatility",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 21/04/2026 | Weekly Market Directions IMF Signals Resilience and Fragilities The IMF outlook indicates that the global economy remains resilient, but higher energy costs, shifting supply chains and policy constrain",
+      "candidate_url": "https://www.amundi.de/institutional/article/imf-signals-resilience-and-fragilities",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 7/05/2026 | Weekly Market Directions Monetary Policy Remains on Hold The energy shock is large enough to alter the policy backdrop, but not yet clear enough to justify an immediate rate cut or hike. Central banks, ",
+      "candidate_url": "https://www.amundi.de/institutional/article/monetary-policy-remains-hold",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 12/05/2026 | Weekly Market Directions Positive earnings and resilient valuations reinforce the inv... Positive emerging markets earnings, resilient valuations and technology leadership support a constructive invest",
+      "candidate_url": "https://www.amundi.de/institutional/article/positive-earnings-and-resilient-valuations-reinforce-investment-case-emerging-markets",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 27/05/2026 | Weekly Market Directions Rising bond yields and mounting uncertainty reshape fixed in... The rise in bond yields reflects inflation, policy repricing and fiscal strain, reinforcing a selective fixed-in",
+      "candidate_url": "https://www.amundi.de/institutional/article/rising-bond-yields-and-mounting-uncertainty-reshape-fixed-income-conditions-across-markets",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 2/06/2026 | Weekly Market Directions Equities reach new highs as the tech rally broadens across r... Global equities are setting new records as the tech rally extends beyond the United States, with Asia offering at",
+      "candidate_url": "https://www.amundi.de/institutional/article/equities-reach-new-highs-tech-rally-broadens-across-regions-and-sectors-especially-asia",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 9/06/2026 | Weekly Market Directions A renewed imperative for green transition as energy security... Against a backdrop of energy shocks, green transition investments strengthen energy security, diversify supply an",
+      "candidate_url": "https://www.amundi.de/institutional/article/renewed-imperative-green-transition-energy-security-and-resilience-take-precedence",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 16/06/2026 | Weekly Market Directions After nearly three years, the ECB raises interest rates The June meeting confirms a cautious stance: ECB rates stay data-dependent as energy prices, wages and inflation expecta",
+      "candidate_url": "https://www.amundi.de/institutional/article/after-nearly-three-years-ecb-raises-interest-rates",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 30/06/2026 | Weekly Market Directions AI’s reality check reinforces diversification South Korea has experienced strong market swings in recent weeks, as the AI trade has come under pressure at a global level. Weite",
+      "candidate_url": "https://www.amundi.de/institutional/article/ai-s-reality-check-reinforces-diversification",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 6/07/2026 | Weekly Market Directions A record quarter for equities Global equities closed their strongest quarter since 2020, led by emerging markets and a rotation away from crowded AI names. Fundamentals, selecti",
+      "candidate_url": "https://www.amundi.de/institutional/article/record-quarter-equities",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 15/07/2026 | Weekly Market Directions Rising tensions around a fragile ceasefire unsettle oil flow... Rising tensions around the fragile ceasefire have lifted Brent towards $80, disrupted Strait of Hormuz traffic a",
+      "candidate_url": "https://www.amundi.de/institutional/article/rising-tensions-around-fragile-ceasefire-unsettle-oil-flows-inflation-risks-and-markets",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 21/07/2026 | Weekly Market Directions Rotations widen as investors shift toward quality and divers... Amid the earnings season, Weekly Market Directions signals widening dispersion, a rotation away from expensive A",
+      "candidate_url": "https://www.amundi.de/institutional/article/rotations-widen-investors-shift-toward-quality-and-diversification",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 3/08/2026 | Weekly Market Directions Fed on hold as policy guidance fades and markets price a shi... Maintain focus on the Fed as policy guidance narrows, short-rate uncertainty rises and yield-curve volatility inc",
+      "candidate_url": "https://www.amundi.de/institutional/article/fed-hold-policy-guidance-fades-and-markets-price-shifting-short-rate-path-lifting-risk",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 11/08/2026 | Weekly Market Directions Strong US earnings growth broadens beyond tech as AI demand ... Q2 reporting confirms US earnings growth is broadening across sectors, with AI-linked demand supporting more tha",
+      "candidate_url": "https://www.amundi.de/institutional/article/strong-us-earnings-growth-broadens-beyond-tech-ai-demand-lifts-sectors-and-quality-guidance",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 1/09/2026 | Weekly Market Directions Iran conflict and diversification: protecting portfolios ami... Six months into the Iran conflict, resilient growth, sticky inflation and firm earnings have kept markets support",
+      "candidate_url": "https://www.amundi.de/institutional/article/iran-conflict-and-diversification-protecting-portfolios-amid-resilient-growth-and-higher-yields",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 8/09/2026 | Weekly Market Directions Bond yields rise again as sticky inflation and fiscal strain... Rising bond yields across maturities reflect sticky inflation, higher funding needs and firmer growth. A diversif",
+      "candidate_url": "https://www.amundi.de/institutional/article/bond-yields-rise-again-sticky-inflation-and-fiscal-strain-lift-long-dated-rates-investors",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 15/09/2026 | Weekly Market Directions ECB policy rates rise amid inflation risks The ECB lifted rates to 2.50%, reaffirming a data-dependent stance. ECB policy rates now face upside inflation risks, firmer energy p",
+      "candidate_url": "https://www.amundi.de/institutional/article/ecb-policy-rates-rise-amid-inflation-risks",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 29/09/2026 | Weekly Market Directions Bond yields climb as resilient US data keeps rates elevated ... Global bond yields climb again, lifting average sovereign debt yields close to 4%. Strong US PMIs, firmer oil an",
+      "candidate_url": "https://www.amundi.de/institutional/article/bond-yields-climb-resilient-us-data-keeps-rates-elevated-year-end",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 6/10/2026 | Weekly Market Directions Latin America gains ground as a diversifier amid AI, energy ... Latin American equities advanced in Q3, supported by attractive valuations, improving policy dynamics and diversi",
+      "candidate_url": "https://www.amundi.de/institutional/article/latin-america-gains-ground-diversifier-amid-ai-energy-uncertainty-and-policy-shifts-ahead",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 13/10/2026 | Weekly Market Directions Long-term bond yields remain elevated as volatility tests fi... Long-term bond yields remain near multi-year highs across developed markets, while volatility stays elevated. In",
+      "candidate_url": "https://www.amundi.de/institutional/article/long-term-bond-yields-remain-elevated-volatility-tests-fixed-income-positioning-and-discipline",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 20/10/2026 | Weekly Market Directions IMF outlook: global resilience, persistent inflation and mar... The IMF global growth outlook signals resilient yet uneven activity, AI-led investment and persistent inflation ",
+      "candidate_url": "https://www.amundi.de/institutional/article/imf-outlook-global-resilience-persistent-inflation-and-market-implications-investors",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 27/10/2026 | Weekly Market Directions Dividends regain appeal as tech cools and investors seek sta... Global markets rotate toward dividends as AI-led technology loses momentum, with investors seeking stronger cash",
+      "candidate_url": "https://www.amundi.de/institutional/node/1684",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 3/11/2026 | Weekly Market Directions Central banks hold rates steady as inflation, AI investment ... Assess how central banks balance resilient growth, persistent inflation and energy risks while AI investment supp",
+      "candidate_url": "https://www.amundi.de/institutional/article/central-banks-hold-rates-steady-inflation-ai-investment-and-growth-risks-reshape-markets",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 10/11/2026 | Weekly Market Directions Post-election equity rotation reshapes opportunities beyond ... The retreat in technology and AI stocks, alongside gains in defensive sectors and India, confirms how market rot",
+      "candidate_url": "https://www.amundi.de/institutional/article/post-election-equity-rotation-reshapes-opportunities-beyond-us-technology-and-ai-linked-stocks",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Direkt zum Inhalt",
+      "candidate_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-aug-17-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-aug-24-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-aug-31-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-sep-8-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-sep-14-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-sep-21-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-sep-28-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-oct-5-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-oct-13-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-oct-19-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-oct-26-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Click Here to Learn More",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/capital-market-outlook-nov-2-2026.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Be cyber secure – Tips to keep financial online accounts safe",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/be-cyber-secure-hone-your-password-writing-skills-with-this-quiz.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: CIO Market Update Audiocast Series",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/daily-market-insights.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Let’s Talk Investments",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/lets-talk-investments.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Concentrated Stock Strategies",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/concentrated-stock-positions.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Study of Wealthy Americans 2026",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/study-of-wealthy-americans.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "Weekly market commentary: Art Market Update - Fall 2026",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/art-market-fall-update.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Bank of America Private Bank CIO",
+      "candidate_title": "CIO Market Updates",
+      "candidate_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "source_page_url": "https://www.privatebank.bankofamerica.com/articles/market-update.html",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "weekly_source_page_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Global investment outlook",
+      "candidate_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/outlook",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Our approach to sustainability",
+      "candidate_url": "https://www.blackrock.com/corporate/insights/thought-leadership/our-approach-to-sustainability",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Investment Stewardship",
+      "candidate_url": "https://www.blackrock.com/corporate/insights/thought-leadership/investment-stewardship",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Weekly market Commentary",
+      "candidate_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Artificial Intelligence",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-themes/artificial-intelligence/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Response Center",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-response-center/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Endowments, Foundations, and Healthcare",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/portfolio-strategy/endowments-foundations-and-healthcare/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Monthly Active ETF Monitor",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/etf-insights/etf-monitor/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: ETF Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/etf-insights/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Social Security and Medicare Hub",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/retirement-insights/social-security-medicare-hub/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Retirement Hot Topics",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/retirement-insights/retirement-hot-topics/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to Retirement",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/retirement-insights/guide-to-retirement/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Retirement Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/retirement-insights/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Strategic Investment Advisory Group",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/strategic-investment-advisory-group/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Portfolio Strategy",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/portfolio-strategy/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Long-Term Capital Market Assumptions",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/ltcma/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Asset Class Views",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Portfolio Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Updates",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to Alternatives",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/guide-to-alternatives/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to Investing in Asia",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/guide-to-investing-in-asia/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to the Markets",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/guide-to-the-markets/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Eye on the Market",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Skip to main content",
+      "candidate_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "source_page_url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Strategic Investment Advisory Group",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/portfolio-insights/strategic-investment-advisory-group/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Sustainable investing",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/portfolio-insights/sustainable-investing/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Long-Term Capital Market Assumptions",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/portfolio-insights/ltcma/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Portfolio Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/portfolio-insights/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Podcast: Markets Explained",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/markets-explained/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Updates",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to the Markets",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/guide-to-the-markets/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Eye on the Market",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/eye-on-the-market/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Cash Investment Policy Statement",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/liquidity-insights/cash-investment-policy-statement/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Leveraging the Power of Cash Segmentation",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/liquidity-insights/leveraging-the-power-of-cash-segmentation/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: ESG Resources for Liquidity Investors",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/liquidity-insights/esg-resources-for-liquidity-investors/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Partnership with fintechs",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/liquidity-insights/connecting-visions-empowering-growth/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Global Liquidity Investment Outlook",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/liquidity-insights/global-liquidity-investment-outlook/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Liquidity Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/liquidity-insights/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Skip to main content",
+      "candidate_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "source_page_url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Load More",
+      "candidate_url": "https://research-center.amundi.com/publications/weekly-market-directions?page=1",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 28/09/2026 Global yields surge In US markets, after the 10- and 30- year yields, the 5-year maturity also moved above the of 5% threshold, the highest level in two decades. More",
+      "candidate_url": "https://research-center.amundi.com/article/global-yields-surge",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 5/10/2026 Latin America rising as a diversifier Despite rising yields. global equities remained resilient in Q3 supported by strong earnings and favourable economic conditions. More",
+      "candidate_url": "https://research-center.amundi.com/article/latin-america-rising-diversifier",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 12/10/2026 Long-term yields at high levels Long-term bond yields remain near multi-year highs across major countries, alongside increased volatility. More",
+      "candidate_url": "https://research-center.amundi.com/article/long-term-yields-high-levels",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 19/10/2026 Lights and shadows from the IMF The IMF raised its 2026 global growth forecast to 3.1%, up slightly from July, with 3.4% projected for 2027 — driven largely by the AI investment boom. More",
+      "candidate_url": "https://research-center.amundi.com/article/lights-and-shadows-imf",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 26/10/2026 Dividends shine as tech cools Technology stocks’ H2 performance underscores a clear market demand for greater visibility on capital expenditure. More",
+      "candidate_url": "https://research-center.amundi.com/article/dividends-shine-tech-cools",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: 2/11/2026 Central banks: action through inaction The Fed, the ECB and the Bank of Japan (BOJ) kept rates on hold at their October policy meetings. More",
+      "candidate_url": "https://research-center.amundi.com/article/central-banks-action-through-inaction",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Listen to the podcast",
+      "candidate_url": "https://research-center.amundi.com/article/outerblue-talks-research-lifecycle-remix-how-glidepath-fits-retirement-solutions",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Read the article",
+      "candidate_url": "https://research-center.amundi.com/article/esg-thema-24-assessing-physical-climate-risks-sovereigns-focus-asia",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Read the article",
+      "candidate_url": "https://research-center.amundi.com/article/2026-mid-year-outlook",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Read the article",
+      "candidate_url": "https://research-center.amundi.com/article/investing-low-trust-world",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Weekly market commentary: Skip to main content",
+      "candidate_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Weekly market commentary: Enterprise",
+      "candidate_url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "source_page_url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: ",
+      "candidate_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/institutional/insights/market-insights/market-updates/weekly-market-recap-au/wmr-weekly.pdf",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Strategic Investment Advisory Group",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/portfolio-insights/strategic-investment-advisory-group/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Long-Term Capital Market Assumptions",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/portfolio-insights/ltcma/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Portfolio Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/portfolio-insights/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to Investing in Asia",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/guide-to-investing-in-asia/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Updates",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Guide to the Markets",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/guide-to-the-markets/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Eye on the Market",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/eye-on-the-market/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Market Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Cash Investment Policy Statement",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/liquidity-insights/cash-investment-policy-statement/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Leveraging the Power of Cash Segmentation",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/liquidity-insights/leveraging-the-power-of-cash-segmentation/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: ESG Resources for Liquidity Investors",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/liquidity-insights/esg-resources-for-liquidity-investors/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Partnership with fintechs",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/liquidity-insights/connecting-visions-empowering-growth/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Global Liquidity Investment Outlook",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/liquidity-insights/global-liquidity-investment-outlook/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Liquidity Insights Overview",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/liquidity-insights/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "J.P. Morgan Asset Management",
+      "candidate_title": "Weekly market commentary: Skip to main content",
+      "candidate_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "source_page_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Read more Read more",
+      "candidate_url": "https://www.blackrock.com/us/individual/insights/equity-market-outlook",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Energy and the AI buildout",
+      "candidate_url": "https://www.blackrock.com/us/individual/insights/energy-and-the-ai-buildout",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Our approach to sustainability",
+      "candidate_url": "https://www.blackrock.com/corporate/insights/thought-leadership/our-approach-to-sustainability",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: BlackRock Investment Institute",
+      "candidate_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Global investment outlook",
+      "candidate_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/outlook",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Weekly market commentary: Skip to content",
+      "candidate_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-10T22:20:28+00:00",
+      "review_status": "candidate_unverified"
+    }
+  ],
+  "views_already_recorded": 129,
+  "institutions_with_recorded_views": 43,
+  "institutions_without_recorded_views": [
+    "AQR Capital Management",
+    "AXA Investment Managers",
+    "Aditya Birla Sun Life Asset Management",
+    "AllianceBernstein",
+    "Apollo Global Management",
+    "Ashmore Group",
+    "Asset Management One",
+    "Baillie Gifford",
+    "Bank of America Private Bank CIO",
+    "Bosera Asset Management",
+    "Brown Advisory",
+    "CSOP Asset Management",
+    "Capital Group",
+    "China Asset Management (ChinaAMC)",
+    "China Southern Asset Management",
+    "Daiwa Asset Management",
+    "E Fund Management",
+    "Eurizon Asset Management",
+    "Federated Hermes",
+    "Fidelity International",
+    "Fiera Capital",
+    "GAM Investments",
+    "Goldman Sachs Asset Management",
+    "Goldman Sachs Research",
+    "HDFC Asset Management",
+    "Hamilton Lane",
+    "Janus Henderson",
+    "Jupiter Asset Management",
+    "KB Asset Management",
+    "KKR",
+    "Kotak Mahindra Asset Management",
+    "Lazard Asset Management",
+    "MFS Investment Management",
+    "Macquarie Asset Management",
+    "Main Management",
+    "Man Group",
+    "Mirae Asset Global Investments",
+    "Morgan Stanley Investment Management",
+    "Motilal Oswal Asset Management",
+    "Orbis Investments",
+    "PGIM",
+    "Partners Group",
+    "Polar Capital",
+    "Principal Asset Management",
+    "Resona Asset Management",
+    "Ruffer LLP",
+    "SEI Investments",
+    "SPARX Asset Management",
+    "Samsung Asset Management",
+    "Schroders",
+    "StepStone Group",
+    "Sumitomo Mitsui DS Asset Management",
+    "Tokio Marine Asset Management",
+    "UBS Global Wealth Management",
+    "VanEck",
+    "Vanguard",
+    "Vontobel"
+  ],
+  "interpretation_required": true,
+  "automated_view_validation_performed": false
+}
