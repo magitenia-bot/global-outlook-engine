@@ -38,8 +38,9 @@ def request(url):
   content_type=res.headers.get("Content-Type","").lower()
   if not any(t in content_type for t in ("text/","xml","pdf")): raise ValueError("unsupported content")
   body=res.read(400_001)
-  if len(body)>400_000: raise ValueError("document too large for bounded scan")
-  return final,body,content_type
+  partial = len(body)>400_000
+  # Partial scans are valid discovery evidence, never full-document verification.
+  return final,body[:400_000],content_type,partial
 def rows(path):
  if not path.exists(): return []
  with path.open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
@@ -74,25 +75,30 @@ def main():
  state=json.loads(STATE.read_text()) if STATE.exists() else {"hashes":{},"cursor":0,"search_cursor":0}
  names,sources=names_and_sources()
  cursor=int(state.get("cursor",0)); search_cursor=int(state.get("search_cursor",0))
- examined=changed=errors=0
+ examined=changed=errors=partial_scans=0
+ issues=[]
  # Rotate to cover all known URLs over successive hours, without hammering a single domain.
  chosen=[sources[(cursor+i)%len(sources)] for i in range(min(MAX_FETCH,len(sources)))] if sources else []
  state["cursor"]=(cursor+len(chosen))%len(sources) if sources else 0
  for name,url in chosen:
   examined+=1
   try:
-   final,body,ctype=request(url)
+   final,body,ctype,partial=request(url)
+   if partial:partial_scans+=1
    digest=hashlib.sha256(body).hexdigest()
    key=hashlib.sha256((name+"|"+url).encode()).hexdigest()
    if state["hashes"].get(key)!=digest:
     title="PDF document" if "pdf" in ctype else ""
     if not title:
      parser=PageTitle();parser.feed(body.decode("utf-8","replace"));title=" ".join(parser.title).strip()[:240]
-    if append_event({"found_at_utc":now.isoformat(),"manager":name,"source_url":url,"document_url":final,"title":title,"source_type":"registered_source","status":"requires_human_classification","content_hash":digest}):changed+=1
+    if append_event({"found_at_utc":now.isoformat(),"manager":name,"source_url":url,"document_url":final,"title":title,"source_type":"registered_source","status":("partial_scan_requires_ChatGPT_document_analysis" if partial else "requires_ChatGPT_document_analysis"),"content_hash":digest}):changed+=1
    state["hashes"][key]=digest
   except Exception as e:
    errors+=1
-   print("SOURCE_ERROR",name,url,type(e).__name__,str(e)[:120])
+   code=getattr(e,"code",None)
+   category=("throttled" if code==429 else "access_restricted" if code in (401,403) else "redirect_error" if code in (301,302,303,307,308) else "other_error")
+   issues.append({"manager":name,"source_url":url,"category":category,"http_code":code,"message":str(e)[:180]})
+   print("SOURCE_ERROR",category,name,url,type(e).__name__,str(e)[:120])
   time.sleep(0.15)
  # Daily discovery uses public news RSS search. A result is only a candidate, never a validated view.
  if mode=="daily" and names:
@@ -102,7 +108,8 @@ def main():
    query=urllib.parse.quote(name+' ("investment outlook" OR "market outlook" OR "asset allocation")')
    url="https://news.google.com/rss/search?q="+query+"&hl=en-US&gl=US&ceid=US:en"
    try:
-    _,body,_=request(url)
+    _,body,_,partial=request(url)
+    if partial:raise ValueError("search RSS exceeds scan limit; no candidate inferred")
     root=ET.fromstring(body)
     for item in root.findall("./channel/item")[:5]:
      link=(item.findtext("link") or "").strip()
@@ -114,6 +121,7 @@ def main():
     errors+=1;print("DISCOVERY_ERROR",name,type(e).__name__,str(e)[:120])
    time.sleep(0.15)
  STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
- (OUT/"last_run.json").write_text(json.dumps({"utc":now.isoformat(),"mode":mode,"registered_managers":len(names),"registered_sources":len(sources),"sources_checked":examined,"new_records":changed,"errors":errors,"view_classifications_created":0},indent=2)+"\n")
- print("RESULT",mode,"managers",len(names),"sources",len(sources),"checked",examined,"new",changed,"errors",errors)
+ (OUT/"last_run.json").write_text(json.dumps({"utc":now.isoformat(),"mode":mode,"registered_managers":len(names),"registered_sources":len(sources),"sources_checked":examined,"new_records":changed,"partial_scans":partial_scans,"errors":errors,"error_categories":{category:sum(i["category"]==category for i in issues) for category in ("access_restricted","throttled","redirect_error","other_error")},"view_classifications_created":0},indent=2)+"\n",encoding="utf-8")
+ (OUT/"last_errors.json").write_text(json.dumps({"utc":now.isoformat(),"issues":issues},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+ print("RESULT",mode,"managers",len(names),"sources",len(sources),"checked",examined,"new",changed,"partial",partial_scans,"errors",errors)
 if __name__=="__main__":main()
