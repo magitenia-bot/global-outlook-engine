@@ -1,27 +1,45 @@
-# Global Outlook 3.1 — Institutional dashboard
+# GLOBAL OUTLOOK — GitHub source database + ChatGPT research/report
 
-The existing GitHub Action monitors source pages, discovers candidate outlook documents, checks HTTP/metadata, and classifies candidate frequencies once daily at approximately 07:00 Europe/Rome (GitHub Actions scheduling can be delayed).
+**Architettura operativa (11 novembre 2026):** GitHub conserva il database persistente delle 100 istituzioni censite, i collegamenti e gli eventi di acquisizione. Le interpretazioni delle view, gli aggiornamenti delle matrici e la realizzazione dell'HTML sono compiti **esclusivi di ChatGPT**, mediante l'automazione giornaliera dedicata.
 
-**New:** `build_report.py` generates `global_outlook.html` (responsive, Italian) and `report_status.json`, available as GitHub Actions artifacts and committed to the repository. The generated HTML is committed to the repository after successful checks. Public GitHub Pages availability depends on repository Pages settings; email delivery is not part of this workflow. No third-party packages or API keys are needed.
+## Ciclo quotidiano
 
-## Integrity rules
+1. **06:00 Europe/Rome — GitHub Actions `monitor.yml`:** acquisizione delle pagine di tutte le frequenze, rilevamento cambi, scoperta di documenti, salvataggio in `sources.csv`, `acquisition_events.csv`, `document_candidates.csv`, `discovery_checks.csv` e `research_snapshot.json`. Le condizioni di accesso HTTP possono impedire singole letture; non costituiscono un filtro di validazione finanziaria. L'orario effettivo dipende dal servizio GitHub Actions.
+2. **07:00 Europe/Rome — automazione ChatGPT** "Global Outlook — analisi ChatGPT e report HTML", ID `6af0be4926fc81918dc8ce5d4b4350b2`: legge repository e fonti verificabili, interpreta i documenti, integra lo storico e crea/aggiorna direttamente la dashboard `global_outlook.html` e i KPI `report_status.json` mediante il connettore GitHub. La riuscita richiede che il connettore sia disponibile durante l'esecuzione.
+3. I due processi sono **separati per evitare sovrascritture**. `monitor.yml` NON lancia `build_report.py` e NON modifica `validated_views.csv`, `view_reassessment_latest.csv`, `expanded_official_outlooks.csv`, `global_outlook.html` o `report_status.json`.
 
-- `outlook_*_candidates.csv` entries are **unverified**. They never contribute to investment stances or consensus.
-- The first two old admission filters (official-source requirement and technical accessibility requirement) have been removed. Sources may be primary or secondary and temporary access errors do not automatically reject a view. Each included position must still be pertinent, attributable, interpretable and traceable to research evidence.
-- No independent human approval is required. Only entries in `validated_views.csv` explicitly marked `ChatGPT - verifica documentale completata` after direct document/content review enter operational semaphores; other entries remain exploratory. GitHub only stores research and generates the dashboard; it does not certify views.
-- Fields: institution_name, document_url (HTTPS), publication_date (ISO date), frequency (`weekly`/`monthly`/`quarterly`), asset_class, stance (`positive`/`neutral`/`negative`), reviewed_at_utc (ISO UTC datetime), reviewer, evidence_quote, previous_stance (optional), previous_document_url (optional).
-- Arrows are shown only with an explicit previous stance. Duplicate institution/asset/frequency entries use the most recently published/reviewed record.
-- Consensus is an **equal-weighted descriptive summary of validated views**, not a performance forecast; source coverage and flows are labeled transparently. No automatic LLM inference or document-body certification is claimed.
-- If no validated rows exist, the HTML displays `n.d.` instead of fabricated stances.
+## Regole metodologiche
 
-## Run locally
+- **Censimento ≠ view analizzata.** Una fonte scoperta non implica un giudizio finanziario. I documenti candidati mantengono lo stato non verificato.
+- La lettura e l'interpretazione dei documenti spettano a ChatGPT: attribuzione, data originale, asset class, direzione, mandati, classificazione qualitativa/tattica e link.
+- Le annotazioni `ChatGPT - verifica documentale completata` devono essere apposte solo dopo aver letto contenuti realmente verificabili. Non significano revisione umana o certificazione da un ente esterno.
+- Per ogni gestore/asset/orizzonte mantieni le osservazioni precedenti; le frecce storiche sono lecite solo quando esiste un documento precedente distinto e comparabile, oppure evidenza esplicita di una modifica.
+- Distingui **sovrappesi/neutralità/sottopesi effettivi** da **opinioni qualitative**, scenari, outlook settoriali o posizioni di singoli fondi. Evita un consensus non omogeneo. Raggruppa i giudizi per asset class, orizzonte e mandato; usa almeno tre gestori indipendenti per eventuali letture di consensus e dichiara il campione.
+- Nella dashboard italiana presentare KPI del censimento e sua copertura (numeratore e denominatore), matrici a semaforo e cambi documentati, fonti individuali, view per Asia, settori e alternativi. Flussi del periodo soltanto se confrontabili e verificabili, altrimenti `n.d.`.
+- Nessuna revisione umana obbligatoria; nessun filtro bloccante per dominio ufficiale o accessibilità tecnica. Pertinenza, attribuzione, interpretazione e tracciabilità restano obbligatorie.
+- Errori della rete o indisponibilità del connettore NON devono eliminare view storiche né produrre view fittizie. L'ultimo HTML valido resta archiviato; fallimenti dichiarati espressamente.
 
-```sh
-python build_report.py --dir .
-```
+## File principali
 
-## Deploy
+| File | Proprietario | Significato |
+| --- | --- | --- |
+| `sources.csv` | GitHub Actions + ricerca ChatGPT | Registro persistente fonti e istituzioni |
+| `acquisition_events.csv` | GitHub Actions | Storico delle modifiche e degli accessi |
+| `document_candidates.csv` | GitHub Actions | Candidati documentali storicizzati, non validati |
+| `discovery_checks.csv` | GitHub Actions | Storico dei controlli effettuati |
+| `research_snapshot.json` | GitHub Actions | Coda compatta da sottoporre all'analisi ChatGPT |
+| `validated_views.csv` | ChatGPT | Posizioni verificate per l'analisi |
+| `view_reassessment_latest.csv` | ChatGPT | Tipologia e qualità delle posizioni |
+| `expanded_official_outlooks.csv` | ChatGPT | Sintesi delle ricerche interpretate |
+| `global_outlook.html` | ChatGPT | Dashboard HTML interattiva e matrici |
+| `report_status.json` | ChatGPT | Metadati, copertura e KPI dell'HTML |
 
-Copy the contents of this updated repository to the existing GitHub repository, including `.github/workflows/monitor.yml`. Run the workflow once via Actions → Global Outlook - Daily Production → Run workflow. The `global-outlook-results` artifact contains `global_outlook.html` and `report_status.json`.
+## Operatività e limiti
 
-For a public or private web link, GitHub Pages or another authenticated hosting integration must be configured separately. GitHub Actions artifacts require GitHub access and are retained for 30 days.
+Il workflow si può eseguire manualmente nella sezione GitHub **Actions**. Dopo una modifica del codice o delle fonti è prevista anche un'esecuzione da push. I commit nel repository conservano lo storico; gli artifact GitHub Actions sono temporanei (configurazione: 30 giorni).
+
+Il repository è attualmente **pubblico**; non caricare dati personali o ricerca proprietaria senza prima modificarne le impostazioni di visibilità.
+
+`build_report.py` rimane un vecchio renderer/test locale, **non usato nella produzione giornaliera**: eseguirlo manualmente può sostituire il report creato da ChatGPT. Invio email e sincronizzazione con il Report Center esterno **non fanno parte di questo workflow** e vanno verificati separatamente.
+
+Nessun sistema automatizzato di lettura può garantire la disponibilità di ogni sito. L'esecuzione ChatGPT resta soggetta alle autorizzazioni del connettore e alla riuscita del servizio di automazione.
