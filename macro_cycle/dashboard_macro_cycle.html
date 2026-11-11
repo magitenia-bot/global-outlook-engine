@@ -30,7 +30,9 @@ const yieldAt=function(pts,tenor){var p=pts.find(function(q){return Math.abs(q.x
 function chart(){
 let show=["USA","JPN"].filter(function(c){return document.getElementById(c==="USA"?"cbUS":"cbJP").checked}),past=document.getElementById("cbPrev").checked;
 let active=show.flatMap(function(c){return get(c,latest).concat(past?get(c,prior):[])});
-let ymin=Math.max(-1,Math.floor((Math.min.apply(null,active.map(function(p){return p.y}).concat([0]))-.25)*2)/2),ymax=Math.ceil((Math.max.apply(null,active.map(function(p){return p.y}).concat([5]))+.35)*2)/2);
+let allY=active.map(function(p){return p.y});
+let ymin=Math.max(-1,Math.floor((Math.min.apply(null,allY.concat([0]))-0.25)*2)/2);
+let ymax=Math.ceil((Math.max.apply(null,allY.concat([5]))+0.35)*2)/2;
 const W=1000,H=440,L=70,R=22,T=22,B=58,minX=Math.log(1/12),maxX=Math.log(40);
 const xx=function(v){return L+(Math.log(v)-minX)/(maxX-minX)*(W-L-R)},yy=function(v){return H-B-(v-ymin)/(ymax-ymin)*(H-B-T)};
 let s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
