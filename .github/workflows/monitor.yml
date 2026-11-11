@@ -16,7 +16,9 @@ on:
       - 'document_content.py'
       - 'collect_document_evidence.py'
       - 'analyze_evidence.py'
-      - 'propose_stances.py'\n      - 'sources.csv'\n      - 'validated_views.csv'
+      - 'propose_stances.py'
+      - 'sources.csv'
+      - 'validated_views.csv'
   schedule:
     - cron: '0 5,6 * * *'
 
@@ -78,7 +80,15 @@ jobs:
         if: steps.italy_time.outputs.run_pipeline == 'true'
         run: python discover.py --dir .
 
-      # Document verification, source interpretation and stance assignment are\n      # performed by ChatGPT during explicit research sessions, not GitHub Actions.\n      # GitHub stores candidate links, verified research records and historical snapshots.\n\n      - name: Generate updated HTML dashboard and status\n        if: steps.italy_time.outputs.run_pipeline == 'true'\n        run: python build_report.py --dir .\n\n      - name: Commit monitoring and research data
+      # Document verification, source interpretation and stance assignment are
+      # performed by ChatGPT during explicit research sessions, not GitHub Actions.
+      # GitHub stores candidate links, verified research records and historical snapshots.
+
+      - name: Generate updated HTML dashboard and status
+        if: steps.italy_time.outputs.run_pipeline == 'true'
+        run: python build_report.py --dir .
+
+      - name: Commit monitoring and research data
         if: steps.italy_time.outputs.run_pipeline == 'true' && success()
         run: |
           git config user.name "github-actions[bot]"
