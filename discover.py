@@ -143,14 +143,12 @@ def main():
     sources = [s for s in load(root / 'sources.csv')
                if s.get('status', 'active').lower() == 'active']
     results = []
+    checks = []
     with ThreadPoolExecutor(max_workers=6) as pool:
         for candidates, checked in pool.map(lambda src: inspect(src, now), sources):
             results.extend(candidates)
             print(checked['source_id'], checked['result'], checked['candidate_count'], flush=True)
             # Store all checks, including HTTP failures. No technical-access veto.
-            old = None
-            if 'checks' not in locals():
-                checks = []
             checks.append(checked)
 
     existing = load(root / 'document_candidates.csv')
@@ -164,7 +162,7 @@ def main():
             new_count += 1
     save(root / 'document_candidates.csv', FIELDS, existing)
     previous_checks = load(root / 'discovery_checks.csv')
-    previous_checks.extend(checks if sources else [])
+    previous_checks.extend(checks)
     save(root / 'discovery_checks.csv', CHECK_FIELDS, previous_checks)
     print('Sources:', len(sources), 'new candidates:', new_count,
           'historical candidates:', len(existing), 'verified investment views: 0')
