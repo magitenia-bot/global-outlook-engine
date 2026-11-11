@@ -1,5 +1,7 @@
 # GLOBAL OUTLOOK — GitHub source database + ChatGPT research/report
 
+> **Snapshot aggiornato Global Outlook 1.0 (11/11/2026).** Il report HTML autonomo di ChatGPT ha una base curata di **219 view / 62 gestori / 84 documenti** in [research_curated/chatgpt_direct_views_219_2026-11-11.csv](research_curated/chatgpt_direct_views_219_2026-11-11.csv), descritta in [research_curated/README.md](research_curated/README.md). Il registro legacy `validated_views.csv` rimane separato (129 view / 43 gestori), non è il conteggio del report HTML e **non va sommato** alla base curata. Il monitor automatizzato registra candidati, scansioni parziali ed errori d'accesso, ma non attribuisce view. Il report HTML diretto viene interpretato e creato da ChatGPT, non dal motore GitHub. L'automazione delle 07:00 è stata aggiornata per leggere prima la base curata.
+
 **Architettura operativa (11 novembre 2026):** GitHub conserva il database persistente delle 100 istituzioni censite, i collegamenti e gli eventi di acquisizione. Le interpretazioni delle view, gli aggiornamenti delle matrici e la realizzazione dell'HTML sono compiti **esclusivi di ChatGPT**, mediante l'automazione giornaliera dedicata.
 
 ## Ciclo quotidiano
