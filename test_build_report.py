@@ -37,6 +37,17 @@ class DashboardTests(unittest.TestCase):
                     "evidence_quote": "Positive equity outlook.",
                 })
 
+    def mark_independent(self):
+        path = self.root / "validated_views.csv"
+        with path.open(newline="", encoding="utf-8") as f:
+            rs = list(csv.DictReader(f))
+        for r in rs:
+            r["reviewer"] = "Independent research reviewer"
+        with path.open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=rs[0].keys())
+            w.writeheader()
+            w.writerows(rs)
+
     def write_sources(self, count):
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
@@ -60,7 +71,7 @@ class DashboardTests(unittest.TestCase):
         status = json.loads((self.root / 'report_status.json').read_text(encoding='utf-8'))
         self.assertEqual(status['validated_view_rows'], 0)
 
-    def test_official_registered_source_is_operationally_admitted(self):
+    def test_registered_source_alone_does_not_validate_a_view(self):
         self.write_views(3)
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
@@ -69,11 +80,11 @@ class DashboardTests(unittest.TestCase):
                 w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
         render(self.root)
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
-        self.assertEqual(status["source_admitted_view_rows"], 3)
+        self.assertEqual(status["source_admitted_view_rows"], 0)
         self.assertNotIn("independently_approved_view_rows", status)
-        self.assertEqual(status["validated_view_rows"], 3)
+        self.assertEqual(status["validated_view_rows"], 0)
 
-    def test_unrecognized_domain_is_not_admitted(self):
+    def test_unregistered_domain_still_remains_provisional(self):
         self.write_views(1)
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
@@ -198,6 +209,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_two_managers_do_not_produce_consensus(self):
         self.write_views(2)
+        self.mark_independent()
         self.write_sources(2)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
@@ -225,6 +237,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
+        self.mark_independent()
         self.write_sources(3)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
