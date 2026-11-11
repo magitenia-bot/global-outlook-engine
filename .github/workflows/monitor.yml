@@ -7,8 +7,8 @@ on:
     paths:
       - '.github/workflows/monitor.yml'
       - 'test_*.py'
-      - 'build_report.py'
       - 'acquire.py'
+      - 'snapshot_sources.py'
       - 'discover.py'
       - 'verify_documents_v2.py'
       - 'select_outlooks_v21.py'
@@ -18,9 +18,8 @@ on:
       - 'analyze_evidence.py'
       - 'propose_stances.py'
       - 'sources.csv'
-      - 'validated_views.csv'
   schedule:
-    - cron: '0 5,6 * * *'
+    - cron: '0 4,5 * * *'
 
 permissions:
   contents: write
@@ -31,8 +30,8 @@ concurrency:
 
 jobs:
   monitor:
-    # Only one of the two UTC slots corresponds to 07:00 Europe/Rome.
-    if: github.event_name != 'schedule' || (github.event.schedule == '0 5,6 * * *')
+    # Only one of the two UTC slots corresponds to 06:00 Europe/Rome; ChatGPT interprets later.
+    if: github.event_name != 'schedule' || (github.event.schedule == '0 4,5 * * *')
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -46,7 +45,7 @@ jobs:
           import datetime as dt, os
           from zoneinfo import ZoneInfo
           local = dt.datetime.now(ZoneInfo('Europe/Rome'))
-          allowed = os.environ.get('EVENT_NAME') != 'schedule' or local.hour == 7
+          allowed = os.environ.get('EVENT_NAME') != 'schedule' or local.hour == 6
           print('run_pipeline=' + ('true' if allowed else 'false'))
           print('italy_time=' + local.isoformat())
           PY
@@ -84,9 +83,9 @@ jobs:
       # performed by ChatGPT during explicit research sessions, not GitHub Actions.
       # GitHub stores candidate links, verified research records and historical snapshots.
 
-      - name: Generate updated HTML dashboard and status
+      - name: Generate source-only snapshot for ChatGPT interpretation
         if: steps.italy_time.outputs.run_pipeline == 'true'
-        run: python build_report.py --dir .
+        run: python snapshot_sources.py --dir .
 
       - name: Commit monitoring and research data
         if: steps.italy_time.outputs.run_pipeline == 'true' && success()
@@ -94,10 +93,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -- '*.csv' global_outlook.html report_status.json
+          git add -- sources.csv acquisition_events.csv document_candidates.csv discovery_checks.csv research_snapshot.json
 
           if ! git diff --cached --quiet; then
-            git commit -m "Update Global Outlook research and selection data"
+            git commit -m "Update Global Outlook raw source discovery database"
             git push origin HEAD:main
           else
             echo "No research data changes to commit"
@@ -126,6 +125,7 @@ jobs:
             document_evidence.csv
             document_topic_evidence.csv
             stance_proposals.csv
+            research_snapshot.json
             global_outlook.html
             report_status.json
           if-no-files-found: warn
