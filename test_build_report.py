@@ -149,6 +149,13 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status["provisional_view_rows"], 3)
         self.assertIn("Matrice esplorativa", html)
 
+    def test_all_frequency_sections_are_present(self):
+        self.write_views(0)
+        render(self.root)
+        html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
+        for label in ("Settimanali", "Mensili", "Trimestrali", "Strategici / annuali"):
+            self.assertIn(label, html)
+
     def test_no_validated_views_remains_unavailable(self):
         self.write_views(0)
         render(self.root)
