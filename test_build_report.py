@@ -60,7 +60,7 @@ class DashboardTests(unittest.TestCase):
         status = json.loads((self.root / 'report_status.json').read_text(encoding='utf-8'))
         self.assertEqual(status['validated_view_rows'], 0)
 
-    def test_official_registered_source_is_operationally_admitted(self):
+    def test_registered_source_alone_does_not_validate_a_view(self):
         self.write_views(3)
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
@@ -69,11 +69,11 @@ class DashboardTests(unittest.TestCase):
                 w.writerow({"institution_name": f"Manager {n}", "source_url": "https://example.org/research", "status": "active"})
         render(self.root)
         status = json.loads((self.root / "report_status.json").read_text(encoding="utf-8"))
-        self.assertEqual(status["source_admitted_view_rows"], 3)
+        self.assertEqual(status["source_admitted_view_rows"], 0)
         self.assertNotIn("independently_approved_view_rows", status)
-        self.assertEqual(status["validated_view_rows"], 3)
+        self.assertEqual(status["validated_view_rows"], 0)
 
-    def test_unrecognized_domain_is_not_admitted(self):
+    def test_unregistered_domain_still_remains_provisional(self):
         self.write_views(1)
         with (self.root / "sources.csv").open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["institution_name", "source_url", "status"])
