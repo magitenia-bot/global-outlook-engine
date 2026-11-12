@@ -1,36 +1,57 @@
 {
   "schema_version": 1,
-  "run_type": "manual_pipeline_smoke_test",
+  "run_type": "scheduled_phase_A",
   "phase": "A",
-  "status": "baseline_initialized_no_new_views_verified",
-  "generated_at_utc": "2026-11-11T22:15:04.284Z",
+  "status": "completed_no_new_deduplicated_views",
+  "generated_at_utc": "2026-11-12T04:04:40Z",
   "timezone": "Europe/Rome",
+  "scheduled_local": "2026-11-12T05:00:00+01:00",
   "current_views_path": "research_curated/current_views.csv",
   "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
   "views_before": 219,
   "views_after": 219,
   "verified_new_views": 0,
-  "new_views_comment": "No new official documents were fully reviewed in this connectivity/hand-off test; do not interpret newly discovered GitHub candidate records as validated views.",
-  "sources_read_for_new_view_validation": 0,
+  "sources_read_for_new_view_validation": 3,
+  "sources_reviewed": [
+    {
+      "institution": "Amundi",
+      "date": "2026-11-09",
+      "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
+      "outcome": "already represented; no new distinct observation appended"
+    },
+    {
+      "institution": "BlackRock",
+      "date": "2026-11-09",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "outcome": "weekly commentary reviewed; no sufficiently distinct new directional view beyond current rows"
+    },
+    {
+      "institution": "Robeco",
+      "date": "2026-10-09",
+      "url": "https://www.robeco.com/en-uk/insights/market-view-outlook",
+      "outcome": "index entry, not enough attributable directional evidence to append"
+    }
+  ],
   "github_monitor_last_run": {
-    "utc": "2026-11-11T21:46:46.036003+00:00",
-    "mode": "hourly",
+    "utc": "2026-11-12T02:56:48.456266+00:00",
     "registered_managers": 180,
     "registered_sources": 27,
     "sources_checked": 27,
     "new_records": 10,
     "partial_scans": 8,
     "errors": 4,
-    "error_categories": {
-      "access_restricted": 2,
-      "throttled": 1,
-      "redirect_error": 1,
-      "other_error": 0
-    },
     "view_classifications_created": 0
   },
-  "persistence_verified": true,
+  "candidates_pending": "discovered_documents.csv contains unclassified records; 10 monitor records are not validated views",
+  "errors": [
+    "Eurizon redirect loop",
+    "Neuberger Berman HTTP 429",
+    "Ninety One HTTP 403",
+    "Nomura Reuters HTTP 401"
+  ],
+  "persistence_verified": false,
   "historical_files_unchanged": true,
-  "publisher_status": "not_tested_by_phase_A",
+  "publisher_status": "not_applicable_phase_A",
+  "email_status": "not_sent_phase_A",
   "ready_for_phase_B": true
 }
