@@ -1,0 +1,95 @@
+{
+  "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
+  "contract_version": "1.0",
+  "approved_format_checkpoint": "GO-20261112-2246",
+  "effective_from": "2026-11-13",
+  "status": "active",
+  "timezone": "Europe/Rome",
+  "automation": {
+    "automation_id": "6af0be4926fc81918dc8ce5d4b4350b2",
+    "phase_a": "05:00",
+    "phase_b": "07:00",
+    "phase_a_action": "only research validate deduplicate persist; no HTML email",
+    "phase_b_action": "read latest validated dataset, compare prior edition, create HTML, QA, publish, email"
+  },
+  "repositories": {
+    "research": "magitenia-bot/global-outlook-engine",
+    "publisher_private": "magitenia-bot/trading-system-professional",
+    "publisher_branch": "report-center-publisher",
+    "canonical_source_git_blob_sha": "73d8d0a1b558a8fd14b0d5e0ce903fa82d520142",
+    "canonical_source_commit": "27a29f184b08052836492d9ef7cbb6d3923d7a71",
+    "published_version": "13 novembre 2026, stile canonico confermato nel ramo publisher (slug riservato)"
+  },
+  "immutable_format": {
+    "original_css_sha256": "28edae1d4bfa36060dc2dd6cf8d9dbddfca4b70e0ad4e69ab2c543cc69e2c277",
+    "css_style_tags": 5,
+    "section_01": {
+      "name": "View degli ultimi 21 giorni",
+      "palette": "verde",
+      "mandatory": [
+        "gestori e view precedenti-attuali",
+        "nuove view e nuovi gestori",
+        "matrici macro",
+        "matrici micro",
+        "lista delle variazioni dichiarate",
+        "revisione stance con coppie di documenti comparabili",
+        "fonti",
+        "scorrimento temporale finestra"
+      ],
+      "date_precision": "YYYY-MM-DD",
+      "window": "report_date - 21 giorni, compresi estremi"
+    },
+    "section_02": {
+      "name": "View globale · intero periodo",
+      "palette": "blu",
+      "mandatory": [
+        "gestori e view precedenti-attuali",
+        "fonti",
+        "date media",
+        "anzianita media",
+        "precisione delle date",
+        "metodo di imputazione",
+        "matrici 30 dimensioni",
+        "macro micro settori",
+        "schede gestori",
+        "link fonti",
+        "consensus prudenti",
+        "flussi o n.d."
+      ]
+    },
+    "required_html_ids": [
+      "focus-21d",
+      "confronto-recenti",
+      "variazioni-posizioni-21g",
+      "quadro",
+      "global-publication-average",
+      "macro",
+      "micro",
+      "settori",
+      "registro",
+      "sintesi-fonti",
+      "metodo",
+      "all-views",
+      "edition-rows",
+      "recent-docs"
+    ],
+    "percent_or_flow": "n.d. without documented denominator/source",
+    "exclude_new_portfolio_model": true
+  },
+  "history": {
+    "baseline_views_file": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
+    "current_views_file": "research_curated/current_views.csv",
+    "previous_report_file": "research_curated/latest_report_baseline.json",
+    "legacy_views_file": "validated_views.csv",
+    "legacy_no_addition": true,
+    "do_not_delete_history": true
+  },
+  "validation": {
+    "python_validator_private": "publisher/validate_global_outlook.py",
+    "github_actions_private": ".github/workflows/global-outlook-checkpoint-qa.yml",
+    "must_pass_before_publishing": true,
+    "on_failure": "keep previously valid report, identify failure; do not call incomplete edition complete",
+    "do_not_publish_secret_slug_publicly": true,
+    "notes": "GitHub Actions post-commit check does not itself guarantee pre-publication blocking without branch protection. The automation performs mandatory pre-publication QA."
+  }
+}
