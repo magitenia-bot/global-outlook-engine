@@ -3,37 +3,31 @@
   "run_type": "scheduled_phase_A",
   "phase": "A",
   "status": "completed_no_new_deduplicated_views",
-  "generated_at_utc": "2026-11-12T04:04:40Z",
+  "generated_at_utc": "2026-11-13T04:04:03Z",
   "timezone": "Europe/Rome",
-  "scheduled_local": "2026-11-12T05:00:00+01:00",
+  "scheduled_local": "2026-11-13T05:00:00+01:00",
   "current_views_path": "research_curated/current_views.csv",
   "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
   "views_before": 219,
   "views_after": 219,
   "verified_new_views": 0,
-  "sources_read_for_new_view_validation": 3,
+  "sources_read_for_new_view_validation": 2,
   "sources_reviewed": [
     {
       "institution": "Amundi",
       "date": "2026-11-09",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
-      "outcome": "already represented; no new distinct observation appended"
+      "outcome": "already represented in current dataset; no duplicate appended"
     },
     {
-      "institution": "BlackRock",
-      "date": "2026-11-09",
-      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
-      "outcome": "weekly commentary reviewed; no sufficiently distinct new directional view beyond current rows"
-    },
-    {
-      "institution": "Robeco",
-      "date": "2026-10-09",
-      "url": "https://www.robeco.com/en-uk/insights/market-view-outlook",
-      "outcome": "index entry, not enough attributable directional evidence to append"
+      "institution": "PIMCO",
+      "date": null,
+      "url": "https://www.pimco.com/ch/en/insights/the-credit-market-lens-where-to-seek-diversification-from-the-ai-investment-theme",
+      "outcome": "source reviewed; publication date not firmly established and classification pending; no new validated view"
     }
   ],
   "github_monitor_last_run": {
-    "utc": "2026-11-12T02:56:48.456266+00:00",
+    "utc": "2026-11-13T02:53:57.946544+00:00",
     "registered_managers": 180,
     "registered_sources": 27,
     "sources_checked": 27,
@@ -42,7 +36,7 @@
     "errors": 4,
     "view_classifications_created": 0
   },
-  "candidates_pending": "discovered_documents.csv contains unclassified records; 10 monitor records are not validated views",
+  "candidates_pending": "10 new monitor records require manual source-content validation; not counted as views",
   "errors": [
     "Eurizon redirect loop",
     "Neuberger Berman HTTP 429",
