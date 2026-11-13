@@ -45,3 +45,7 @@ Il repository è attualmente **pubblico**; non caricare dati personali o ricerca
 `build_report.py` rimane un vecchio renderer/test locale, **non usato nella produzione giornaliera**: eseguirlo manualmente può sostituire il report creato da ChatGPT. Invio email e sincronizzazione con il Report Center esterno **non fanno parte di questo workflow** e vanno verificati separatamente.
 
 Nessun sistema automatizzato di lettura può garantire la disponibilità di ogni sito. L'esecuzione ChatGPT resta soggetta alle autorizzazioni del connettore e alla riuscita del servizio di automazione.
+
+## Contratto obbligatorio del report (13 novembre 2026)
+
+**Per ogni run ChatGPT Global Outlook, prima di comporre o pubblicare l'HTML, leggere e rispettare [research_curated/README.md](research_curated/README.md), sezione «Requisiti di pubblicazione obbligatori».** La pubblicazione e la dicitura «report completo» richiedono che siano effettivamente presenti almeno: (1) data media delle view dell'**intero periodo** e metodo di calcolo; (2) **variazioni di posizione dichiarate** e variazioni di stance comparabili negli **ultimi 21 giorni**, distinguendo i due concetti; (3) matrici macro/micro delle due sezioni; (4) confronti verso il report precedente, fonti e limiti documentali. Ripristini e snapshot non sostituiscono questa verifica.
