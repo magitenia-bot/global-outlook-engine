@@ -1,8 +1,8 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "1.0",
+  "contract_version": "1.1",
   "approved_format_checkpoint": "GO-20261112-2246",
-  "effective_from": "2026-11-13",
+  "effective_from": "2026-11-14",
   "status": "active",
   "timezone": "Europe/Rome",
   "automation": {
@@ -34,10 +34,20 @@
         "lista delle variazioni dichiarate",
         "revisione stance con coppie di documenti comparabili",
         "fonti",
-        "scorrimento temporale finestra"
+        "scorrimento temporale finestra",
+        "matrice settoriale GICS completa per i soli ultimi 21 giorni, con 11 settori, segnali, numero view/gestori, dettaglio e fonti, senza inventare consensus",
+        "registro separato per temi e sottosettori (IA, semiconduttori, industriali e difensivi), senza duplicazioni nei conteggi GICS"
       ],
       "date_precision": "YYYY-MM-DD",
-      "window": "report_date - 21 giorni, compresi estremi"
+      "window": "report_date - 21 giorni, compresi estremi",
+      "sector_matrix": {
+        "mode": "11 settori GICS: positivi/neutrali/negativi secondo le view direttamente classificabili, n.d. quando assenti",
+        "data_window": "solo date giornaliere certe nell'intervallo recente",
+        "links": "numero ID view, nome gestore, data, tipo metodo e fonte",
+        "exclude": "attribuzioni gestore/fonte discordanti o non verificabili",
+        "qualitative_themes": "tabella distinta, non equivalente a sovrappeso GICS",
+        "do_not_change_css": true
+      }
     },
     "section_02": {
       "name": "View globale · intero periodo",
@@ -71,7 +81,10 @@
       "metodo",
       "all-views",
       "edition-rows",
-      "recent-docs"
+      "recent-docs",
+      "settori-recenti-21g",
+      "settori-recenti-gics",
+      "settori-recenti-temi"
     ],
     "percent_or_flow": "n.d. without documented denominator/source",
     "exclude_new_portfolio_model": true
@@ -90,6 +103,7 @@
     "must_pass_before_publishing": true,
     "on_failure": "keep previously valid report, identify failure; do not call incomplete edition complete",
     "do_not_publish_secret_slug_publicly": true,
-    "notes": "GitHub Actions post-commit check does not itself guarantee pre-publication blocking without branch protection. The automation performs mandatory pre-publication QA."
+    "notes": "GitHub Actions post-commit check does not itself guarantee pre-publication blocking without branch protection. The automation performs mandatory pre-publication QA.",
+    "additional_requirement": "11 settori GICS nella zona verde e tabella temi separata, con source ID attribuibili alla stessa finestra temporale"
   }
 }
