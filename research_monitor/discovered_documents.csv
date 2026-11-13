@@ -1107,3 +1107,34 @@ found_at_utc,manager,source_url,document_url,title,source_type,status,content_ha
 2026-11-12T20:56:20.646032+00:00,Sumitomo Mitsui DS Asset Management,https://www.smd-am.co.uk/insights/outlook-japan-s-roe-revolution,https://www.smd-am.co.uk/insights/outlook-japan-s-roe-revolution,Outlook - Japan’s ROE revolution,registered_source,partial_scan_requires_ChatGPT_document_analysis,71ee55d1f5436a1c57bec0795717366f8b047ca653bcfd94d855b6aefa0544bc
 2026-11-12T20:56:20.646032+00:00,Vontobel,https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/,https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/,Investors’ Outlook November 2026 | Vontobel,registered_source,partial_scan_requires_ChatGPT_document_analysis,d8f119a6170596de00caa28b01da1ddc2501594b0a23b841d5c7d811154ab3d6
 2026-11-12T20:56:20.646032+00:00,Wellington Management,https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026,https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026,Prospettive di asset allocation | Wellington Italia Investitori Professionali,registered_source,requires_ChatGPT_document_analysis,b29bbd408f58e81707a905d0b8b227dc4f0cbbaaee34c60fd9972ffeaad3d741
+2026-11-13T01:15:43.587190+00:00,Ashmore Group,https://www.ashmoregroup.com/en-gb/insights/2026-emerging-markets-outlook,https://www.ashmoregroup.com/en-gb/insights/2026-emerging-markets-outlook,2026 Emerging Markets Outlook | Ashmore Group,registered_source,partial_scan_requires_ChatGPT_document_analysis,8f1f05152b535062da14d50f3aaf99153994b614fc88354e0b1480d80539c604
+2026-11-13T01:15:43.587190+00:00,Carmignac,https://www.carmignac.com/it-it/articoli/carmignac-patrimoine-lettera-dei-gestori-sul-terzo-trimestre-2026-4126-14044,https://www.carmignac.com/it-it/articoli/carmignac-patrimoine-lettera-dei-gestori-sul-terzo-trimestre-2026-4126-14044,,registered_source,requires_ChatGPT_document_analysis,a7aaad63c53322d1e970d4404a66058d32e9a55696ae54d918d4a2b5a586f3a8
+2026-11-13T01:15:43.587190+00:00,Fiera Capital,https://www.fieracapital.com/en/insights/q4-2026-investment-outlook-portfolio-strategy/,https://www.fieracapital.com/en/insights/q4-2026-investment-outlook-portfolio-strategy/,Q4 2026 Investment Outlook & Portfolio Strategy – Fiera Capital,registered_source,requires_ChatGPT_document_analysis,dce4afac3a166a09b6975d8c66cde5533deb2188bb3b27bb1e3e5389b32e166d
+2026-11-13T01:15:43.587190+00:00,GAM Investments,https://www.gam.com/en/our-thinking/investment-opinions/q3-multi-asset-perspectives-tightening-not-frightening,https://www.gam.com/en/our-thinking/investment-opinions/q3-multi-asset-perspectives-tightening-not-frightening,Q3 Multi-Asset Perspectives: Tightening not frightening  | 15 October 2026 | en,registered_source,requires_ChatGPT_document_analysis,d47d40128e056a6a8c52818200b96706a85be8d6a57c543e38b6cf8e9cf9156c
+2026-11-13T01:15:43.587190+00:00,Lazard Asset Management,https://www.lazardassetmanagement.com/us/en_us/research-insights/investment-insights/investment-research/mid-year-outlook-2026/investment-implications,https://www.lazardassetmanagement.com/us/en_us/research-insights/investment-insights/investment-research/mid-year-outlook-2026/investment-implications,Investment Implications | Lazard Asset Management,registered_source,requires_ChatGPT_document_analysis,1ec8e2ff954fcf553dbb58e89cca9c01d597e54fc86425a2a26b085b86a3f44f
+2026-11-13T01:15:43.587190+00:00,Man Group,https://www.man.com/insights/the-early-view-september-2026,https://www.man.com/insights/the-early-view-september-2026,Under Pressure | Man Group,registered_source,requires_ChatGPT_document_analysis,485c59f79f3556e9313d7fa4c27e4e89dad497857e1ec512a3fd00c31075fb21
+2026-11-13T01:15:43.587190+00:00,Morgan Stanley Investment Management,https://www.morganstanley.com/Themes/outlooks,https://www.morganstanley.com/Themes/outlooks,2026 Outlooks: Market and Economic Forecasts | Morgan Stanley,registered_source,partial_scan_requires_ChatGPT_document_analysis,a0b89e45c75e1aaeaf9db86078e306da57785978f3cf963531b0c5e29881ced4
+2026-11-13T01:15:43.587190+00:00,PGIM,https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks,https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks,Year Ahead 2027 - 12-Month Global Outlook,registered_source,requires_ChatGPT_document_analysis,50979be65e8466f4a2cf24867a80abdbf1649a749a790fbde3d43d28751a1c2a
+2026-11-13T01:15:43.587190+00:00,SEI Investments,https://www.seic.com/en-ca/about-sei/market-commentaries/sei-vantage-consensus-third-quarter-2026,https://www.seic.com/en-ca/about-sei/market-commentaries/sei-vantage-consensus-third-quarter-2026,"SEI Vantage: Consensus. Third quarter 2026 | SEI Canada 
+      remove
+     
+    menu
+   
+    search
+   
+    search
+   
+      remove
+     
+      right-arrow
+     
+      arrow-sm-down
+     
+      left-arrow
+     
+        user-icon
+     
+     ",registered_source,requires_ChatGPT_document_analysis,a6b57e0f909a9e6fa74269fef90e195abce84dd4c99d7a6752517c2501937fd1
+2026-11-13T01:15:43.587190+00:00,Sumitomo Mitsui DS Asset Management,https://www.smd-am.co.uk/insights/outlook-japan-s-roe-revolution,https://www.smd-am.co.uk/insights/outlook-japan-s-roe-revolution,Outlook - Japan’s ROE revolution,registered_source,partial_scan_requires_ChatGPT_document_analysis,fd99656dd36f562254577493562a3ef0723424d95e6d0d19324e193fd6fd0946
+2026-11-13T01:15:43.587190+00:00,Vontobel,https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/,https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/,Investors’ Outlook November 2026 | Vontobel,registered_source,partial_scan_requires_ChatGPT_document_analysis,62b603b687e042486469504829460b83cdb030e497f214a7e9d2b9a7690e90b2
+2026-11-13T01:15:43.587190+00:00,Wellington Management,https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026,https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026,Prospettive di asset allocation | Wellington Italia Investitori Professionali,registered_source,requires_ChatGPT_document_analysis,5f438f6e17a1d79ad7fed56b979acf1e038e131cb7c3ec2e3fc7767113a40828
