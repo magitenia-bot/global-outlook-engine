@@ -235,7 +235,14 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("non contribuiscono ai semafori né al consensus", html)
         self.assertIn("Nessuna view ammessa", html)
 
-    def test_ai_completed_verification_requires_no_human_reviewer(self):\n        self.write_views(1)\n        self.mark_chatgpt_verified()\n        render(self.root)\n        status = json.loads((self.root / 'report_status.json').read_text(encoding='utf-8'))\n        self.assertEqual(status['validated_view_rows'], 1)\n\n    def test_three_managers_produce_consensus(self):
+    def test_ai_completed_verification_requires_no_human_reviewer(self):
+        self.write_views(1)
+        self.mark_chatgpt_verified()
+        render(self.root)
+        status = json.loads((self.root / 'report_status.json').read_text(encoding='utf-8'))
+        self.assertEqual(status['validated_view_rows'], 1)
+
+    def test_three_managers_produce_consensus(self):
         self.write_views(3)
         self.mark_independent()
         self.write_sources(3)
