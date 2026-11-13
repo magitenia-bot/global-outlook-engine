@@ -15,6 +15,8 @@ Questi requisiti sono **vincolanti per ogni report Global Outlook**, incluse rig
 ### Sezione 01 — Ultimi 21 giorni (verde)
 1. KPI numero di view, gestori, documenti, delta nuovi gestori e nuove view rispetto al precedente report, distinguendo per scorrimento temporale e nuovi documenti.
 2. Matrici macro asset class e micro asset class, con semafori positivi, neutrali e negativi; evidenziare N, copertura e omogeneità.
+2 bis. **Matrice settoriale recente obbligatoria** nella sezione verde: 11 settori GICS con numero gestori, numero view, semafori verde/giallo/rosso, link diretti alle view e ai gestori e indicazione n.d. quando il campione non è sufficiente. Calcolare usando solo pubblicazioni con data giornaliera certa nei 21 giorni. Inserire anche un **livello tematico distinto** (IA, semiconduttori, industria/materiali, difensivi), non assimilabile a overweight GICS; evitare duplicazioni di osservazioni e scartare le attribuzioni gestore/fonte discordanti fino a riconciliazione. Non alterare il CSS del checkpoint.
+
 3. **Variazioni di view e di posizione**: tabella visibile con gestore, asset/settore, data fonte, orientamento e freccia salita/discesa/invariato **solo se documentata**, link a fonte e tipo di evidenza.
 4. Distinguere **(a)** aumento/diminuzione di esposizione esplicitamente dichiarato nella singola pubblicazione, da **(b)** cambio effettivo di stance rispetto a un precedente documento datato, omogeneo per mandato/orizzonte. Il tipo (a) va mostrato e qualificato, anche quando non esiste un documento precedente completo. Il tipo (b) non va inventato.
 5. Le view che escono dalla finestra mobile per data non sono cambi di posizionamento. Riportare separatamente entrate/uscite della finestra ed entrate/uscite nel database.
