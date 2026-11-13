@@ -1,17 +1,14 @@
 {
-  "version": 1,
+  "version": 2,
+  "date": "2026-11-13",
   "report_name": "Global Outlook",
-  "date": "2026-11-12",
-  "edition": "comparative-sections-21-day-and-global",
-  "reference_report": "12 novembre 2026 - precedente versione con 219 view",
-  "current_database_path": "research_curated/current_views.csv",
+  "edition": "21-day-and-global",
   "source_blob_sha": "1b864ccbd2a51e1489733664009c3c07be538461",
   "period_recent": {
-    "start": "2026-10-22",
-    "end": "2026-11-12",
-    "date_precision": "YYYY-MM-DD required",
-    "view_count": 90,
-    "manager_count": 20,
+    "start": "2026-10-23",
+    "end": "2026-11-13",
+    "view_count": 86,
+    "manager_count": 18,
     "view_ids": [
       6,
       7,
@@ -77,10 +74,6 @@
       170,
       172,
       173,
-      177,
-      178,
-      184,
-      185,
       187,
       189,
       190,
@@ -106,25 +99,23 @@
     ],
     "manager_names": [
       "Amundi",
-      "Anima SGR",
       "BNP Paribas Asset Management",
       "BlackRock",
-      "Brown Advisory",
-      "Capital Group",
-      "Federated Hermes",
-      "GAM Investments",
       "HSBC Asset Management",
       "Harvest Fund Management",
-      "Invesco",
       "J.P. Morgan Asset Management",
-      "Janus Henderson Investors",
-      "Jupiter Asset Management",
-      "Lazard Asset Management",
       "Nomura Asset Management",
-      "Swiss Life Asset Managers",
       "Value Partners Group",
+      "Anima SGR",
+      "Janus Henderson Investors",
       "Vanguard",
-      "Vontobel Asset Management"
+      "Swiss Life Asset Managers",
+      "GAM Investments",
+      "Federated Hermes",
+      "Jupiter Asset Management",
+      "Vontobel Asset Management",
+      "Lazard Asset Management",
+      "Invesco"
     ]
   },
   "period_global": {
@@ -352,68 +343,68 @@
       219
     ],
     "manager_names": [
-      "AllianceBernstein",
       "Allianz Global Investors",
       "Amova Asset Management",
       "Amundi",
-      "Anima SGR",
-      "Ashmore Group",
       "Axis Asset Management",
       "BNP Paribas Asset Management",
-      "Baillie Gifford",
       "Baroda BNP Paribas Asset Management",
       "BlackRock",
       "Brookfield Asset Management",
-      "Brown Advisory",
       "Candriam",
-      "Capital Group",
       "Carmignac",
       "Cohen & Steers",
       "Columbia Threadneedle Investments",
       "DWS",
       "Eastspring Investments",
-      "Eurizon",
-      "Federated Hermes",
       "Franklin Templeton",
       "Fullerton Fund Management",
-      "GAM Investments",
       "HSBC Asset Management",
       "Harvest Fund Management",
       "ICICI Prudential Asset Management",
       "Invesco",
       "J.P. Morgan Asset Management",
-      "Janus Henderson Investors",
-      "Jupiter Asset Management",
       "LGT Capital Partners",
-      "Lazard Asset Management",
       "Lion Global Investors",
       "Loomis Sayles",
-      "MFS Investment Management",
-      "Macquarie Asset Management",
       "Manulife Investment Management",
       "Neuberger Berman",
       "Ninety One",
       "Nippon Life India Asset Management",
       "Nomura Asset Management",
       "Nuveen",
-      "PGIM",
       "PIMCO",
       "Pictet Asset Management",
       "RBC Global Asset Management",
       "Robeco",
       "SBI Funds Management",
-      "Schroders",
       "Schwab Asset Management",
       "State Street Investment Management",
       "SuMi TRUST Asset Management",
-      "Swiss Life Asset Managers",
       "T. Rowe Price",
       "UBS Asset Management",
       "UOB Asset Management",
       "Value Partners Group",
+      "Wellington Management",
+      "Anima SGR",
+      "AllianceBernstein",
+      "Janus Henderson Investors",
       "Vanguard",
+      "Swiss Life Asset Managers",
+      "Macquarie Asset Management",
+      "Capital Group",
+      "MFS Investment Management",
+      "PGIM",
+      "Schroders",
+      "Brown Advisory",
+      "GAM Investments",
+      "Federated Hermes",
+      "Ashmore Group",
+      "Baillie Gifford",
+      "Jupiter Asset Management",
+      "Eurizon",
       "Vontobel Asset Management",
-      "Wellington Management"
+      "Lazard Asset Management"
     ]
   },
   "view_identity": [
@@ -423,7 +414,6 @@
       "date": "2026-09-30",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://uk.allianzgi.com/en-gb/institutional/insights/house-view-q4-2026"
     },
     {
@@ -432,7 +422,6 @@
       "date": "2026-09-30",
       "asset": "Azioni mercati emergenti — multi-asset",
       "stance": "positive",
-      "method": "R",
       "url": "https://uk.allianzgi.com/en-gb/institutional/insights/house-view-q4-2026"
     },
     {
@@ -441,7 +430,6 @@
       "date": "2026-09-30",
       "asset": "Titoli di Stato sviluppati",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://uk.allianzgi.com/en-gb/institutional/insights/house-view-q4-2026"
     },
     {
@@ -450,7 +438,6 @@
       "date": "2026-09-30",
       "asset": "Oro — multi-asset",
       "stance": "positive",
-      "method": "Q",
       "url": "https://uk.allianzgi.com/en-gb/institutional/insights/house-view-q4-2026"
     },
     {
@@ -459,7 +446,6 @@
       "date": "2026-10",
       "asset": "Azioni Giappone — macro/strategico",
       "stance": "positive",
-      "method": "Q",
       "url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026"
     },
     {
@@ -468,7 +454,6 @@
       "date": "2026-11-09",
       "asset": "Duration Eurozona",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -477,7 +462,6 @@
       "date": "2026-11-09",
       "asset": "Duration Regno Unito",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -486,7 +470,6 @@
       "date": "2026-11-09",
       "asset": "Duration Stati Uniti",
       "stance": "neutral",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -495,7 +478,6 @@
       "date": "2026-11-09",
       "asset": "Duration Giappone",
       "stance": "neutral",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -504,7 +486,6 @@
       "date": "2026-11-09",
       "asset": "Credito investment grade globale ed europeo",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -513,7 +494,6 @@
       "date": "2026-11-09",
       "asset": "Obbligazioni emergenti in valuta forte",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -522,7 +502,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Europa — strategico",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -531,7 +510,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Giappone — strategico",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -540,7 +518,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Cina",
       "stance": "neutral",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -549,7 +526,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Brasile",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -558,7 +534,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Stati Uniti — tattico multi-asset",
       "stance": "positive",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -567,7 +542,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Europa — tattico multi-asset",
       "stance": "neutral",
-      "method": "S",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026"
     },
     {
@@ -576,7 +550,6 @@
       "date": "2026-08",
       "asset": "Azioni India — breve periodo",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/Hybrid-outlook.html"
     },
     {
@@ -585,7 +558,6 @@
       "date": "2026-10-27",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/"
     },
     {
@@ -594,7 +566,6 @@
       "date": "2026-10-27",
       "asset": "Materie prime globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/"
     },
     {
@@ -603,7 +574,6 @@
       "date": "2026-10-27",
       "asset": "Titoli di Stato — multi-asset",
       "stance": "negative",
-      "method": "A",
       "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/"
     },
     {
@@ -612,7 +582,6 @@
       "date": "2026-10-27",
       "asset": "Credito investment grade — multi-asset",
       "stance": "negative",
-      "method": "A",
       "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/"
     },
     {
@@ -621,7 +590,6 @@
       "date": "2026-10-27",
       "asset": "Obbligazioni high yield — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/"
     },
     {
@@ -630,7 +598,6 @@
       "date": "2026-10-27",
       "asset": "Debito mercati emergenti — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/"
     },
     {
@@ -639,7 +606,6 @@
       "date": "2026-09",
       "asset": "Credito India AAA 1–3 anni — carry",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.barodabnpparibasmf.in/efactsheet/Sep2026/Innerpages/market.html"
     },
     {
@@ -648,7 +614,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Stati Uniti — tattico",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
     },
     {
@@ -657,7 +622,6 @@
       "date": "2026-11-09",
       "asset": "Azioni mercati emergenti — tattico",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
     },
     {
@@ -666,7 +630,6 @@
       "date": "2026-11-09",
       "asset": "Treasury USA breve termine",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
     },
     {
@@ -675,7 +638,6 @@
       "date": "2026-11-09",
       "asset": "Treasury USA lungo termine",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
     },
     {
@@ -684,7 +646,6 @@
       "date": "2026-11-09",
       "asset": "Azioni Europa — tattico",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
     },
     {
@@ -693,7 +654,6 @@
       "date": "2025-12",
       "asset": "Infrastrutture digitali ed energetiche — 2026",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.brookfield.com/2026-investment-outlook"
     },
     {
@@ -702,7 +662,6 @@
       "date": "2025-12",
       "asset": "Immobiliare operativo selettivo — 2026",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.brookfield.com/2026-investment-outlook"
     },
     {
@@ -711,7 +670,6 @@
       "date": "2026-10-13",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.candriam.com/en-it/private/insight-overview/monthly-coffee-break/asset-allocation---monthly-coffee-break/earnings-take-centre-stage/"
     },
     {
@@ -720,7 +678,6 @@
       "date": "2026-10",
       "asset": "Azioni globali — Carmignac Patrimoine",
       "stance": "positive",
-      "method": "F",
       "url": "https://www.carmignac.com/it-it/articoli/carmignac-patrimoine-lettera-dei-gestori-sul-terzo-trimestre-2026-4126-14044"
     },
     {
@@ -729,7 +686,6 @@
       "date": "2026-10",
       "asset": "Obbligazioni europee a breve duration — Carmignac Patrimoine",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.carmignac.com/it-it/articoli/carmignac-patrimoine-lettera-dei-gestori-sul-terzo-trimestre-2026-4126-14044"
     },
     {
@@ -738,7 +694,6 @@
       "date": "2026-10",
       "asset": "Credito speculativo — Carmignac Patrimoine",
       "stance": "negative",
-      "method": "F",
       "url": "https://www.carmignac.com/it-it/articoli/carmignac-patrimoine-lettera-dei-gestori-sul-terzo-trimestre-2026-4126-14044"
     },
     {
@@ -747,7 +702,6 @@
       "date": "2026-09",
       "asset": "Real assets quotati — scenario pluriennale",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/"
     },
     {
@@ -756,7 +710,6 @@
       "date": "2026-09",
       "asset": "Azioni risorse naturali e infrastrutture quotate",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/"
     },
     {
@@ -765,7 +718,6 @@
       "date": "2026-10",
       "asset": "Azioni globali — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.columbiathreadneedle.com/en/lu/intermediary/insights/asset-allocation-update-q4-2026/"
     },
     {
@@ -774,7 +726,6 @@
       "date": "2026-10",
       "asset": "Titoli di Stato — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.columbiathreadneedle.com/en/lu/intermediary/insights/asset-allocation-update-q4-2026/"
     },
     {
@@ -783,7 +734,6 @@
       "date": "2026-10-09",
       "asset": "Azioni Giappone",
       "stance": "positive",
-      "method": "S",
       "url": "https://funds.deutsche-am.com/it-it/informare/mercati/market-outlook/Mercato-e-macro/"
     },
     {
@@ -792,7 +742,6 @@
       "date": "2026-10-09",
       "asset": "Azioni small e mid cap Europa",
       "stance": "positive",
-      "method": "R",
       "url": "https://funds.deutsche-am.com/it-it/informare/mercati/market-outlook/Mercato-e-macro/"
     },
     {
@@ -801,7 +750,6 @@
       "date": "2026-10",
       "asset": "Azioni Giappone — stock picking",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.eastspring.com/insights/deep-dives/japan-equities-is-the-investment-case-sustainable"
     },
     {
@@ -810,7 +758,6 @@
       "date": "2026",
       "asset": "High yield Stati Uniti — selettivo",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.franklintempleton.com/corporate/articles/2026/institute/the-world-didnt-break-2026-mid-year-investment-outlook"
     },
     {
@@ -819,7 +766,6 @@
       "date": "2026",
       "asset": "Debito mercati emergenti America Latina — selettivo",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.franklintempleton.com/corporate/articles/2026/institute/the-world-didnt-break-2026-mid-year-investment-outlook"
     },
     {
@@ -828,7 +774,6 @@
       "date": "2026-08-26",
       "asset": "Attivi rischiosi globali — 12 mesi",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.fullertonfund.com/fullerton-insights/keep-calm-and-carry-on-with-discipline/"
     },
     {
@@ -837,7 +782,6 @@
       "date": "2026-11-04",
       "asset": "Azioni Giappone — opportunità selettive",
       "stance": "positive",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-monthly-november-2026"
     },
     {
@@ -846,7 +790,6 @@
       "date": "2026-11-04",
       "asset": "Azioni mercati emergenti — opportunità selettive",
       "stance": "positive",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-monthly-november-2026"
     },
     {
@@ -855,7 +798,6 @@
       "date": "2026-11-04",
       "asset": "Credito investment grade — qualità",
       "stance": "positive",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-monthly-november-2026"
     },
     {
@@ -864,7 +806,6 @@
       "date": "2026-10-27",
       "asset": "Azioni Cina A-share — opportunità di medio periodo",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.jsfund.cn/main/a/20261027/484262.shtml"
     },
     {
@@ -873,7 +814,6 @@
       "date": "2026-10-27",
       "asset": "Azioni Cina — AI e manifattura avanzata",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.jsfund.cn/main/a/20261027/484262.shtml"
     },
     {
@@ -882,7 +822,6 @@
       "date": "2026-10-15",
       "asset": "Azioni India — valutazioni",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/October/Filing%20date%2016-10-2026/Release%20date%2015-10-2026/Advertisements/Annexure%204-%20Mailer%20on%20Monthly%20Market%20Outlook.html"
     },
     {
@@ -891,7 +830,6 @@
       "date": "2026-10-15",
       "asset": "Duration obbligazionaria India — preferenza",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/October/Filing%20date%2016-10-2026/Release%20date%2015-10-2026/Advertisements/Annexure%204-%20Mailer%20on%20Monthly%20Market%20Outlook.html"
     },
     {
@@ -900,7 +838,6 @@
       "date": "2026-06-15",
       "asset": "Azioni mercati emergenti — outlook secondo semestre",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html"
     },
     {
@@ -909,7 +846,6 @@
       "date": "2026-06-15",
       "asset": "Dollaro USA — outlook secondo semestre",
       "stance": "negative",
-      "method": "Q",
       "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html"
     },
     {
@@ -918,7 +854,6 @@
       "date": "2026-06-15",
       "asset": "Azioni Europa — outlook secondo semestre",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html"
     },
     {
@@ -927,7 +862,6 @@
       "date": "2026-10-01",
       "asset": "Azioni Stati Uniti — allocazione 12 mesi",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.jpmorgan.com/ca/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/"
     },
     {
@@ -936,7 +870,6 @@
       "date": "2026-10-01",
       "asset": "Azioni Giappone — allocazione 12 mesi",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.jpmorgan.com/ca/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/"
     },
     {
@@ -945,7 +878,6 @@
       "date": "2026-10-01",
       "asset": "High yield Stati Uniti — allocazione 12 mesi",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.jpmorgan.com/ca/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/"
     },
     {
@@ -954,7 +886,6 @@
       "date": "2026-10-01",
       "asset": "Duration Europa — allocazione 12 mesi",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.jpmorgan.com/ca/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/"
     },
     {
@@ -963,7 +894,6 @@
       "date": "2026-10-27",
       "asset": "Azioni globali — aspettative di rendimento",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://am.jpmorgan.com/gb/en/asset-management/per/insights/portfolio-insights/asset-class-views/equity-views/"
     },
     {
@@ -972,7 +902,6 @@
       "date": "2026-01-19",
       "asset": "Private credit Europa vs USA — credito diretto",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.lgtcp.com/lgt-capital-partners-publishes-investment-outlook-2026-0"
     },
     {
@@ -981,7 +910,6 @@
       "date": "2026-01-19",
       "asset": "Hedge fund market neutral — diversificazione",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.lgtcp.com/lgt-capital-partners-publishes-investment-outlook-2026-0"
     },
     {
@@ -990,7 +918,6 @@
       "date": "2026-10-02",
       "asset": "Azioni USA — preferenza regionale",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.lionglobalinvestors.com/en/insights/2026-4q-market-outlook.html"
     },
     {
@@ -999,7 +926,6 @@
       "date": "2026-10-02",
       "asset": "Azioni Asia ex Giappone — preferenza regionale",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.lionglobalinvestors.com/en/insights/2026-4q-market-outlook.html"
     },
     {
@@ -1008,7 +934,6 @@
       "date": "2026-10-02",
       "asset": "Azioni Giappone — 4Q",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.lionglobalinvestors.com/en/insights/2026-4q-market-outlook.html"
     },
     {
@@ -1017,7 +942,6 @@
       "date": "2026-10-02",
       "asset": "Azioni Europa — 4Q",
       "stance": "negative",
-      "method": "R",
       "url": "https://www.lionglobalinvestors.com/en/insights/2026-4q-market-outlook.html"
     },
     {
@@ -1026,7 +950,6 @@
       "date": "2026-10-02",
       "asset": "Titoli di Stato — 4Q",
       "stance": "negative",
-      "method": "R",
       "url": "https://www.lionglobalinvestors.com/en/insights/2026-4q-market-outlook.html"
     },
     {
@@ -1035,7 +958,6 @@
       "date": "2026-10-01",
       "asset": "Azioni USA growth",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.loomissayles.com/insights/october-2026-investment-outlook/"
     },
     {
@@ -1044,7 +966,6 @@
       "date": "2026-10-01",
       "asset": "Credito corporate globale — fondamentali",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.loomissayles.com/insights/october-2026-investment-outlook/"
     },
     {
@@ -1053,7 +974,6 @@
       "date": "2026-10",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.manulifeim.com/institutional/global/en/multi-asset-outlook"
     },
     {
@@ -1062,7 +982,6 @@
       "date": "2026-10",
       "asset": "Azioni Giappone — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.manulifeim.com/institutional/global/en/multi-asset-outlook"
     },
     {
@@ -1071,7 +990,6 @@
       "date": "2026-10",
       "asset": "Azioni Asia Pacifico ex Giappone — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.manulifeim.com/institutional/global/en/multi-asset-outlook"
     },
     {
@@ -1080,7 +998,6 @@
       "date": "2026-10",
       "asset": "Materie prime — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.manulifeim.com/institutional/global/en/multi-asset-outlook"
     },
     {
@@ -1089,7 +1006,6 @@
       "date": "2026-10",
       "asset": "Azioni USA small e mid cap — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.manulifeim.com/institutional/global/en/multi-asset-outlook"
     },
     {
@@ -1098,7 +1014,6 @@
       "date": "2026-10-05",
       "asset": "Azioni globali — asset allocation",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1107,7 +1022,6 @@
       "date": "2026-10-05",
       "asset": "Azioni USA large cap — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1116,7 +1030,6 @@
       "date": "2026-10-05",
       "asset": "Azioni USA small e mid cap — asset allocation",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1125,7 +1038,6 @@
       "date": "2026-10-05",
       "asset": "Azioni sviluppate ex USA — asset allocation",
       "stance": "negative",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1134,7 +1046,6 @@
       "date": "2026-10-05",
       "asset": "Azioni mercati emergenti — asset allocation",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1143,7 +1054,6 @@
       "date": "2026-10-05",
       "asset": "Azioni Giappone — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1152,7 +1062,6 @@
       "date": "2026-10-05",
       "asset": "Azioni Cina — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1161,7 +1070,6 @@
       "date": "2026-10-05",
       "asset": "Azioni Europa — asset allocation",
       "stance": "negative",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1170,7 +1078,6 @@
       "date": "2026-10-05",
       "asset": "Materie prime — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1179,7 +1086,6 @@
       "date": "2026-10-05",
       "asset": "Immobiliare privato — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1188,7 +1094,6 @@
       "date": "2026-10-05",
       "asset": "Titoli di Stato USA e agency MBS",
       "stance": "negative",
-      "method": "A",
       "url": "https://www.nb.com/en/insights/aac-repricing-risk-recalibrating-exposure"
     },
     {
@@ -1197,7 +1102,6 @@
       "date": "2026-10",
       "asset": "Azioni mercati emergenti — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://ninetyone.com/en/insights/multi-asset-strategy-quarterly-october-2026"
     },
     {
@@ -1206,7 +1110,6 @@
       "date": "2026-10",
       "asset": "Yen giapponese — valute",
       "stance": "positive",
-      "method": "A",
       "url": "https://ninetyone.com/en/insights/multi-asset-strategy-quarterly-october-2026"
     },
     {
@@ -1215,7 +1118,6 @@
       "date": "2026-10",
       "asset": "Euro — valute",
       "stance": "negative",
-      "method": "A",
       "url": "https://ninetyone.com/en/insights/multi-asset-strategy-quarterly-october-2026"
     },
     {
@@ -1224,7 +1126,6 @@
       "date": "2026-09",
       "asset": "Azioni India large cap — preferenza",
       "stance": "positive",
-      "method": "R",
       "url": "https://mf.nipponindiaim.com/LearnAndInvest/MarketOutlook/September-2026/Equity-Market-Outlook.html"
     },
     {
@@ -1233,7 +1134,6 @@
       "date": "2026-11-05",
       "asset": "Azioni Giappone — opportunità selettive",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.nomura-am.co.jp/news/20261105111133010296.html"
     },
     {
@@ -1242,7 +1142,6 @@
       "date": "2026-11-05",
       "asset": "Azioni globali — utili e valutazioni",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.nomura-am.co.jp/news/20261105111133010296.html"
     },
     {
@@ -1251,7 +1150,6 @@
       "date": "2026-07-14",
       "asset": "Credito high yield di qualità — selezione",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.nuveen.com/global/insights/fixed-income/taxable-fixed-income-update?type=us"
     },
     {
@@ -1260,7 +1158,6 @@
       "date": "2026-10-06",
       "asset": "Obbligazioni globali — carry e diversificazione",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.pimco.com/it/it/insights/growth-holds-risks-widen"
     },
     {
@@ -1269,7 +1166,6 @@
       "date": "2026-10-06",
       "asset": "Credito — selezione e remunerazione del rischio",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.pimco.com/it/it/insights/growth-holds-risks-widen"
     },
     {
@@ -1278,7 +1174,6 @@
       "date": "2026-10",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://am.pictet.com/ch/en/intermediaries/investment-views/multi-asset/2026/october-barometer-of-financial-markets-outlook"
     },
     {
@@ -1287,7 +1182,6 @@
       "date": "2026-10",
       "asset": "Obbligazioni globali — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://am.pictet.com/ch/en/intermediaries/investment-views/multi-asset/2026/october-barometer-of-financial-markets-outlook"
     },
     {
@@ -1296,7 +1190,6 @@
       "date": "2026-10",
       "asset": "Liquidità — multi-asset",
       "stance": "negative",
-      "method": "A",
       "url": "https://am.pictet.com/ch/en/intermediaries/investment-views/multi-asset/2026/october-barometer-of-financial-markets-outlook"
     },
     {
@@ -1305,7 +1198,6 @@
       "date": "2026-06-01",
       "asset": "Azioni globali — portafoglio bilanciato",
       "stance": "positive",
-      "method": "H",
       "url": "https://www.rbcgam.com/en/ca/article/iran-war-progress-and-ai-spending-boom-fuels-technology-led-equity-market-rebound/detail"
     },
     {
@@ -1314,7 +1206,6 @@
       "date": "2026-06-01",
       "asset": "Obbligazioni globali — portafoglio bilanciato",
       "stance": "negative",
-      "method": "H",
       "url": "https://www.rbcgam.com/en/ca/article/iran-war-progress-and-ai-spending-boom-fuels-technology-led-equity-market-rebound/detail"
     },
     {
@@ -1323,7 +1214,6 @@
       "date": "2026-10-01",
       "asset": "Azioni globali — fondamentali",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.robeco.com/en-uk/insights/2026/10/equity-outlook-parallel-worlds"
     },
     {
@@ -1332,7 +1222,6 @@
       "date": "2026-10-01",
       "asset": "Azioni mercati emergenti — fondamentali",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.robeco.com/en-uk/insights/2026/10/equity-outlook-parallel-worlds"
     },
     {
@@ -1341,7 +1230,6 @@
       "date": "2026-01-08",
       "asset": "Azioni India — asset allocation modello 2026",
       "stance": "neutral",
-      "method": "H",
       "url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook"
     },
     {
@@ -1350,7 +1238,6 @@
       "date": "2026-01-08",
       "asset": "Duration obbligazionaria India — strategia 2026",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook"
     },
     {
@@ -1359,7 +1246,6 @@
       "date": "2026-06-08",
       "asset": "Azioni globali — secondo semestre",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.schwabassetmanagement.com/story/global-stock-market-outlook"
     },
     {
@@ -1368,7 +1254,6 @@
       "date": "2026-10-21",
       "asset": "Azioni globali — qualità",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.ssga.com/se/en_gb/intermediary/insights/quarterly-investment-outlook-q4-2026"
     },
     {
@@ -1377,7 +1262,6 @@
       "date": "2026-07-20",
       "asset": "Azioni Giappone — secondo semestre",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.sumitrust-am.com/news-insights/insights/letter-sumi-trust-am-japan-outlook-second-half-2026"
     },
     {
@@ -1386,7 +1270,6 @@
       "date": "2026-10",
       "asset": "Azioni USA large cap growth — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2026/q3/monthly-asset-allocation-update-october-2026.html"
     },
     {
@@ -1395,7 +1278,6 @@
       "date": "2026-10",
       "asset": "Azioni mercati emergenti — multi-asset",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2026/q3/monthly-asset-allocation-update-october-2026.html"
     },
     {
@@ -1404,7 +1286,6 @@
       "date": "2026-10",
       "asset": "Gilt Regno Unito — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2026/q3/monthly-asset-allocation-update-october-2026.html"
     },
     {
@@ -1413,7 +1294,6 @@
       "date": "2026-10",
       "asset": "High yield globale — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2026/q3/monthly-asset-allocation-update-october-2026.html"
     },
     {
@@ -1422,7 +1302,6 @@
       "date": "2026-09-23",
       "asset": "Azioni globali — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html"
     },
     {
@@ -1431,7 +1310,6 @@
       "date": "2026-09-23",
       "asset": "Azioni USA — asset allocation",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html"
     },
     {
@@ -1440,7 +1318,6 @@
       "date": "2026-09-23",
       "asset": "Azioni Europa — asset allocation",
       "stance": "negative",
-      "method": "A",
       "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html"
     },
     {
@@ -1449,7 +1326,6 @@
       "date": "2026-09-23",
       "asset": "Azioni Giappone — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html"
     },
     {
@@ -1458,7 +1334,6 @@
       "date": "2026-09-23",
       "asset": "Azioni mercati emergenti — asset allocation",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html"
     },
     {
@@ -1467,7 +1342,6 @@
       "date": "2026-09-30",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.uobam.com.sg/uobam/insights/quarterly-investment-strategy/qis4q26.page"
     },
     {
@@ -1476,7 +1350,6 @@
       "date": "2026-09-30",
       "asset": "Obbligazioni globali — multi-asset",
       "stance": "negative",
-      "method": "A",
       "url": "https://www.uobam.com.sg/uobam/insights/quarterly-investment-strategy/qis4q26.page"
     },
     {
@@ -1485,7 +1358,6 @@
       "date": "2026-11-06",
       "asset": "Tecnologia globale — settore",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/"
     },
     {
@@ -1494,7 +1366,6 @@
       "date": "2026-11-06",
       "asset": "Titoli a reddito / dividend yield — selezione",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/"
     },
     {
@@ -1503,7 +1374,6 @@
       "date": "2026-11-06",
       "asset": "Azioni Cina advanced manufacturing — selezione",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/"
     },
     {
@@ -1512,7 +1382,6 @@
       "date": "2026-11",
       "asset": "Azioni globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1521,7 +1390,6 @@
       "date": "2026-11",
       "asset": "Azioni Stati Uniti — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1530,7 +1398,6 @@
       "date": "2026-11",
       "asset": "Azioni Europa escluso Regno Unito — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1539,7 +1406,6 @@
       "date": "2026-11",
       "asset": "Azioni Regno Unito — multi-asset",
       "stance": "negative",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1548,7 +1414,6 @@
       "date": "2026-11",
       "asset": "Azioni Giappone — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1557,7 +1422,6 @@
       "date": "2026-11",
       "asset": "Azioni mercati emergenti — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1566,7 +1430,6 @@
       "date": "2026-11",
       "asset": "Duration governativi globali — multi-asset",
       "stance": "positive",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1575,7 +1438,6 @@
       "date": "2026-11",
       "asset": "Titoli governativi USA — multi-asset",
       "stance": "neutral",
-      "method": "A",
       "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook"
     },
     {
@@ -1584,7 +1446,6 @@
       "date": "2026-11-04",
       "asset": "Azionario globale — giudizio generale",
       "stance": "neutral",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-privato/notizie-e-approfondimenti/Pagine/News/la-rotta-non-cambia.aspx"
     },
     {
@@ -1593,7 +1454,6 @@
       "date": "2026-11-04",
       "asset": "Titoli governativi core — orientamento costruttivo",
       "stance": "positive",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-privato/notizie-e-approfondimenti/Pagine/News/la-rotta-non-cambia.aspx"
     },
     {
@@ -1602,7 +1462,6 @@
       "date": "2026-10-30",
       "asset": "Treasury USA — orientamento costruttivo",
       "stance": "positive",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1611,7 +1470,6 @@
       "date": "2026-10-30",
       "asset": "Bund tedeschi — orientamento costruttivo",
       "stance": "positive",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1620,7 +1478,6 @@
       "date": "2026-10-30",
       "asset": "BTP italiani — orientamento costruttivo",
       "stance": "positive",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1629,7 +1486,6 @@
       "date": "2026-10-30",
       "asset": "Governativi Francia — prudenza relativa",
       "stance": "negative",
-      "method": "Q",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1638,7 +1494,6 @@
       "date": "2026-10-30",
       "asset": "Dollaro USA — view generale",
       "stance": "neutral",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1647,7 +1502,6 @@
       "date": "2026-10-30",
       "asset": "Yen giapponese — view generale",
       "stance": "neutral",
-      "method": "S",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1656,7 +1510,6 @@
       "date": "2026-10-30",
       "asset": "Farmaceutici — esposizione recentemente incrementata",
       "stance": "positive",
-      "method": "F",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1665,7 +1518,6 @@
       "date": "2026-10-30",
       "asset": "Consumi di base — esposizione recentemente incrementata",
       "stance": "positive",
-      "method": "F",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1674,7 +1526,6 @@
       "date": "2026-10-30",
       "asset": "Banche — esposizione selettivamente ridotta",
       "stance": "negative",
-      "method": "F",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1683,7 +1534,6 @@
       "date": "2026-10-30",
       "asset": "Tecnologia — esposizione selettivamente ridotta",
       "stance": "negative",
-      "method": "F",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1692,7 +1542,6 @@
       "date": "2026-10-30",
       "asset": "Filiera IA — visione costruttiva nel medio periodo",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.animasgr.it/IT/investitore-Istituzionale/mercati-e-approfondimenti/Pagine/blog/blog/la-view-di-anima-novembre-2026.aspx"
     },
     {
@@ -1701,7 +1550,6 @@
       "date": "2026-10-14",
       "asset": "Azioni value globali — preferenza rispetto al growth",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.alliancebernstein.com/it/it/adviser/insights/portfolio-perspectives/have-rate-hikes-tipped-the-scales-toward-value-equities.html"
     },
     {
@@ -1710,7 +1558,6 @@
       "date": "2026-10-14",
       "asset": "Azioni value — opportunità nel settore sanità",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.alliancebernstein.com/it/it/adviser/insights/portfolio-perspectives/have-rate-hikes-tipped-the-scales-toward-value-equities.html"
     },
     {
@@ -1719,7 +1566,6 @@
       "date": "2026-10-14",
       "asset": "Azioni value — opportunità nel settore finanziari",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.alliancebernstein.com/it/it/adviser/insights/portfolio-perspectives/have-rate-hikes-tipped-the-scales-toward-value-equities.html"
     },
     {
@@ -1728,7 +1574,6 @@
       "date": "2026-10-14",
       "asset": "Azioni value — opportunità nel settore immobiliare",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.alliancebernstein.com/it/it/adviser/insights/portfolio-perspectives/have-rate-hikes-tipped-the-scales-toward-value-equities.html"
     },
     {
@@ -1737,7 +1582,6 @@
       "date": "2026-10-14",
       "asset": "Azioni value — opportunità nel settore industriali",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.alliancebernstein.com/it/it/adviser/insights/portfolio-perspectives/have-rate-hikes-tipped-the-scales-toward-value-equities.html"
     },
     {
@@ -1746,7 +1590,6 @@
       "date": "2026-11-03",
       "asset": "Azioni Europa — opportunità selettive stock picking",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.janushenderson.com/it-it/investor/article/europes-unloved-opportunity-finding-quality-amid-the-pessimism/"
     },
     {
@@ -1755,7 +1598,6 @@
       "date": "2026-11-02",
       "asset": "Tecnologia — sovranità digitale, AI e semiconduttori",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.janushenderson.com/it-it/advisor/article/ai-geopolitics-and-the-reshaping-of-technology-investment/"
     },
     {
@@ -1764,7 +1606,6 @@
       "date": "2026-11-04",
       "asset": "Credito IG — selezione fuori dagli hyperscaler indebitati",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.janushenderson.com/it-it/investor/article/concentration-issues-the-problem-with-indexing-bonds-in-an-ai-world/"
     },
     {
@@ -1773,7 +1614,6 @@
       "date": "2026-11-05",
       "asset": "Azionario long/short absolute return — opportunità da dispersione",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.janushenderson.com/it-it/advisor/article/absolute-return-dispersion-and-opportunity-in-an-era-of-disorder/"
     },
     {
@@ -1782,7 +1622,6 @@
       "date": "2026-11-06",
       "asset": "IA — hyperscaler solidi rispetto a neocloud",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.janushenderson.com/it-it/investor/article/quick-view-an-argument-for-the-long-view-during-ai-volatility/"
     },
     {
@@ -1791,7 +1630,6 @@
       "date": "2026-11",
       "asset": "Azioni globali — asset allocation novembre",
       "stance": "neutral",
-      "method": "A",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1800,7 +1638,6 @@
       "date": "2026-11",
       "asset": "Obbligazioni globali — asset allocation novembre",
       "stance": "neutral",
-      "method": "A",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1809,7 +1646,6 @@
       "date": "2026-11",
       "asset": "Liquidità — asset allocation novembre",
       "stance": "neutral",
-      "method": "A",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1818,7 +1654,6 @@
       "date": "2026-11",
       "asset": "Settore sanitario — portato a sovrappeso",
       "stance": "positive",
-      "method": "A",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1827,7 +1662,6 @@
       "date": "2026-11",
       "asset": "Settore finanziario — ridotto a neutralità",
       "stance": "neutral",
-      "method": "A",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1836,7 +1670,6 @@
       "date": "2026-11",
       "asset": "Franco svizzero — preferenza difensiva",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1845,7 +1678,6 @@
       "date": "2026-11",
       "asset": "Oro — protezione difensiva e inflazione",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1854,7 +1686,6 @@
       "date": "2026-11",
       "asset": "Bond inflation-linked USA e Regno Unito",
       "stance": "positive",
-      "method": "R",
       "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre"
     },
     {
@@ -1863,7 +1694,6 @@
       "date": "2026-11-04",
       "asset": "Governativi Italia — view positiva sugli spread",
       "stance": "positive",
-      "method": "S",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1872,7 +1702,6 @@
       "date": "2026-11-04",
       "asset": "Governativi Spagna — view positiva sugli spread",
       "stance": "positive",
-      "method": "S",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1881,7 +1710,6 @@
       "date": "2026-11-04",
       "asset": "Gilt Regno Unito lunga scadenza — sovrappeso",
       "stance": "positive",
-      "method": "A",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1890,7 +1718,6 @@
       "date": "2026-11-04",
       "asset": "Debito emergente in valuta forte — verso neutrale",
       "stance": "neutral",
-      "method": "S",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1899,7 +1726,6 @@
       "date": "2026-11-04",
       "asset": "Debito emergente in valuta locale — positivo selettivo",
       "stance": "positive",
-      "method": "S",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1908,7 +1734,6 @@
       "date": "2026-11-04",
       "asset": "High yield euro — incremento selettivo dell’esposizione",
       "stance": "positive",
-      "method": "F",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1917,7 +1742,6 @@
       "date": "2026-11-04",
       "asset": "Azioni finanziarie globali — diversificazione da tecnologia",
       "stance": "positive",
-      "method": "R",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1926,7 +1750,6 @@
       "date": "2026-11-04",
       "asset": "Azioni energia — preferenza di settore",
       "stance": "positive",
-      "method": "R",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -1935,7 +1758,6 @@
       "date": "2026-11-10",
       "asset": "High yield USA BB/B — reddito e resilienza selettiva",
       "stance": "positive",
-      "method": "R",
       "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/beyond-ccc-high-yield-appears-resilient.html"
     },
     {
@@ -1944,7 +1766,6 @@
       "date": "2026-11-10",
       "asset": "High yield USA CCC — stress degli emittenti deboli",
       "stance": "negative",
-      "method": "Q",
       "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/beyond-ccc-high-yield-appears-resilient.html"
     },
     {
@@ -1953,7 +1774,6 @@
       "date": "2026-09-17",
       "asset": "Obbligazioni USA — punto di partenza rendimenti migliorato",
       "stance": "positive",
-      "method": "Q",
       "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/as-fed-raises-key-rate-bonds-remain-attractive.html"
     },
     {
@@ -1962,7 +1782,6 @@
       "date": "2026-11-05",
       "asset": "Azioni europee ad alto dividendo — opportunità di acquisto",
       "stance": "positive",
-      "method": "R",
       "url": "https://ch.swisslife-am.com/en/home/publications-hub/perspectives/financial-markets.html"
     },
     {
@@ -1971,7 +1790,6 @@
       "date": "2026-11-05",
       "asset": "Euro contro USD / CHF — nessun ulteriore indebolimento atteso",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://ch.swisslife-am.com/en/home/publications-hub/perspectives/financial-markets.html"
     },
     {
@@ -1980,7 +1798,6 @@
       "date": "2026",
       "asset": "Infrastrutture private — crescita strutturale degli utili",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.macquarie.com/it/en/about/company/macquarie-asset-management/insights/outlook.html"
     },
     {
@@ -1989,7 +1806,6 @@
       "date": "2026",
       "asset": "Private credit — reddito e direct lending selettivo",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.macquarie.com/it/en/about/company/macquarie-asset-management/insights/outlook.html"
     },
     {
@@ -1998,7 +1814,6 @@
       "date": "2026",
       "asset": "Credito quotato — yield e selezione emittenti",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.macquarie.com/it/en/about/company/macquarie-asset-management/insights/outlook.html"
     },
     {
@@ -2007,7 +1822,6 @@
       "date": "2026-10-22",
       "asset": "Obbligazionario globale — rendimenti iniziali più attraenti",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.capitalgroup.com/institutions/gb/en/insights/articles/fixed-income-perspectives.html"
     },
     {
@@ -2016,7 +1830,6 @@
       "date": "2026-10-22",
       "asset": "Azioni globali — opportunità AI in Europa, Giappone e Cina",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.capitalgroup.com/institutions/global-consultants/en/insights/articles/equity-perspectives.html"
     },
     {
@@ -2025,7 +1838,6 @@
       "date": "2026-10",
       "asset": "Azioni globali — utili e crescita diffusa",
       "stance": "positive",
-      "method": "Q",
       "url": "https://dr-www.mfs.com/en-de/investment-professional/insights/market-insights/global-market-pulse-eur.html"
     },
     {
@@ -2034,7 +1846,6 @@
       "date": "2026-10",
       "asset": "AI equity — opportunità oltre gli Stati Uniti",
       "stance": "positive",
-      "method": "Q",
       "url": "https://dr-www.mfs.com/en-de/investment-professional/insights/market-insights/global-market-pulse-eur.html"
     },
     {
@@ -2043,7 +1854,6 @@
       "date": "2026-11",
       "asset": "Obbligazionario USA — attese decennali riviste al rialzo",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.pgim.com/us/en/institutional/insights/market-portfolio/outlooks/capital-market-assumptions"
     },
     {
@@ -2052,7 +1862,6 @@
       "date": "2026",
       "asset": "Azioni USA — utili e investimenti 2026",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.schroders.com/en/global/individual/outlook/"
     },
     {
@@ -2061,7 +1870,6 @@
       "date": "2026",
       "asset": "Private markets — punti d’ingresso dopo la ricalibrazione",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.schroders.com/en/global/individual/outlook/"
     },
     {
@@ -2070,7 +1878,6 @@
       "date": "2026-10-22",
       "asset": "Governativi globali — scadenze 2–5 anni",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.brownadvisory.com/us/insights/mind-inflection-points-global-interest-rates"
     },
     {
@@ -2079,7 +1886,6 @@
       "date": "2026-10-22",
       "asset": "Governativi globali — duration lunga",
       "stance": "negative",
-      "method": "R",
       "url": "https://www.brownadvisory.com/us/insights/mind-inflection-points-global-interest-rates"
     },
     {
@@ -2088,7 +1894,6 @@
       "date": "2026-10-08",
       "asset": "Reti elettriche, efficienza energetica e produttività delle risorse",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.brownadvisory.com/us/insights/energy-expansion-and-economics-constraint-how-rising-demand-infrastructure-limits-and"
     },
     {
@@ -2097,7 +1902,6 @@
       "date": "2026-11-05",
       "asset": "RMBS non-agency — rendimento e diversificazione",
       "stance": "positive",
-      "method": "R",
       "url": "https://cdn.gam.com/en/our-thinking/investment-opinions/income-diversification-and-resilience-through-mortgage-backed-securities"
     },
     {
@@ -2106,7 +1910,6 @@
       "date": "2026-09-08",
       "asset": "Bond a breve scadenza — reddito difensivo e flessibilità",
       "stance": "positive",
-      "method": "R",
       "url": "https://cdn.gam.com/es/our-thinking/investment-opinions/tightening-not-frightening"
     },
     {
@@ -2115,7 +1918,6 @@
       "date": "2026-10-29",
       "asset": "Azioni USA — valutazioni e concentrazione tecnologica",
       "stance": "negative",
-      "method": "Q",
       "url": "https://www.gam.com/en/our-thinking/investment-opinions/late-cycle-reckoning"
     },
     {
@@ -2124,7 +1926,6 @@
       "date": "2026-10-29",
       "asset": "Attivi brasiliani — sovrappeso dell’autore",
       "stance": "positive",
-      "method": "F",
       "url": "https://www.gam.com/en/our-thinking/investment-opinions/late-cycle-reckoning"
     },
     {
@@ -2133,7 +1934,6 @@
       "date": "2026-11-10",
       "asset": "Obbligazionario USA — duration breve",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.federatedhermes.com/en-gb/insights/what-is-the-role-of-short-term-and-muni-bonds-in-a-cautious-us-market"
     },
     {
@@ -2142,7 +1942,6 @@
       "date": "2026-11-10",
       "asset": "Municipal bond USA tax-free — opportunità selettive",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.federatedhermes.com/en-gb/insights/what-is-the-role-of-short-term-and-muni-bonds-in-a-cautious-us-market"
     },
     {
@@ -2151,7 +1950,6 @@
       "date": "2026-11-04",
       "asset": "Azioni USA — prospettiva oltre la volatilità post-midterm",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.federatedhermes.com/en-gb/insights/us-midterms-2026-democrats-take-control-of-congress"
     },
     {
@@ -2160,7 +1958,6 @@
       "date": "2025-12-02",
       "asset": "Debito emergente — sovrappeso rispetto al Global Aggregate",
       "stance": "positive",
-      "method": "S",
       "url": "https://www.ashmoregroup.com/en-gb/insights/2026-emerging-markets-outlook"
     },
     {
@@ -2169,7 +1966,6 @@
       "date": "2025-12-02",
       "asset": "Bond emergenti in valuta locale — prospettiva 2026",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.ashmoregroup.com/en-gb/insights/2026-emerging-markets-outlook"
     },
     {
@@ -2178,7 +1974,6 @@
       "date": "2025-12-02",
       "asset": "Azioni emergenti — scenario macro 2026",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.ashmoregroup.com/en-gb/insights/2026-emerging-markets-outlook"
     },
     {
@@ -2187,7 +1982,6 @@
       "date": "2026-11",
       "asset": "US Growth — società profittevoli e crescita durevole",
       "stance": "positive",
-      "method": "F",
       "url": "https://www.bailliegifford.com/en/uk/individual-investors/insights/ic-article/2026-q3-trust-53-what-makes-a-growth-company-built-to-last-10066474/"
     },
     {
@@ -2196,7 +1990,6 @@
       "date": "2026-11",
       "asset": "Semiconduttori — attrezzature EUV e ASML",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.bailliegifford.com/en/uk/individual-investors/insights/ic-article/2026-q3-trust-53-how-asml-became-indispensable-to-ai-10066391/"
     },
     {
@@ -2205,7 +1998,6 @@
       "date": "2026-11-06",
       "asset": "Azioni Europa — utili e superciclo degli investimenti",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.jupiteram.com/is/en/professional/insights/europes-investment-supercycle-meets-a-new-rate-regime/"
     },
     {
@@ -2214,7 +2006,6 @@
       "date": "2026-11-06",
       "asset": "Banche europee — redditività e tassi normalizzati",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.jupiteram.com/is/en/professional/insights/europes-investment-supercycle-meets-a-new-rate-regime/"
     },
     {
@@ -2223,7 +2014,6 @@
       "date": "2026-11-06",
       "asset": "Industriali e materiali Europa — spinta del capex",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.jupiteram.com/is/en/professional/insights/europes-investment-supercycle-meets-a-new-rate-regime/"
     },
     {
@@ -2232,7 +2022,6 @@
       "date": "2026-10-19",
       "asset": "Oro, argento e società minerarie — tesi strutturale",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.jupiteram.com/it/en/professional/insights/gold-silver-a-macro-driven-price-correction-creates-opportunity/"
     },
     {
@@ -2241,7 +2030,6 @@
       "date": "2026-10-21",
       "asset": "Informatica e IA — vincitori con monetizzazione sostenibile",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.janushenderson.com/en-gb/institutional/article/research-in-focus-quarterly-sector-update-q326/"
     },
     {
@@ -2250,7 +2038,6 @@
       "date": "2026-10-21",
       "asset": "Elettrificazione — opportunità da trend secolari",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.janushenderson.com/en-gb/institutional/article/research-in-focus-quarterly-sector-update-q326/"
     },
     {
@@ -2259,7 +2046,6 @@
       "date": "2026-10-21",
       "asset": "Sanità — innovazione sanitaria come tema di crescita",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.janushenderson.com/en-gb/institutional/article/research-in-focus-quarterly-sector-update-q326/"
     },
     {
@@ -2268,7 +2054,6 @@
       "date": "2026-10",
       "asset": "Tecnologia, difesa e infrastrutture — sostegno al ciclo",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.eurizoncapital.com/it-IT/analisi-mercati/podcast-di-eurizon"
     },
     {
@@ -2277,7 +2062,6 @@
       "date": "2026-11-03",
       "asset": "Credito multi-asset — carry e rendimenti di partenza",
       "stance": "positive",
-      "method": "Q",
       "url": "https://am.vontobel.com/en/insights/navigating-credit-in-a-higher-yield-world"
     },
     {
@@ -2286,7 +2070,6 @@
       "date": "2026-11-03",
       "asset": "Credito corporate — dispersione e gestione attiva",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://am.vontobel.com/en/insights/navigating-credit-in-a-higher-yield-world"
     },
     {
@@ -2295,7 +2078,6 @@
       "date": "2026-11-04",
       "asset": "Tassi USA — rischio di restrizione Fed più persistente",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://www.lazardassetmanagement.com/us/en_us/research-insights/market-insights/behind-the-headlines/november-04-2026"
     },
     {
@@ -2304,7 +2086,6 @@
       "date": "2026-11-09",
       "asset": "Settori difensivi globali — rotazione dai tecnologici",
       "stance": "positive",
-      "method": "R",
       "url": "https://www.amundi.com/globaldistributor/article/great-mid-term-rotation"
     },
     {
@@ -2313,7 +2094,6 @@
       "date": "2026-11-09",
       "asset": "Tecnologia USA — pressione da AI capex e concentrazione",
       "stance": "negative",
-      "method": "Q",
       "url": "https://www.amundi.com/globaldistributor/article/great-mid-term-rotation"
     },
     {
@@ -2322,7 +2102,6 @@
       "date": "2026-11-09",
       "asset": "Small cap USA ed Europa — valutazioni relativamente contenute",
       "stance": "neutral",
-      "method": "Q",
       "url": "https://am.jpmorgan.com/it/en/asset-management/institutional/insights/market-insights/market-updates/the-weekly-brief/"
     },
     {
@@ -2331,7 +2110,6 @@
       "date": "2026-11-06",
       "asset": "Azionario globale — utili resilienti, leadership in evoluzione",
       "stance": "positive",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026"
     },
     {
@@ -2340,7 +2118,6 @@
       "date": "2026-11-04",
       "asset": "Small cap e mercati non USA — opportunità selettive",
       "stance": "positive",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/institutional-investor/news-and-insights/investment-monthly-november-2026"
     },
     {
@@ -2349,7 +2126,6 @@
       "date": "2026-11-04",
       "asset": "Mega-cap USA — rischio concentrazione e valutazioni",
       "stance": "negative",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/institutional-investor/news-and-insights/investment-monthly-november-2026"
     },
     {
@@ -2358,7 +2134,6 @@
       "date": "2026-11-04",
       "asset": "Obbligazioni qualità — reddito e diversificazione",
       "stance": "positive",
-      "method": "Q",
       "url": "https://mena.assetmanagement.hsbc.com/en/institutional-investor/news-and-insights/investment-monthly-november-2026"
     },
     {
@@ -2367,7 +2142,6 @@
       "date": "2026-11-04",
       "asset": "Infrastrutture IA — energia, reti e risorse idriche",
       "stance": "positive",
-      "method": "Q",
       "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance"
     },
     {
@@ -2376,7 +2150,6 @@
       "date": "2026-11-09",
       "asset": "Azionario difensivo — possibile beneficio da AI capex più lento",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.invesco.com/us/en/insights/what-slower-ai-buildout-may-mean-for-markets.html"
     },
     {
@@ -2385,36 +2158,9 @@
       "date": "2026-11-09",
       "asset": "Bond di qualità — possibile beneficio da AI capex più lento",
       "stance": "positive",
-      "method": "Q",
       "url": "https://www.invesco.com/us/en/insights/what-slower-ai-buildout-may-mean-for-markets.html"
     }
   ],
-  "comparison_to_prior_edition": {
-    "new_recent_managers": 0,
-    "new_recent_views": 0,
-    "new_global_managers": 0,
-    "new_global_views": 0
-  },
-  "last_daily_window_2026_11_11": {
-    "view_count": 94,
-    "manager_count": 21,
-    "views_exited_window_by_date": 4,
-    "managers_exited_window_by_date": 1,
-    "new_views_validated": 0
-  },
-  "position_change_evidence": {
-    "period": "2026-10-22/2026-11-12",
-    "source_declared_manager_count": 2,
-    "source_declared_change_count": 5,
-    "view_ids": [
-      138,
-      139,
-      140,
-      141,
-      190
-    ],
-    "two_comparable_document_pairs": 0,
-    "scope_note": "Source-declared shifts only; do not infer quantitative differences without distinct dated comparable documents."
-  },
-  "policy": "Update this snapshot AFTER a verified report publication; use it as the previous edition for the following report. If unavailable report comparison as n.d. Never classify discovered document candidates as validated views."
+  "prior_snapshot_date": "2026-11-12",
+  "phase_a_status": "completed_no_new_deduplicated_views"
 }
