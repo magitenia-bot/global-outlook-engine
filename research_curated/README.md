@@ -32,3 +32,11 @@ Questi requisiti sono **vincolanti per ogni report Global Outlook**, incluse rig
 - Mantenere gli 219 record storici archiviati distinti dal registro legacy da 129 record: non sommarli.
 - Non assumere che un punto di ripristino, una chat precedente o una dashboard HTML precedente trasmetta automaticamente istruzioni nuove all'automazione: rileggerle da questo contratto prima di generare.
 - Se la fonte non consente confronto omogeneo, mostrarne il limite e conservare comunque le variazioni fonte-dichiarate con etichetta corretta.
+
+## Layout canonico del checkpoint GO-20261112-2246
+
+- **Sorgente grafica ESATTA e immutabile:** repository `magitenia-bot/trading-system-professional`, branch `report-center-publisher`, commit `27a29f184b08052836492d9ef7cbb6d3923d7a71`, file `publisher/reports/cap-945cc9f493ec52f5000655c4f8ba6d4f45264af476559e9e.html`, blob Git SHA `73d8d0a1b558a8fd14b0d5e0ce903fa82d520142`. È il formato verde/blu esistente alle 22:46 Europe/Rome del 12/11/2026, non un mock-up.
+- **Preservare CSS, struttura e interazioni dell'HTML originario.** Le ancore centrali sono `focus-21d`, `confronto-recenti`, `variazioni-posizioni-21g`, `confronto-globale`, `quadro`, `global-publication-average`, `macro`, `micro`, `settori`, `registro`, `sintesi-fonti`, `metodo`.
+- L'edizione 13/11/2026, nel **layout ripristinato**, è stata pubblicata come `publisher/reports/cap-7c7eb5b4f1168310ab0dba9fef2f7689cf54d061be8b48ef.html` (commit `69ed032cc3b30ead4ab03ece42e49c91772b1072`); conserva le 219 view, 62 gestori, 84 URL, con 86 view/18 gestori/30 documenti nella finestra recente; 5 variazioni fonte-dichiarate e data media dello storico.
+- Aggiornare i dati significa cambiare le osservazioni, i KPI e le finestre temporali mantenendo identica l'impostazione visuale; **non riprogettare** la dashboard a ogni esecuzione. Lasciare l'originale del checkpoint immutato e usare una nuova edizione per ogni rilascio.
+- Non considerare completo un report se mancano la data media delle view nell'intero periodo, le variazioni nella sezione recenti, le matrici e le schede fonti. Le modifiche alla struttura non vanno inferite dai soli CSV.
