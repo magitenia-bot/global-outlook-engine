@@ -244,7 +244,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_three_managers_produce_consensus(self):
         self.write_views(3)
-        self.mark_independent()
+        self.mark_chatgpt_verified()
         self.write_sources(3)
         render(self.root)
         html = (self.root / "global_outlook.html").read_text(encoding="utf-8")
