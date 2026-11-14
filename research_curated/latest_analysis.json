@@ -3,47 +3,52 @@
   "run_type": "scheduled_phase_A",
   "phase": "A",
   "status": "completed_no_new_deduplicated_views",
-  "generated_at_utc": "2026-11-13T04:04:03Z",
+  "generated_at_utc": "2026-11-14T04:01:30Z",
   "timezone": "Europe/Rome",
-  "scheduled_local": "2026-11-13T05:00:00+01:00",
+  "scheduled_local": "2026-11-14T05:00:00+01:00",
   "current_views_path": "research_curated/current_views.csv",
+  "current_views_blob_sha": "1b864ccbd2a51e1489733664009c3c07be538461",
   "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
   "views_before": 219,
   "views_after": 219,
   "verified_new_views": 0,
+  "unique_record_ids": 219,
+  "duplicate_record_ids": 0,
   "sources_read_for_new_view_validation": 2,
   "sources_reviewed": [
     {
       "institution": "Amundi",
       "date": "2026-11-09",
       "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
-      "outcome": "already represented in current dataset; no duplicate appended"
+      "outcome": "official dated outlook; already represented; no duplicate added"
     },
     {
-      "institution": "PIMCO",
-      "date": null,
-      "url": "https://www.pimco.com/ch/en/insights/the-credit-market-lens-where-to-seek-diversification-from-the-ai-investment-theme",
-      "outcome": "source reviewed; publication date not firmly established and classification pending; no new validated view"
+      "institution": "BlackRock",
+      "date": "2026-11",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "outcome": "official current commentary reviewed; page-level exact publication day not established for individual positions; no new validated observation appended"
     }
   ],
   "github_monitor_last_run": {
-    "utc": "2026-11-13T02:53:57.946544+00:00",
+    "utc": "2026-11-14T02:56:24.640479+00:00",
     "registered_managers": 180,
     "registered_sources": 27,
     "sources_checked": 27,
     "new_records": 10,
     "partial_scans": 8,
-    "errors": 4,
+    "errors": 5,
     "view_classifications_created": 0
   },
-  "candidates_pending": "10 new monitor records require manual source-content validation; not counted as views",
+  "candidates_pending": "10 monitor records require source-content validation; not counted as views",
   "errors": [
+    "AllianceBernstein timeout",
     "Eurizon redirect loop",
     "Neuberger Berman HTTP 429",
     "Ninety One HTTP 403",
     "Nomura Reuters HTTP 401"
   ],
   "persistence_verified": false,
+  "persistence_verification_note": "Awaiting GitHub read-back of both files",
   "historical_files_unchanged": true,
   "publisher_status": "not_applicable_phase_A",
   "email_status": "not_sent_phase_A",
