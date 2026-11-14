@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "report_name": "Global Outlook",
   "edition": "21-day-and-global",
   "source_blob_sha": "1b864ccbd2a51e1489733664009c3c07be538461",
   "period_recent": {
-    "start": "2026-10-23",
-    "end": "2026-11-13",
+    "start": "2026-10-24",
+    "end": "2026-11-14",
     "view_count": 86,
     "manager_count": 18,
     "view_ids": [
@@ -2161,6 +2161,8 @@
       "url": "https://www.invesco.com/us/en/insights/what-slower-ai-buildout-may-mean-for-markets.html"
     }
   ],
-  "prior_snapshot_date": "2026-11-12",
-  "phase_a_status": "completed_no_new_deduplicated_views"
+  "prior_snapshot_date": "2026-11-13",
+  "phase_a_status": "completed_no_new_deduplicated_views",
+  "report_publication_commit": "9c150caab8e10907ba26050bf771d522dc3ff4b4",
+  "report_quality_note": "Immutable CSS preserved; 219 archive rows, 86 dated recent views, 11 GICS rows; publisher deployment verification pending"
 }
