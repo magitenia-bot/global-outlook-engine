@@ -1,9 +1,9 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "1.5",
+  "contract_version": "1.7.1",
   "approved_format_checkpoint": "GO-20261112-2246",
   "effective_from": "2026-11-14",
-  "status": "active",
+  "status": "definitive",
   "timezone": "Europe/Rome",
   "automation": {
     "automation_id": "6af0be4926fc81918dc8ce5d4b4350b2",
@@ -217,5 +217,62 @@
       "data_integrity": "Values generated from current_views.csv and previous snapshot at every publication; correct view vs manager vs source distinction; no invented market returns, no artificial inferred day precision, no implied institutional consensus",
       "output": "Static HTML charts with meaningful labels and text alternatives; accessible without JS"
     }
+  },
+  "definitive_release": {
+    "status": "definitive",
+    "version": "1.7.1",
+    "approved_at_local": "2026-11-14T22:23:00+01:00",
+    "scope": "Project methodology, institutional report presentation, and Global Asset Allocation Equity Intelligence integration",
+    "format_checkpoint": "GO-20261112-2246",
+    "approved_report": {
+      "name": "Global Outlook — Global Investment Outlook & Research Intelligence",
+      "version": "1.7.1",
+      "date": "2026-11-14",
+      "publisher_private_repo": "magitenia-bot/trading-system-professional",
+      "publisher_branch": "report-center-publisher",
+      "pointer_path": "publisher/global_outlook_current.json",
+      "published_commit": "86a612b36fb3cf304c0ef1415712b7c40f66eddd",
+      "rendered_live_verified": true,
+      "canonical_layout_qa": "success",
+      "pointer_timestamp_policy": "Always point to the newest validated and deployed report; do not replace with drafts"
+    },
+    "editorial_order": [
+      "Executive summary; Global Outlook sintesi e view recenti; lettura integrata decisioni",
+      "Key performance indicators and executive visuals",
+      "Global Asset Allocation — Equity Intelligence geographic, sector, cross-matrix analysis",
+      "Green 01: dated exact 30 days with separately labeled month-only current and previous months; dedicated Lettura trasversale",
+      "Blue 02: entire historical archive; comparative matrices, sources, average view date and consensus when supported"
+    ],
+    "equity_intelligence": {
+      "origin": "Equity Intelligence 2.2 incorporated into Global Outlook 1.7.1",
+      "geographic_category_merger": [
+        "Globale/multi-area",
+        "Non geografico"
+      ],
+      "geographic_category_label": "Globale",
+      "deduplication": "Merge existing view IDs without duplicates; distinct manager/mandate labels are counted with set semantics",
+      "geography_scope": "All 127 equity views, geography matrix and plots",
+      "sector_policy": "Exclude generic Multi-settore/non settoriale views exclusively from sector matrices and sector graphics; preserve them in geographic summaries and original source register",
+      "sector_cross_matrix": "Geografia × Settore; only sector-attributable views; charts adjacent to each matrix",
+      "focus": "Exact prior 30-calendar-day views + separately date-precision-labeled current and previous month-only views; historical full archive separately available",
+      "source_registry": "Closed by default, expandable details",
+      "methods": "A allocation, S explicit, R relative, Q qualitative, F fund-specific, H historical; do not inflate independent consensus",
+      "scope_limitation": "Classification labels remain experimental unless individually confirmed, avoid false formal GICS or overweight conclusions",
+      "baseline_dataset": "research_curated/current_views.csv",
+      "last_verified_total_equity_views": 127,
+      "last_verified_recent_exact_equity_views": 48,
+      "last_verified_month_only_equity_views": 31,
+      "last_verified_full_total_views": 232,
+      "no_auto_copy_of_static_counts": true
+    },
+    "constraints": [
+      "Do not cite excluded editorial date in any visible report while retaining original dated historical data internally",
+      "No fabrication of returns, net flows, missing coverage denominators, or qualitative-to-overweight reclassification",
+      "Every matrix or monitor has relevant source-backed summary visualization",
+      "Keep publisher credential only in private repository; never store capability slug or URL in public contract",
+      "Do not alter official report's canonical CSS, green/blue sections, schedules or source archive without explicit new request",
+      "Five AM acquisition/validation, seven AM production, deployment, verified HTML email with browser URL; no new automation",
+      "Preserve historical versions for rollback, changes require explicit request and QA"
+    ]
   }
 }

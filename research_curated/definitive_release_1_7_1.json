@@ -1,0 +1,18 @@
+{
+  "release": "GLOBAL_OUTLOOK_1.7.1_DEFINITIVE",
+  "status": "locked_as_current_reference",
+  "confirmed_by_user": true,
+  "confirmed_date": "2026-11-14",
+  "timezone": "Europe/Rome",
+  "report_version": "1.7.1",
+  "report_pointer_private": "magitenia-bot/trading-system-professional@report-center-publisher:publisher/global_outlook_current.json",
+  "report_commit": "86a612b36fb3cf304c0ef1415712b7c40f66eddd",
+  "qa": "success",
+  "publication": "Render LIVE verified",
+  "contract_file": "research_curated/global_outlook_contract.json",
+  "dataset_path": "research_curated/current_views.csv",
+  "dataset_blob_sha": "b3bc073572965708087b31d00c04cfeb7664bb76",
+  "archive_policy": "append-only; earlier approved reports and CSS checkpoint retained",
+  "supersession_policy": "Only explicit user instruction may supersede this reference after QA",
+  "notes": "Save exact project configuration and report layout; no private capability URL or secret in public research repository."
+}
