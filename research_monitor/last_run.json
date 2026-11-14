@@ -1,17 +1,17 @@
 {
-  "utc": "2026-11-14T02:51:38.529249+00:00",
-  "mode": "daily",
+  "utc": "2026-11-14T02:56:24.640479+00:00",
+  "mode": "hourly",
   "registered_managers": 180,
   "registered_sources": 27,
   "sources_checked": 27,
-  "new_records": 107,
+  "new_records": 10,
   "partial_scans": 8,
-  "errors": 4,
+  "errors": 5,
   "error_categories": {
     "access_restricted": 2,
     "throttled": 1,
     "redirect_error": 1,
-    "other_error": 0
+    "other_error": 1
   },
   "view_classifications_created": 0
 }

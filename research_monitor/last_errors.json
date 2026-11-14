@@ -1,6 +1,13 @@
 {
-  "utc": "2026-11-14T02:51:38.529249+00:00",
+  "utc": "2026-11-14T02:56:24.640479+00:00",
   "issues": [
+    {
+      "manager": "AllianceBernstein",
+      "source_url": "https://www.alliancebernstein.com/it/en-gb/financial-intermediary/insights/investment-insights/strategic-investment-outlook-2026.html",
+      "category": "other_error",
+      "http_code": null,
+      "message": "The read operation timed out"
+    },
     {
       "manager": "Eurizon Asset Management",
       "source_url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
