@@ -5,8 +5,17 @@
   "total_candidates": 90,
   "new_candidates_appended": 0,
   "batch_01_candidates": 20,
-  "unresolved": 81,
+  "unresolved": 71,
   "explicit_warning": "No candidate is a validated view without ChatGPT source reading",
   "metrics_as_of_italian_date": "2026-11-14",
-  "note": "Manual bootstrap. Technical GitHub handoff updates this file after subsequent monitor scans."
+  "note": "Manual bootstrap. Technical GitHub handoff updates this file after subsequent monitor scans.",
+  "last_validation_italian_date": "2026-11-14",
+  "completed_first_batch": {
+    "total_candidates": 20,
+    "source_content_reviewed": 16,
+    "rejected_attribution": 3,
+    "requires_professional_access": 1,
+    "validated_new_view_rows": 13,
+    "new_manager_names": 3
+  }
 }
