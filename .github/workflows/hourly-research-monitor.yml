@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'research_monitor.py'
+      - 'build_review_queue.py'
   schedule:
     - cron: '17 */2 * * *'
     - cron: '10 2 * * *'
@@ -35,11 +36,15 @@ jobs:
         run: python -m py_compile research_monitor.py
       - name: Monitor public sources and discover outlook candidates
         run: python research_monitor.py
+      - name: Run prioritized candidate queue handoff (without classifying views)
+        run: |
+          python -m py_compile build_review_queue.py
+          python build_review_queue.py
       - name: Commit evidence log and state only when changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research_monitor/
+          git add research_monitor/ research_curated/review_queue.csv research_curated/queue_monitor_metrics.json
           if ! git diff --cached --quiet; then
             git commit -m "research: update public-source monitoring results"
             git push
