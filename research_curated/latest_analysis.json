@@ -47,8 +47,8 @@
     "Ninety One HTTP 403",
     "Nomura Reuters HTTP 401"
   ],
-  "persistence_verified": false,
-  "persistence_verification_note": "Awaiting GitHub read-back of both files",
+  "persistence_verified": true,
+  "persistence_verification_note": "Read-back confirmed current_views.csv: 219 rows, unique IDs, expected blob SHA; latest_analysis.json read-back confirmed before final status update",
   "historical_files_unchanged": true,
   "publisher_status": "not_applicable_phase_A",
   "email_status": "not_sent_phase_A",
