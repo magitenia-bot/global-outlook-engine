@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "source_discovery_handoff_only",
+  "last_event_seen_utc": "2026-11-14T12:56:51.296852+00:00",
+  "total_candidates": 90,
+  "new_candidates_appended": 0,
+  "batch_01_candidates": 20,
+  "unresolved": 81,
+  "explicit_warning": "No candidate is a validated view without ChatGPT source reading",
+  "metrics_as_of_italian_date": "2026-11-14",
+  "note": "Manual bootstrap. Technical GitHub handoff updates this file after subsequent monitor scans."
+}
