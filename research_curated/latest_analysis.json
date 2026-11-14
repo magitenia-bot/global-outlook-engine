@@ -1,56 +1,121 @@
 {
   "schema_version": 1,
-  "run_type": "scheduled_phase_A",
-  "phase": "A",
-  "status": "completed_no_new_deduplicated_views",
-  "generated_at_utc": "2026-11-14T04:01:30Z",
+  "run_type": "manual_validation_after_scheduled_A",
+  "status": "partial_batch_completed",
+  "recorded_at_utc": "2026-11-14T13:33:13.254Z",
   "timezone": "Europe/Rome",
-  "scheduled_local": "2026-11-14T05:00:00+01:00",
-  "current_views_path": "research_curated/current_views.csv",
-  "current_views_blob_sha": "1b864ccbd2a51e1489733664009c3c07be538461",
-  "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
-  "views_before": 219,
-  "views_after": 219,
-  "verified_new_views": 0,
-  "unique_record_ids": 219,
-  "duplicate_record_ids": 0,
-  "sources_read_for_new_view_validation": 2,
-  "sources_reviewed": [
-    {
-      "institution": "Amundi",
-      "date": "2026-11-09",
-      "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
-      "outcome": "official dated outlook; already represented; no duplicate added"
-    },
-    {
-      "institution": "BlackRock",
-      "date": "2026-11",
-      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
-      "outcome": "official current commentary reviewed; page-level exact publication day not established for individual positions; no new validated observation appended"
-    }
-  ],
-  "github_monitor_last_run": {
-    "utc": "2026-11-14T02:56:24.640479+00:00",
-    "registered_managers": 180,
-    "registered_sources": 27,
-    "sources_checked": 27,
-    "new_records": 10,
-    "partial_scans": 8,
-    "errors": 5,
-    "view_classifications_created": 0
+  "view_dataset": {
+    "path": "research_curated/current_views.csv",
+    "sha": "7e722fcd9bb6e4ca4cf51e6971399ff85938f05d",
+    "views_before": 219,
+    "views_after": 226,
+    "views_added": 7,
+    "new_ids": [
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226
+    ],
+    "new_managers": 0,
+    "total_managers": 62,
+    "publication_precision": "2026-10 month only",
+    "historical_219_ids_retained": true
   },
-  "candidates_pending": "10 monitor records require source-content validation; not counted as views",
-  "errors": [
-    "AllianceBernstein timeout",
-    "Eurizon redirect loop",
-    "Neuberger Berman HTTP 429",
-    "Ninety One HTTP 403",
-    "Nomura Reuters HTTP 401"
+  "queue": {
+    "path": "research_curated/review_queue.csv",
+    "sha": "7d01081e8deea548370e4cf0629c037f38d12796",
+    "total_candidates": 90,
+    "first_batch": "B01",
+    "batch_candidates": 20,
+    "documents_actually_read": 6,
+    "review_status_counts": {
+      "source_verified": 6,
+      "rejected_attribution": 3,
+      "pending_primary_content": 9,
+      "pending_deduplication": 2
+    },
+    "warning": "20 triaged is not 20 complete document reads"
+  },
+  "supporting_source": {
+    "manager": "Eastspring Investments",
+    "published": "2026-10",
+    "url": "https://www.eastspring.us/insights/outlook/4q-2026-market-outlook-resilience-meets-rising-risks",
+    "evidence": "Official asset allocation incl. relative equities US EM Asia vs Europe, Treasuries, HY vs IG, EM hard currency, 3 month tactical risk-on"
+  },
+  "restrictions": [
+    "do not claim Google News discovery as primary evidence",
+    "do not assign publisher's house view from fund-specific article",
+    "do not assume RSS discovery date equals publication date"
   ],
   "persistence_verified": true,
-  "persistence_verification_note": "Read-back confirmed current_views.csv: 219 rows, unique IDs, expected blob SHA; latest_analysis.json read-back confirmed before final status update",
-  "historical_files_unchanged": true,
-  "publisher_status": "not_applicable_phase_A",
-  "email_status": "not_sent_phase_A",
-  "ready_for_phase_B": true
+  "prior_scheduled": {
+    "date": "2026-11-14T04:01:30Z",
+    "views_after": 219,
+    "new_views": 0
+  },
+  "published_report_not_regenerated": true,
+  "email_not_sent": true,
+  "phase": "A",
+  "generated_at_utc": "2026-11-14T13:33:13.254Z",
+  "ready_for_phase_b": true,
+  "manual_audit_path": "research_curated/manual_validation_2026-11-14.json",
+  "prior_scheduled_analysis": {
+    "schema_version": 1,
+    "run_type": "scheduled_phase_A",
+    "phase": "A",
+    "status": "completed_no_new_deduplicated_views",
+    "generated_at_utc": "2026-11-14T04:01:30Z",
+    "timezone": "Europe/Rome",
+    "scheduled_local": "2026-11-14T05:00:00+01:00",
+    "current_views_path": "research_curated/current_views.csv",
+    "current_views_blob_sha": "1b864ccbd2a51e1489733664009c3c07be538461",
+    "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
+    "views_before": 219,
+    "views_after": 219,
+    "verified_new_views": 0,
+    "unique_record_ids": 219,
+    "duplicate_record_ids": 0,
+    "sources_read_for_new_view_validation": 2,
+    "sources_reviewed": [
+      {
+        "institution": "Amundi",
+        "date": "2026-11-09",
+        "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
+        "outcome": "official dated outlook; already represented; no duplicate added"
+      },
+      {
+        "institution": "BlackRock",
+        "date": "2026-11",
+        "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+        "outcome": "official current commentary reviewed; page-level exact publication day not established for individual positions; no new validated observation appended"
+      }
+    ],
+    "github_monitor_last_run": {
+      "utc": "2026-11-14T02:56:24.640479+00:00",
+      "registered_managers": 180,
+      "registered_sources": 27,
+      "sources_checked": 27,
+      "new_records": 10,
+      "partial_scans": 8,
+      "errors": 5,
+      "view_classifications_created": 0
+    },
+    "candidates_pending": "10 monitor records require source-content validation; not counted as views",
+    "errors": [
+      "AllianceBernstein timeout",
+      "Eurizon redirect loop",
+      "Neuberger Berman HTTP 429",
+      "Ninety One HTTP 403",
+      "Nomura Reuters HTTP 401"
+    ],
+    "persistence_verified": true,
+    "persistence_verification_note": "Read-back confirmed current_views.csv: 219 rows, unique IDs, expected blob SHA; latest_analysis.json read-back confirmed before final status update",
+    "historical_files_unchanged": true,
+    "publisher_status": "not_applicable_phase_A",
+    "email_status": "not_sent_phase_A",
+    "ready_for_phase_B": true
+  }
 }
