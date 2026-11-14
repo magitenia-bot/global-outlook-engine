@@ -132,10 +132,11 @@
       "pending_primary_content",
       "pending_access"
     ],
-    "case_first_batch": "7 Eastspring Investments Q4 views (IDs 220-226) verified against official source 2026-10, no new institution; other 19 candidates recorded with statuses and reasons",
+    "case_first_batch": "B01: 20 candidate records triaged, 16 source pages read, 3 issuer mismatches rejected, 1 access-gated report pending. 13 new documented views (220-232) from Eastspring (7), Dragon DCVFM (3), Diamond Hill Large Cap Fund (2), Fidelity Strategic Advisers LLC (1); 3 distinct new manager/mandate names; none automatically count as independent house-level consensus.",
     "batch_metrics_file": "research_curated/manual_validation_2026-11-14.json",
     "do_not_fabricate_20_reviews": true,
     "do_not_propagate_rss_urls_as_primary": true,
-    "no_relabel_or_rewrite_baseline": true
+    "no_relabel_or_rewrite_baseline": true,
+    "phase_A_current_views": 232
   }
 }
