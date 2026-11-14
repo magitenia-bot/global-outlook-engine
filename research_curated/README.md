@@ -43,6 +43,13 @@ Questi requisiti sono **vincolanti per ogni report Global Outlook**, incluse rig
 - Aggiornare i dati significa cambiare le osservazioni, i KPI e le finestre temporali mantenendo identica l'impostazione visuale; **non riprogettare** la dashboard a ogni esecuzione. Lasciare l'originale del checkpoint immutato e usare una nuova edizione per ogni rilascio.
 - Non considerare completo un report se mancano la data media delle view nell'intero periodo, le variazioni nella sezione recenti, le matrici e le schede fonti. Le modifiche alla struttura non vanno inferite dai soli CSV.
 
+## Revisione del perimetro temporale — 14 novembre 2026
+
+- **Sezione verde:** mantenere il nucleo di view giornaliere con data completa negli ultimi 21 giorni, e **aggiungere esplicitamente, in tabella distinta**, tutte le view la cui pubblicazione è nota soltanto come `YYYY-MM` e tale mese coincide con il mese del report o con il mese solare precedente. La data mensile non è un giorno arbitrario: annotare sempre la precisione incompleta e non includerla nel KPI esatto dei 21 giorni. Conteggi separati e somma consultabile solo dopo deduplica.
+- **Sezione blu:** in apertura aggiungere l'analisi rolling degli **ultimi 30 giorni di calendario**, con intervallo inclusivo da data del report meno 29 giorni alla data del report; in questo KPI contare esclusivamente osservazioni con giorno certo. Accanto, esporre separatamente gli stessi `YYYY-MM` di mese corrente/precedente, senza considerarli per definizione entro la finestra esatta di 30 giorni. **Mantenere sottostante l'intero archivio storico**, tutte le matrici macro/micro/settoriali, le schede fonti, la media storica delle date e tutti gli ID.
+- **Formato:** conservare tutti e cinque i blocchi CSS del checkpoint `GO-20261112-2246`; usare `green-monthly-views` e `green-monthly-rows` per il supplemento verde, `blue-30day-window` e `blue-30day-rows` per il focus blu. L'assenza dei quattro elementi impedisce il superamento del controllo qualità.
+- **Regola ricorrente:** ricalcolare le finestre ad ogni esecuzione 07:00, non copiare staticamente date o volumi dall'edizione precedente; non trasformare una data mensile in un giorno 15 per verificare l'appartenenza alle finestre. Il giorno 15 può essere usato **solo** per la data media stimata dell'archivio storico, con relativa avvertenza.
+
 ## Procedura permanente di validazione incrementale — 14 novembre 2026
 
 - **Backlog persistente:** `research_curated/review_queue.csv` raccoglie 90 coppie gestore-documento candidate emerse il 14/11 dopo deduplicazione rispetto alle scoperte precedenti. `B01` identifica i primi 20 candidati da valutare; la mera iscrizione in coda non comporta verifica né validazione.
