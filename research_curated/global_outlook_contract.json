@@ -1,6 +1,6 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "1.4",
+  "contract_version": "1.5",
   "approved_format_checkpoint": "GO-20261112-2246",
   "effective_from": "2026-11-14",
   "status": "active",
@@ -10,7 +10,7 @@
     "phase_a": "05:00",
     "phase_b": "07:00",
     "phase_a_action": "Source verification and validation of up to 20 prioritized queue candidates; persistent audit, append-only validated dataset, no HTML/email.",
-    "phase_b_action": "read latest validated dataset, compare prior edition, create HTML, QA, publish, email"
+    "phase_b_action": "read latest validated dataset, compare previous edition, produce executive-first HTML with integrated reading and 4 charts before detailed tables, QA, publish and email"
   },
   "repositories": {
     "research": "magitenia-bot/global-outlook-engine",
@@ -108,7 +108,15 @@
       "green-monthly-views",
       "green-monthly-rows",
       "green-30day-window",
-      "green-30day-rows"
+      "green-30day-rows",
+      "recenti",
+      "executive-front-title",
+      "executive-visuals",
+      "chart-macro-30d",
+      "chart-cadenza-30d",
+      "chart-orientamenti",
+      "chart-nuove-view",
+      "recenti-dettaglio"
     ],
     "percent_or_flow": "n.d. without documented denominator/source",
     "exclude_new_portfolio_model": true
@@ -134,7 +142,11 @@
       "BLUE: historical archive remains full and unfiltered (no blue 30-day window); maintain historical matrices, source cards, full-archive mean date and all IDs.",
       "Month-only YYYY-MM cannot be assigned an invented publication day; day=15 imputation is only for full-archive mean calculations.",
       "Keep five pinned CSS style blocks and 11 GICS sectors in green; sector source IDs must reflect exact 30-day observations.",
-      "Do not alter phases 05:00 research and 07:00 HTML/email publication."
+      "Do not alter phases 05:00 research and 07:00 HTML/email publication.",
+      "Executive Global Outlook header and integrated reading must be before the green 30-day detailed tables; executive charts also before the detailed tables",
+      "At least four accessible verified-data visual charts: macro (stance-stacked), publication cadence (non-overlapping time bins), stance shares (30d vs monthly vs history), new view sources",
+      "Each chart source-count cross-check must use current validated view data and snapshot changes, avoid mixing month-only with 30-day date-precise counts",
+      "Preserve complete original 232/updated historical records, references, CSS SHA, separate green rolling 30-day and blue full archive, and protected private report URL"
     ],
     "temporal_revision": "1.4: user's explicit correction: 30-day focus GREEN ONLY; BLUE full historical archive"
   },
@@ -170,5 +182,40 @@
     "do_not_propagate_rss_urls_as_primary": true,
     "no_relabel_or_rewrite_baseline": true,
     "phase_A_current_views": 232
+  },
+  "report_presentation": {
+    "priority": "executive_first",
+    "contract_note": "In all editions, first substantive section within the green chapter is the executive Global Outlook — sintesi e view recenti and Lettura integrata. Detailed view registers, document tables and source dossiers follow, not precede, the executive reading.",
+    "order": [
+      "top navigation (Green 30 days / Blue complete history)",
+      "executive summary with title Global Outlook — sintesi e view recenti",
+      "KPI 30-day exact, current/previous month-only, combined green, full history blue and validated changes",
+      "Lettura integrata · decisioni per il comitato investimenti: equity, fixed income, diversifiers, risks",
+      "four verified-data charts, accessible and responsive",
+      "green rolling 30-day source details / sectors / monthly supplement / detailed register",
+      "blue complete historical archive, 30-dimensional comparisons, source dossiers, date mean methodology"
+    ],
+    "required_ids": [
+      "recenti",
+      "executive-front-title",
+      "executive-visuals",
+      "chart-macro-30d",
+      "chart-cadenza-30d",
+      "chart-orientamenti",
+      "chart-nuove-view",
+      "recenti-dettaglio"
+    ],
+    "graphic_rules": {
+      "charts_minimum": 4,
+      "charts": [
+        "macro-asset class stacked counts by stance for exact 30-day date window",
+        "historical publication-day histogram binned into non-overlapping chronological intervals within 30d",
+        "individual-view stance mix: exact 30d, month-only and complete history (normalized percentages, explicit raw n)",
+        "new view additions by manager/mandate/source vs prior snapshot"
+      ],
+      "visual_style": "Professional institutional palette, high contrast text labels and source counts, responsive layout, no added external JS libraries, original 5 CSS style blocks kept byte-identical",
+      "data_integrity": "Values generated from current_views.csv and previous snapshot at every publication; correct view vs manager vs source distinction; no invented market returns, no artificial inferred day precision, no implied institutional consensus",
+      "output": "Static HTML charts with meaningful labels and text alternatives; accessible without JS"
+    }
   }
 }
