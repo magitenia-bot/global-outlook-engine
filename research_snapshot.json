@@ -1,17 +1,65 @@
 {
-  "generated_at_utc": "2026-11-13T18:50:16+00:00",
+  "generated_at_utc": "2026-11-14T05:41:32+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 100,
   "sources_total": 116,
   "sources_active": 116,
   "source_last_results": {
-    "baseline_requires_review": 74,
-    "changed_requires_review": 16,
+    "changed_requires_review": 7,
     "error": 11,
-    "unchanged": 15
+    "unchanged": 98
   },
-  "source_change_events_last_4d": 140,
+  "source_change_events_last_4d": 123,
   "source_changes_recent": [
+    {
+      "source_id": "src-pimco-outlook",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-loomis-oct26",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche3-01",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-added-value-partners-group",
+      "checked_at_utc": "2026-11-14T05:40:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-jpm-weekly",
       "checked_at_utc": "2026-11-13T18:49:07+00:00",
@@ -802,59 +850,194 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-10T17:31:30+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T17:31:30+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-columbia-insights",
-      "checked_at_utc": "2026-11-10T17:31:30+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-09T22:23:09+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-09T22:12:41+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-09T22:10:18+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-09T22:01:01+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1294,
+  "candidate_documents_total": 1317,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=fe921775-10f6-439b-92d8-7c350893810e&ssb=65029214755&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=376d31d7-cslf-478c-b408-77eb75768e4b&ssk=botmanager_support@radware.com&ssm=69240723984030142107413526303797&ssn=6335fb1e5601fe7d4ac01e4877976cdf44eb63b7ff29-51fc-4848-91a00e&sso=660cde6a-b11f9271b412a754e04cfdc4a1db3e017641510c119e034f&ssp=32714221491794611089179467882855628&ssq=40703313487324209693034873338488956321518&ssr=NTEuOC4xNDQuMTkz&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwN2I2M2Y1NDYtNmU3MC00ZDU1LWE1ZjYtNzZmZTM4ZGQ3NjNiMS0xNzk0NjM0ODczNzc5MC0wMGQ2ODNkY2I2YzA3NDFlZWZmMTAiLCJfX3V6bWYiOiI3ZjkwMDA2M2I3ZmYyOS01MWZjLTQ4NDgtOWU2YS1iMTFmOTI3MWI0MTIxLTE3OTQ2MzQ4NzM3NzkwLTAwNWRjMTlkMjU1MDQ5NDZjZDYxMCIsInJkIjoia290YWttZi5jb20ifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Integrating Private Assets In DC: Bridging Innovation and Outcomes Integrating private assets into DC plans",
+      "candidate_url": "https://www.pgim.com/us/en/individual/insights/dc-solutions-insights/integrating-private-assets-in-dc",
+      "source_page_url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/uk/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/de-ch/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/se/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Español",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/es/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/pt/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/no/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/nl/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/lu/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ie/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/is/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/de/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/fi/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/dk/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/be/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/de/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/en/lp/global-market-outlook.html?dtag-114971046=&placementguid=pcnl_UK_adv_WMR_CWNMA_WeeklyMarketRecap_101125",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-14T05:41:04+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "LGT Capital Partners",
       "candidate_title": "Insights",
@@ -3068,190 +3251,6 @@
       "candidate_title": "Conflicts of Interest Policy",
       "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-conflicts-of-interest-policy.pdf",
       "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "/docs/default-source/default-document-library/pdf/insights/2026/2610-global-investment-strategy-committee-outlook-q4-2026.pdf",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/default-document-library/pdf/insights/2026/2610-global-investment-strategy-committee-outlook-q4-2026.pdf?sfvrsn=169a9d76_3",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Global Investment Strategy Committee Outlook Q4 2026",
-      "candidate_url": "https://emea.amova-am.com/institutional/insights/detail",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Insights",
-      "candidate_url": "https://emea.amova-am.com/institutional/insights",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Official investment outlook",
-      "candidate_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – July 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-july-2025-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – July 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-jul-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – August 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-aug-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – August 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-aug-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – September 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-september-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – September 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-sep-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – October 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-october/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – October 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-october-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – November 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-november-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – November 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-november-2025/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – December 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-december-2025-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – December 2025",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-december-2025-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "2026 Market Outlook | Advancing with Resilience",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/2026-market-outlook-advancing-with-resilience-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – January 2026",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-january-2026/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – January 2026",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-january-2026-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – February 2026",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-february-2026-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – February 2026",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-february-2026-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Multi-Asset Perspective – March 2026",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/multi-asset-perspective-march-2026/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Value Partners Group",
-      "candidate_title": "Asia Credit Market Overview – March 2026",
-      "candidate_url": "https://www.valuepartners-group.com/en/investment-insights/insights/asia-credit-market-overview-march-2026-en/",
-      "source_page_url": "https://www.valuepartners-group.com/en/investment-insights/insights/value-partners-macro-outlook-november-2026/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
