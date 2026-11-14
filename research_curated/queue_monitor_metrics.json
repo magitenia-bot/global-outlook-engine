@@ -1,21 +1,10 @@
 {
   "schema_version": 1,
   "type": "source_discovery_handoff_only",
-  "last_event_seen_utc": "2026-11-14T12:56:51.296852+00:00",
-  "total_candidates": 90,
-  "new_candidates_appended": 0,
+  "last_event_seen_utc": "2026-11-14T14:49:47.346143+00:00",
+  "total_candidates": 102,
+  "new_candidates_appended": 12,
   "batch_01_candidates": 20,
-  "unresolved": 71,
-  "explicit_warning": "No candidate is a validated view without ChatGPT source reading",
-  "metrics_as_of_italian_date": "2026-11-14",
-  "note": "Manual bootstrap. Technical GitHub handoff updates this file after subsequent monitor scans.",
-  "last_validation_italian_date": "2026-11-14",
-  "completed_first_batch": {
-    "total_candidates": 20,
-    "source_content_reviewed": 16,
-    "rejected_attribution": 3,
-    "requires_professional_access": 1,
-    "validated_new_view_rows": 13,
-    "new_manager_names": 3
-  }
+  "unresolved": 82,
+  "explicit_warning": "No candidate is a validated view without ChatGPT source reading"
 }
