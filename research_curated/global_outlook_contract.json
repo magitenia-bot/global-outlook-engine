@@ -1,6 +1,6 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "1.3",
+  "contract_version": "1.4",
   "approved_format_checkpoint": "GO-20261112-2246",
   "effective_from": "2026-11-14",
   "status": "active",
@@ -24,7 +24,7 @@
     "original_css_sha256": "28edae1d4bfa36060dc2dd6cf8d9dbddfca4b70e0ad4e69ab2c543cc69e2c277",
     "css_style_tags": 5,
     "section_01": {
-      "name": "View giornaliere degli ultimi 21 giorni + integrazione delle view con data mensile corrente/precedente",
+      "name": "Finestra principale verde 30 giorni completi + supplemento mese corrente e precedente",
       "palette": "verde",
       "mandatory": [
         "gestori e view precedenti-attuali",
@@ -35,11 +35,11 @@
         "revisione stance con coppie di documenti comparabili",
         "fonti",
         "scorrimento temporale finestra",
-        "matrice settoriale GICS completa per i soli ultimi 21 giorni, con 11 settori, segnali, numero view/gestori, dettaglio e fonti, senza inventare consensus",
+        "matrice settoriale GICS completa per i soli ultimi 30 giorni, con 11 settori, segnali, numero view/gestori, dettaglio e fonti, senza inventare consensus",
         "registro separato per temi e sottosettori (IA, semiconduttori, industriali e difensivi), senza duplicazioni nei conteggi GICS"
       ],
-      "date_precision": "YYYY-MM-DD",
-      "window": "report_date - 21 giorni, compresi estremi",
+      "date_precision": "YYYY-MM-DD per i 30 giorni verificati; YYYY-MM separato per mese corrente o precedente",
+      "window": "report_date - 29 giorni, compresi estremi: 30 date di calendario",
       "sector_matrix": {
         "mode": "11 settori GICS: positivi/neutrali/negativi secondo le view direttamente classificabili, n.d. quando assenti",
         "data_window": "solo date giornaliere certe nell'intervallo recente",
@@ -50,16 +50,26 @@
       },
       "month_precision_supplement": {
         "enabled": true,
-        "policy": "Include observations with year+month only if publication month equals report's current month or previous calendar month. Keep exact-date 21-day set disjoint and separately counted.",
-        "label": "Data mensile, giorno non disponibile; non certificata come entro 21 giorni",
+        "policy": "Include views with YYYY-MM matching current report month or preceding calendar month, in a SEPARATE GREEN table; the 30-day exact set is disjoint and day-precise. No day inferred.",
+        "label": "Data mensile, giorno non disponibile; non certificata come entro 30 giorni",
         "preserve_original_date": true,
         "independent_counts": true,
         "show_deduped_record_ids": true,
         "include_sectors_from_monthly": "Only as an explicitly separate thematic/sector matrix layer; no false GICS house consensus."
+      },
+      "day30_focus": {
+        "enabled": true,
+        "day_count": 30,
+        "window_rule": "report_date -29 calendar days to report_date inclusive",
+        "day_precision_only": true,
+        "monthly_supplement_separate": true,
+        "original_21_day_subwindow_optional": true,
+        "sector_matrix": "30-day exact dates + separate thematic month-only evidence; never conflate",
+        "keep_all_history_in_blue": true
       }
     },
     "section_02": {
-      "name": "Focus analitico ultimi 30 giorni + storico completo",
+      "name": "Archivio storico completo senza finestra temporale limitante",
       "palette": "blu",
       "mandatory": [
         "gestori e view precedenti-attuali",
@@ -75,16 +85,7 @@
         "consensus prudenti",
         "flussi o n.d."
       ],
-      "day30_focus": {
-        "enabled": true,
-        "day_count": 30,
-        "window_rule": "report_date minus 29 calendar days to report_date, both inclusive, only source dates with day precision",
-        "monthly_supplement": "Also show current-month and previous-month observations with month-only dates separately, never claim they are precisely within 30 days",
-        "preserve_history": true,
-        "historic_archive_below_focus": true,
-        "preserve_global_date_mean": true,
-        "explain_delta_not_freshness": true
-      }
+      "scope_rule": "ALL verified historical views, all original dates and full source links, consensus caveats, macro/micro/sector matrices and estimated full archive mean. No 30-day focus in blue."
     },
     "required_html_ids": [
       "focus-21d",
@@ -106,8 +107,8 @@
       "settori-recenti-temi",
       "green-monthly-views",
       "green-monthly-rows",
-      "blue-30day-window",
-      "blue-30day-rows"
+      "green-30day-window",
+      "green-30day-rows"
     ],
     "percent_or_flow": "n.d. without documented denominator/source",
     "exclude_new_portfolio_model": true
@@ -129,10 +130,13 @@
     "notes": "GitHub Actions post-commit check does not itself guarantee pre-publication blocking without branch protection. The automation performs mandatory pre-publication QA.",
     "additional_requirement": "11 settori GICS nella zona verde e tabella temi separata, con source ID attribuibili alla stessa finestra temporale",
     "additional_requirements": [
-      "Check date precision: 21-day exact rows are separate from current/previous month-only observations; blue 30-day exact rows separate from month-only observations, no artificial day precision",
-      "Preserve immutable checkpoint CSS, all historic view IDs and full archive below 30-day blue focus",
-      "Check report date and both window anchors for off-by-one errors in the last 30 days"
-    ]
+      "GREEN: exact 30-day rows cover all day-precision records from report date -29 through report date inclusive; supplemented with current/previous month YYYY-MM in distinct green table.",
+      "BLUE: historical archive remains full and unfiltered (no blue 30-day window); maintain historical matrices, source cards, full-archive mean date and all IDs.",
+      "Month-only YYYY-MM cannot be assigned an invented publication day; day=15 imputation is only for full-archive mean calculations.",
+      "Keep five pinned CSS style blocks and 11 GICS sectors in green; sector source IDs must reflect exact 30-day observations.",
+      "Do not alter phases 05:00 research and 07:00 HTML/email publication."
+    ],
+    "temporal_revision": "1.4: user's explicit correction: 30-day focus GREEN ONLY; BLUE full historical archive"
   },
   "validation_queue": {
     "path": "research_curated/review_queue.csv",
