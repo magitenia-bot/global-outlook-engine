@@ -2754,13 +2754,18 @@
     "blue_exact_row_ids_verified": 95,
     "format_contract": "GO-20261112-2246 + user correction 1.4",
     "green_exact_row_ids_verified": 95,
-    "blue_30day_focus_removed": true
+    "blue_30day_focus_removed": true,
+    "executive_first": true,
+    "charts_verified": 4,
+    "visual_qa_run": "43623978983",
+    "visual_qa_status": "success",
+    "checkpoint_css_unchanged": true
   },
   "cautions": [
     "13 verified views are outside 21-day precise date window",
     "fund-level and managed account opinions not independent institutional house consensus"
   ],
-  "format_contract_version": "1.4",
+  "format_contract_version": "1.5",
   "time_scope_policy": {
     "strategy": "green_30_day_exact_with_month_precision_supplement; blue_complete_historical_archive",
     "green_rolling_window": "report_date - 29 days through report_date inclusive, 30 calendar dates; only day-precise dated views for exact count",
@@ -2776,5 +2781,66 @@
     "manager_label_count": 65,
     "source_count": 88,
     "rolling_window": null
+  },
+  "report_presentation": {
+    "mode": "executive_first",
+    "anchor": "recenti",
+    "heading": "Global Outlook — sintesi e view recenti",
+    "reading_heading": "Lettura integrata · decisioni per il comitato investimenti",
+    "first_details_anchor": "recenti-dettaglio",
+    "visuals_anchor": "executive-visuals",
+    "charts": [
+      "chart-macro-30d",
+      "chart-cadenza-30d",
+      "chart-orientamenti",
+      "chart-nuove-view"
+    ],
+    "chart_source_blob": "b3bc073572965708087b31d00c04cfeb7664bb76",
+    "chart_view_counts": {
+      "exact30": 95,
+      "month_only_current_previous": 53,
+      "historical": 232
+    },
+    "macro_category_counts_sorted": [
+      48,
+      38,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    "publication_histogram_date_bins": [
+      9,
+      11,
+      41,
+      34,
+      0
+    ],
+    "stance_counts": {
+      "exact30": {
+        "positive": 68,
+        "neutral": 17,
+        "negative": 10
+      },
+      "month_only": {
+        "positive": 36,
+        "neutral": 12,
+        "negative": 5
+      },
+      "historical": {
+        "positive": 168,
+        "neutral": 40,
+        "negative": 24
+      }
+    },
+    "new_view_source_counts": [
+      7,
+      3,
+      2,
+      1
+    ],
+    "methodology": "Each view one observation, month-only not treated as exact within 30 days, no weighted institutional consensus; static HTML/SVG and canonical 5 CSS blocks unchanged",
+    "quality": "GitHub Actions workflow success on source HTML and extended visual QA, confirmed 2026-11-14."
   }
 }
