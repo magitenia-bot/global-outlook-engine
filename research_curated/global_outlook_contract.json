@@ -1,6 +1,6 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "1.1",
+  "contract_version": "1.2",
   "approved_format_checkpoint": "GO-20261112-2246",
   "effective_from": "2026-11-14",
   "status": "active",
@@ -9,7 +9,7 @@
     "automation_id": "6af0be4926fc81918dc8ce5d4b4350b2",
     "phase_a": "05:00",
     "phase_b": "07:00",
-    "phase_a_action": "only research validate deduplicate persist; no HTML email",
+    "phase_a_action": "Source verification and validation of up to 20 prioritized queue candidates; persistent audit, append-only validated dataset, no HTML/email.",
     "phase_b_action": "read latest validated dataset, compare prior edition, create HTML, QA, publish, email"
   },
   "repositories": {
@@ -105,5 +105,37 @@
     "do_not_publish_secret_slug_publicly": true,
     "notes": "GitHub Actions post-commit check does not itself guarantee pre-publication blocking without branch protection. The automation performs mandatory pre-publication QA.",
     "additional_requirement": "11 settori GICS nella zona verde e tabella temi separata, con source ID attribuibili alla stessa finestra temporale"
+  },
+  "validation_queue": {
+    "path": "research_curated/review_queue.csv",
+    "candidate_source": "research_monitor/discovered_documents.csv",
+    "state": "active",
+    "scope": "90 unique candidate manager-document pairs newly detected 2026-11-14; first batch B01 of 20, with continuous followup",
+    "owner_of_stance": "ChatGPT (the GitHub monitor only discovers and archives public candidates)",
+    "processing": "up to 20 candidates per 05:00 run, prioritizing unreviewed B01 then backlog, subject to actual source accessibility",
+    "quality_gates": [
+      "issuer and primary source attribution",
+      "original publication date separate from discovery timestamp",
+      "actual document content",
+      "stance category and distinction from scenario/forecast",
+      "dedup by manager source date asset and meaning",
+      "readback and unique sequential IDs",
+      "consistent audit trail for all reviewed documents"
+    ],
+    "decision_outcomes": [
+      "validated_views",
+      "source_verified_no_view",
+      "fund_specific_only",
+      "stale_historical",
+      "duplicate",
+      "rejected_attribution",
+      "pending_primary_content",
+      "pending_access"
+    ],
+    "case_first_batch": "7 Eastspring Investments Q4 views (IDs 220-226) verified against official source 2026-10, no new institution; other 19 candidates recorded with statuses and reasons",
+    "batch_metrics_file": "research_curated/manual_validation_2026-11-14.json",
+    "do_not_fabricate_20_reviews": true,
+    "do_not_propagate_rss_urls_as_primary": true,
+    "no_relabel_or_rewrite_baseline": true
   }
 }
