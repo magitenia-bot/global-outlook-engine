@@ -43,6 +43,19 @@ Questi requisiti sono **vincolanti per ogni report Global Outlook**, incluse rig
 - Aggiornare i dati significa cambiare le osservazioni, i KPI e le finestre temporali mantenendo identica l'impostazione visuale; **non riprogettare** la dashboard a ogni esecuzione. Lasciare l'originale del checkpoint immutato e usare una nuova edizione per ogni rilascio.
 - Non considerare completo un report se mancano la data media delle view nell'intero periodo, le variazioni nella sezione recenti, le matrici e le schede fonti. Le modifiche alla struttura non vanno inferite dai soli CSV.
 
+## Ordine di lettura e dashboard grafica — 14 novembre 2026 (1.5)
+
+La prima schermata del report, subito dopo la navigazione dei due capitoli, presenta **«Global Outlook — sintesi e view recenti»** e **«Lettura integrata · decisioni per il comitato investimenti»**. Non collocare questi contenuti dopo i registri o le tabelle di dettaglio: quella gerarchia non soddisfa il requisito executive-first.
+
+Ordine obbligatorio:
+
+1. Executive summary con KPI verificati e lettura integrata di azionario, obbligazionario, diversificazione e rischi; includere i principali cambiamenti rispetto all'edizione precedente e le limitazioni della fonte.
+2. **Quattro visualizzazioni** visibili prima dei registri: istogramma per asset class delle view precise degli ultimi 30 giorni (composizione per semaforo); distribuzione delle view datate per intervalli non sovrapposti nei 30 giorni; semafori su 30 giorni, data solo mensile e archivio storico; acquisizioni aggiuntive per fonte/gestore/mandato (senza confondere controllate e case indipendenti).
+3. Dettagli verde 30 giorni con matrice GICS, date originali e separata aggiunta delle view con sola precisione mensile (mese corrente/precedente), variazioni documentate, fonti e registri;
+4. Blu con **intero archivio storico** e matrici macro/micro/settori, data media storica, schede e fonti. Non spostare il focus 30 giorni nella blu.
+
+Gli istogrammi sono calcolati ogni mattina dal dataset validato e dallo snapshot precedente. Non sono dati di mercato o di performance, né consenso equi-pesato per asset manager. Mostrare unità, numeri grezzi e caveat metodologici. I grafici devono essere statici, responsive, accessibili anche senza script esterni, mantenendo invariati i cinque blocchi CSS del checkpoint `GO-20261112-2246`. Ancore obbligatorie: `executive-front-title`, `executive-visuals`, `chart-macro-30d`, `chart-cadenza-30d`, `chart-orientamenti`, `chart-nuove-view`. La sezione approfondimenti può usare `recenti-dettaglio` e l'ancora originaria `recenti` punta ora alla sintesi iniziale.
+
 ## Correzione definitiva del perimetro temporale — 14 novembre 2026 (1.4, prevale su 1.3)
 
 **Richiesta esplicita correttiva: la sezione VERDE è ampliata a 30 giorni; la BLU NON è ridotta né ampliata a una finestra di 30 giorni.**
