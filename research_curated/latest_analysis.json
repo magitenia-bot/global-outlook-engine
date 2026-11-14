@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "run_type": "manual_validation_after_scheduled_A",
-  "status": "partial_batch_completed",
-  "recorded_at_utc": "2026-11-14T13:33:13.254Z",
+  "status": "first_batch_completed_except_one_gated_document",
+  "recorded_at_utc": "2026-11-14T13:42:27.916Z",
   "timezone": "Europe/Rome",
   "view_dataset": {
     "path": "research_curated/current_views.csv",
-    "sha": "7e722fcd9bb6e4ca4cf51e6971399ff85938f05d",
+    "sha": "b3bc073572965708087b31d00c04cfeb7664bb76",
     "views_before": 219,
-    "views_after": 226,
-    "views_added": 7,
+    "views_after": 232,
+    "views_added": 13,
     "new_ids": [
       220,
       221,
@@ -17,27 +17,35 @@
       223,
       224,
       225,
-      226
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232
     ],
-    "new_managers": 0,
-    "total_managers": 62,
+    "new_managers": 3,
+    "total_managers": 65,
     "publication_precision": "2026-10 month only",
-    "historical_219_ids_retained": true
+    "historical_219_ids_retained": true,
+    "distinguish_manager_names": "Three new names are subsidiary/fund mandate identities; not three independently verified asset management groups."
   },
   "queue": {
     "path": "research_curated/review_queue.csv",
-    "sha": "7d01081e8deea548370e4cf0629c037f38d12796",
+    "sha": "99fe6aae60195431de9e300b8cbbe47d1a08703c",
     "total_candidates": 90,
     "first_batch": "B01",
     "batch_candidates": 20,
-    "documents_actually_read": 6,
+    "documents_actually_read": 16,
     "review_status_counts": {
-      "source_verified": 6,
+      "source_verified": 16,
       "rejected_attribution": 3,
-      "pending_primary_content": 9,
-      "pending_deduplication": 2
+      "source_verified_gated": 1
     },
-    "warning": "20 triaged is not 20 complete document reads"
+    "warning": "20 candidate records triaged; 16 underlying source contents inspected; 3 rejected by issuer mismatch; 1 access-gated full report remains pending",
+    "documents_publisher_attribution_rejected_from_title": 3,
+    "gated_documents_pending": 1
   },
   "supporting_source": {
     "manager": "Eastspring Investments",
@@ -58,8 +66,55 @@
   },
   "published_report_not_regenerated": true,
   "email_not_sent": true,
+  "primary_sources_verified": [
+    {
+      "manager": "Eastspring Investments",
+      "origin": "source primary",
+      "document": "https://www.eastspring.us/insights/outlook/4q-2026-market-outlook-resilience-meets-rising-risks",
+      "date": "2026-10",
+      "ids": [
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226
+      ]
+    },
+    {
+      "manager": "Dragon Capital VietFund Management (DCVFM)",
+      "origin": "secondary direct CEO interview",
+      "document": "https://theinvestor.vn/vietnam-could-gain-msci-upgrade-by-2028-dragon-capital-ceo-d18234.html",
+      "date": "2026-01-27",
+      "ids": [
+        227,
+        228,
+        229
+      ]
+    },
+    {
+      "manager": "Diamond Hill Capital Management — Large Cap Fund",
+      "origin": "secondary fund commentary; not house stance",
+      "document": "https://seekingalpha.com/article/4964040-diamond-hill-large-cap-fund-q3-2026-commentary",
+      "date": "2026-11",
+      "ids": [
+        230,
+        231
+      ]
+    },
+    {
+      "manager": "Fidelity Strategic Advisers LLC",
+      "origin": "official Fidelity article concerning managed client accounts; not house stance",
+      "document": "https://www.fidelity.com/learning-center/trading-investing/economic-outlook",
+      "date": "2026-06-15",
+      "ids": [
+        232
+      ]
+    }
+  ],
   "phase": "A",
-  "generated_at_utc": "2026-11-14T13:33:13.254Z",
+  "generated_at_utc": "2026-11-14T13:42:27.916Z",
   "ready_for_phase_b": true,
   "manual_audit_path": "research_curated/manual_validation_2026-11-14.json",
   "prior_scheduled_analysis": {
