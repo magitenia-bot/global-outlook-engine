@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-15T10:50:55.024370+00:00",
+  "utc": "2026-11-15T12:58:44.670090+00:00",
   "issues": [
     {
       "manager": "Eurizon Asset Management",
@@ -7,6 +7,13 @@
       "category": "redirect_error",
       "http_code": 302,
       "message": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    {
+      "manager": "Fiera Capital",
+      "source_url": "https://www.fieracapital.com/en/insights/q4-2026-investment-outlook-portfolio-strategy/",
+      "category": "other_error",
+      "http_code": null,
+      "message": "<urlopen error [Errno 111] Connection refused>"
     },
     {
       "manager": "Neuberger Berman",
