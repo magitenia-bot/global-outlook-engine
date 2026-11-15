@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-14T05:41:32+00:00",
+  "generated_at_utc": "2026-11-15T05:45:07+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 100,
   "sources_total": 116,
@@ -9,8 +9,57 @@
     "error": 11,
     "unchanged": 98
   },
-  "source_change_events_last_4d": 123,
+  "source_change_events_last_4d": 104,
   "source_changes_recent": [
+    {
+      "source_id": "src-jpm-weekly",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche3-07",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-added-value-partners-group",
+      "checked_at_utc": "2026-11-15T05:43:57+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-pimco-outlook",
       "checked_at_utc": "2026-11-14T05:40:29+00:00",
@@ -689,171 +738,42 @@
       "result": "baseline_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T22:19:31+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-hsbc-weekly",
-      "checked_at_utc": "2026-11-10T22:19:31+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-10T22:19:31+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T21:44:50+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly-brief",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly-us",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-blackrock-corporate-weekly",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bofa-cio-weekly",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-de",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-fr",
-      "checked_at_utc": "2026-11-10T21:33:00+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-10T21:22:28+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T21:22:28+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-10T21:18:14+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T21:09:17+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T21:06:05+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-principal-perspectives",
-      "checked_at_utc": "2026-11-10T21:03:32+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T20:55:23+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-loomis-oct26",
-      "checked_at_utc": "2026-11-10T20:55:23+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-schwab-midyear26",
-      "checked_at_utc": "2026-11-10T20:55:23+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-10T17:52:22+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-10T17:52:22+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1317,
+  "candidate_documents_total": 1321,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=075d8ba1-399a-47a2-a5ce-aac19b8f7e04&ssb=15279262601&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=1ccb1a93-cslf-49e3-9b31-1753fff2ce00&ssk=botmanager_support@radware.com&ssm=42920641736877236105950992075515&ssn=0720458eab6cc04722bb93d0bfaac0cb7511c613121c-bf25-47fb-817991&sso=51085ef8-3243b799533abf7048fbc3da3ef3fe1ce5e1d2a71b6d4eb6&ssp=99200003141794799315179475419515677&ssq=60416642148832346134621488290332246154525&ssr=MTMuNzEuMjI2Ljgw&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBjNjEzMTIxYy1iZjI1LTQ3ZmItOGVmOC0zMjQzYjc5OTUzM2ExLTE3OTQ3MjE0ODgyMzYwLTAwNTk3MmZjNzJmYWEwYTZhZjYxMCIsInV6bXgiOiI3ZmMwMDBhM2Y3N2UyYi0xYjQzLTQ0NDctYTllZS1jNzMzNzNjYjA4ZjIxLTE3OTQ3MjE0ODgyMzYwLTAwZGM5YjRlNGZlNGU3NmQzZjAxMCIsInJkIjoia290YWttZi5jb20ifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-15T05:44:37+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Scopri come la curiosità può portarti a risultati migliori Porre domande migliori ci spinge ad approfondire e condurre ricerche più rigorose per ottenere un vantaggio competitivo negli investimenti.",
+      "candidate_url": "https://www.troweprice.com/content/tpd/it/it/lp/curiosity-campaign.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-15T05:44:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "AXA Investment Managers",
+      "candidate_title": "Multi-Asset Investments Views: You spin me round",
+      "candidate_url": "https://core.axa-im.com/investment-strategies/multi-asset/insights/multi-asset-investments-views-you-spin-me-round",
+      "source_page_url": "https://core.axa-im.com/investment-strategies/multi-asset/insights/multi-asset-investment-views-will-people",
+      "discovered_at_utc": "2026-11-15T05:44:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Why are gold and bitcoin rising together?",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/why-are-gold-and-bitcoin-rising-together",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-15T05:44:37+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Kotak Mahindra Asset Management",
       "candidate_title": "Source institutional research registry",
@@ -3218,38 +3138,6 @@
       "institution_name": "Amova Asset Management",
       "candidate_title": "Modern Slavery Act Statement",
       "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-modern-slavery-act-statement.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Remuneration Disclosure Statement",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-remuneration-disclosure-statement.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Global Controversial Weapons Exclusion Policy",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/default-document-library/pdf/tcfd/global-controversial-weapon-exclusion-policy.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Best Execution Policy",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-best-execution-policy.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Conflicts of Interest Policy",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-conflicts-of-interest-policy.pdf",
       "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
