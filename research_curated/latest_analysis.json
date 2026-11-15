@@ -1,176 +1,47 @@
 {
   "schema_version": 1,
-  "run_type": "manual_validation_after_scheduled_A",
-  "status": "first_batch_completed_except_one_gated_document",
-  "recorded_at_utc": "2026-11-14T13:42:27.916Z",
-  "timezone": "Europe/Rome",
-  "view_dataset": {
-    "path": "research_curated/current_views.csv",
-    "sha": "b3bc073572965708087b31d00c04cfeb7664bb76",
-    "views_before": 219,
-    "views_after": 232,
-    "views_added": 13,
-    "new_ids": [
-      220,
-      221,
-      222,
-      223,
-      224,
-      225,
-      226,
-      227,
-      228,
-      229,
-      230,
-      231,
-      232
-    ],
-    "new_managers": 3,
-    "total_managers": 65,
-    "publication_precision": "2026-10 month only",
-    "historical_219_ids_retained": true,
-    "distinguish_manager_names": "Three new names are subsidiary/fund mandate identities; not three independently verified asset management groups."
-  },
-  "queue": {
-    "path": "research_curated/review_queue.csv",
-    "sha": "99fe6aae60195431de9e300b8cbbe47d1a08703c",
-    "total_candidates": 90,
-    "first_batch": "B01",
-    "batch_candidates": 20,
-    "documents_actually_read": 16,
-    "review_status_counts": {
-      "source_verified": 16,
-      "rejected_attribution": 3,
-      "source_verified_gated": 1
-    },
-    "warning": "20 candidate records triaged; 16 underlying source contents inspected; 3 rejected by issuer mismatch; 1 access-gated full report remains pending",
-    "documents_publisher_attribution_rejected_from_title": 3,
-    "gated_documents_pending": 1
-  },
-  "supporting_source": {
-    "manager": "Eastspring Investments",
-    "published": "2026-10",
-    "url": "https://www.eastspring.us/insights/outlook/4q-2026-market-outlook-resilience-meets-rising-risks",
-    "evidence": "Official asset allocation incl. relative equities US EM Asia vs Europe, Treasuries, HY vs IG, EM hard currency, 3 month tactical risk-on"
-  },
-  "restrictions": [
-    "do not claim Google News discovery as primary evidence",
-    "do not assign publisher's house view from fund-specific article",
-    "do not assume RSS discovery date equals publication date"
+  "run_type": "scheduled_phase_A",
+  "status": "partial_queue_processed_verified",
+  "recorded_at_utc": "2026-11-15T04:00:00Z",
+  "recorded_at_italy": "2026-11-15T05:00:00+01:00",
+  "dataset_path": "research_curated/current_views.csv",
+  "views_before": 232,
+  "views_after": 239,
+  "newly_validated_views": 7,
+  "new_view_ids": [
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239
   ],
-  "persistence_verified": true,
-  "prior_scheduled": {
-    "date": "2026-11-14T04:01:30Z",
-    "views_after": 219,
-    "new_views": 0
-  },
-  "published_report_not_regenerated": true,
-  "email_not_sent": true,
-  "primary_sources_verified": [
-    {
-      "manager": "Eastspring Investments",
-      "origin": "source primary",
-      "document": "https://www.eastspring.us/insights/outlook/4q-2026-market-outlook-resilience-meets-rising-risks",
-      "date": "2026-10",
-      "ids": [
-        220,
-        221,
-        222,
-        223,
-        224,
-        225,
-        226
-      ]
-    },
-    {
-      "manager": "Dragon Capital VietFund Management (DCVFM)",
-      "origin": "secondary direct CEO interview",
-      "document": "https://theinvestor.vn/vietnam-could-gain-msci-upgrade-by-2028-dragon-capital-ceo-d18234.html",
-      "date": "2026-01-27",
-      "ids": [
-        227,
-        228,
-        229
-      ]
-    },
-    {
-      "manager": "Diamond Hill Capital Management — Large Cap Fund",
-      "origin": "secondary fund commentary; not house stance",
-      "document": "https://seekingalpha.com/article/4964040-diamond-hill-large-cap-fund-q3-2026-commentary",
-      "date": "2026-11",
-      "ids": [
-        230,
-        231
-      ]
-    },
-    {
-      "manager": "Fidelity Strategic Advisers LLC",
-      "origin": "official Fidelity article concerning managed client accounts; not house stance",
-      "document": "https://www.fidelity.com/learning-center/trading-investing/economic-outlook",
-      "date": "2026-06-15",
-      "ids": [
-        232
-      ]
-    }
+  "newly_represented_managers": 1,
+  "source_pages_actually_read": 1,
+  "documents_verified": 1,
+  "documents_no_view": 0,
+  "rejected_misattribution": 0,
+  "duplicates": 0,
+  "documents_pending_access": 0,
+  "candidates_screened": 1,
+  "candidate_backlog_start": "not_recomputed",
+  "candidate_backlog_end": "not_recomputed",
+  "queue_updated_candidate_ids": [
+    "GO-20261114-072"
   ],
-  "phase": "A",
-  "generated_at_utc": "2026-11-14T13:42:27.916Z",
-  "ready_for_phase_b": true,
-  "manual_audit_path": "research_curated/manual_validation_2026-11-14.json",
-  "prior_scheduled_analysis": {
-    "schema_version": 1,
-    "run_type": "scheduled_phase_A",
-    "phase": "A",
-    "status": "completed_no_new_deduplicated_views",
-    "generated_at_utc": "2026-11-14T04:01:30Z",
-    "timezone": "Europe/Rome",
-    "scheduled_local": "2026-11-14T05:00:00+01:00",
-    "current_views_path": "research_curated/current_views.csv",
-    "current_views_blob_sha": "1b864ccbd2a51e1489733664009c3c07be538461",
-    "baseline_path": "research_curated/chatgpt_direct_views_219_2026-11-11.csv",
-    "views_before": 219,
-    "views_after": 219,
-    "verified_new_views": 0,
-    "unique_record_ids": 219,
-    "duplicate_record_ids": 0,
-    "sources_read_for_new_view_validation": 2,
-    "sources_reviewed": [
-      {
-        "institution": "Amundi",
-        "date": "2026-11-09",
-        "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
-        "outcome": "official dated outlook; already represented; no duplicate added"
-      },
-      {
-        "institution": "BlackRock",
-        "date": "2026-11",
-        "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
-        "outcome": "official current commentary reviewed; page-level exact publication day not established for individual positions; no new validated observation appended"
-      }
-    ],
-    "github_monitor_last_run": {
-      "utc": "2026-11-14T02:56:24.640479+00:00",
-      "registered_managers": 180,
-      "registered_sources": 27,
-      "sources_checked": 27,
-      "new_records": 10,
-      "partial_scans": 8,
-      "errors": 5,
-      "view_classifications_created": 0
-    },
-    "candidates_pending": "10 monitor records require source-content validation; not counted as views",
-    "errors": [
-      "AllianceBernstein timeout",
-      "Eurizon redirect loop",
-      "Neuberger Berman HTTP 429",
-      "Ninety One HTTP 403",
-      "Nomura Reuters HTTP 401"
-    ],
-    "persistence_verified": true,
-    "persistence_verification_note": "Read-back confirmed current_views.csv: 219 rows, unique IDs, expected blob SHA; latest_analysis.json read-back confirmed before final status update",
-    "historical_files_unchanged": true,
-    "publisher_status": "not_applicable_phase_A",
-    "email_status": "not_sent_phase_A",
-    "ready_for_phase_B": true
-  }
+  "source_urls_verified": [
+    "https://www.fieracapital.com/wp-content/uploads/insights/6674/fiera-capital-investment-outlook-institutional-markets-q4-2026.pdf"
+  ],
+  "source_original_publication_date": "2026-10-15",
+  "source_type": "official_primary",
+  "dataset_content_sha": "0490e0151927b5a8a293f777b58474d7d6afe4ea",
+  "queue_content_sha": "c14069eb25cac5a49d529e2a80dc6a61269ed596",
+  "persistence_verified": false,
+  "persistence_verification_note": "Pending GitHub readback at initial write",
+  "errors": [],
+  "publisher_status": "not_applicable_phase_A",
+  "email_status": "not_sent_phase_A",
+  "historical_files_unchanged": true,
+  "notes": "Fiera tactical equity/bond stance and portfolio-specific allocation recorded separately. Remaining candidates not fully screened during this run."
 }
