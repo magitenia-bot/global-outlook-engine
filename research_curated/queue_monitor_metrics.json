@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "type": "source_discovery_handoff_only",
-  "last_event_seen_utc": "2026-11-15T07:09:23.614196+00:00",
+  "last_event_seen_utc": "2026-11-15T08:56:50.014189+00:00",
   "total_candidates": 188,
   "new_candidates_appended": 0,
   "batch_01_candidates": 20,
