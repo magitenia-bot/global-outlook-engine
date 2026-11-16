@@ -51,7 +51,21 @@ jobs:
           git add research_monitor/ research_curated/review_queue.csv research_curated/queue_monitor_metrics.json
           if ! git diff --cached --quiet; then
             git commit -m "research: update public-source monitoring results"
-            git push
+            # A concurrent, authorized source-catalog change must not lose the
+            # append-only discovery evidence. Retry with a fast-forward rebase,
+            # never force-push; fail visibly on a true content conflict.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "Research log persisted after attempt $attempt"
+                exit 0
+              fi
+              echo "Concurrent repository update detected; safe retry $attempt"
+              sleep 2
+            done
+            echo "Unable to persist research results after safe retries" >&2
+            exit 1
           fi
       - name: Upload run summary
         if: always()
