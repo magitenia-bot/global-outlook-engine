@@ -1,0 +1,26 @@
+{
+  "batch_id": "GO-20261116-P2",
+  "previous_views": 245,
+  "current_views": 247,
+  "new_ids": [
+    246,
+    247
+  ],
+  "verified_original_publications": [
+    "2026-11-16",
+    "2026-11-05"
+  ],
+  "new_source_urls": [
+    "https://www.loomissayles.com/insights/blended-emerging-markets-debt-a-paradigm-shift/",
+    "https://www.robeco.com/en-sg/insights/2026/11/could-french-bond-stress-change-the-ecbs-course"
+  ],
+  "new_documents_with_views": 2,
+  "duplicates_resolved": 5,
+  "older_source_deprioritized": 1,
+  "pending_no_confirmed_view": 1,
+  "extra_organization_labels": 0,
+  "source_evidence": "Original primary source pages, dates and descriptions examined",
+  "standards": "Qualitative non-overweight; full previously validated dataset kept append-only",
+  "report_publication": "unchanged",
+  "email": "not_sent"
+}
