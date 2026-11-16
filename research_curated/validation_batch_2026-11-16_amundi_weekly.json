@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "batch": "GO-20261116-AFTER-255",
+  "source_url": "https://research-center.amundi.com/article/high-rates-higher-interest-payments",
+  "source_title": "High rates, higher interest payments",
+  "original_published_date": "2026-11-16",
+  "validated_original_author": "Monica Defend, Amundi Investment Institute",
+  "source_kind": "Weekly Market Directions",
+  "new_view_ids": [
+    256
+  ],
+  "new_manager_labels": 0,
+  "classification": "neutral, qualitative, non-directional bond volatility; no overweight/underweight inferred",
+  "previews": 255,
+  "postviews": 256,
+  "verified_primary_source": true,
+  "acquisition_note": "Research read directly from official Amundi Research Center article",
+  "run_mode": "requested_manual_new_report",
+  "publication": "pending"
+}
