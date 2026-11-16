@@ -105,7 +105,20 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "Update Global Outlook raw source discovery database"
-            git push origin HEAD:main
+            # Preserve the approved source catalog when concurrent updates land.
+            # Rebase is safe only if source-file changes do not conflict.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "Research acquisition persisted after attempt $attempt"
+                exit 0
+              fi
+              echo "Concurrent update detected, retrying safely"
+              sleep 2
+            done
+            echo "Source extraction persistence failed after retries" >&2
+            exit 1
           else
             echo "No research data changes to commit"
           fi
