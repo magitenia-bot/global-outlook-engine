@@ -6,6 +6,7 @@ on:
       - 'research_monitor.py'
       - 'sources.csv'
       - 'test_research_source_coverage.py'
+      - 'test_build_review_queue.py'
       - 'build_review_queue.py'
   schedule:
     - cron: '17 */2 * * *'
@@ -37,7 +38,7 @@ jobs:
       - name: Validate monitor syntax and source coverage regression
         run: |
           python -m py_compile research_monitor.py
-          python -m unittest -v test_research_source_coverage
+          python -m unittest -v test_research_source_coverage test_build_review_queue
       - name: Monitor public sources and discover outlook candidates
         run: python research_monitor.py
       - name: Run prioritized candidate queue handoff (without classifying views)
@@ -48,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research_monitor/ research_curated/review_queue.csv research_curated/queue_monitor_metrics.json
+          git add research_monitor/ research_curated/review_queue.csv research_curated/queue_monitor_metrics.json research_curated/prioritized_source_batch.csv
           if ! git diff --cached --quiet; then
             git commit -m "research: update public-source monitoring results"
             # A concurrent, authorized source-catalog change must not lose the

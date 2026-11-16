@@ -15,6 +15,7 @@ ROOT = pathlib.Path(__file__).resolve().parent
 DOCS = ROOT / "research_monitor/discovered_documents.csv"
 QUEUE = ROOT / "research_curated/review_queue.csv"
 METRICS = ROOT / "research_curated/queue_monitor_metrics.json"
+PRIORITIZED = ROOT / "research_curated/prioritized_source_batch.csv"
 FIELDS = [
     "candidate_id", "batch", "priority", "found_at_utc", "manager",
     "original_title", "raw_url", "primary_url", "source_type",
@@ -56,6 +57,43 @@ def status_from_metadata(doc):
             return "P1", "pending_primary_content", "Issuer mentioned in title; still unverified"
         return "P2", "pending_attribution", "Potential issuer/title mismatch; resolve original URL"
     return "P3", "pending_screening", "Low-confidence discovery; no inferred financial view"
+
+
+
+# This is document-TRIAGE scoring only; no classification of a market stance.
+FINISHED = {"validated_primary_document", "source_verified", "rejected_attribution", "duplicate_existing_dataset"}
+PENDING = {"pending_primary_content", "pending_screening", "pending_attribution", "pending_specific_document", "pending_publication_date"}
+
+def triage_score(row):
+    url = (row.get("primary_url") or row.get("raw_url") or "").lower()
+    title = (row.get("original_title") or "").lower()
+    score = 0
+    if url.startswith("https://") and not any(x in url for x in ("news.google.com", "seekingalpha.com", "finance.yahoo.com", "marketwatch.com")):
+        score += 40
+    if re.search(r"outlook|asset allocation|market view|weekly|investment view", title):
+        score += 15
+    if "2026" in title:
+        score += 10
+    if row.get("priority") == "P1":
+        score += 20
+    elif row.get("priority") == "P2":
+        score += 8
+    if row.get("review_status") == "pending_primary_content":
+        score += 6
+    return score
+
+def write_prioritized_queue(records):
+    pending = [r for r in records if r.get("review_status") in PENDING]
+    prioritized = sorted(pending, key=lambda r: (-triage_score(r), r.get("candidate_id") or ""))
+    cols = ["candidate_id", "manager", "original_title", "raw_url",
+            "primary_url", "priority", "triage_score", "review_status"]
+    PRIORITIZED.parent.mkdir(parents=True, exist_ok=True)
+    with PRIORITIZED.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=cols)
+        writer.writeheader()
+        for r in prioritized:
+            writer.writerow({**r, "triage_score": triage_score(r)})
+    return len(prioritized)
 
 
 def main():
@@ -111,6 +149,7 @@ def main():
         appended += 1
     if appended:
         write_csv(QUEUE, old)
+    prioritized_count = write_prioritized_queue(old)
     data = {
         "schema_version": 1,
         "type": "source_discovery_handoff_only",
@@ -118,13 +157,15 @@ def main():
         "total_candidates": len(old),
         "new_candidates_appended": appended,
         "batch_01_candidates": sum(r.get("batch") == "B01" for r in old),
-        "unresolved": sum(r.get("result") == "pending" for r in old),
+        "unresolved": sum(r.get("review_status") in PENDING for r in old),
+        "prioritized_backlog": prioritized_count,
+        "verified_primary_documents": sum(r.get("review_status") == "validated_primary_document" for r in old),
         "explicit_warning": "No candidate is a validated view without ChatGPT source reading",
     }
     text = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
     if not METRICS.exists() or METRICS.read_text(encoding="utf-8") != text:
         METRICS.write_text(text, encoding="utf-8")
-    print(f"Global Outlook queue: {len(old)} candidates, {appended} newly indexed, no stance assignment")
+    print(f"Global Outlook queue: {len(old)} candidates, {appended} newly indexed, {prioritized_count} awaiting documentary review, no stance assignment")
 
 
 if __name__ == "__main__":
