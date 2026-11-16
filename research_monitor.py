@@ -19,7 +19,7 @@ REGISTRIES=[
  "morningstar_source_registry_2026-11-11.csv",
 ]
 MAX_FETCH=80
-MAX_SEARCH=20
+MAX_SEARCH=40
 UA="GlobalOutlookResearchMonitor/1.0 (public research discovery; contact repository owner)"
 class PageTitle(HTMLParser):
  def __init__(self): super().__init__(); self.in_title=False; self.title=[]
@@ -45,21 +45,38 @@ def rows(path):
  if not path.exists(): return []
  with path.open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
 def names_and_sources():
- names=set(); sources=[]
+ """Cover the canonical source catalog first, retaining historical research registries."""
+ names=set()
+ sources={}
  for filename in REGISTRIES:
   for row in rows(ROOT/filename):
    name=(row.get("manager") or row.get("institution") or "").strip()
    if name: names.add(name)
    url=(row.get("source_url") or "").strip()
-   if name and url.startswith("https://"):sources.append((name,url))
- # Add pre-existing official source records
+   if name and url.startswith("https://"):
+    sources[(name,url)]=min(sources.get((name,url),3),3)
+ # The canonical institutional catalog was previously omitted from this monitor.
+ # 'active' is a CATALOG status, never proof that the actual document was verified.
+ for row in rows(ROOT/"sources.csv"):
+  name=(row.get("institution_name") or "").strip()
+  url=(row.get("source_url") or "").strip()
+  status=(row.get("status") or "").strip().lower()
+  if name: names.add(name)
+  if not name or not url.startswith("https://") or status not in ("active","verified"):
+   continue
+  try: priority=int(row.get("priority") or "3")
+  except ValueError: priority=3
+  key=(name,url)
+  sources[key]=min(sources.get(key,3),max(1,min(3,priority)))
+ # Add pre-existing official document records, but never promote them to validated views.
  for filename in ("research_views_2026-11-10_tranche4_20.csv","expanded_official_outlooks.csv"):
   for row in rows(ROOT/filename):
    name=(row.get("institution") or row.get("institution_name") or "").strip()
    if name:names.add(name)
    url=(row.get("source_url") or row.get("document_url") or "").strip()
-   if name and url.startswith("https://"):sources.append((name,url))
- return sorted(names),sorted(set(sources))
+   if name and url.startswith("https://"):
+    sources[(name,url)]=min(sources.get((name,url),3),3)
+ return sorted(names),sorted((priority,name,url) for (name,url),priority in sources.items())
 def append_event(row):
  existing=rows(EVENTS)
  key=(row["manager"],row["document_url"],row["content_hash"])
@@ -80,7 +97,7 @@ def main():
  # Rotate to cover all known URLs over successive hours, without hammering a single domain.
  chosen=[sources[(cursor+i)%len(sources)] for i in range(min(MAX_FETCH,len(sources)))] if sources else []
  state["cursor"]=(cursor+len(chosen))%len(sources) if sources else 0
- for name,url in chosen:
+ for _,name,url in chosen:
   examined+=1
   try:
    final,body,ctype,partial=request(url)
@@ -121,7 +138,7 @@ def main():
     errors+=1;print("DISCOVERY_ERROR",name,type(e).__name__,str(e)[:120])
    time.sleep(0.15)
  STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
- (OUT/"last_run.json").write_text(json.dumps({"utc":now.isoformat(),"mode":mode,"registered_managers":len(names),"registered_sources":len(sources),"sources_checked":examined,"new_records":changed,"partial_scans":partial_scans,"errors":errors,"error_categories":{category:sum(i["category"]==category for i in issues) for category in ("access_restricted","throttled","redirect_error","other_error")},"view_classifications_created":0},indent=2)+"\n",encoding="utf-8")
+ (OUT/"last_run.json").write_text(json.dumps({"utc":now.isoformat(),"mode":mode,"registered_managers":len(names),"registered_sources":len(sources),"sources_checked":examined,"source_catalog_coverage_percent":round(100*examined/len(sources),1) if sources else 0,"priority1_registered":sum(x[0]==1 for x in sources),"priority2_registered":sum(x[0]==2 for x in sources),"priority3_registered":sum(x[0]==3 for x in sources),"source_scan_policy":"rotating catalog; each run covers up to 80 registered URLs; no view classified without source reading","new_records":changed,"partial_scans":partial_scans,"errors":errors,"error_categories":{category:sum(i["category"]==category for i in issues) for category in ("access_restricted","throttled","redirect_error","other_error")},"view_classifications_created":0},indent=2)+"\n",encoding="utf-8")
  (OUT/"last_errors.json").write_text(json.dumps({"utc":now.isoformat(),"issues":issues},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
  print("RESULT",mode,"managers",len(names),"sources",len(sources),"checked",examined,"new",changed,"partial",partial_scans,"errors",errors)
 if __name__=="__main__":main()
