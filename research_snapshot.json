@@ -1,16 +1,30 @@
 {
-  "generated_at_utc": "2026-11-16T20:40:36+00:00",
+  "generated_at_utc": "2026-11-16T20:52:06+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 102,
   "sources_total": 118,
   "sources_active": 118,
   "source_last_results": {
-    "baseline_requires_review": 2,
+    "changed_requires_review": 2,
     "error": 11,
     "unchanged": 105
   },
-  "source_change_events_last_4d": 129,
+  "source_change_events_last_4d": 131,
   "source_changes_recent": [
+    {
+      "source_id": "src-added-value-partners-group",
+      "checked_at_utc": "2026-11-16T20:51:03+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-stepstone-group",
+      "checked_at_utc": "2026-11-16T20:51:03+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-coverage-aberdeen-houseview",
       "checked_at_utc": "2026-11-16T20:39:32+00:00",
@@ -836,24 +850,18 @@
       "result": "baseline_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-census-jupiter-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-polar-capital",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1364,
+  "candidate_documents_total": 1365,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=bafe3a8b-d364-4d56-a618-da6c6f062932&ssb=56362299720&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=c68d02d1-cslf-40c8-b668-cbcf711a920f&ssk=botmanager_support@radware.com&ssm=48972124420986733103134553348524&ssn=c3798d0c6311b92fb3a050db4103c51556bb197006a3-d629-45a4-b50f1b&sso=bb34cdc9-0728fb6872cbb8d7b858a467922eae6f2fb6925c5f511df7&ssp=66142910411794826895179486412798364&ssq=99147396230753140142362307815836171822149&ssr=OS4yMzQuMTgxLjY1&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAxOTcwMDZhMy1kNjI5LTQ1YTQtYmRjOS0wNzI4ZmI2ODcyY2IxLTE3OTQ4NjIzMDc4NTYwLTAwNTRlNjRhYzA1ODMzYmUyNGIxMCIsInJkIjoia290YWttZi5jb20iLCJ1em14IjoiN2ZjMDAwYmY4MmYwOGQtYTZjOS00ZjQ3LWEwNTgtNDFiMTdlYzc0YWY0MS0xNzk0ODYyMzA3ODU2MC0wMGU4YzAyMDdkN2QwZGUyMDAzMTAifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-16T20:51:37+00:00",
+      "review_status": "source_page_unverified"
+    },
     {
       "institution_name": "M&G Investments",
       "candidate_title": "2025 PruFund Strategic Asset Allocation",
@@ -3242,14 +3250,6 @@
       "institution_name": "Tokio Marine Asset Management",
       "candidate_title": "投資信託用語集",
       "candidate_url": "https://www.tokiomarineam.co.jp/basic_knowledge/word/index.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "オルタナティブ投資の世界",
-      "candidate_url": "https://www.tokiomarineam.co.jp/basic_knowledge/alternative/index.html",
       "source_page_url": "https://www.tokiomarineam.co.jp/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
