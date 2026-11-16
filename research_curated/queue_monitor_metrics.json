@@ -1,10 +1,12 @@
 {
   "schema_version": 1,
   "type": "source_discovery_handoff_only",
-  "last_event_seen_utc": "2026-11-16T20:40:49.842176+00:00",
-  "total_candidates": 335,
-  "new_candidates_appended": 56,
+  "last_event_seen_utc": "registered_source",
+  "total_candidates": 341,
+  "new_candidates_appended": 0,
   "batch_01_candidates": 20,
-  "unresolved": 313,
+  "unresolved": 257,
+  "prioritized_backlog": 257,
+  "verified_primary_documents": 5,
   "explicit_warning": "No candidate is a validated view without ChatGPT source reading"
 }
