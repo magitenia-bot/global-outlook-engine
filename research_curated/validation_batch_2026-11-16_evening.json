@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "batch_id": "GO-20261116-P1",
+  "dataset_before": 239,
+  "dataset_after": 245,
+  "new_view_ids": [
+    240,
+    241,
+    242,
+    243,
+    244,
+    245
+  ],
+  "new_distinct_document_urls": 3,
+  "documents_read_with_view": 3,
+  "documents_read_without_validated_view": 2,
+  "previously_covered_documents": 1,
+  "primary_research_organizations": [
+    "Goldman Sachs Asset Management",
+    "Vontobel SFA",
+    "Sumitomo Mitsui DS Asset Management"
+  ],
+  "new_independent_houses": "not_established",
+  "date_precision": "six original document dates verified, one June document historical",
+  "quality_note": "No view was inferred from Aberdeen catalog, undated Candriam source, or already indexed Fiera source",
+  "report_publication": "not_performed",
+  "email": "not_sent"
+}
