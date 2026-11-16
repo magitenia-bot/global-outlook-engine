@@ -1,16 +1,30 @@
 {
-  "generated_at_utc": "2026-11-15T05:45:07+00:00",
+  "generated_at_utc": "2026-11-16T05:24:21+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 100,
   "sources_total": 116,
   "sources_active": 116,
   "source_last_results": {
-    "changed_requires_review": 7,
+    "changed_requires_review": 2,
     "error": 11,
-    "unchanged": 98
+    "unchanged": 103
   },
-  "source_change_events_last_4d": 104,
+  "source_change_events_last_4d": 106,
   "source_changes_recent": [
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-16T05:23:15+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-china-southern-asset-management",
+      "checked_at_utc": "2026-11-16T05:23:15+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-jpm-weekly",
       "checked_at_utc": "2026-11-15T05:43:57+00:00",
@@ -740,8 +754,16 @@
       "error": ""
     }
   ],
-  "candidate_documents_total": 1321,
+  "candidate_documents_total": 1322,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=e80c0aa6-9fc4-4ae3-ad40-12fd0acf2b77&ssb=77463284647&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=6c3cc62a-cslf-4878-943e-f5e032fd784d&ssk=botmanager_support@radware.com&ssm=65739685253575415105110434623570&ssn=db80299adb8da9310dc51cc097db4302fcbd3effd351-1fcb-44d3-8d45c9&sso=ef3a1e80-cbd7f0f635e23acca5b411bba469ea9f22ede946eed6f49b&ssp=04272593061794821058179485656428174&ssq=88546170664161839349606641401589931117079&ssr=MTMwLjEzMS4yMDYuMzg=&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMmI3ZTJkZmEtNzMxYy00NDYyLWFiOTItNDBiNjk3OWNkMzljMS0xNzk0ODA2NjQxODI5MC0wMGUxY2U1MDM1YjBhY2ZkNDYxMTAiLCJyZCI6ImtvdGFrbWYuY29tIiwiX191em1mIjoiN2Y5MDAwM2VmZmQzNTEtMWZjYi00NGQzLThlODAtY2JkN2YwZjYzNWUyMS0xNzk0ODA2NjQxODI5MC0wMDU5MTIwNTRiMWVkYTU4ZDQ4MTAifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-16T05:23:52+00:00",
+      "review_status": "source_page_unverified"
+    },
     {
       "institution_name": "Kotak Mahindra Asset Management",
       "candidate_title": "Source institutional research registry",
@@ -3130,14 +3152,6 @@
       "institution_name": "Amova Asset Management",
       "candidate_title": "Amova AM Global Stewardship Report 2026",
       "candidate_url": "https://emea.amova-am.com/docs/default-source/default-document-library/pdf/tcfd/global-stewardship-report-2026.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Modern Slavery Act Statement",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-modern-slavery-act-statement.pdf",
       "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
