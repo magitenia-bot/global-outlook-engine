@@ -92,7 +92,7 @@ def write_prioritized_queue(records):
         writer = csv.DictWriter(f, fieldnames=cols)
         writer.writeheader()
         for r in prioritized:
-            writer.writerow({**r, "triage_score": triage_score(r)})
+            writer.writerow({k: (triage_score(r) if k == "triage_score" else r.get(k, "")) for k in cols})
     return len(prioritized)
 
 
