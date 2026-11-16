@@ -1,0 +1,25 @@
+{
+  "release": "GLOBAL_OUTLOOK_EDITORIAL_2_0_DEFINITIVE",
+  "status": "locked_as_current_reference",
+  "confirmed_by_user": true,
+  "confirmed_date": "2026-11-16",
+  "timezone": "Europe/Rome",
+  "report_version": "2.0",
+  "format": "narrative_first_manager_house_views",
+  "report_pointer_private": "magitenia-bot/trading-system-professional@report-center-publisher:publisher/global_outlook_current.json",
+  "publisher_commit": "dc435ebf5d1eb832e22abf280daf904bf1ee0c51",
+  "contract_file": "research_curated/global_outlook_contract.json",
+  "legacy_release_path": "research_curated/definitive_release_1_7_1.json",
+  "dataset_path": "research_curated/current_views.csv",
+  "qa_policy": "editorial-2.0 validation on publisher, legacy validator retained",
+  "publication_status": "awaiting verification",
+  "checks": [
+    "12 narrative house cards in approved 2026-11-16 example",
+    "all validated views available in hidden searchable source register",
+    "compact consensus, equity and fixed income insights",
+    "source reference publication date precision retained",
+    "private publisher pointer current to editorial edition"
+  ],
+  "workflow": "existing 05:00 research and 07:00 production; no new automation",
+  "archive_policy": "preserve 1.7.1 report and old contract history; only explicit user request replaces editorial 2.0"
+}

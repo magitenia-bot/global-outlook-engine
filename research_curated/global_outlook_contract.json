@@ -1,8 +1,8 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "1.7.1",
-  "approved_format_checkpoint": "GO-20261112-2246",
-  "effective_from": "2026-11-14",
+  "contract_version": "2.0",
+  "approved_format_checkpoint": "GO-EDITORIAL-20261116-2.0",
+  "effective_from": "2026-11-16",
   "status": "definitive",
   "timezone": "Europe/Rome",
   "automation": {
@@ -216,11 +216,31 @@
       "visual_style": "Professional institutional palette, high contrast text labels and source counts, responsive layout, no added external JS libraries, original 5 CSS style blocks kept byte-identical",
       "data_integrity": "Values generated from current_views.csv and previous snapshot at every publication; correct view vs manager vs source distinction; no invented market returns, no artificial inferred day precision, no implied institutional consensus",
       "output": "Static HTML charts with meaningful labels and text alternatives; accessible without JS"
-    }
+    },
+    "format": "editorial_descriptive_2_0",
+    "current_definitive": "GLOBAL_OUTLOOK_EDITORIAL_2_0",
+    "primary_principle": "Most recent relevant views of largest managers, explained narratively, take precedence over matrices and taxonomy.",
+    "structure": [
+      "Executive Investment Outlook — 4-7 core messages with attributed supporting source perspectives",
+      "12-15 prioritized asset manager narratives, each with date, views, interpretation, risks, latest sources; 150-250 words when grounded",
+      "Cross-manager agreements, disagreements and genuine view changes; 1-2 verified summary charts",
+      "Compact Equity Intelligence and Fixed Income Intelligence synthesis; no duplicate tables",
+      "Complete source registry and historical annex collapsed by default, searchable, source links open new tab"
+    ],
+    "old_visual_contract_status": "superseded for post-2026-11-16 reports; retained as legacy for rollback",
+    "legacy_1_7_1_report_pointer": "reference in private publisher checkpoint only",
+    "requirements": [
+      "Recompute the source manager priorities and each house's newest views at every edition; never reuse static paragraphs without comparing evidence",
+      "Explicitly distinguish source publication date vs acquisition date; YYYY-MM month-only remains month-only",
+      "No invented weights, consensus, forecasts or stale recency",
+      "New reports preserve readability and narrative first, while all source views remain in expandable searchable archive",
+      "Use verified public source references; prefer primary houses, label dependent mandates",
+      "Do not write secret report slugs or URLs to research repository"
+    ]
   },
   "definitive_release": {
-    "status": "definitive",
-    "version": "1.7.1",
+    "status": "superseded_by_editorial_v2_0",
+    "version": "2.0",
     "approved_at_local": "2026-11-14T22:23:00+01:00",
     "scope": "Project methodology, institutional report presentation, and Global Asset Allocation Equity Intelligence integration",
     "format_checkpoint": "GO-20261112-2246",
@@ -273,6 +293,7 @@
       "Do not alter official report's canonical CSS, green/blue sections, schedules or source archive without explicit new request",
       "Five AM acquisition/validation, seven AM production, deployment, verified HTML email with browser URL; no new automation",
       "Preserve historical versions for rollback, changes require explicit request and QA"
-    ]
+    ],
+    "superseded_on": "2026-11-16"
   }
 }

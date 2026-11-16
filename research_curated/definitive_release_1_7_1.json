@@ -1,6 +1,6 @@
 {
   "release": "GLOBAL_OUTLOOK_1.7.1_DEFINITIVE",
-  "status": "locked_as_current_reference",
+  "status": "superseded_retained_for_rollback",
   "confirmed_by_user": true,
   "confirmed_date": "2026-11-14",
   "timezone": "Europe/Rome",
@@ -14,5 +14,7 @@
   "dataset_blob_sha": "b3bc073572965708087b31d00c04cfeb7664bb76",
   "archive_policy": "append-only; earlier approved reports and CSS checkpoint retained",
   "supersession_policy": "Only explicit user instruction may supersede this reference after QA",
-  "notes": "Save exact project configuration and report layout; no private capability URL or secret in public research repository."
+  "notes": "Save exact project configuration and report layout; no private capability URL or secret in public research repository.",
+  "superseded_by": "research_curated/definitive_release_2_0.json",
+  "superseded_at": "2026-11-16"
 }
