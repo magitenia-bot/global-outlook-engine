@@ -1,0 +1,28 @@
+{
+  "batch": "GO-20261116-P3",
+  "before": 247,
+  "after": 255,
+  "new_ids": [
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255
+  ],
+  "dated_day": 6,
+  "year_only": 2,
+  "primary_source_urls": [
+    "https://am.gs.com/en-fr/institutions/insights/article/market-monitor-weekly",
+    "https://www.morganstanley.com/im/it-it/institutional-investor/insights/carons-corner/market-pulse-with-jim-caron-20261109.html",
+    "https://www.morganstanley.com/im/it-it/institutional-investor/insights/articles/corporate-resilience-sovereign-volatility.html",
+    "https://www.morganstanley.com/im/it-it/institutional-investor/insights/articles/floating-rate-3q-outlook.html",
+    "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
+    "https://www.mandg.com/adviser/services/insights/investment-markets-outlook"
+  ],
+  "note": "Only source-attributable qualitative views; specialized teams not confused with house-wide overweight. Historical and year-only views kept out of recent 30 day.",
+  "report": "not published",
+  "email": "not sent"
+}
