@@ -1,28 +1,27 @@
 {
-  "version": 3,
+  "version": 4,
   "report_name": "Global Outlook",
   "date": "2026-11-16",
-  "edition": "report-2026-11-16-2034",
-  "produced_at_local": "2026-11-16T20:34:00+01:00",
+  "edition": "editorial-2.1-manual-intraday-255",
+  "produced_at_local": "2026-11-16",
   "publication_timezone": "Europe/Rome",
-  "source_blob_sha": "0490e0151927b5a8a293f777b58474d7d6afe4ea",
+  "source_blob_sha": "ed3e51832b0b10b639bcef038fbdf2f280433ad3",
   "report_source": {
     "path": "publisher/global_outlook_current.json",
     "report_file_path": "private_pointer_only",
-    "publisher_commit": "6edc53de8c04d2efe3ecae186a1fede7028f0a41",
-    "publisher_render_deployment_id": "dep-dbtlo0jm8hqs739t92f0",
+    "publisher_commit": "117216a83184934cb44ce2267131edcfc1407b2c",
+    "publisher_render_deployment_id": "dep-dbtnc6balhtc73fg2lhg",
     "publisher_render_status": "live_confirmed_exact_commit",
-    "publisher_route_http200": "not_directly_measured",
     "canonical_layout_qa": "success",
     "delivery": "gmail_sent",
-    "gmail_message_id": "1a1e5e04b17e98e1"
+    "gmail_message_id": "1a1e64694ab48abf"
   },
   "period_recent": {
     "start": "2026-10-18",
     "end": "2026-11-16",
     "precision": "day",
-    "view_count": 95,
-    "manager_count": 21,
+    "view_count": 107,
+    "manager_count": 26,
     "view_ids": [
       6,
       7,
@@ -118,76 +117,37 @@
       216,
       217,
       218,
-      219
-    ]
+      219,
+      240,
+      241,
+      242,
+      243,
+      244,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252
+    ],
+    "stance_counts": {
+      "positive": 76,
+      "negative": 13,
+      "neutral": 18
+    }
   },
-  "period_month": {
+  "monthly_recent": {
     "months": [
       "2026-10",
       "2026-11"
     ],
-    "precision": "month_only",
-    "view_count": 53,
-    "view_ids": [
-      5,
-      34,
-      35,
-      36,
-      39,
-      40,
-      43,
-      71,
-      72,
-      73,
-      74,
-      75,
-      87,
-      88,
-      89,
-      96,
-      97,
-      98,
-      108,
-      109,
-      110,
-      111,
-      122,
-      123,
-      124,
-      125,
-      126,
-      127,
-      128,
-      129,
-      153,
-      154,
-      155,
-      156,
-      157,
-      158,
-      159,
-      160,
-      179,
-      180,
-      181,
-      197,
-      198,
-      206,
-      220,
-      221,
-      222,
-      223,
-      224,
-      225,
-      226,
-      230,
-      231
-    ]
+    "view_count": 53
   },
-  "period_global": {
-    "view_count": 239,
-    "manager_count": 66,
-    "source_url_count": 89,
+  "overall": {
+    "view_count": 255,
+    "manager_labels": 71,
+    "source_url_count": 99,
     "view_ids": [
       1,
       2,
@@ -427,37 +387,59 @@
       236,
       237,
       238,
-      239
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255
     ]
   },
-  "equity": {
-    "view_count": 132,
-    "exact_30_day": 48,
-    "month_only": 31
+  "previous_published": {
+    "edition": "report-2026-11-16-2034",
+    "report_date": "2026-11-16",
+    "view_count": 239,
+    "manager_labels": 66,
+    "url_count": 89
   },
-  "difference_from_previous": {
-    "previous_edition": "2026-11-14",
-    "previous_total_views": 232,
-    "new_views": 7,
-    "previous_manager_labels": 65,
-    "new_manager_labels": 1,
-    "new_url_sources": 1,
-    "new_ids": [
-      233,
-      234,
-      235,
-      236,
-      237,
-      238,
-      239
+  "deltas": {
+    "new_view_count": 16,
+    "new_view_ids": [
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255
     ],
-    "explicit_changes_in_recent_window": "none established"
+    "new_manager_label_count": 5,
+    "new_url_count": 10
   },
-  "data_integrity": {
-    "unique_ids": true,
-    "report_date_precision_respected": true,
-    "phase_a_current_validated_views": 239,
-    "phase_a_new_views": 0
-  },
-  "notes": "No report capability URL or token stored. 7 additions derive from document originally dated 15 October and fall outside the exact 30-day window."
+  "notes": [
+    "View acquisition date is distinct from document publication date",
+    "This update compares two editions published on 16/11/2026 and should not be labelled last 24 hours",
+    "Month/year only dates stay imprecise",
+    "Save only after publication QA, exact-deploy LIVE and email verified"
+  ]
 }
