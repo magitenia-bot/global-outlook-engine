@@ -1,16 +1,30 @@
 {
-  "generated_at_utc": "2026-11-16T20:36:40+00:00",
+  "generated_at_utc": "2026-11-16T20:40:36+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
-  "source_institutions": 100,
-  "sources_total": 116,
-  "sources_active": 116,
+  "source_institutions": 102,
+  "sources_total": 118,
+  "sources_active": 118,
   "source_last_results": {
-    "changed_requires_review": 21,
+    "baseline_requires_review": 2,
     "error": 11,
-    "unchanged": 84
+    "unchanged": 105
   },
-  "source_change_events_last_4d": 127,
+  "source_change_events_last_4d": 129,
   "source_changes_recent": [
+    {
+      "source_id": "src-coverage-aberdeen-houseview",
+      "checked_at_utc": "2026-11-16T20:39:32+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-coverage-mandg-outlook",
+      "checked_at_utc": "2026-11-16T20:39:32+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-blackrock-weekly",
       "checked_at_utc": "2026-11-16T20:35:29+00:00",
@@ -836,24 +850,106 @@
       "result": "baseline_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-census-aqr-capital-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-cohen-steers",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1352,
+  "candidate_documents_total": 1364,
   "candidate_documents_recent": [
+    {
+      "institution_name": "M&G Investments",
+      "candidate_title": "2025 PruFund Strategic Asset Allocation",
+      "candidate_url": "https://www.mandg.com/adviser/services/insights/prufund-saa-review-2025",
+      "source_page_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "M&G Investments",
+      "candidate_title": "PruFund Global Diversification",
+      "candidate_url": "https://www.mandg.com/assets/shared/documents/en/tio271201.pdf",
+      "source_page_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "M&G Investments",
+      "candidate_title": "Weekly market commentary Market outlook from the Life Investment Office (LIO)",
+      "candidate_url": "https://www.mandg.com/adviser/about/weekly-market-updates",
+      "source_page_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "M&G Investments",
+      "candidate_title": "Investment insights Investment insights from the Life Investment Office (LIO).",
+      "candidate_url": "https://www.mandg.com/adviser/services/insights",
+      "source_page_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "M&G Investments",
+      "candidate_title": "On-demand events",
+      "candidate_url": "https://www.mandg.com/adviser/services/insights/on-demand-events",
+      "source_page_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "M&G Investments",
+      "candidate_title": "M&G Investment Markets Outlook",
+      "candidate_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "source_page_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "Aberdeen Investments",
+      "candidate_title": "Podcasts",
+      "candidate_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research?article_type=Podcast",
+      "source_page_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Aberdeen Investments",
+      "candidate_title": "The Witt",
+      "candidate_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research/the-witt",
+      "source_page_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Aberdeen Investments",
+      "candidate_title": "Insights",
+      "candidate_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research/insights",
+      "source_page_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Aberdeen Investments",
+      "candidate_title": "Global Macro Research",
+      "candidate_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research/global-macro-research",
+      "source_page_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Aberdeen Investments",
+      "candidate_title": "Aberdeen House View and Investment Outlook",
+      "candidate_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research",
+      "source_page_url": "https://www.aberdeeninvestments.com/en-gb/professional/insights-and-research",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=ec48666b-2114-412f-b11a-c49839e2a7c4&ssb=95076204107&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=81202c75-cslf-4efd-ab73-93817021d867&ssk=botmanager_support@radware.com&ssm=76935942476848333103404913769398&ssn=278c60fc978d2143166add224663e8aa1f790edbabe0-539d-4efe-803325&sso=c462f598-08172e07f33c2716909296fa74167d3de50189ec1831de06&ssp=28253366531794810733179485827906563&ssq=67254096161545235516861615171390276116402&ssr=My40Mi4xNTcuNjU=&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAwZWRiYWJlMC01MzlkLTRlZmUtODU5OC0wODE3MmUwN2YzM2MxLTE3OTQ4NjE2MTU5NjkwLTAwNTEzNzUzZjFlNTk2NzVmZDExMCIsInJkIjoia290YWttZi5jb20iLCJ1em14IjoiN2ZjMDAwYjkwMDVjNjYtNmZhYS00MTU3LWI3ODUtNDZkNjkzY2Y0MzlkMS0xNzk0ODYxNjE1OTY5MC0wMGUzNDUxMWU0NzE2Yjc3Njg5MTAifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-16T20:40:05+00:00",
+      "review_status": "source_page_unverified"
+    },
     {
       "institution_name": "Kotak Mahindra Asset Management",
       "candidate_title": "Source institutional research registry",
@@ -3157,102 +3253,6 @@
       "source_page_url": "https://www.tokiomarineam.co.jp/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "投資信託の羅針盤",
-      "candidate_url": "https://www.tokiomarineam.co.jp/basic_knowledge/rashinban.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "投資信託の基礎知識",
-      "candidate_url": "https://www.tokiomarineam.co.jp/basic_knowledge/toushin/index.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "機関投資家のお客様",
-      "candidate_url": "https://www.tokiomarineam.co.jp/corporate/index.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.tokiomarineam.co.jp/",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "2",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/index_2.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "1",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/index.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "The Dawn of Japan: Historical Turning Point for the World",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/ff25c15566ff2ae6c007db0dcdcb523b_1.pdf",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Beyond Large Caps: Uncovering Value and Potential in Small-Cap Stocks",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1339.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Yen and Beyond: How Currency Fluctuations Shape Japanese Business",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1465.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Undervalued and Overlooked: Why Now is the Time to Invest in Japanese Small and Mid-Cap Stocks",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1467.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "The TSE's Push for Capital Awareness: Implications for Japanese Companies",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1473.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "The Role of Share Buybacks and Strategic Investments",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1474.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
     }
   ],
   "views_already_recorded": 129,
@@ -3260,6 +3260,7 @@
   "institutions_without_recorded_views": [
     "AQR Capital Management",
     "AXA Investment Managers",
+    "Aberdeen Investments",
     "Aditya Birla Sun Life Asset Management",
     "AllianceBernstein",
     "Apollo Global Management",
@@ -3290,6 +3291,7 @@
     "KKR",
     "Kotak Mahindra Asset Management",
     "Lazard Asset Management",
+    "M&G Investments",
     "MFS Investment Management",
     "Macquarie Asset Management",
     "Main Management",
