@@ -1,10 +1,10 @@
 {
-  "utc": "2026-11-16T02:56:45.971078+00:00",
-  "mode": "daily",
+  "utc": "2026-11-16T03:01:47.261448+00:00",
+  "mode": "hourly",
   "registered_managers": 180,
   "registered_sources": 27,
   "sources_checked": 27,
-  "new_records": 103,
+  "new_records": 12,
   "partial_scans": 8,
   "errors": 4,
   "error_categories": {
