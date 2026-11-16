@@ -92,7 +92,7 @@ def main():
  state=json.loads(STATE.read_text()) if STATE.exists() else {"hashes":{},"cursor":0,"search_cursor":0}
  names,sources=names_and_sources()
  cursor=int(state.get("cursor",0)); search_cursor=int(state.get("search_cursor",0))
- examined=changed=errors=partial_scans=0
+ examined=changed=errors=partial_scans=successful_scans=0
  issues=[]
  # Rotate to cover all known URLs over successive hours, without hammering a single domain.
  chosen=[sources[(cursor+i)%len(sources)] for i in range(min(MAX_FETCH,len(sources)))] if sources else []
@@ -101,6 +101,7 @@ def main():
   examined+=1
   try:
    final,body,ctype,partial=request(url)
+   successful_scans+=1
    if partial:partial_scans+=1
    digest=hashlib.sha256(body).hexdigest()
    key=hashlib.sha256((name+"|"+url).encode()).hexdigest()
@@ -138,7 +139,7 @@ def main():
     errors+=1;print("DISCOVERY_ERROR",name,type(e).__name__,str(e)[:120])
    time.sleep(0.15)
  STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
- (OUT/"last_run.json").write_text(json.dumps({"utc":now.isoformat(),"mode":mode,"registered_managers":len(names),"registered_sources":len(sources),"sources_checked":examined,"source_catalog_coverage_percent":round(100*examined/len(sources),1) if sources else 0,"priority1_registered":sum(x[0]==1 for x in sources),"priority2_registered":sum(x[0]==2 for x in sources),"priority3_registered":sum(x[0]==3 for x in sources),"source_scan_policy":"rotating catalog; each run covers up to 80 registered URLs; no view classified without source reading","new_records":changed,"partial_scans":partial_scans,"errors":errors,"error_categories":{category:sum(i["category"]==category for i in issues) for category in ("access_restricted","throttled","redirect_error","other_error")},"view_classifications_created":0},indent=2)+"\n",encoding="utf-8")
+ (OUT/"last_run.json").write_text(json.dumps({"utc":now.isoformat(),"mode":mode,"registered_managers":len(names),"registered_sources":len(sources),"sources_checked":examined,"sources_successfully_read":successful_scans,"sources_failed":errors,"source_catalog_coverage_percent":round(100*examined/len(sources),1) if sources else 0,"priority1_registered":sum(x[0]==1 for x in sources),"priority2_registered":sum(x[0]==2 for x in sources),"priority3_registered":sum(x[0]==3 for x in sources),"source_scan_policy":"rotating catalog; each run covers up to 80 registered URLs; no view classified without source reading","new_records":changed,"partial_scans":partial_scans,"errors":errors,"error_categories":{category:sum(i["category"]==category for i in issues) for category in ("access_restricted","throttled","redirect_error","other_error")},"view_classifications_created":0},indent=2)+"\n",encoding="utf-8")
  (OUT/"last_errors.json").write_text(json.dumps({"utc":now.isoformat(),"issues":issues},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
  print("RESULT",mode,"managers",len(names),"sources",len(sources),"checked",examined,"new",changed,"partial",partial_scans,"errors",errors)
 if __name__=="__main__":main()
