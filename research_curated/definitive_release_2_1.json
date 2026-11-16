@@ -1,0 +1,25 @@
+{
+  "release": "GLOBAL_OUTLOOK_EDITORIAL_2_1_DEFINITIVE",
+  "status": "locked_as_current_reference",
+  "confirmed_by_user": true,
+  "confirmed_date": "2026-11-16",
+  "timezone": "Europe/Rome",
+  "report_version": "2.1",
+  "format": "narrative_first_with_previous_edition_changes",
+  "report_pointer_private": "magitenia-bot/trading-system-professional@report-center-publisher:publisher/global_outlook_current.json",
+  "publisher_commit": "8369e5a11234454de997dbe94f23e2adbe94ca18",
+  "contract_file": "research_curated/global_outlook_contract.json",
+  "legacy_release_path": "research_curated/definitive_release_2_0.json",
+  "comparison": "prior actually published validated report with exact dates; 14–16 November in initial prototype (not 24 hours)",
+  "publication_status": "awaiting verification",
+  "quality_gate": "publisher/validate_global_outlook.py for editorial-2.1",
+  "requirements": [
+    "Change blocks before house narratives",
+    "Separate new view IDs, manager labels, source URLs, comparable stance changes",
+    "Show document source publication and report acquisition separately",
+    "No invented previous-day comparison",
+    "Append-only snapshot after live deployment; historical editions retained",
+    "Latest main narrative and all source registry preserved"
+  ],
+  "workflow": "05:00 research, 07:00 production and email, existing automation only"
+}

@@ -1,7 +1,7 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "2.0",
-  "approved_format_checkpoint": "GO-EDITORIAL-20261116-2.0",
+  "contract_version": "2.1",
+  "approved_format_checkpoint": "GO-EDITORIAL-20261116-2.1",
   "effective_from": "2026-11-16",
   "status": "definitive",
   "timezone": "Europe/Rome",
@@ -217,15 +217,16 @@
       "data_integrity": "Values generated from current_views.csv and previous snapshot at every publication; correct view vs manager vs source distinction; no invented market returns, no artificial inferred day precision, no implied institutional consensus",
       "output": "Static HTML charts with meaningful labels and text alternatives; accessible without JS"
     },
-    "format": "editorial_descriptive_2_0",
-    "current_definitive": "GLOBAL_OUTLOOK_EDITORIAL_2_0",
+    "format": "editorial_descriptive_2_1_with_changes",
+    "current_definitive": "GLOBAL_OUTLOOK_EDITORIAL_2_1",
     "primary_principle": "Most recent relevant views of largest managers, explained narratively, take precedence over matrices and taxonomy.",
     "structure": [
-      "Executive Investment Outlook — 4-7 core messages with attributed supporting source perspectives",
-      "12-15 prioritized asset manager narratives, each with date, views, interpretation, risks, latest sources; 150-250 words when grounded",
-      "Cross-manager agreements, disagreements and genuine view changes; 1-2 verified summary charts",
-      "Compact Equity Intelligence and Fixed Income Intelligence synthesis; no duplicate tables",
-      "Complete source registry and historical annex collapsed by default, searchable, source links open new tab"
+      "Executive Investment Outlook — 4-7 grounded messages",
+      "Novità dal report precedente — evidence-backed change KPIs and narrative cards near the top",
+      "12-15 prioritized manager narratives with date and original source",
+      "Cross-manager agreements, disagreements, view revisions; 1-2 source-backed charts",
+      "Compact Equity Intelligence and Fixed Income Intelligence",
+      "Complete historical source register in collapsed searchable appendix"
     ],
     "old_visual_contract_status": "superseded for post-2026-11-16 reports; retained as legacy for rollback",
     "legacy_1_7_1_report_pointer": "reference in private publisher checkpoint only",
@@ -236,7 +237,34 @@
       "New reports preserve readability and narrative first, while all source views remain in expandable searchable archive",
       "Use verified public source references; prefer primary houses, label dependent mandates",
       "Do not write secret report slugs or URLs to research repository"
-    ]
+    ],
+    "daily_changes": {
+      "mandatory": true,
+      "preferred_reference": "Previous calendar day's actually published and validated report",
+      "fallback": "Last verified published edition, explicitly display actual dates and days gap; never label it 24h or yesterday",
+      "never_use_only_rolling_window_deltas": true,
+      "kpis": [
+        "new validated distinct view IDs",
+        "new institution/mandate labels, distinguishing independent house/subsidiary",
+        "new distinct source document URLs",
+        "removed/corrected view IDs with correction history",
+        "source-backed stance revisions on same manager/asset/mandate and comparable horizon",
+        "views entering/leaving recent 30-day rolling scope separately"
+      ],
+      "highlight_labels": [
+        "NUOVA VIEW",
+        "NUOVA CASA",
+        "NUOVA FONTE",
+        "VIEW MODIFICATA",
+        "CORREZIONE",
+        "FUORI FINESTRA"
+      ],
+      "method": "Set difference between frozen persisted baselines of consecutive actually published editions. Never equate document publication date with acquisition date. Compare stance only on comparable manager/mandate, instrument, time horizon and primary document; otherwise n.d.",
+      "preservation": "Append-only prior-edition snapshot saved on successful production; never overwrite old snapshot before comparison",
+      "location": "Immediately after Executive Investment Outlook and before House Views",
+      "display": "Four KPI tiles and concise descriptions linking to original sources; do not show a false zero for unassessable changes",
+      "no_changes": "Explicitly state no verified changes if diffs are actually empty, not if data missing"
+    }
   },
   "definitive_release": {
     "status": "superseded_by_editorial_v2_0",

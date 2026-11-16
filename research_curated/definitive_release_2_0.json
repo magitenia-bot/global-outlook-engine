@@ -1,6 +1,6 @@
 {
   "release": "GLOBAL_OUTLOOK_EDITORIAL_2_0_DEFINITIVE",
-  "status": "locked_as_current_reference",
+  "status": "superseded_retained_for_rollback",
   "confirmed_by_user": true,
   "confirmed_date": "2026-11-16",
   "timezone": "Europe/Rome",
@@ -21,5 +21,7 @@
     "private publisher pointer current to editorial edition"
   ],
   "workflow": "existing 05:00 research and 07:00 production; no new automation",
-  "archive_policy": "preserve 1.7.1 report and old contract history; only explicit user request replaces editorial 2.0"
+  "archive_policy": "preserve 1.7.1 report and old contract history; only explicit user request replaces editorial 2.0",
+  "superseded_by": "research_curated/definitive_release_2_1.json",
+  "superseded_at": "2026-11-16"
 }
