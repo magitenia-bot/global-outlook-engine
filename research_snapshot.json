@@ -1,16 +1,163 @@
 {
-  "generated_at_utc": "2026-11-16T05:24:21+00:00",
+  "generated_at_utc": "2026-11-16T20:36:40+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 100,
   "sources_total": 116,
   "sources_active": 116,
   "source_last_results": {
-    "changed_requires_review": 2,
+    "changed_requires_review": 21,
     "error": 11,
-    "unchanged": 103
+    "unchanged": 84
   },
-  "source_change_events_last_4d": 106,
+  "source_change_events_last_4d": 127,
   "source_changes_recent": [
+    {
+      "source_id": "src-blackrock-weekly",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-pimco-outlook",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-capitalgroup-outlook",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-columbia-insights",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-loomis-oct26",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-corporate-weekly",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-fr",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-2026-midyear",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-12",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-16",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-extended-eastspring-investments",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-added-value-partners-group",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-tokio-marine-asset-management",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-china-southern-asset-management",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-bosera-asset-management",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-stepstone-group",
+      "checked_at_utc": "2026-11-16T20:35:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-nuveen-outlook",
       "checked_at_utc": "2026-11-16T05:23:15+00:00",
@@ -703,59 +850,250 @@
       "result": "baseline_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-census-partners-group",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-hamilton-lane",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-stepstone-group",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-kkr",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-apollo-global-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-brookfield-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-lgt-capital-partners",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1322,
+  "candidate_documents_total": 1352,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=7773fb8a-df1d-46cd-b8c5-c587ee4b6c49&ssb=80419282662&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=a6d3afcf-cslf-44e2-bcc9-2181512ac235&ssk=botmanager_support@radware.com&ssm=72967501307323297108264386107479&ssn=1351bc026b9f46076a7559fd3932a742c7f71500e4d9-692b-4407-93d740&sso=2caacca5-4087d28f047b8d22ff47b03dbda63f3351435660c3c5cec7&ssp=56200658501794805286179481227676383&ssq=10568086138053409930461380975298769376523&ssr=My40Mi4xNTcuMTcz&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwOGZmMTNlYzEtOWZhMC00YTZmLThkYjQtZDRmMzA0MjE4YjFlMS0xNzk0ODYxMzgwNjQzMC0wMGUwMjkwYjllMzEwZDk5MzRjMTAiLCJyZCI6ImtvdGFrbWYuY29tIiwiX191em1mIjoiN2Y5MDAwMTUwMGU0ZDktNjkyYi00NDA3LTljYTUtNDA4N2QyOGYwNDdiMS0xNzk0ODYxMzgwNjQzMC0wMDViYzYwMTZlZjFjM2YzZjBiMTAifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "Eastspring Investments",
+      "candidate_title": "/docs/librariesprovider6/cio-views-documents/weekly/2026/investment-bulletin-weekly-week-46_final.pdf",
+      "candidate_url": "https://www.eastspring.com/docs/librariesprovider6/cio-views-documents/weekly/2026/investment-bulletin-weekly-week-46_final.pdf",
+      "source_page_url": "https://www.eastspring.com/insights/deep-dives/japan-equities-is-the-investment-case-sustainable",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Ashmore Group",
+      "candidate_title": "Read more about EM equity recovery dampened by US CPI and NVIDIA headwinds",
+      "candidate_url": "https://www.ashmoregroup.com/en-gb/insights/em-equity-recovery-dampened-us-cpi-and-nvidia-headwinds",
+      "source_page_url": "https://www.ashmoregroup.com/en-gb/insights/2026-emerging-markets-outlook",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fiera Capital",
+      "candidate_title": "/en/insights/6855/",
+      "candidate_url": "https://www.fieracapital.com/en/insights/6855/",
+      "source_page_url": "https://www.fieracapital.com/en/insights/q4-2026-investment-outlook-portfolio-strategy/",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/se/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Español",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/es/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/pt/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/no/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/lu/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/prospettive/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ie/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/is/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/fi/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/dk/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/be/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/sg/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "日本語",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/jp/ja/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "中文",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/hk/zh/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/hk/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/en/thinking/articles/2014/q4/2015-emerging-markets-outlook.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Why the AI story may be stronger than skeptics think November 16, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/why-ai-story-stronger-than-skeptics-think-stock-markets.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Bulls, bears and bond yields",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/bulls-bears-and-bond-yields",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Download full commentary (PDF)",
+      "candidate_url": "https://www.blackrock.com/gls-download/literature/market-commentary/weekly-investment-commentary-en-us-20261116-ai-looking-beyond-the-buildout.pdf",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Why the AI story may be stronger than skeptics think November 16, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/why-ai-story-stronger-than-skeptics-think-stock-markets.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Download full commentary (PDF)",
+      "candidate_url": "https://www.blackrock.com/us/individual/literature/market-commentary/weekly-investment-commentary-en-us-20261116-ai-looking-beyond-the-buildout.pdf",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-16T20:36:08+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Kotak Mahindra Asset Management",
       "candidate_title": "Source institutional research registry",
@@ -2913,246 +3251,6 @@
       "candidate_title": "The Role of Share Buybacks and Strategic Investments",
       "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1474.html",
       "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Introduction of SPARX Japan Asia Focus Strategy",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1482.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Is Yen Depreciation a Headwind for Small and Mid-Cap Stocks?",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1498.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Cultural Norms in Japan: The Good and Bad of Homogeneity and Egalitarianism",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1499.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Increasing Delisting: The New Metabolism of the Japanese Stock Market",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1523.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Investing in Timeless IP: Why Virtual Celebrities Outshine Human Stars",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/1633.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Japan Asia Focus Growth Strategy: Performance Review 2024",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/2346.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Instant noodles, lasting impact - Buldak's global journey reflects Asia's soft power.",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/detail/2465.html",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SPARX Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.sparx.co.jp/ins/insights/",
-      "source_page_url": "https://www.sparx.co.jp/ins/insights/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Resona Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.resona-am.co.jp/english/about/profile.html",
-      "source_page_url": "https://www.resona-am.co.jp/english/about/profile.html",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "2026/03/13 Asset Management One - Japan Outlook 2024 4,644KB",
-      "candidate_url": "https://www.am-one.co.jp/pdf/english_insights/japan/8/AMO_Opinion_Report_231218.pdf",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "2026/03/13 Asset Management One - Global Outlook 2024 1,344KB",
-      "candidate_url": "https://www.am-one.co.jp/pdf/english_insights/global/8/AMO_Opinion_Report_240105.pdf",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "2026/04/15 Asset Management One - Japan Outlook 2025 1,479KB",
-      "candidate_url": "https://www.am-one.co.jp/pdf/english_insights/japan/7/Market_Outlook_Japan_2025.pdf",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "2026/04/15 Asset Management One - Global Outlook 2025 998KB",
-      "candidate_url": "https://www.am-one.co.jp/pdf/english_insights/global/7/Market_Outlook_Global_2025.pdf",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "2026/04/21 Asset Management One - Japan Outlook 2026 3,945KB",
-      "candidate_url": "https://www.am-one.co.jp/pdf/english_insights/japan/6/Market_Outlook_Japan_2026.pdf",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "2026/04/21 Asset Management One - Global Outlook 2026 1,026KB",
-      "candidate_url": "https://www.am-one.co.jp/pdf/english_insights/global/6/Market_Outlook_Global_2026.pdf",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "Insights",
-      "candidate_url": "https://www.am-one.co.jp/english/insights/",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Asset Management One",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "source_page_url": "https://www.am-one.co.jp/english/insights/outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Axis Asset Management",
-      "candidate_title": "/efactsheet/Aug-2026/Innerpage/Axis Fund Factsheet August 2026 Final.pdf",
-      "candidate_url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/Axis Fund Factsheet August 2026 Final.pdf",
-      "source_page_url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/Hybrid-outlook.html",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Axis Asset Management",
-      "candidate_title": "< < Previous",
-      "candidate_url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/fixed-income-outlook.html",
-      "source_page_url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/Hybrid-outlook.html",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Axis Asset Management",
-      "candidate_title": "Official investment outlook",
-      "candidate_url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/Hybrid-outlook.html",
-      "source_page_url": "https://www.axismf.com/efactsheet/Aug-2026/Innerpage/Hybrid-outlook.html",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Nippon Life India Asset Management",
-      "candidate_title": "Official investment outlook",
-      "candidate_url": "https://mf.nipponindiaim.com/LearnAndInvest/MarketOutlook/September-2026/Equity-Market-Outlook.html",
-      "source_page_url": "https://mf.nipponindiaim.com/LearnAndInvest/MarketOutlook/September-2026/Equity-Market-Outlook.html",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "SBI Funds Management",
-      "candidate_title": "Update on Valuation of Equity Shares of Manpasand Beverages Ltd.",
-      "candidate_url": "https://www.sbimf.com/docs/default-source/disclosures/update-on-valuation-of-equity-shares-of-manpasand-beverages-ltd.pdf",
-      "source_page_url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SBI Funds Management",
-      "candidate_title": "Update on Valuation of Debt Securities of Reliance Home Finance Ltd.",
-      "candidate_url": "https://www.sbimf.com/docs/default-source/disclosures/update-on-valuation-of-debt-securities-of-reliance-home-finance-ltd.pdf",
-      "source_page_url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SBI Funds Management",
-      "candidate_title": "Statement of Additional Information",
-      "candidate_url": "https://www.sbimf.com/docs/default-source/documents/statement-of-additional-information.pdf",
-      "source_page_url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SBI Funds Management",
-      "candidate_title": "MOA & AOA",
-      "candidate_url": "https://www.sbimf.com/docs/default-source/documents/mao-and-aoa/certified-moa-aoa---29-07-2024.pdf",
-      "source_page_url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "SBI Funds Management",
-      "candidate_title": "Official investment outlook",
-      "candidate_url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook",
-      "source_page_url": "https://www.sbimf.com/learn-about-mutual-funds/2026-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Amova AM UK TCFD Entity Report 2026",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk---tcfd-entity-report-2026.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Proxy Voting Policy UK Addendum",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-proxy-voting-policy-addendum.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Stewardship Code and Engagement Policy",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/emea-library/legal/amova-uk-stewardship-code-and-engagement-policy.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Amova Asset Management",
-      "candidate_title": "Amova AM Global Stewardship Report 2026",
-      "candidate_url": "https://emea.amova-am.com/docs/default-source/default-document-library/pdf/tcfd/global-stewardship-report-2026.pdf",
-      "source_page_url": "https://emea.amova-am.com/institutional/insights/detail/2610-global-investment-strategy-committee-outlook-q4-2026",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
