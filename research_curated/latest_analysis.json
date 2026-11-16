@@ -1,47 +1,39 @@
 {
   "schema_version": 1,
   "run_type": "scheduled_phase_A",
-  "status": "partial_queue_processed_verified",
-  "recorded_at_utc": "2026-11-15T04:00:00Z",
-  "recorded_at_italy": "2026-11-15T05:00:00+01:00",
+  "status": "partial_queue_screening_no_new_views",
+  "recorded_at_utc": "2026-11-16T04:00:00Z",
+  "recorded_at_italy": "2026-11-16T05:00:00+01:00",
   "dataset_path": "research_curated/current_views.csv",
-  "views_before": 232,
+  "views_before": 239,
   "views_after": 239,
-  "newly_validated_views": 7,
-  "new_view_ids": [
-    233,
-    234,
-    235,
-    236,
-    237,
-    238,
-    239
-  ],
-  "newly_represented_managers": 1,
+  "newly_validated_views": 0,
+  "new_view_ids": [],
+  "newly_represented_managers": 0,
+  "candidates_screened": 2,
   "source_pages_actually_read": 1,
   "documents_verified": 1,
-  "documents_no_view": 0,
-  "rejected_misattribution": 0,
+  "documents_no_view": 1,
+  "rejected_misattribution": 2,
   "duplicates": 0,
   "documents_pending_access": 0,
-  "candidates_screened": 1,
   "candidate_backlog_start": "not_recomputed",
   "candidate_backlog_end": "not_recomputed",
   "queue_updated_candidate_ids": [
-    "GO-20261114-072"
+    "GO-20261114-003",
+    "GO-20261114-005"
   ],
   "source_urls_verified": [
-    "https://www.fieracapital.com/wp-content/uploads/insights/6674/fiera-capital-investment-outlook-institutional-markets-q4-2026.pdf"
+    "https://www.troweprice.com/en/us/insights/retirement-market-outlook"
   ],
-  "source_original_publication_date": "2026-10-15",
-  "source_type": "official_primary",
+  "source_original_publication_date": "2026-01",
   "dataset_content_sha": "0490e0151927b5a8a293f777b58474d7d6afe4ea",
-  "queue_content_sha": "c14069eb25cac5a49d529e2a80dc6a61269ed596",
-  "persistence_verified": true,
-  "persistence_verification_note": "Readback confirmed 239 rows, 239 unique IDs, matching dataset and queue blob SHA, Fiera queue status and analysis file presence.",
+  "queue_content_sha": "e3fb852964442ef4aa93447de5a440084037d21a",
+  "persistence_verified": false,
+  "persistence_verification_note": "Pending readback of latest_analysis.json after commit",
   "errors": [],
   "publisher_status": "not_applicable_phase_A",
   "email_status": "not_sent_phase_A",
   "historical_files_unchanged": true,
-  "notes": "Fiera tactical equity/bond stance and portfolio-specific allocation recorded separately. Remaining candidates not fully screened during this run."
+  "notes": "Two search candidates incorrectly attributed to Davis Advisors; both resolve to the same T. Rowe Price retirement education outlook, not a house tactical allocation view. One primary document read. No new validated investment stance. Other pending candidates remain."
 }
