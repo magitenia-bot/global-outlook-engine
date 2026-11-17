@@ -1,0 +1,1656 @@
+{
+  "as_of": "2026-11-17",
+  "window_start": "2026-10-19",
+  "monthly_allowed": [
+    "2026-10",
+    "2026-11"
+  ],
+  "columns": [
+    "Azionario globale",
+    "Azionario USA",
+    "Azionario Europa",
+    "Azionario emergenti",
+    "Governativi USA BT",
+    "Governativi USA MLT",
+    "Governativi Euro BT",
+    "Governativi Euro MLT",
+    "Corporate IG USA",
+    "Corporate IG Euro",
+    "Corporate HY USA",
+    "Corporate HY Euro",
+    "Obbligazionario emergenti",
+    "Oro",
+    "EUR/USD",
+    "Brent"
+  ],
+  "rows": [
+    {
+      "manager": "BlackRock",
+      "cells": [
+        [],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T",
+            "evidence": "Neutrale sul periodo tattico.",
+            "source": 1
+          },
+          {
+            "score": 1,
+            "type": "A",
+            "label": "S",
+            "evidence": "Sovrappeso strategico, almeno cinque anni.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T",
+            "evidence": "Europa neutrale.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "T",
+            "evidence": "Sovrappeso emergenti.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "T",
+            "evidence": "Sovrappeso Treasury brevi.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T · lungo",
+            "evidence": "Treasury lunghi neutrali: non esteso all'intero segmento medio.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T",
+            "evidence": "Governativi euro brevi e medi neutrali; il lungo non è coperto.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "HC · T",
+            "evidence": "Debito emergente in valuta forte neutrale.",
+            "source": 1
+          },
+          {
+            "score": 1,
+            "type": "A",
+            "label": "LC · T",
+            "evidence": "Debito emergente in valuta locale sovrappeso.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+          "date": "16/11/2026 · tabella 11/2026",
+          "note": "BII; testo della view. T: 6–12 mesi; S: almeno 5 anni. Alcuni testi alternativi delle immagini discordano dal testo: prevalgono le indicazioni esplicite e corroborate nel corpo."
+        }
+      ],
+      "note": "Orizzonti T e S separati. IG e HY globali non vengono attribuiti automaticamente a USA ed Euro; il medio euro non basta a coprire tutto MLT.",
+      "reference": {
+        "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+        "date": "2026-11-16"
+      }
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "cells": [
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "2027 · relativo",
+            "evidence": "Preferenza USA rispetto al benchmark emergente concentrato nell'hardware.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "2027",
+            "evidence": "Prospettive favorevoli per utili europei e diffusione dell'IA.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/investment-outlook-2027.pdf",
+          "date": "11/2026 · dati 09/11",
+          "note": "2027 Investment Outlook. Scenari e preferenze relative, senza tabella di pesi."
+        }
+      ],
+      "note": "USA preferiti agli emergenti è una preferenza relativa, non un sottopeso EM. Outlook annuale distinto dalle view tattiche.",
+      "reference": {
+        "url": "https://am.jpmorgan.com/it/en/asset-management/institutional/insights/market-insights/market-updates/the-weekly-brief/",
+        "date": "2026-11-09"
+      }
+    },
+    {
+      "manager": "Amundi",
+      "cells": [
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Azionario USA positivo tatticamente.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Europa neutrale tatticamente.",
+            "source": 1
+          },
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "S",
+            "evidence": "Europa positiva strategicamente.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [
+          {
+            "score": null,
+            "type": "N",
+            "label": "duration generale",
+            "evidence": "Duration USA positiva senza ripartizione tra scadenze: giudizio sulla duration, peso MLT non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T · Schatz",
+            "evidence": "Favorevole sui titoli tedeschi brevi; sottoinsieme del mercato euro.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T · Bund",
+            "evidence": "Favorevole sui Bund; sottoinsieme del mercato euro.",
+            "source": 1
+          }
+        ],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "S",
+            "evidence": "Credito IG europeo positivo.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "HC",
+            "evidence": "Debito emergente in valuta forte positivo.",
+            "source": 1
+          },
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "LC · T",
+            "evidence": "Valuta locale positiva tatticamente.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "multi-asset",
+            "evidence": "Giudizio favorevole sull'oro.",
+            "source": 1
+          }
+        ],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
+          "date": "09/11/2026",
+          "note": "Global Investment Views; mantenute distinte le indicazioni strategiche e tattiche. Positivo/negativo è giudizio qualitativo Q, salvo peso esplicito."
+        }
+      ],
+      "note": "Duration USA favorevole senza fascia BT/MLT: dato informativo grigio. Schatz e Bund sono sottoinsiemi tedeschi dell'Euro. USD e petrolio generici non diventano EUR/USD e Brent.",
+      "reference": {
+        "url": "https://research-center.amundi.com/article/high-rates-higher-interest-payments",
+        "date": "2026-11-16"
+      }
+    },
+    {
+      "manager": "PIMCO",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.pimco.com/se/en/insights/income-update-compelling-yields-drive-long-term-opportunities",
+          "date": "16/11/2026",
+          "note": "Income Update; view di strategia, non allocazione dell'intera casa sulle 16 esposizioni."
+        }
+      ],
+      "note": "Favore per qualità e rendimento senza articolazione verificata nelle specifiche classi richieste. Cyclical Outlook del 6 ottobre fuori finestra.",
+      "reference": {
+        "url": "https://www.pimco.com/it/it/insights/rupture-and-resilience",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "Goldman Sachs Asset Management",
+      "cells": [
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "commento",
+            "evidence": "Orientamento favorevole alle azioni USA, sostenuto dagli utili.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://am.gs.com/en-fr/institutions/insights/article/market-monitor-weekly",
+          "date": "13/11/2026",
+          "note": "Market Monitor; commento, non pesi di portafoglio."
+        }
+      ],
+      "note": "Giudizio qualitativo sul mercato USA; nessuna allocazione regionale del credito dedotta.",
+      "reference": {
+        "url": "https://am.gs.com/en-fr/institutions/insights/article/market-monitor-weekly",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "manager": "Morgan Stanley Investment Management",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "commento",
+            "evidence": "Orientamento costruttivo sul rischio azionario, con attenzione alla selezione.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.morganstanley.com/im/it-it/institutional-investor/insights/carons-corner/market-pulse-with-jim-caron-20261109.html",
+          "date": "09/11/2026",
+          "note": "Market Pulse, Jim Caron; commento di mercato."
+        }
+      ],
+      "note": "Commento di mercato: peso sull'azionario globale non dichiarato.",
+      "reference": {
+        "url": "https://www.morganstanley.com/im/it-it/institutional-investor/insights/carons-corner/market-pulse-with-jim-caron-20261109.html",
+        "date": "2026-11-09"
+      }
+    },
+    {
+      "manager": "Vanguard",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "BB/B",
+            "evidence": "Quadro più favorevole sulle qualità BB/B; non tutto HY.",
+            "source": 1
+          },
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "CCC",
+            "evidence": "Prudenza sulle CCC; non tutto HY.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/beyond-ccc-high-yield-appears-resilient.html",
+          "date": "10/11/2026",
+          "note": "Analisi del credito high yield USA."
+        }
+      ],
+      "note": "Due sottoinsiemi con giudizi diversi. Nessun semaforo aggregato per l'intero HY USA.",
+      "reference": {
+        "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/beyond-ccc-high-yield-appears-resilient.html",
+        "date": "2026-11-10"
+      }
+    },
+    {
+      "manager": "Fidelity International",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.fidelity.co.uk/markets-insights/markets/global/this-week-in-the-market/",
+          "date": "16/11/2026",
+          "note": "This Week in the Market; commento e rotazione, senza pesi comparabili."
+        }
+      ],
+      "note": "Commenti recenti disponibili; peso specifico sulle 16 esposizioni non verificato. Casa distinta da Fidelity Investments.",
+      "reference": {
+        "url": "https://www.fidelity.co.uk/markets-insights/markets/global/this-week-in-the-market/",
+        "date": "2026-11-16"
+      }
+    },
+    {
+      "manager": "Fidelity Investments",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+          "date": "26/10/2026",
+          "note": "Quarterly Market Update AART; scenari, non pesi regionali e per scadenza."
+        }
+      ],
+      "note": "Rischio e valutazioni discussi senza allocazioni specifiche. Nessun peso ricavato dal solo scenario macro.",
+      "reference": {
+        "url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+        "date": "2026-10-26"
+      }
+    },
+    {
+      "manager": "Capital Group",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "selezione · archivio",
+            "evidence": "Opportunità azionarie globali legate all'IA, con selezione regionale; peso non dichiarato.",
+            "source": 2
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.capitalgroup.com/institutions/gb/en/insights/articles/fixed-income-perspectives.html",
+          "date": "22/10/2026",
+          "note": "Fixed Income Perspectives."
+        },
+        {
+          "url": "https://www.capitalgroup.com/institutions/global-consultants/en/insights/articles/equity-perspectives.html",
+          "date": "22/10/2026",
+          "note": "Equity Perspectives già censito nell'archivio del report."
+        }
+      ],
+      "note": "Giudizio obbligazionario generale: nessuna attribuzione automatica a governativi per scadenza o corporate per area.",
+      "reference": {
+        "url": "https://www.capitalgroup.com/institutions/gb/en/insights/articles/fixed-income-perspectives.html",
+        "date": "2026-10-22"
+      }
+    },
+    {
+      "manager": "State Street Investment Management",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "Q4 · dati 30/09",
+            "evidence": "Quadro costruttivo sulle azioni; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.ssga.com/us/en/individual/insights/quarterly-investment-outlook-q4-2026",
+          "date": "21/10/2026 · dati 30/09",
+          "note": "Outlook trimestrale; pubblicazione nella finestra, informazioni sottostanti al 30 settembre."
+        }
+      ],
+      "note": "Pubblicazione recente, ma dati al 30 settembre: non rappresenta un aggiornamento tattico di novembre.",
+      "reference": {
+        "url": "https://www.ssga.com/se/en_gb/intermediary/insights/quarterly-investment-outlook-q4-2026",
+        "date": "2026-10-21"
+      }
+    },
+    {
+      "manager": "UBS Asset Management",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+          "date": "25/09/2026 · fuori finestra",
+          "note": "Macro Quarterly Q4; non sostituito con fonti di UBS Wealth Management."
+        }
+      ],
+      "note": "Ultima fonte pertinente individuata fuori dai 30 giorni. Fonti wealth non attribuite a UBS Asset Management.",
+      "reference": {
+        "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "Wellington Management",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+          "date": "data incoerente",
+          "note": "Pagina con data futura 2027 e riferimenti del testo a settembre 2026: sospesa."
+        }
+      ],
+      "note": "Segnali sospesi per incoerenza temporale della fonte, coerentemente con il registro del report.",
+      "reference": {
+        "url": "https://www.wellington.com/en-it/institutional/insights/monthly-asset-allocation-outlook",
+        "date": "2026-11"
+      }
+    },
+    {
+      "manager": "T. Rowe Price",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "comitato",
+            "evidence": "Modesto sovrappeso azionario.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": -1,
+            "type": "A",
+            "label": "comitato",
+            "evidence": "Sottopeso investment grade USA.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://investors.troweprice.com/news-releases/news-release-details/t-rowe-price-experts-share-2027-outlook-global-financial-markets",
+          "date": "17/11/2026",
+          "note": "Outlook 2027 del comitato di asset allocation, testo indicizzato dal comunicato ufficiale; riapertura integrale non riuscita."
+        }
+      ],
+      "note": "Dettagli estratti dal testo indicizzato del comunicato ufficiale. Sovrappeso USA large cap growth non esteso a tutto l'azionario USA.",
+      "reference": {
+        "url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "BNP Paribas Asset Management",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "multi-asset · archivio",
+            "evidence": "Modesto sovrappeso delle azioni globali.",
+            "source": 2
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio positivo nella tabella della fonte; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio neutrale.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio positivo nella tabella della fonte; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [],
+        [
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "10 anni*",
+            "evidence": "Treasury negativi; testo focalizzato sul decennale.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio positivo nella tabella della fonte; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio positivo nella tabella della fonte; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio positivo nella tabella della fonte; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile*",
+            "evidence": "Giudizio positivo nella tabella della fonte; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "Q",
+            "label": "HC*",
+            "evidence": "Valuta forte neutrale.",
+            "source": 1
+          },
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "LC*",
+            "evidence": "Valuta locale positiva.",
+            "source": 1
+          },
+          {
+            "score": 1,
+            "type": "A",
+            "label": "multi-asset · archivio",
+            "evidence": "Sovrappeso debito emergente aggregato; team distinto dalla view mensile HC/LC.",
+            "source": 2
+          }
+        ],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+          "date": "11/2026*",
+          "note": "Outlook mensile: giudizi positivo/neutrale/negativo, dichiarati dalla fonte diversi da raccomandazioni di asset allocation. Mese suggerito dall'indicizzazione secondaria del 10 novembre; giorno non confermato nella pagina ufficiale."
+        },
+        {
+          "url": "https://viewpoint.bnpparibas-am.com/multi-asset-investment-views-will-of-the-people/",
+          "date": "27/10/2026",
+          "note": "Multi-Asset Investment Views, già presente nell'archivio validato; nuova apertura restituisce 403. Team diverso dall'outlook mensile, mantenuto distinto."
+        }
+      ],
+      "note": "*Data mensile da confermare sul documento. I segnali Q sono provvisori ed esclusi dai conteggi dei pesi dichiarati. Core euro neutrale e periferici positivi non vengono estesi alle due fasce di scadenza.",
+      "reference": {
+        "url": "https://core.axa-im.com/monthly-market-views-the-tech-divide-rising-bond-yields-and-chinas-industrial-renaissance",
+        "date": "2026-11-04"
+      }
+    },
+    {
+      "manager": "Allianz Global Investors",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Orientamento costruttivo, con selettività regionale; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Orientamento costruttivo, con selettività regionale; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Orientamento costruttivo, con selettività regionale; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Orientamento costruttivo, con selettività regionale; peso non dichiarato.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Orientamento prudente.",
+            "source": 1
+          }
+        ],
+        [],
+        [
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "HC · T",
+            "evidence": "Prudenza sul debito emergente in valuta forte.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Orientamento prudente.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "T",
+            "evidence": "Preferenza per USD rispetto a EUR, espressa qui come orientamento ribassista di EUR/USD.",
+            "source": 1
+          }
+        ],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.allianzgi.com/en/insights/multi-asset-tactical-view-movember-2026",
+          "date": "13/11/2026 · dati 30/10",
+          "note": "Multi Asset Tactical View: giudizi di direzione e convinzione analitica indipendenti dalle allocazioni di portafoglio."
+        }
+      ],
+      "note": "Per EUR/USD, verde indica euro favorito e rosso dollaro favorito. Il petrolio della fonte usa un indice crude oil, non Brent: nessuna equivalenza applicata.",
+      "reference": {
+        "url": "https://origin-it.allianzgi.com/it-it/insights/the-week-ahead",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "DWS",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [],
+      "note": "CIO Portfolio Perspectives reperite con dati agosto/settembre; commento di mercato del 9 ottobre fuori finestra. Nessun aggiornamento recente specifico verificato.",
+      "reference": {
+        "url": "https://funds.deutsche-am.com/it-it/informare/mercati/market-outlook/Mercato-e-macro/",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "Schroders",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [],
+      "note": "Bollettino trimestrale reperito con view di settembre. Nessuna allocazione recente verificata sulle 16 esposizioni.",
+      "reference": {
+        "url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "Pictet Asset Management",
+      "cells": [
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T",
+            "evidence": "Azionario neutrale.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T",
+            "evidence": "Azionario neutrale.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "T",
+            "evidence": "Azionario neutrale.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "ex Cina",
+            "evidence": "Potenziale favorevole emergenti esclusa Cina; non rappresenta il peso aggregato EM.",
+            "source": 1
+          },
+          {
+            "score": -1,
+            "type": "A",
+            "label": "Cina",
+            "evidence": "Cina sottopeso; sottoinsieme, non intero EM.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": 0,
+            "type": "A",
+            "label": "LC ex Cina",
+            "evidence": "Debito emergente locale esclusa Cina ridotto a neutrale.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "T",
+            "evidence": "Oro sovrappeso.",
+            "source": 1
+          }
+        ],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+          "date": "11/2026 · solo mese",
+          "note": "Barometro di novembre. La precisione mensile è conservata; nessun giorno inventato."
+        }
+      ],
+      "note": "Azionario globale ridotto da sovrappeso a neutrale. EM ex Cina, Cina e debito LC ex Cina restano identificati come sottoinsiemi.",
+      "reference": {
+        "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+        "date": "2026-11"
+      }
+    },
+    {
+      "manager": "Invesco",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "T",
+            "evidence": "Modesto sovrappeso azioni rispetto alle obbligazioni.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.invesco.com/content/dam/invesco/it/it/pdf/tactical-asset-allocation.pdf",
+          "date": "11/2026 · solo mese",
+          "note": "Tactical Asset Allocation, testo del PDF ufficiale indicizzato; apertura integrale non riuscita."
+        }
+      ],
+      "note": "Indicazione globale dal testo indicizzato. Sottopeso credito e favore sulla duration non hanno ripartizione regionale e per scadenza verificata.",
+      "reference": {
+        "url": "https://www.invesco.com/us/en/insights/what-slower-ai-buildout-may-mean-for-markets.html",
+        "date": "2026-11-09"
+      }
+    },
+    {
+      "manager": "Franklin Templeton",
+      "cells": [
+        [],
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "multi-asset",
+            "evidence": "Sovrappeso USA dichiarato.",
+            "source": 1
+          }
+        ],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "A",
+            "label": "ex Cina",
+            "evidence": "Sovrappeso emergenti esclusa Cina, non totale EM.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.franklintempleton.com/corporate/articles/2026/multi-asset/allocation-views-investing-through-ai-crosscurrents",
+          "date": "10/11/2026",
+          "note": "Franklin Templeton Investment Solutions, Allocation Views. Data dal registro della casa."
+        }
+      ],
+      "note": "Il favore per il rischio e la preferenza delle azioni sul credito non definiscono un peso sull'azionario globale. Treasury meno favoriti senza dettaglio BT/MLT.",
+      "reference": {
+        "url": "https://www.franklintempleton.com/insights/collections/global-investment-outlook-2026",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "PGIM",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": null,
+            "type": "N",
+            "label": "CMA · 10 anni",
+            "evidence": "Rendimento annuo atteso Treasury lunghi 7,9%, aggiornato rispetto al 5,9%; nessun sovrappeso dedotto.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": null,
+            "type": "N",
+            "label": "CMA · 10 anni",
+            "evidence": "Rendimento annuo atteso HY USA 6,4%; non equivale a sovrappeso.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.pgim.com/us/en/institutional/insights/market-portfolio/outlooks/capital-market-assumptions",
+          "date": "11/2026 · dati 30/09",
+          "note": "Capital Market Assumptions a dieci anni: rendimenti attesi, non raccomandazioni di asset allocation."
+        }
+      ],
+      "note": "Le stime di rendimento atteso restano informative e grigie. Aggiornamento pubblicato a novembre con ipotesi al 30 settembre.",
+      "reference": {
+        "url": "https://www.pgim.com/us/en/institutional/insights/market-portfolio/outlooks/capital-market-assumptions",
+        "date": "2026-11"
+      }
+    },
+    {
+      "manager": "Robeco",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.robeco.com/en-sg/insights/2026/11/could-french-bond-stress-change-the-ecbs-course",
+          "date": "05/11/2026",
+          "note": "Commento sul debito francese."
+        }
+      ],
+      "note": "La view sulla Francia non rappresenta il complesso dei governativi Euro BT/MLT.",
+      "reference": {
+        "url": "https://www.robeco.com/en-sg/insights/2026/11/could-french-bond-stress-change-the-ecbs-course",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "manager": "Janus Henderson Investors",
+      "cells": [
+        [],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "selezione · archivio",
+            "evidence": "Opportunità selettive sulle azioni europee; nessun sovrappeso dell'area dichiarato.",
+            "source": 2
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.janushenderson.com/it-it/investor/article/quick-view-an-argument-for-the-long-view-during-ai-volatility/",
+          "date": "06/11/2026",
+          "note": "Analisi sul tema IA, non allocazione per area."
+        },
+        {
+          "url": "https://www.janushenderson.com/it-it/investor/article/europes-unloved-opportunity-finding-quality-amid-the-pessimism/",
+          "date": "03/11/2026",
+          "note": "Documento già censito nell'archivio del report; selezione di azioni europee."
+        }
+      ],
+      "note": "Tema tecnologico e selezione del credito non convertiti in pesi sulle asset class aggregate.",
+      "reference": {
+        "url": "https://www.janushenderson.com/it-it/investor/article/quick-view-an-argument-for-the-long-view-during-ai-volatility/",
+        "date": "2026-11-06"
+      }
+    },
+    {
+      "manager": "M&G Investments",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [],
+      "note": "La pagina individuata riguarda Life Investment Office; attribuzione e data insufficienti per usarla come house view di M&G Investments.",
+      "reference": {
+        "url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "HSBC Asset Management",
+      "cells": [
+        [],
+        [],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile",
+            "evidence": "Preferenza qualitativa per i mercati emergenti.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "mensile",
+            "evidence": "Valutazioni del debito emergente considerate interessanti; HC/LC non separati.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-monthly-november-2026",
+          "date": "04/11/2026",
+          "note": "Investment Monthly. Commento leggibile; posizioni delle tabelle grafiche non verificabili nel testo."
+        }
+      ],
+      "note": "Credito IG globale non attribuito automaticamente a USA ed Euro. Nessun peso ricostruito da immagini non leggibili.",
+      "reference": {
+        "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+        "date": "2026-11-06"
+      }
+    },
+    {
+      "manager": "Ninety One",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://ninetyone.com/en/insights/multi-asset-strategy-quarterly-october-2026",
+          "date": "03/11/2026 · view 30/09",
+          "note": "Pubblicazione recente, ma view al 30 settembre e indicatori grafici non leggibili nel testo."
+        }
+      ],
+      "note": "Nessuna intensità ricostruita dai punti della tabella grafica. Data della view distinta dalla data di pubblicazione.",
+      "reference": {
+        "url": "https://ninetyone.com/en/insights/2026-investment-views",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "Nomura Asset Management",
+      "cells": [
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "scenario · 09/2026",
+            "evidence": "Scenario di crescita dei corsi azionari, senza peso dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "scenario · 09/2026",
+            "evidence": "Scenario di crescita dei corsi azionari, senza peso dichiarato.",
+            "source": 1
+          }
+        ],
+        [
+          {
+            "score": 1,
+            "type": "Q",
+            "label": "scenario · 09/2026",
+            "evidence": "Scenario di crescita dei corsi azionari, senza peso dichiarato.",
+            "source": 1
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "score": -1,
+            "type": "Q",
+            "label": "2027 · scenario",
+            "evidence": "Atteso indebolimento dell'euro rispetto al dollaro nell'anno successivo.",
+            "source": 1
+          }
+        ],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://global.nomura-am.co.jp/latest-news/pdf/investment_outlook2026_autumn.pdf",
+          "date": "10/2026 · solo mese · dati 09/2026",
+          "note": "Autumn Outlook: scenari e previsioni, non asset allocation; dati di settembre."
+        }
+      ],
+      "note": "Pubblicazione mensile ammessa, con dati di settembre. EUR/USD è una previsione direzionale, non un peso; nessuna intensità dedotta.",
+      "reference": {
+        "url": "https://www.nomura-am.co.jp/news/20261105111133010296.html",
+        "date": "2026-11-05"
+      }
+    },
+    {
+      "manager": "Eurizon",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
+          "date": "11/2026 · registrato 27/10",
+          "note": "The Globe, posizionamento di novembre; sintesi audio indicizzata, dettaglio dei pesi non disponibile."
+        }
+      ],
+      "note": "Sintesi del posizionamento recente individuata; assenti nel testo accessibile i pesi sulle singole esposizioni.",
+      "reference": {
+        "url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
+        "date": "data recente non confermata"
+      }
+    },
+    {
+      "manager": "Vontobel Asset Management",
+      "cells": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "sources": [
+        {
+          "url": "https://am.vontobel.com/en/insights/navigating-credit-in-a-higher-yield-world",
+          "date": "03/11/2026",
+          "note": "Commento TwentyFour sul credito."
+        }
+      ],
+      "note": "Carry e selezione nel credito senza pesi separati USA/Euro, IG/HY. Investors' Outlook del gruppo non attribuito automaticamente ad Asset Management.",
+      "reference": {
+        "url": "https://am.vontobel.com/en/insights/navigating-credit-in-a-higher-yield-world",
+        "date": "2026-11-03"
+      }
+    }
+  ],
+  "legend": {
+    "A": "peso di allocazione dichiarato",
+    "Q": "orientamento qualitativo, contorno tratteggiato: non peso",
+    "N": "dato informativo, non classificabile"
+  },
+  "scope_manager_count": 30,
+  "coverage": [
+    {
+      "name": "Azionario globale",
+      "A": 4,
+      "Q": 5,
+      "nd": 21
+    },
+    {
+      "name": "Azionario USA",
+      "A": 3,
+      "Q": 6,
+      "nd": 21
+    },
+    {
+      "name": "Azionario Europa",
+      "A": 2,
+      "Q": 6,
+      "nd": 22
+    },
+    {
+      "name": "Azionario emergenti",
+      "A": 3,
+      "Q": 3,
+      "nd": 24
+    },
+    {
+      "name": "Governativi USA BT",
+      "A": 1,
+      "Q": 0,
+      "nd": 29
+    },
+    {
+      "name": "Governativi USA MLT",
+      "A": 1,
+      "Q": 1,
+      "nd": 28
+    },
+    {
+      "name": "Governativi Euro BT",
+      "A": 1,
+      "Q": 1,
+      "nd": 28
+    },
+    {
+      "name": "Governativi Euro MLT",
+      "A": 0,
+      "Q": 1,
+      "nd": 29
+    },
+    {
+      "name": "Corporate IG USA",
+      "A": 1,
+      "Q": 1,
+      "nd": 28
+    },
+    {
+      "name": "Corporate IG Euro",
+      "A": 0,
+      "Q": 2,
+      "nd": 28
+    },
+    {
+      "name": "Corporate HY USA",
+      "A": 0,
+      "Q": 3,
+      "nd": 27
+    },
+    {
+      "name": "Corporate HY Euro",
+      "A": 0,
+      "Q": 1,
+      "nd": 29
+    },
+    {
+      "name": "Obbligazionario emergenti",
+      "A": 3,
+      "Q": 3,
+      "nd": 24
+    },
+    {
+      "name": "Oro",
+      "A": 1,
+      "Q": 2,
+      "nd": 27
+    },
+    {
+      "name": "EUR/USD",
+      "A": 0,
+      "Q": 2,
+      "nd": 28
+    },
+    {
+      "name": "Brent",
+      "A": 0,
+      "Q": 0,
+      "nd": 30
+    }
+  ],
+  "generated_at_rome": "17/11/2026 22:19"
+}
