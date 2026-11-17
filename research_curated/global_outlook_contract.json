@@ -388,5 +388,43 @@
     "historical_data_policy": "Retain archived data and earlier reports; exclude out-of-scope managers from operational research and new report metrics.",
     "coverage_denominator": 30,
     "selection": "Editorial selection approved by user, Vontobel replaces Legal & General."
+  },
+  "asset_class_matrix": {
+    "enabled": true,
+    "placement": "immediately_before_section_04",
+    "columns": [
+      "Azionario globale",
+      "Azionario USA",
+      "Azionario Europa",
+      "Azionario emergenti",
+      "Governativi USA BT",
+      "Governativi USA MLT",
+      "Governativi Euro BT",
+      "Governativi Euro MLT",
+      "Corporate IG USA",
+      "Corporate IG Euro",
+      "Corporate HY USA",
+      "Corporate HY Euro",
+      "Obbligazionario emergenti",
+      "Oro",
+      "EUR/USD",
+      "Brent"
+    ],
+    "scope": "Only the 30 approved managers",
+    "publication_window_days": 30,
+    "monthly_current_previous_allowed": true,
+    "allocation_scale": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "qualitative_views": "Q dashed border, kept distinct from declared allocation A",
+    "unknown": "n.d., never neutral",
+    "preserve_horizons_teams_subsets": true,
+    "source_dates_and_evidence_required": true,
+    "summary_chart": "Unique manager coverage per asset class: A, only Q, n.d.; not consensus",
+    "last_snapshot": "research_curated/asset_class_matrix_2026-11-17.json"
   }
 }
