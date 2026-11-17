@@ -323,5 +323,52 @@
       "Preserve historical versions for rollback, changes require explicit request and QA"
     ],
     "superseded_on": "2026-11-16"
+  },
+  "research_scope": {
+    "enabled": true,
+    "effective_from": "2026-11-17",
+    "manager_count": 30,
+    "managers": [
+      "BlackRock",
+      "J.P. Morgan Asset Management",
+      "Amundi",
+      "PIMCO",
+      "Goldman Sachs Asset Management",
+      "Morgan Stanley Investment Management",
+      "Vanguard",
+      "Fidelity International",
+      "Fidelity Investments",
+      "Capital Group",
+      "State Street Investment Management",
+      "UBS Asset Management",
+      "Wellington Management",
+      "T. Rowe Price",
+      "BNP Paribas Asset Management",
+      "Allianz Global Investors",
+      "DWS",
+      "Schroders",
+      "Pictet Asset Management",
+      "Invesco",
+      "Franklin Templeton",
+      "PGIM",
+      "Robeco",
+      "Janus Henderson Investors",
+      "M&G Investments",
+      "HSBC Asset Management",
+      "Ninety One",
+      "Nomura Asset Management",
+      "Eurizon",
+      "Vontobel Asset Management"
+    ],
+    "aliases": {
+      "Janus Henderson": "Janus Henderson Investors",
+      "Eurizon Asset Management": "Eurizon",
+      "Vontobel": "Vontobel Asset Management"
+    },
+    "discover_new_managers": false,
+    "allow_new_sources_for_selected_managers": true,
+    "historical_data_policy": "Retain archived data and earlier reports; exclude out-of-scope managers from operational research and new report metrics.",
+    "coverage_denominator": 30,
+    "selection": "Editorial selection approved by user, Vontobel replaces Legal & General."
   }
 }
