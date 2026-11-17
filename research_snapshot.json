@@ -1,16 +1,37 @@
 {
-  "generated_at_utc": "2026-11-16T20:52:06+00:00",
+  "generated_at_utc": "2026-11-17T05:52:25+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 102,
   "sources_total": 118,
   "sources_active": 118,
   "source_last_results": {
-    "changed_requires_review": 2,
+    "changed_requires_review": 3,
     "error": 11,
-    "unchanged": 105
+    "unchanged": 104
   },
-  "source_change_events_last_4d": 131,
+  "source_change_events_last_4d": 134,
   "source_changes_recent": [
+    {
+      "source_id": "src-nuveen-outlook",
+      "checked_at_utc": "2026-11-17T05:51:23+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-loomis-oct26",
+      "checked_at_utc": "2026-11-17T05:51:23+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-census-tokio-marine-asset-management",
+      "checked_at_utc": "2026-11-17T05:51:23+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-added-value-partners-group",
       "checked_at_utc": "2026-11-16T20:51:03+00:00",
@@ -829,31 +850,26 @@
       "result": "baseline_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-census-samsung-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-orbis-investments",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-ruffer-llp",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1365,
+  "candidate_documents_total": 1367,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Kotak Mahindra Asset Management",
+      "candidate_title": "Source institutional research registry",
+      "candidate_url": "https://validate.perfdrive.com/?ssa=98c7f5c1-d336-4714-a279-ff79e1813ab4&ssb=19827297257&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=9a021ee4-cslf-437e-acb5-eb74e3eeb428&ssk=botmanager_support@radware.com&ssm=62582986593944874108651594164224&ssn=6d98d4b70cae3c92d79c35d8cb9d3f297535b9050e2d-b9be-40b1-be95ee&sso=7923018d-cb502a2c27e40cc0fb190e1937999bc5331e895e44b03466&ssp=18599172491794811875179481191597150&ssq=11293069472634771374894726987336924316399&ssr=NTIuMjI0LjI0NC4xMDU=&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBiOTA1MGUyZC1iOWJlLTQwYjEtYjE4ZC1jYjUwMmEyYzI3ZTQxLTE3OTQ4OTQ3MjY2MTQwLTAwNTg4YjYyYTYyZjhkMzg5MzExMCIsInJkIjoia290YWttZi5jb20iLCJ1em14IjoiN2ZjMDAwYjg3MjkxZWItYWZhMi00NDBmLTgxYzMtODE2MWM5NmZlMjRiMS0xNzk0ODk0NzI2NjE0MC0wMGUyMjc2NGMxYzlmZDBhYWFlMTAifQ==",
+      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
+      "discovered_at_utc": "2026-11-17T05:51:57+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/prospettive/articles/2023/q3/where-now-for-global-equity-markets.html?%0Ableh+%22+canary=1&sf268390811=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-17T05:51:57+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Kotak Mahindra Asset Management",
       "candidate_title": "Source institutional research registry",
@@ -3234,22 +3250,6 @@
       "institution_name": "Tokio Marine Asset Management",
       "candidate_title": "運用体制",
       "candidate_url": "https://www.tokiomarineam.co.jp/company/index.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "責任投資の取組み",
-      "candidate_url": "https://www.tokiomarineam.co.jp/company/responsible_investment/index.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "投資信託用語集",
-      "candidate_url": "https://www.tokiomarineam.co.jp/basic_knowledge/word/index.html",
       "source_page_url": "https://www.tokiomarineam.co.jp/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
