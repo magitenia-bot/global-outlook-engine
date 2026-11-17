@@ -1,6 +1,41 @@
 {
-  "utc": "2026-11-17T14:59:43.311272+00:00",
+  "utc": "2026-11-17T17:10:50.387380+00:00",
   "issues": [
+    {
+      "manager": "Sumitomo Mitsui DS Asset Management",
+      "source_url": "https://www.smd-am.co.jp/english/corporate/investment.html",
+      "category": "other_error",
+      "http_code": 404,
+      "message": "HTTP Error 404: Not Found"
+    },
+    {
+      "manager": "VanEck",
+      "source_url": "https://www.vaneck.com/us/en/insights/investment-outlook",
+      "category": "redirect_error",
+      "http_code": 302,
+      "message": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+    },
+    {
+      "manager": "Pictet Asset Management",
+      "source_url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+      "category": "access_restricted",
+      "http_code": 403,
+      "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "Allianz Global Investors",
+      "source_url": "https://origin-it.allianzgi.com/it-it/insights/the-week-ahead",
+      "category": "redirect_error",
+      "http_code": 302,
+      "message": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+    },
+    {
+      "manager": "Eurizon Asset Management",
+      "source_url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
+      "category": "redirect_error",
+      "http_code": 302,
+      "message": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
     {
       "manager": "Main Management",
       "source_url": "https://www.mainmgt.com/insights/",
@@ -21,34 +56,6 @@
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
-    },
-    {
-      "manager": "CSOP Asset Management",
-      "source_url": "https://www.csopassetx.com/en/",
-      "category": "other_error",
-      "http_code": null,
-      "message": "<urlopen error [Errno 111] Connection refused>"
-    },
-    {
-      "manager": "Daiwa Asset Management",
-      "source_url": "https://www.daiwa-am.co.jp/specialreport/outlook/index.html",
-      "category": "access_restricted",
-      "http_code": 403,
-      "message": "HTTP Error 403: Forbidden"
-    },
-    {
-      "manager": "KB Asset Management",
-      "source_url": "https://kbam.co.kr/en",
-      "category": "other_error",
-      "http_code": null,
-      "message": "<urlopen error timed out>"
-    },
-    {
-      "manager": "Nomura Asset Management",
-      "source_url": "https://www.reuters.com/markets/wealth/nomura-asset-counting-japanese-market-enthusiasm-expand-global-business-2026-10-07/",
-      "category": "access_restricted",
-      "http_code": 401,
-      "message": "HTTP Error 401: HTTP Forbidden"
     }
   ]
 }
