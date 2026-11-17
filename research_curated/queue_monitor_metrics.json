@@ -5,8 +5,8 @@
   "total_candidates": 342,
   "new_candidates_appended": 0,
   "batch_01_candidates": 20,
-  "unresolved": 252,
-  "prioritized_backlog": 252,
+  "unresolved": 250,
+  "prioritized_backlog": 250,
   "verified_primary_documents": 7,
   "explicit_warning": "No candidate is a validated view without ChatGPT source reading"
 }
