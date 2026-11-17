@@ -1,8 +1,8 @@
 {
   "contract_id": "GLOBAL_OUTLOOK_DEFINITIVE",
-  "contract_version": "2.1",
-  "approved_format_checkpoint": "GO-EDITORIAL-20261116-2.1",
-  "effective_from": "2026-11-16",
+  "contract_version": "2.2",
+  "approved_format_checkpoint": "GO-DEFINITIVE-30-MATRIX-20261117",
+  "effective_from": "2026-11-17",
   "status": "definitive",
   "timezone": "Europe/Rome",
   "automation": {
@@ -218,7 +218,7 @@
       "output": "Static HTML charts with meaningful labels and text alternatives; accessible without JS"
     },
     "format": "editorial_descriptive_2_1_with_changes",
-    "current_definitive": "GLOBAL_OUTLOOK_EDITORIAL_2_1",
+    "current_definitive": "GLOBAL_OUTLOOK_EDITORIAL_2_2_30_CASE_MATRIX",
     "primary_principle": "Most recent relevant views of largest managers, explained narratively, take precedence over matrices and taxonomy.",
     "structure": [
       "Executive Investment Outlook — 4-7 grounded messages",
@@ -281,6 +281,18 @@
         "embed_images": true,
         "preserve_aspect_ratio": true,
         "include_full_manager_name": true
+      },
+      "matrix_insertion": {
+        "after": "House Views",
+        "before": "Lettura trasversale",
+        "section_number": "03 bis",
+        "renumber_existing_sections": false
+      },
+      "house_view_order": "Publication dates descending within each narrative/expandable group; month precision explicit; undated last",
+      "house_change_footer": {
+        "required_for_every_manager": true,
+        "reference": "Previous actually published report; source-backed material changes, no invented changes",
+        "missing": "n.d. when not comparable"
       }
     }
   },
@@ -426,5 +438,15 @@
     "source_dates_and_evidence_required": true,
     "summary_chart": "Unique manager coverage per asset class: A, only Q, n.d.; not consensus",
     "last_snapshot": "research_curated/asset_class_matrix_2026-11-17.json"
+  },
+  "approval_2026_11_17": {
+    "status": "definitive",
+    "approved_at_rome": "17/11/2026, 22:35",
+    "user_instruction": "salva tutto come definitivo",
+    "precedence": "This editorial 2.2 contract supersedes all conflicting legacy visual structures retained for rollback.",
+    "preserve_schedules": true,
+    "scope_manager_count": 30,
+    "individual_house_signal_badges": false,
+    "matrix_signal_badges": true
   }
 }
