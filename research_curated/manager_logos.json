@@ -8,9 +8,9 @@
       "site": "https://www.blackrock.com"
     },
     "J.P. Morgan Asset Management": {
-      "url": "https://cdn.jpmorganfunds.com/etc/designs/jpm-am-aem/images/favicon.ico",
+      "url": "https://www.asifma.org/wp-content/uploads/2018/06/j.p.-morgan-asset-management.png",
       "site": "https://am.jpmorgan.com/it/en/asset-management/institutional/",
-      "kind": "official brand mark"
+      "source_page": "https://www.asifma.org/wp-content/uploads/2018/06/j.p.-morgan-asset-management.png"
     },
     "Amundi": {
       "url": "https://static.amundi.com/web-assets/awf-assets/corporate/logo_menu_mobile.png",
@@ -31,14 +31,14 @@
       "site": "https://www.morganstanley.com/im/en-us/individual-investor.html"
     },
     "Vanguard": {
-      "url": "https://corporate.vanguard.com/etc.clientlibs/corporatesite/clientlibs/clientlib-site/resources/icons/vanguardLogos/favicon.ico",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Vanguard.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "site": "https://corporate.vanguard.com",
-      "kind": "official brand mark"
+      "source_page": "https://commons.wikimedia.org/wiki/File:Vanguard.svg"
     },
     "Fidelity International": {
-      "url": "https://www.fidelity.co.uk/static_cms/fil_site_assets/images/favicon-16x16.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/FidelityInternational.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
       "site": "https://www.fidelity.co.uk",
-      "kind": "official brand mark"
+      "source_page": "https://commons.wikimedia.org/wiki/File:FidelityInternational.svg"
     },
     "Fidelity Investments": {
       "url": "https://www.fidelity.com/intlacct/images/fidelityweblogo.gif",
