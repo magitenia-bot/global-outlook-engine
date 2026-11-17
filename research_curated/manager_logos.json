@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "effective_from": "2026-11-17",
+  "manager_count": 30,
+  "logos": {
+    "BlackRock": {
+      "url": "https://www.blackrock.com/uk-retail-c-assets/cache-1542298123000/images/media-bin/web/global/wordmark/blackrock-logo-sitemap.svg",
+      "site": "https://www.blackrock.com"
+    },
+    "J.P. Morgan Asset Management": {
+      "url": "https://cdn.jpmorganfunds.com/etc/designs/jpm-am-aem/images/favicon.ico",
+      "site": "https://am.jpmorgan.com/it/en/asset-management/institutional/",
+      "kind": "official brand mark"
+    },
+    "Amundi": {
+      "url": "https://static.amundi.com/web-assets/awf-assets/corporate/logo_menu_mobile.png",
+      "site": "https://www.amundi.com"
+    },
+    "PIMCO": {
+      "url": "https://www.pimco.com/it/it/-/media/pimco-images/logos/white-logo.webp?rev=cf1e230c195e4230a15ab2d7efc99ee2&la=it-IT&h=20&w=107&hash=C7BC35A5BC216536B4E99D745EA111C4",
+      "site": "https://www.pimco.com/it/it",
+      "kind": "official brand mark"
+    },
+    "Goldman Sachs Asset Management": {
+      "url": "https://cdn.gs.com/images/goldman-sachs/v1/gs-favicon-180.png",
+      "site": "https://am.gs.com/it-it/advisors",
+      "kind": "official brand mark"
+    },
+    "Morgan Stanley Investment Management": {
+      "url": "https://www.morganstanley.com/content/dam/im/assets/web/images/logo/logo_msim.svg",
+      "site": "https://www.morganstanley.com/im/en-us/individual-investor.html"
+    },
+    "Vanguard": {
+      "url": "https://corporate.vanguard.com/etc.clientlibs/corporatesite/clientlibs/clientlib-site/resources/icons/vanguardLogos/favicon.ico",
+      "site": "https://corporate.vanguard.com",
+      "kind": "official brand mark"
+    },
+    "Fidelity International": {
+      "url": "https://www.fidelity.co.uk/static_cms/fil_site_assets/images/favicon-16x16.png",
+      "site": "https://www.fidelity.co.uk",
+      "kind": "official brand mark"
+    },
+    "Fidelity Investments": {
+      "url": "https://www.fidelity.com/intlacct/images/fidelityweblogo.gif",
+      "site": "https://www.fidelity.com"
+    },
+    "Capital Group": {
+      "url": "https://static.capitalgroup.com/content/dam/cgc/tenants/apac/images/cg-logo-tm-317x82.png",
+      "site": "https://www.capitalgroup.com"
+    },
+    "State Street Investment Management": {
+      "url": "https://www.ssga.com/library-content/images/site/state-street-investment-management-logo.svg",
+      "site": "https://www.ssga.com"
+    },
+    "UBS Asset Management": {
+      "url": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/logo/UBS_Logo_Semibold.svg",
+      "site": "https://www.ubs.com"
+    },
+    "Wellington Management": {
+      "url": "https://www.wellington.com/content/dam/wellington/global/icons/logo.svg.thumb.800.480.png?ck=1794588180",
+      "site": "https://www.wellington.com"
+    },
+    "T. Rowe Price": {
+      "url": "https://www.troweprice.com/content/dam/public/enterprise/apple-touch-icon.png",
+      "site": "https://www.troweprice.com/en/us",
+      "kind": "official brand mark"
+    },
+    "BNP Paribas Asset Management": {
+      "url": "https://www.bnpparibas-am.com/en/wp-content/themes/bnpp-global-theme/assets/images/bnp-logo.svg?1",
+      "site": "https://www.bnpparibas-am.com"
+    },
+    "Allianz Global Investors": {
+      "url": "https://www.allianzgi.com/-/media/allianzgi/shared/logo/logo-allianz.svg?rev=397001da0f574dbdbf895f1116c12f9c&sc_lang=en",
+      "site": "https://www.allianzgi.com"
+    },
+    "DWS": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/DWS_Group_202x_logo.svg/1280px-DWS_Group_202x_logo.svg.png?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "site": "https://www.dws.com",
+      "source_page": "https://de.wikipedia.org/wiki/DWS_Group"
+    },
+    "Schroders": {
+      "url": "https://www.schroders.com/en/global/individual/",
+      "site": "https://www.schroders.com/en/global/individual/",
+      "kind": "inline official vector logo"
+    },
+    "Pictet Asset Management": {
+      "url": "https://am.pictet.com/content/dam/am-pictet/media/system/logo/am-pictet.svg",
+      "site": "https://am.pictet.com"
+    },
+    "Invesco": {
+      "url": "https://www.invesco.com/content/dam/invesco/global/en/images/invesco-blue.svg",
+      "site": "https://www.invesco.com"
+    },
+    "Franklin Templeton": {
+      "url": "https://franklintempletonprod.widen.net/content/hrxzxi4q8b/webp/ft-global-logo-header.png",
+      "site": "https://www.franklintempleton.com"
+    },
+    "PGIM": {
+      "url": "https://www.pgim.com/content/dam/pgim/us/en/pgim-center/active/graphical-elements/logos/pgim-light1.svg",
+      "site": "https://www.pgim.com"
+    },
+    "Robeco": {
+      "url": "https://images.ctfassets.net/tl4x668xzide/7sOBECntwXSMnPJ8EW5dMU/6097d7db27c41f8fe34f066d18e97f4e/robeco-logo-color.png?w=320&h=94&fit=fill&fm=png",
+      "site": "https://www.robeco.com"
+    },
+    "Janus Henderson Investors": {
+      "url": "https://www.janushenderson.com/wp-content/uploads/sites/4/JanusHenderson_Logo_4140_Slate.svg",
+      "site": "https://www.janushenderson.com"
+    },
+    "M&G Investments": {
+      "url": "https://assets.mandg.com/is/content/mandgdigital/logo?ts=1776354697945&dpr=off",
+      "site": "https://www.mandg.com"
+    },
+    "HSBC Asset Management": {
+      "url": "https://www.assetmanagement.hsbc.it/-/media/Images/logos/hsbc-am-logo.svg",
+      "site": "https://www.assetmanagement.hsbc.com"
+    },
+    "Ninety One": {
+      "url": "https://ninetyone.com/-/media/images/ninetyone_logo.svg",
+      "site": "https://ninetyone.com"
+    },
+    "Nomura Asset Management": {
+      "url": "https://global.nomura-am.co.jp/assets/images/logo-nomura-foot.svg",
+      "site": "https://global.nomura-am.co.jp"
+    },
+    "Eurizon": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Eurizon_Capital.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "site": "https://www.eurizoncapital.com",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eurizon_Capital.svg"
+    },
+    "Vontobel Asset Management": {
+      "url": "https://am.vontobel.com/themes/custom/vontobel/logo.svg",
+      "site": "https://am.vontobel.com"
+    }
+  }
+}
