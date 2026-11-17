@@ -264,6 +264,24 @@
       "location": "Immediately after Executive Investment Outlook and before House Views",
       "display": "Four KPI tiles and concise descriptions linking to original sources; do not show a false zero for unassessable changes",
       "no_changes": "Explicitly state no verified changes if diffs are actually empty, not if data missing"
+    },
+    "editorial_architecture": {
+      "section_order": [
+        "Executive Investment Outlook",
+        "Novità rispetto al report precedente",
+        "House Views",
+        "Lettura trasversale",
+        "Equity & Fixed Income Intelligence",
+        "Fonti e metodologie"
+      ],
+      "canonical_reference": "publisher/global_outlook_current.json",
+      "manager_logos": {
+        "required": true,
+        "source_registry": "research_curated/manager_logos.json",
+        "embed_images": true,
+        "preserve_aspect_ratio": true,
+        "include_full_manager_name": true
+      }
     }
   },
   "definitive_release": {
