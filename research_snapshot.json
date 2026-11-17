@@ -1,16 +1,66 @@
 {
-  "generated_at_utc": "2026-11-17T05:52:25+00:00",
+  "generated_at_utc": "2026-11-17T20:03:43+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
-  "source_institutions": 102,
-  "sources_total": 118,
-  "sources_active": 118,
+  "source_institutions": 30,
+  "sources_total": 45,
+  "sources_active": 45,
   "source_last_results": {
-    "changed_requires_review": 3,
+    "baseline_requires_review": 1,
+    "changed_requires_review": 9,
     "error": 11,
-    "unchanged": 104
+    "unchanged": 98
   },
-  "source_change_events_last_4d": 134,
+  "source_change_events_last_4d": 51,
   "source_changes_recent": [
+    {
+      "source_id": "src-capitalgroup-outlook",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-corporate-weekly",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-de",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-investments-quarterly",
+      "checked_at_utc": "2026-11-17T20:03:26+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-nuveen-outlook",
       "checked_at_utc": "2026-11-17T05:51:23+00:00",
@@ -318,542 +368,162 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-robeco-monthly",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-pimco-outlook",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-schroders-outlook",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-capitalgroup-outlook",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-outlook",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-statestreet-markets",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-columbia-insights",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-loomis-oct26",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly-brief",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bofa-cio-weekly",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-fr",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-hsbc-weekly",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-axa-multiasset",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-robeco-2026-outlook",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-2026-midyear",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-capital-2026-cma",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-01",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-02",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-03",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-04",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-05",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-06",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-07",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-08",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-09",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-10",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-01",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-02",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-04",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-05",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-06",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-07",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-09",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-10",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-11",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-12",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-13",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-15",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-16",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-17",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-18",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-19",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-20",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-dws",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-uob-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-nomura-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-eastspring-investments",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-baroda-bnp-paribas-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-icici-prudential-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-china-asset-management-chinaamc",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-baillie-gifford",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-sumi-trust-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-fullerton-fund-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-lion-global-investors",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-value-partners-group",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-amova-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-sbi-funds-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-nippon-life-india-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-axis-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-asset-management-one",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-resona-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-sparx-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-tokio-marine-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-hdfc-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-kotak-mahindra-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-aditya-birla-sun-life-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-motilal-oswal-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-china-southern-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-e-fund-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-bosera-asset-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-harvest-fund-management",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-mirae-asset-global-investments",
-      "checked_at_utc": "2026-11-13T18:49:07+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1367,
+  "candidate_documents_total": 1386,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Commentary Second Quarter 2026 Quarterly Market Update",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/topics/market-commentary/second-quarter-2026-quarterly-market-update",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Commentary Third Quarter 2026 Quarterly Market Update",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/topics/market-commentary/third-quarter-2026-quarterly-market-update",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "QMU",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/results?tagname=qmu",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "AART",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/results?tagname=aart",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Fidelity Asset Allocation Research Team",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/results?author=fidelity-asset-allocation-research-team",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Featured Fidelity Portfolio Quick Check® Analyze, compare, and optimize your investment strategy in minutes.",
+      "candidate_url": "https://institutional.fidelity.com/advisors/portfolio-construction/tools-and-services/portfolio-quick-check",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Spotlight Alternative investments education program Boost your expertise with our multi-part alternative investment courses at Fidelity Institutional.",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/spotlights/alternatives-education-program",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Featured Outlook: Five forces that could shape markets in 2026 Fidelity's Asset Allocation Research Team outlines key investment risks and opportunities for the year ahead.",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/topics/market-commentary/2026-aart-outlook",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Portfolio Insights",
+      "candidate_url": "https://institutional.fidelity.com/advisors/portfolio-construction/portfolio-insights",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Asset Allocation",
+      "candidate_url": "https://institutional.fidelity.com/advisors/investment-solutions/asset-classes/asset-allocation",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Topic Library",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/topics",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Webinars & Calls",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/webinars",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Series",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/series",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Spotlights",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/spotlights",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Overview",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity Investments",
+      "candidate_title": "Quarterly Market Update",
+      "candidate_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "source_page_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "17/11/2026 | Weekly Market Directions High US Rates and Debt Costs Sustain Volatility Across Globa... Persistent US inflation, rising Treasury yields and record debt-servicing costs reinforce bond market volatility, supporting a flexible, g",
+      "candidate_url": "https://www.amundi.de/institutional/article/high-us-rates-and-debt-costs-sustain-volatility-across-global-bond-markets-and-investor-risks",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "In-depth research and expert views for professional investors",
+      "candidate_url": "https://www.troweprice.com/en/us/investment-institute/insights",
+      "source_page_url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Capital Group",
+      "candidate_title": "Cosa ci insegnano i grandi boom degli investimenti del passato sull’intelligenza artificiale arrow_forward",
+      "candidate_url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/what-past-investment-booms-can-teach-us-about-ai.html",
+      "source_page_url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html",
+      "discovered_at_utc": "2026-11-17T20:03:37+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Kotak Mahindra Asset Management",
       "candidate_title": "Source institutional research registry",
@@ -3101,220 +2771,21 @@
       "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - October 2026 13 Nov 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-october-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "MOA & AOA",
-      "candidate_url": "https://files.hdfcfund.com/s3fs-public/2025-01/HDFC%20AMC%20Final%20Booklet.pdf",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "HDFC MF Insights",
-      "candidate_url": "https://www.hdfcfund.com/learn/deep-dives/hdfc-mf-insights",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "「金融商品取引法」における「特定投資家制度」に関するお知らせ",
-      "candidate_url": "https://www.tokiomarineam.co.jp/kigenbi.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "ご投資にかかる手数料等およびリスクについて",
-      "candidate_url": "https://www.tokiomarineam.co.jp/feeandrisk.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "第12回 Asset Management Women’s Forum 12月11日開催イベントのご案内",
-      "candidate_url": "https://www.tokiomarineam.co.jp/news/2026/qq9rrr0000000eq5-att/20261023_TMAM_Asset_Management_Womens_Forum.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "「NISAつみたて投資枠」対象商品追加のお知らせ 「東京海上・年金運用型戦略ファンド（年1回決算型）」",
-      "candidate_url": "https://www.tokiomarineam.co.jp/news/2026/048.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "「サステナビリティ・レポート2026」発行",
-      "candidate_url": "https://www.tokiomarineam.co.jp/company/sustainability/cf5aqc0000000ceb-att/sustainabilityreport2026.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "第13回 Asset Management Women’s Forum 12月17日開催イベントのご案内",
-      "candidate_url": "https://www.tokiomarineam.co.jp/news/2026/bi8q6a0000000ed3-att/20261112_TMAM_Asset_Management_Womens_Forum.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "TMAMマーケットウィークリー （10月30日）～AI・半導体関連株のIPO期待と決算に揺れた一週間～",
-      "candidate_url": "https://www.tokiomarineam.co.jp/market/market_report/2026/jprdpc0000000e7s-att/20261030_TMAM_Weekly_Report.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "TMAMマーケットウィークリー （11月6日）～米中間選挙で民主党が勝利、日米株式市場はAI・半導体関連株中心に下落～",
-      "candidate_url": "https://www.tokiomarineam.co.jp/market/market_report/2026/bi8q6a0000000do9-att/20261106_TMAM_Weekly_Report.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "TMAMマーケットウィークリー （11月13日）～米AI・半導体への過度な懸念が一服し、日米株価は前週の急落分を巻き戻し～",
-      "candidate_url": "https://www.tokiomarineam.co.jp/market/market_report/2026/bi8q6a0000000eoh-att/F_20261113_TMAM_Weekly_Report.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "東京海上・宇宙関連株式ファンド（為替ヘッジなし/為替ヘッジあり）「組入銘柄の状況（2026年9月末時点）」",
-      "candidate_url": "https://www.tokiomarineam.co.jp/fund/fund_report/2026/jprdpc0000000e1s-att/F_Report_Uchukanren_disclosure202609.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "【マーケット】ヘルスケアREITデータ集「HealthCare REIT Market Data（2026年10月末基準）」",
-      "candidate_url": "https://www.tokiomarineam.co.jp/fund/fund_report/2026/bi8q6a0000000dcu-att/F_HCREIT_marketdata202611.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "東京海上・がんとたたかう投信（為替ヘッジなし）（年１回決算型）／（為替ヘッジあり）（年１回決算型） 販売用資料（2026年11月）",
-      "candidate_url": "https://www.tokiomarineam.co.jp/fund/fund_report/2026/bi8q6a0000000dff-att/635086A_HP_2611.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "弊社公募投資信託の11月6日付の基準価額の下落について",
-      "candidate_url": "https://www.tokiomarineam.co.jp/fund/fund_report/2026/bi8q6a0000000dx6-att/F_Report_20261106.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "いちよし・グローバル好配当戦略ファンド（年６回決算型）（愛称：ミズナラ）「ミズナラ通信⑥ 当ファンドにおけるインカム収益の寄与について」",
-      "candidate_url": "https://www.tokiomarineam.co.jp/fund/fund_report/2026/bi8q6a0000000e5w-att/F_911011_mizunara_spotreport_202611.pdf",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Tokio Marine Asset Management",
-      "candidate_title": "運用体制",
-      "candidate_url": "https://www.tokiomarineam.co.jp/company/index.html",
-      "source_page_url": "https://www.tokiomarineam.co.jp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
     }
   ],
   "views_already_recorded": 129,
   "institutions_with_recorded_views": 43,
   "institutions_without_recorded_views": [
-    "AQR Capital Management",
-    "AXA Investment Managers",
-    "Aberdeen Investments",
-    "Aditya Birla Sun Life Asset Management",
-    "AllianceBernstein",
-    "Apollo Global Management",
-    "Ashmore Group",
-    "Asset Management One",
-    "Baillie Gifford",
-    "Bank of America Private Bank CIO",
-    "Bosera Asset Management",
-    "Brown Advisory",
-    "CSOP Asset Management",
     "Capital Group",
-    "China Asset Management (ChinaAMC)",
-    "China Southern Asset Management",
-    "Daiwa Asset Management",
-    "E Fund Management",
     "Eurizon Asset Management",
-    "Federated Hermes",
     "Fidelity International",
-    "Fiera Capital",
-    "GAM Investments",
+    "Fidelity Investments",
     "Goldman Sachs Asset Management",
-    "Goldman Sachs Research",
-    "HDFC Asset Management",
-    "Hamilton Lane",
     "Janus Henderson",
-    "Jupiter Asset Management",
-    "KB Asset Management",
-    "KKR",
-    "Kotak Mahindra Asset Management",
-    "Lazard Asset Management",
     "M&G Investments",
-    "MFS Investment Management",
-    "Macquarie Asset Management",
-    "Main Management",
-    "Man Group",
-    "Mirae Asset Global Investments",
     "Morgan Stanley Investment Management",
-    "Motilal Oswal Asset Management",
-    "Orbis Investments",
     "PGIM",
-    "Partners Group",
-    "Polar Capital",
-    "Principal Asset Management",
-    "Resona Asset Management",
-    "Ruffer LLP",
-    "SEI Investments",
-    "SPARX Asset Management",
-    "Samsung Asset Management",
     "Schroders",
-    "StepStone Group",
-    "Sumitomo Mitsui DS Asset Management",
-    "Tokio Marine Asset Management",
-    "UBS Global Wealth Management",
-    "VanEck",
     "Vanguard",
     "Vontobel"
   ],
