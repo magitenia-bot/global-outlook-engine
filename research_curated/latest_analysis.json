@@ -26,8 +26,8 @@
   "dataset_sha": "d21130c36efde41bbc8b2a0a0be97274996c37f1",
   "review_queue_sha": "c9bde7535249f36d58f8d549bd14e6e25fe6546c",
   "unique_ids": true,
-  "persistence_verified": false,
-  "persistence_note": "Awaiting readback of latest_analysis.json; dataset and queue readback succeeded",
+  "persistence_verified": true,
+  "persistence_note": "Readback confirmed current_views.csv, review_queue.csv, latest_analysis.json and consistent dataset/queue blob SHA; analysis status written in subsequent commit",
   "errors": [],
   "notes": "Amundi November document already represented by existing records; BlackRock weekly commentary reviewed without evidence for an additional unique stance. No changes to validated dataset."
 }
