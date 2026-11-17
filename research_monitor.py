@@ -45,37 +45,26 @@ def rows(path):
  if not path.exists(): return []
  with path.open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
 def names_and_sources():
- """Cover the canonical source catalog first, retaining historical research registries."""
+ """Research the approved catalog of 30 managers."""
+ scope=json.loads((ROOT/"research_curated/global_outlook_contract.json").read_text(encoding="utf-8"))["research_scope"]
+ allowed=set(scope["managers"])
+ aliases=scope.get("aliases",{})
  names=set()
  sources={}
- for filename in REGISTRIES:
-  for row in rows(ROOT/filename):
-   name=(row.get("manager") or row.get("institution") or "").strip()
-   if name: names.add(name)
-   url=(row.get("source_url") or "").strip()
-   if name and url.startswith("https://"):
-    sources[(name,url)]=min(sources.get((name,url),3),3)
- # The canonical institutional catalog was previously omitted from this monitor.
- # 'active' is a CATALOG status, never proof that the actual document was verified.
  for row in rows(ROOT/"sources.csv"):
   name=(row.get("institution_name") or "").strip()
+  canonical=aliases.get(name,name)
   url=(row.get("source_url") or "").strip()
   status=(row.get("status") or "").strip().lower()
-  if name: names.add(name)
-  if not name or not url.startswith("https://") or status not in ("active","verified"):
+  if canonical not in allowed:
+   continue
+  names.add(canonical)
+  if not url.startswith("https://") or status not in ("active","verified"):
    continue
   try: priority=int(row.get("priority") or "3")
   except ValueError: priority=3
-  key=(name,url)
+  key=(canonical,url)
   sources[key]=min(sources.get(key,3),max(1,min(3,priority)))
- # Add pre-existing official document records, but never promote them to validated views.
- for filename in ("research_views_2026-11-10_tranche4_20.csv","expanded_official_outlooks.csv"):
-  for row in rows(ROOT/filename):
-   name=(row.get("institution") or row.get("institution_name") or "").strip()
-   if name:names.add(name)
-   url=(row.get("source_url") or row.get("document_url") or "").strip()
-   if name and url.startswith("https://"):
-    sources[(name,url)]=min(sources.get((name,url),3),3)
  return sorted(names),sorted((priority,name,url) for (name,url),priority in sources.items())
 def append_event(row):
  existing=rows(EVENTS)
