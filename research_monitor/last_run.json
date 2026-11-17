@@ -1,24 +1,24 @@
 {
-  "utc": "2026-11-17T11:10:15.691551+00:00",
+  "utc": "2026-11-17T13:15:09.766166+00:00",
   "mode": "hourly",
   "registered_managers": 212,
   "registered_sources": 121,
   "sources_checked": 80,
-  "sources_successfully_read": 72,
-  "sources_failed": 8,
+  "sources_successfully_read": 71,
+  "sources_failed": 9,
   "source_catalog_coverage_percent": 66.1,
   "priority1_registered": 7,
   "priority2_registered": 68,
   "priority3_registered": 46,
   "source_scan_policy": "rotating catalog; each run covers up to 80 registered URLs; no view classified without source reading",
-  "new_records": 43,
-  "partial_scans": 16,
-  "errors": 8,
+  "new_records": 33,
+  "partial_scans": 13,
+  "errors": 9,
   "error_categories": {
-    "access_restricted": 2,
-    "throttled": 2,
+    "access_restricted": 3,
+    "throttled": 0,
     "redirect_error": 3,
-    "other_error": 1
+    "other_error": 3
   },
   "view_classifications_created": 0
 }
