@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-18",
+  "audit_type": "extraordinary_qa_reconciliation",
+  "source_dataset": "magitenia-bot/global-outlook-engine:main/research_curated/current_views.csv",
+  "source_matrix": "magitenia-bot/global-outlook-engine:main/research_curated/asset_class_matrix_2026-11-17.json",
+  "total_dataset_rows": 264,
+  "unique_row_ids": 264,
+  "selected_managers": 30,
+  "rows_in_manager_scope": 135,
+  "rows_outside_manager_scope": 129,
+  "approved_baseline_rows": 118,
+  "unreconciled_difference": 17,
+  "scope_managers_with_rows": 29,
+  "scope_managers_without_rows": [
+    "M&G Investments"
+  ],
+  "findings": [
+    "135 is the exact number of dataset rows belonging to the 30 managers in the matrix",
+    "129 are outside the manager scope, not suspended observations",
+    "17 is the difference between 135 scoped rows and 118 approved baseline rows; this is not yet a verified row-by-row set",
+    "No proof of newly validated views was obtained in this audit"
+  ],
+  "publication_decision": "preserve_2026-11-17_approved_report",
+  "follow_up": "row-level comparison against approved baseline IDs and primary-source validation required before promoting additional rows",
+  "automatic_recovery_rule": "enabled in Global Outlook scheduled task",
+  "do_not_infer": "do not treat all 17 as new, duplicate or invalid without evidence"
+}
