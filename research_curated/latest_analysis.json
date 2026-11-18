@@ -26,7 +26,8 @@
   "dataset_sha": "b5f1917e405aa595d9489bb6f59fb23ff09e53b2",
   "review_queue_sha": "c9bde7535249f36d58f8d549bd14e6e25fe6546c",
   "unique_ids": true,
-  "persistence_verified": false,
+  "persistence_verified": true,
   "notes": "J.P. Morgan AM 16 Nov: commentary on Treasuries as equity cushion, not explicit allocation stance. BlackRock 16 Nov: strategic AI conviction vs tactical US equities neutral; existing BlackRock November allocation source, no new distinct view added without full deduplication. No candidate queue status altered. Partial session: target 20 not met; queue backlog not recalculated. Catalog 45 URLs from current sources.csv, historical monitor counts not used.",
-  "errors": []
+  "errors": [],
+  "persistence_note": "Readback of dataset and analysis, unique IDs and blob SHA confirmed; no dataset changes"
 }
