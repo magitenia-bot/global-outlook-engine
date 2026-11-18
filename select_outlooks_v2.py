@@ -48,8 +48,8 @@ def classify(row, today, start):
     status = str(row.get('http_status') or '').strip()
     if status != '200': selection = 'exclude_unreachable'
     elif not relevant: selection = 'exclude_generic_or_unrelated'
-    elif bucket == 'unclassified': selection = 'exclude_frequency_unclear'
-    elif date_status == 'outside_window_or_future': selection = 'exclude_outside_window'
+    elif bucket == 'unclassified': selection = 'manual_date_review'
+    elif date_status == 'outside_window_or_future': selection = 'manual_date_review'
     elif date_status == 'within_3_calendar_months_metadata_only': selection = 'priority_manual_review'
     else: selection = 'manual_date_review'
     result = {key: row.get(key, '') for key in FIELDS}
@@ -80,7 +80,7 @@ def main():
             writer = csv.DictWriter(handle, fieldnames=FIELDS, extrasaction='ignore')
             writer.writeheader(); writer.writerows(rows)
     write('outlook_selection.csv', results)
-    for frequency in ('weekly','monthly'):
+    for frequency in ('weekly','monthly','unclassified'):
         candidates = [r for r in results if r['frequency_bucket'] == frequency and r['selection_status'] in ('priority_manual_review','manual_date_review')]
         unique = {}
         for row in candidates:
@@ -90,7 +90,7 @@ def main():
                 unique[key] = row
         write(f'outlook_{frequency}_candidates.csv', list(unique.values()))
         print(f'{frequency}: {len(unique)} unverified candidates for manual review')
-    print(f'Outlook Selection 2.0: {len(results)} records evaluated, window {start} to {today}.')
+    print(f'Outlook Selection 2.1: {len(results)} records evaluated; no automatic date/frequency exclusion.')
     print('No dates, official documents or investment stances certified.')
 
 if __name__ == '__main__': main()
