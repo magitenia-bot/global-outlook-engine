@@ -1,16 +1,72 @@
 {
-  "generated_at_utc": "2026-11-18T05:54:01+00:00",
+  "generated_at_utc": "2026-11-18T13:31:07+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 45,
   "sources_active": 45,
   "source_last_results": {
-    "changed_requires_review": 4,
+    "changed_requires_review": 11,
     "error": 11,
-    "unchanged": 104
+    "unchanged": 97
   },
-  "source_change_events_last_4d": 45,
+  "source_change_events_last_4d": 53,
   "source_changes_recent": [
+    {
+      "source_id": "src-robeco-monthly",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-hsbc-weekly",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-robeco-2026-outlook",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-2026-midyear",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-04",
+      "checked_at_utc": "2026-11-18T13:30:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-tranche4-07",
       "checked_at_utc": "2026-11-18T05:53:49+00:00",
@@ -327,8 +383,56 @@
       "error": ""
     }
   ],
-  "candidate_documents_total": 1386,
+  "candidate_documents_total": 1392,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Wellington Management",
+      "candidate_title": "/it-it/investitori-professionali/approfondimenti/outlook-mensile-sull-asset-allocation-novembre-2026",
+      "candidate_url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-mensile-sull-asset-allocation-novembre-2026",
+      "source_page_url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+      "discovered_at_utc": "2026-11-18T13:31:02+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Wellington Management",
+      "candidate_title": "Investire nel credito",
+      "candidate_url": "https://www.wellington.com/it-it/investitori-professionali/gamma-investimenti/obbligazionario/credito-multisettoriale",
+      "source_page_url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+      "discovered_at_utc": "2026-11-18T13:31:02+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "4 charts every investor needs when markets fall",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/4-charts-every-investor-needs-when-markets-fall",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-18T13:31:02+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Fixed Income Insights",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/fixed-income-insights-q4-2026",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-18T13:31:02+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "whitepaper Prospettive d’investimento ETF Watch – novembre 2026 By Daniel Dornel",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/etf-watch-novembre-2026/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-18T13:31:02+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "Articolo Prospettive d’investimento Correzione IA: cosa è successo? By BNP Paribas Asset Management",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/correzione-ia-cosa-e-successo/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-18T13:31:02+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Fidelity Investments",
       "candidate_title": "Commentary Second Quarter 2026 Quarterly Market Update",
@@ -2677,54 +2781,6 @@
       "institution_name": "HDFC Asset Management",
       "candidate_title": "Market Review - March 2026 5 min read 14 Apr 2026",
       "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-march-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - April 2026 5 min read 11 May 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-april-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - May 2026 11 Jun 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-may-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - June 2026 5 min read 10 Jul 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-june-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - July 2026 5 min read 10 Aug 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-july-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - August 2026 9 Sep 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-august-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - September 2026 13 Oct 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-september-2026",
       "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
