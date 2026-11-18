@@ -1,17 +1,23 @@
 {
-  "generated_at_utc": "2026-11-17T20:03:43+00:00",
+  "generated_at_utc": "2026-11-18T05:54:01+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 45,
   "sources_active": 45,
   "source_last_results": {
-    "baseline_requires_review": 1,
-    "changed_requires_review": 9,
+    "changed_requires_review": 4,
     "error": 11,
-    "unchanged": 98
+    "unchanged": 104
   },
-  "source_change_events_last_4d": 51,
+  "source_change_events_last_4d": 45,
   "source_changes_recent": [
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-18T05:53:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-capitalgroup-outlook",
       "checked_at_utc": "2026-11-17T20:03:26+00:00",
@@ -316,55 +322,6 @@
     {
       "source_id": "src-added-value-partners-group",
       "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-pimco-outlook",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-trowe-weekly",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-loomis-oct26",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-01",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-07",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-value-partners-group",
-      "checked_at_utc": "2026-11-14T05:40:29+00:00",
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
