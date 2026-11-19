@@ -1,16 +1,44 @@
 {
-  "generated_at_utc": "2026-11-18T13:31:07+00:00",
+  "generated_at_utc": "2026-11-19T05:53:19+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 45,
   "sources_active": 45,
   "source_last_results": {
-    "changed_requires_review": 11,
+    "changed_requires_review": 7,
     "error": 11,
-    "unchanged": 97
+    "unchanged": 101
   },
-  "source_change_events_last_4d": 53,
+  "source_change_events_last_4d": 50,
   "source_changes_recent": [
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-19T05:53:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly-us",
+      "checked_at_utc": "2026-11-19T05:53:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-fr",
+      "checked_at_utc": "2026-11-19T05:53:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-05",
+      "checked_at_utc": "2026-11-19T05:53:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-robeco-monthly",
       "checked_at_utc": "2026-11-18T13:30:52+00:00",
@@ -332,59 +360,82 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-trowe-weekly",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-07",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-07",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-value-partners-group",
-      "checked_at_utc": "2026-11-15T05:43:57+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1392,
+  "candidate_documents_total": 1401,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Economic Roundtable: Why Is Global Growth So Resilient?",
+      "candidate_url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/global-economic-growth-roundtable-seth-carpenter-michael-gapen-jens-eisenschmidt-chetan-ahya",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "A Credit Perspective on the AI Buildout",
+      "candidate_url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/ai-investment-fine-print-behind-boom-vishy-tirupattur-dan-toscano",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "2027 Global Outlook: Powered by AI, Tested by Oil",
+      "candidate_url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/2027-global-economic-outlook-ai-growth-inflation-seth-carpenter-serena-tang",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "2027 Global Outlooks: The Case for a Stronger Dollar, Longer AI Cycle",
+      "candidate_url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/global-outlook-2027-seth-carpenter-serena-tang",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "/insights/articles/economic-signals-emerging-from-founders-institute-2026",
+      "candidate_url": "https://www.morganstanley.com/insights/articles/economic-signals-emerging-from-founders-institute-2026",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "/insights/articles/europe-new-investment-era-guides-economic-outlook-2026",
+      "candidate_url": "https://www.morganstanley.com/insights/articles/europe-new-investment-era-guides-economic-outlook-2026",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "/insights/articles/global-economic-outlook-2027",
+      "candidate_url": "https://www.morganstanley.com/insights/articles/global-economic-outlook-2027",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "/insights/articles/stock-market-investment-outlook-2027",
+      "candidate_url": "https://www.morganstanley.com/insights/articles/stock-market-investment-outlook-2027",
+      "source_page_url": "https://www.morganstanley.com/Themes/outlooks",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "Podcast TALKING HEADS Prospettive d’investimento ETF attivi: ampliare le fonti di rendimento del portafoglio By Vincent Bérard & other authors",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/talking-heads-etf-attivi-ampliare-le-fonti-di-rendimento-del-portafoglio/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-19T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Wellington Management",
       "candidate_title": "/it-it/investitori-professionali/approfondimenti/outlook-mensile-sull-asset-allocation-novembre-2026",
@@ -2710,78 +2761,6 @@
       "candidate_title": "Demat to Re-mat Process",
       "candidate_url": "https://mutualfund.adityabirlacapital.com/-/media/bsl/files/faq-dematerialisation/faq-on-dematerialisation-v1.pdf",
       "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Monthly Factsheet",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/forms-and-downloads/factsheetsold",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Tax Reckoner",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/-/media/bsl/files/tax-reckoner/ab-amc---proposed-cg-rates-as-per-finance-bill-no-2-2024.pdf",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Aditya Birla Sun Life Multi Asset Allocation Fund",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/products/wealth-creation-solutions/aditya-birla-sun-life-multi-asset-allocation-fund",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Kotak Mahindra Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://validate.perfdrive.com/?ssa=ec23f8e9-d51b-4b05-b1df-3bf47b441cb9&ssb=74281241188&ssc=https%3A%2F%2Fwww.kotakmf.com%2Fmonthly-market-update&ssi=04ab6892-cslf-4370-ad32-e968d6fdb768&ssk=botmanager_support@radware.com&ssm=08039296070168131101674144951178&ssn=475ad2eaeba0299e65f0e7d39e3c57312cfa6c50674b-d038-4fe5-9eb125&sso=6517d0b2-3f22b8202462623b0c2f22d7de2bebd162c271c3c118d076&ssp=28615062781794587820179457422662709&ssq=64354099579618827058595796455652672175867&ssr=MTM3LjEzNS4zOC4yMDk=&sst=Mozilla/5.0%20(compatible;%20GlobalOutlookResearch/3.2)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2YzUwNjc0Yi1kMDM4LTRmZTUtOTBiMi0zZjIyYjgyMDI0NjIxLTE3OTQ1OTU3OTY4NTUwLTAwNTBiODFlYzg3NmJjNjkwNmMxMCIsInJkIjoia290YWttZi5jb20iLCJ1em14IjoiN2ZjMDAwZjZlNDdkOGMtZmJlOS00NzJhLWIwNDItMDUwYjkwODgzNTE0MS0xNzk0NTk1Nzk2ODU1MC0wMGQzZGI1MGFhYjAxYWZiZjdiMTAifQ==",
-      "source_page_url": "https://www.kotakmf.com/monthly-market-update",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Notice (Monthly & Fortnightly Portfolio)",
-      "candidate_url": "https://www.hdfcfund.com/information/notice-fortnightly-monthly-portfolios",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Monthly & Fortnightly Scheme Portfolio",
-      "candidate_url": "https://www.hdfcfund.com/statutory-disclosure/portfolio/monthly-portfolio",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - February 2026 5 min read 13 Mar 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-february-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "HDFC Asset Management",
-      "candidate_title": "Market Review - March 2026 5 min read 14 Apr 2026",
-      "candidate_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review/market-review-march-2026",
-      "source_page_url": "https://www.hdfcfund.com/learn/macros-markets-more/market-review",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
