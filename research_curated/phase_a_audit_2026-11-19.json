@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_type": "scheduled_phase_A",
+  "date_rome": "2026-11-19",
+  "status": "partial_direct_source_review",
+  "universe_managers": 30,
+  "catalog_active_urls": 45,
+  "urls_directly_opened": 3,
+  "urls_not_directly_opened": 42,
+  "documents_read": 3,
+  "newly_validated_views": 0,
+  "asset_calls_added": 0,
+  "attempts_recorded_in_validation_ledger": 0,
+  "excluded_after_two_attempts": 0,
+  "duplicates_confirmed": 0,
+  "baseline_approved_views": 118,
+  "reviewed": [
+    {
+      "manager": "BlackRock",
+      "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "document_date": "2026-11-16",
+      "finding": "strategic overweight US equities, tactical neutral US equities; already documented in previous review, no new candidate added",
+      "status": "existing_context_not_new"
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://research-center.amundi.com/publications/global-investment-views",
+      "document_date": "2026-11-09",
+      "finding": "November 2026 publication listed; detailed document not opened in this run",
+      "status": "index_only"
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "document_date": "2026-11-16",
+      "finding": "Treasury diversification commentary, not a formal asset allocation recommendation",
+      "status": "no_new_stance"
+    }
+  ],
+  "limitations": [
+    "acquire.py was not executed in this environment; 45 source URLs not independently monitored in this run",
+    "only three URLs opened; Amundi was an index, not full document",
+    "no new view inserted without primary source verification and deduplication",
+    "candidate backlog not recalculated"
+  ],
+  "publication_decision": "do_not_modify_approved_baseline"
+}
