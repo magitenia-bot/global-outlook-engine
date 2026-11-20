@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_type": "scheduled_phase_A",
+  "date_rome": "2026-11-20",
+  "started_at_rome": "2026-11-20T05:02:50+01:00",
+  "scope_managers": 30,
+  "source_catalog_active": 45,
+  "source_catalog_last_monitor_date": "2026-11-19",
+  "sources_directly_consulted_today": 3,
+  "source_urls_directly_consulted": [
+    "https://research-center.amundi.com/article/global-investment-views-november-2026",
+    "https://research-center.amundi.com/publications/global-investment-views",
+    "https://am.gs.com/en-fr/institutions/insights/article/market-monitor-weekly"
+  ],
+  "source_urls_not_directly_consulted_today": 42,
+  "documents_read_today": 2,
+  "new_documents_approved": 0,
+  "new_asset_calls_added": 0,
+  "newly_validated_views": 0,
+  "approved_baseline_views": 118,
+  "failed_validation_attempts_logged": 0,
+  "excluded_after_two_attempts": 0,
+  "duplicate_candidates_identified": 2,
+  "duplicate_note": "Amundi 9 November and GSAM 13 November already appear in previous research; no new validated investment position promoted",
+  "matrix_scope": "30x16 baseline 2026-11-17",
+  "matrix_coverage_new": "n.d.",
+  "average_view_date": "n.d.",
+  "acquire_executed_today": false,
+  "reason": "Runtime cannot access outbound DNS; repository source monitor last ran 19 November, not today",
+  "selector_executed_today": false,
+  "ledger_updated_today": false,
+  "publication": "not part of 05:00 phase A",
+  "sources_checked_notes": [
+    {
+      "manager": "Amundi",
+      "date": "2026-11-09",
+      "result": "Primary original GIV read; existing documented stances, no newly approved view"
+    },
+    {
+      "manager": "Goldman Sachs Asset Management",
+      "date": "2026-11-13",
+      "result": "Primary weekly monitor read; descriptive earnings outlook, not new formal allocation"
+    },
+    {
+      "manager": "Amundi",
+      "date": "2026-11-09",
+      "result": "Official publication index checked"
+    }
+  ],
+  "limitations": [
+    "Not all 45 sources accessed",
+    "No automated acquisition run today",
+    "No complete deduplication of 264 historical rows",
+    "No asset-class recalculation",
+    "No candidate validation attempt logged"
+  ]
+}
