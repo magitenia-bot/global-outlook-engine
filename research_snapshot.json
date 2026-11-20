@@ -1,16 +1,93 @@
 {
-  "generated_at_utc": "2026-11-19T05:53:19+00:00",
+  "generated_at_utc": "2026-11-20T05:55:04+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 45,
   "sources_active": 45,
   "source_last_results": {
-    "changed_requires_review": 7,
-    "error": 11,
-    "unchanged": 101
+    "changed_requires_review": 14,
+    "error": 12,
+    "unchanged": 93
   },
-  "source_change_events_last_4d": 50,
+  "source_change_events_last_4d": 59,
   "source_changes_recent": [
+    {
+      "source_id": "src-amundi-monthly",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly-brief",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly-us",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-fr",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-2026-midyear",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-capital-2026-cma",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche3-01",
+      "checked_at_utc": "2026-11-20T05:54:49+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-bnp-monthly",
       "checked_at_utc": "2026-11-19T05:53:09+00:00",
@@ -346,24 +423,98 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-16T05:23:15+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-china-southern-asset-management",
-      "checked_at_utc": "2026-11-16T05:23:15+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1401,
+  "candidate_documents_total": 1412,
   "candidate_documents_recent": [
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/prospettive/articles/2023/q2/what-does-the-stress-in-regional-banking-mean-for-US-smaller-companies.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "PIMCO",
+      "candidate_title": "Gestione attiva vs passiva: perché l’obbligazionario racconta una storia diversa rispetto all’azionario",
+      "candidate_url": "https://www.pimco.com/it/it/insights/active-vs-passive-why-fixed-income-and-equities-tell-different-stories",
+      "source_page_url": "https://www.pimco.com/it/it/insights/charting-the-year-ahead-investment-ideas-for-2026",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Capital Group",
+      "candidate_title": "Retirement",
+      "candidate_url": "https://www.capitalgroup.com/institutional/insights/categories/retirement.html",
+      "source_page_url": "https://www.capitalgroup.com/institutional/insights/capital-market-assumptions.html",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Capital Group",
+      "candidate_title": "Multi-Asset",
+      "candidate_url": "https://www.capitalgroup.com/institutional/insights/categories/multi-asset.html",
+      "source_page_url": "https://www.capitalgroup.com/institutional/insights/capital-market-assumptions.html",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Above the Noise: 10 things investors can be thankful for November 19, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/ten-things-investors-can-be-thankful-for.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Discover the Outlook",
+      "candidate_url": "https://research-center.amundi.com/article/2027-investment-outlook",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "Articolo Prospettive d’investimento Autonomia strategica europea nel 2027: dove siamo? Dove stiamo andando? By Lazare Hounhouayenou & other authors",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-2027-autonomia-strategica-europea/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "Articolo Prospettive d’investimento Credito europeo investment grade: sfruttare i fondamentali e gli interessanti rendimenti By Boutaïna Deixonne",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-2027-credito-europeo-investment-grade/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "Articolo Prospettive d’investimento Navigare la volatilità con le obbligazioni inflation-linked By Cedric Scholtes & other authors",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-2027-inflazione/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Above the Noise: 10 things investors can be thankful for November 19, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/ten-things-investors-can-be-thankful-for.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Discover the Outlook",
+      "candidate_url": "https://research-center.amundi.com/article/2027-investment-outlook",
+      "source_page_url": "https://research-center.amundi.com/publications/global-investment-views",
+      "discovered_at_utc": "2026-11-20T05:54:59+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Morgan Stanley Investment Management",
       "candidate_title": "Economic Roundtable: Why Is Global Growth So Resilient?",
@@ -2672,94 +2823,6 @@
       "institution_name": "Aditya Birla Sun Life Asset Management",
       "candidate_title": "Investing Insights",
       "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/insights?_ga=2.114928385.704256865.1711516066-1433687392.1711516066",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Fixed Monthly Withdrawal",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/investor-education/fixed-monthly-withdrawal-calculator",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Aditya Birla Sun Life Multi Asset Allocation Fund",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/products/wealth-creation-solutions/aditya-birla-sun-life-multi-asset-allocation-fund?fundtype=direct",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Market Outlook - May 2026 Global markets staged a sharp recovery in April following the dislocation seen in March, supported by expectations of contained geopolitical escalation and resilient economic momentum. Click for more",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/articles/market-outlook-may-2026",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Market Outlook - June 2026 Global equity markets delivered another month of divergent performance in May, with AI-led markets continuing to outperform despite rising macroeconomic uncertainties. Click for more",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/articles/market-outlook-june-2026",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Market Outlook - July 2026 Global markets entered June with a significant reduction in geopolitical uncertainty following the US-Iran ceasefire and the reopening of the Strait of Hormuz. Click for more",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/articles/market-outlook-july-2026",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Market Outlook - August 2026 Global equity markets witnessed sharp divergence during July as the prolonged rally in artificial intelligence and semiconductor related stocks began to lose momentum. Click for more",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/articles/market-outlook-august-2026",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Market Outlook - September 2026 Global markets witnessed renewed volatility during August as geopolitical tensions in West Asia resurfaced and crude oil prices moved higher. Click for more",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/articles/market-outlook-september-2026",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Market Outlook - October 2026 Global financial conditions deteriorated during September as escalating tensions in West Asia pushed crude oil prices above USD100/bbl, while government bond yields moved sharply higher across developed markets",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/articles/market-outlook-october-2026",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Daily Market News",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/investor-education/others/insights",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Empower - Monthly Factsheet",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/-/media/bsl/files/resources/factsheets/2026/empower-for-the-month-of-october-2026.pdf",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Demat to Re-mat Process",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/-/media/bsl/files/faq-dematerialisation/faq-on-dematerialisation-v1.pdf",
       "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
