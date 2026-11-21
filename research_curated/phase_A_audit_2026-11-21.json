@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "run_type": "scheduled_phase_A",
+  "date_rome": "2026-11-21",
+  "scope_managers": 30,
+  "catalog_active_sources": 45,
+  "source_catalog_last_checked_utc": "2026-11-20T05:54:49+00:00",
+  "sources_directly_consulted_this_run": 3,
+  "source_urls": [
+    "https://research-center.amundi.com/publications/global-investment-views",
+    "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+    "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/"
+  ],
+  "sources_not_directly_consulted": 42,
+  "documents_read": 2,
+  "index_pages_read": 1,
+  "documents_newly_discovered": 0,
+  "new_asset_calls_approved": 0,
+  "new_views_validated": 0,
+  "baseline_approved_views": 118,
+  "validation_attempts_recorded": 0,
+  "excluded_after_two_attempts": 0,
+  "duplicate_assessment": "BlackRock 16 Nov and JPM 16 Nov already assessed in 18 Nov record; Amundi index shows 9 Nov issue already in dataset",
+  "asset_class_coverage_new": "n.d.",
+  "average_view_date": "n.d.",
+  "acquire_executed": false,
+  "selector_executed": false,
+  "ledger_updated": false,
+  "publication": "phase B not executed in this run",
+  "findings": [
+    {
+      "manager": "BlackRock",
+      "document_date": "2026-11-16",
+      "result": "Strategic US equities overweight and tactical neutral already noted; no new record without row-level deduplication"
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "document_date": "2026-11-16",
+      "result": "Treasury diversification commentary not a formal allocation stance"
+    },
+    {
+      "manager": "Amundi",
+      "document_date": "2026-11-09",
+      "result": "Index confirms November Global Investment Views; full document not reread"
+    }
+  ],
+  "limitations": [
+    "42 registered source URLs not directly checked",
+    "No complete acquisition/selection script execution",
+    "No new row-level deduplication",
+    "No current matrix recalculation"
+  ]
+}
