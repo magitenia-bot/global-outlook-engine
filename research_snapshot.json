@@ -1,16 +1,51 @@
 {
-  "generated_at_utc": "2026-11-20T05:55:04+00:00",
+  "generated_at_utc": "2026-11-21T05:48:44+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 45,
   "sources_active": 45,
   "source_last_results": {
-    "changed_requires_review": 14,
+    "changed_requires_review": 8,
     "error": 12,
-    "unchanged": 93
+    "unchanged": 99
   },
-  "source_change_events_last_4d": 59,
+  "source_change_events_last_4d": 39,
   "source_changes_recent": [
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-21T05:48:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-21T05:48:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-hsbc-weekly",
+      "checked_at_utc": "2026-11-21T05:48:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-21T05:48:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-coverage-mandg-outlook",
+      "checked_at_utc": "2026-11-21T05:48:29+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-amundi-monthly",
       "checked_at_utc": "2026-11-20T05:54:49+00:00",
@@ -248,185 +283,26 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-added-value-partners-group",
-      "checked_at_utc": "2026-11-16T20:51:03+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-stepstone-group",
-      "checked_at_utc": "2026-11-16T20:51:03+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-coverage-aberdeen-houseview",
-      "checked_at_utc": "2026-11-16T20:39:32+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-coverage-mandg-outlook",
-      "checked_at_utc": "2026-11-16T20:39:32+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-blackrock-weekly",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-pimco-outlook",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-capitalgroup-outlook",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-outlook",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-trowe-weekly",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-columbia-insights",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-loomis-oct26",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-blackrock-corporate-weekly",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-fr",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-2026-midyear",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-12",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-16",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-extended-eastspring-investments",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-added-value-partners-group",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-tokio-marine-asset-management",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-china-southern-asset-management",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-bosera-asset-management",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-stepstone-group",
-      "checked_at_utc": "2026-11-16T20:35:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1412,
+  "candidate_documents_total": 1414,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Why investors should watch bond yields, not just AI",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/why-investors-should-watch-bond-yields-not-just-ai",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-21T05:48:39+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Investment Weekly",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-20-november-2026",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-21T05:48:39+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "T. Rowe Price",
       "candidate_title": "Italiano",
@@ -2810,22 +2686,6 @@
       "source_page_url": "https://www.southernfund.com/en/about/index.shtml",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Motilal Oswal Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.motilaloswal.com/our-businesses/asset-management",
-      "source_page_url": "https://www.motilaloswal.com/our-businesses/asset-management",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Aditya Birla Sun Life Asset Management",
-      "candidate_title": "Investing Insights",
-      "candidate_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/insights?_ga=2.114928385.704256865.1711516066-1433687392.1711516066",
-      "source_page_url": "https://mutualfund.adityabirlacapital.com/abslamc-knowledge-centre/monthly-outlook",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
     }
   ],
   "views_already_recorded": 129,
