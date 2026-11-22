@@ -1,0 +1,2 @@
+candidate_id,manager,document_url,document_date,asset_class,stance,evidence,source_kind,checked_at_utc,attempt,result,reason
+SCHRODERS-20261120,Schroders,https://professionalparaplanner.co.uk/multi-asset-investment-views-november-2026/,,,n.d.,,unavailable,2026-11-22T15:07:55.759963+00:00,2,fail,Backfill of documented earlier attempt: direct_http_page; 403. Originale della casa non reperito; ripresa secondaria non leggibile integralmente.
