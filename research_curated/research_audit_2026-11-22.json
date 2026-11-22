@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-22",
-  "reference_report": "2026-11-17",
+  "reference_report": "2026-11-21",
   "selected_manager_count": 30,
   "catalog_rows": 45,
   "unique_catalog_urls": 42,
@@ -473,5 +473,7 @@
   "baseline_views": 118,
   "new_validated_asset_calls": 26,
   "approved_views": 144,
-  "new_manager_labels": 0
+  "new_manager_labels": 0,
+  "analytical_baseline_date": "2026-11-17",
+  "control_21_verification": "Source HTML and successful deploy checked; 118 observations, zero new calls, historical 17 November matrix."
 }
