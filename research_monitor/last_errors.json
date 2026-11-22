@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-22T20:57:41.523866+00:00",
+  "utc": "2026-11-22T22:51:16.675872+00:00",
   "issues": [
     {
       "manager": "Ninety One",
@@ -14,6 +14,20 @@
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "PIMCO",
+      "source_url": "https://www.pimco.com/it/it/insights/charting-the-year-ahead-investment-ideas-for-2026",
+      "category": "other_error",
+      "http_code": null,
+      "message": "The read operation timed out"
+    },
+    {
+      "manager": "PIMCO",
+      "source_url": "https://www.pimco.com/it/it/insights/rupture-and-resilience",
+      "category": "other_error",
+      "http_code": null,
+      "message": "The read operation timed out"
     },
     {
       "manager": "PGIM",
