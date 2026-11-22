@@ -1,0 +1,477 @@
+{
+  "as_of": "2026-11-22",
+  "reference_report": "2026-11-17",
+  "selected_manager_count": 30,
+  "catalog_rows": 45,
+  "unique_catalog_urls": 42,
+  "catalog_success": 39,
+  "catalog_access_errors": 3,
+  "catalog": [
+    {
+      "manager": "BlackRock",
+      "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "source_id": "src-blackrock-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://research-center.amundi.com/publications/global-investment-views",
+      "source_id": "src-amundi-monthly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "source_id": "src-jpm-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Robeco",
+      "url": "https://www.robeco.com/en-int/themes/market-outlooks",
+      "source_id": "src-robeco-monthly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "PIMCO",
+      "url": "https://www.pimco.com/it/it/insights/rupture-and-resilience",
+      "source_id": "src-pimco-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Schroders",
+      "url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+      "source_id": "src-schroders-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Capital Group",
+      "url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html",
+      "source_id": "src-capitalgroup-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Invesco",
+      "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "source_id": "src-invesco-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Franklin Templeton",
+      "url": "https://www.franklintempleton.com/insights/collections/global-investment-outlook-2026",
+      "source_id": "src-franklin-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Janus Henderson",
+      "url": "https://www.janushenderson.com/corporate/insights/investment-outlook-2026/",
+      "source_id": "src-janus-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "State Street Investment Management",
+      "url": "https://www.ssga.com/us/en/institutional/insights/the-markets",
+      "source_id": "src-statestreet-markets",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Vanguard",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+      "source_id": "src-vanguard-forecast",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "BNP Paribas Asset Management",
+      "url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "source_id": "src-bnp-monthly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn342282725view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "UBS Asset Management",
+      "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+      "source_id": "src-ubs-quarterly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn342282725view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "T. Rowe Price",
+      "url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "source_id": "src-trowe-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn342282725view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Goldman Sachs Asset Management",
+      "url": "https://am.gs.com/en-se/institutions/insights/article/market-pulse",
+      "source_id": "src-gsam-monthly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn342282725view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "source_id": "src-amundi-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn342282725view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "url": "https://am.jpmorgan.com/gb/en/asset-management/liq/insights/market-insights/market-updates/the-weekly-brief/",
+      "source_id": "src-jpm-weekly-brief",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn342282725view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "url": "https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/market-updates/weekly-market-recap/",
+      "source_id": "src-jpm-weekly-us",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn636375712view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "BlackRock",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "source_id": "src-blackrock-corporate-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn636375712view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "source_id": "src-amundi-weekly-de",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn636375712view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://www.amundi-ee.com/epargnant/l-hebdo-des-marches",
+      "source_id": "src-amundi-weekly-fr",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn636375712view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "HSBC Asset Management",
+      "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "source_id": "src-hsbc-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn636375712view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Allianz Global Investors",
+      "url": "https://origin-it.allianzgi.com/it-it/insights/the-week-ahead",
+      "source_id": "src-allianz-week-ahead",
+      "result": "access_error",
+      "evidence_ref": "turn636375712view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Fidelity International",
+      "url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "source_id": "src-fidelity-markets-weekly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn187914063view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Pictet Asset Management",
+      "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+      "source_id": "src-pictet-barometer",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn187914063view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Robeco",
+      "url": "https://www.robeco.com/en-int/media/press-release/robeco-publishes-2026-outlook-the-synchronized-shift",
+      "source_id": "src-robeco-2026-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn187914063view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Invesco",
+      "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "source_id": "src-invesco-2026-midyear",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Capital Group",
+      "url": "https://www.capitalgroup.com/institutional/insights/capital-market-assumptions.html",
+      "source_id": "src-capital-2026-cma",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn187914063view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "PIMCO",
+      "url": "https://www.pimco.com/it/it/insights/charting-the-year-ahead-investment-ideas-for-2026",
+      "source_id": "src-tranche3-01",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn187914063view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Vanguard",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+      "source_id": "src-tranche3-02",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn154385146view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Franklin Templeton",
+      "url": "https://www.franklintempleton.com/corporate/articles/2025/institute/global-investment-outlook-2026-and-beyond",
+      "source_id": "src-tranche3-03",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn187914063view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Janus Henderson",
+      "url": "https://www.janushenderson.com/it-it/advisor/insights/mid-year-investment-outlook/",
+      "source_id": "src-tranche3-04",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn242953171view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "T. Rowe Price",
+      "url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "source_id": "src-tranche3-07",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn242953171view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Schroders",
+      "url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+      "source_id": "src-tranche3-08",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn892030284view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Eurizon Asset Management",
+      "url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
+      "source_id": "src-tranche4-03",
+      "result": "access_error",
+      "evidence_ref": "turn242953171view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Wellington Management",
+      "url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+      "source_id": "src-tranche4-04",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn242953171view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Morgan Stanley Investment Management",
+      "url": "https://www.morganstanley.com/Themes/outlooks",
+      "source_id": "src-tranche4-05",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn242953171view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "PGIM",
+      "url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "source_id": "src-tranche4-07",
+      "result": "access_error",
+      "evidence_ref": "turn242953171view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Ninety One",
+      "url": "https://ninetyone.com/en/insights/2026-investment-views",
+      "source_id": "src-tranche4-08",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn893278845view0",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Vontobel",
+      "url": "https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/",
+      "source_id": "src-tranche4-13",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn893278845view1",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "DWS",
+      "url": "https://funds.deutsche-am.com/it-it/informare/mercati/market-outlook/Mercato-e-macro/",
+      "source_id": "src-extended-dws",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn893278845view2",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Nomura Asset Management",
+      "url": "https://www.nomura-am.co.jp/news/20261105111133010296.html",
+      "source_id": "src-extended-nomura-asset-management",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn893278845view3",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "M&G Investments",
+      "url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "source_id": "src-coverage-mandg-outlook",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn893278845view4",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    },
+    {
+      "manager": "Fidelity Investments",
+      "url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "source_id": "src-fidelity-investments-quarterly",
+      "result": "page_or_index_retrieved",
+      "evidence_ref": "turn893278845view5",
+      "note": "Recupero pagina distinto da lettura di un nuovo documento e da validazione di una view."
+    }
+  ],
+  "validated_documents": [
+    {
+      "url": "https://research-center.amundi.com/files/nuxeo/dl/7b5b55e0-81d7-4b9d-ac71-513f8f0ad431?inline=",
+      "manager": "Amundi",
+      "date": "2026-11-19",
+      "publication_precision": "day",
+      "result": "validated_content",
+      "asset_calls": 7
+    },
+    {
+      "url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "manager": "Morgan Stanley Investment Management",
+      "date": "2026-11-19",
+      "publication_precision": "day",
+      "result": "validated_content",
+      "asset_calls": 4
+    },
+    {
+      "url": "https://funds.deutsche-am.com/en-ch/inform/markets/market-outlook/market-and-macro/",
+      "manager": "DWS",
+      "date": "2026-11-16",
+      "publication_precision": "day",
+      "result": "validated_content",
+      "asset_calls": 8
+    },
+    {
+      "url": "https://www.pgim.com/content/dam/pgim/us/en/pgim-center/active/documents/campaigns/PGIM_2027%20Global%20Market%20Outlook.pdf",
+      "manager": "PGIM",
+      "date": "2026-11",
+      "publication_precision": "month",
+      "result": "validated_content",
+      "asset_calls": 3
+    },
+    {
+      "url": "https://www.pimco.com/us/en/documents/d99e5c2b2773067dcaef1b6632aa02db380ba8d0affef9ccbc09f3c56254a499755505d284df563dfb955d371f4782b7?app=dot",
+      "manager": "PIMCO",
+      "date": "2026-11",
+      "publication_precision": "month",
+      "result": "validated_content",
+      "asset_calls": 3
+    },
+    {
+      "url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "manager": "Allianz Global Investors",
+      "date": "2026-11-16",
+      "publication_precision": "day",
+      "result": "validated_content",
+      "asset_calls": 1
+    }
+  ],
+  "context_documents": [
+    {
+      "manager": "T. Rowe Price",
+      "date": "2026-11-20",
+      "url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "result": "market_review_no_new_allocation"
+    },
+    {
+      "manager": "HSBC Asset Management",
+      "date": "2026-11-20",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/intermediary/news-and-insights/investment-weekly-20-november-2026",
+      "result": "summary_read_no_own_brent_call_pdf_pending"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "id": "SCHRODERS-20261120",
+      "manager": "Schroders",
+      "url": "https://professionalparaplanner.co.uk/multi-asset-investment-views-november-2026/",
+      "attempts": [
+        {
+          "method": "web_original_page",
+          "outcome": "unavailable"
+        },
+        {
+          "method": "direct_http_page",
+          "outcome": "403"
+        }
+      ],
+      "result": "excluded_from_operational_dataset_after_two_attempts",
+      "reason": "Originale della casa non reperito; ripresa secondaria non leggibile integralmente."
+    },
+    {
+      "id": "WELLINGTON-DATE-CONFLICT",
+      "manager": "Wellington Management",
+      "result": "baseline_quarantine_retained",
+      "reason": "Date future 2027 incoerenti col testo; non aggiunte nuove osservazioni."
+    },
+    {
+      "id": "VONTOBEL-SFA",
+      "manager": "Vontobel Asset Management",
+      "result": "not_am_house_view",
+      "reason": "Fonte SFA wealth distinta da AM; vecchia verifica confermata."
+    },
+    {
+      "id": "ROBECO-BOSTON",
+      "manager": "Robeco",
+      "url": "https://www.robeco.com/en-int/insights/2026/11/us-stock-market-rotation-broadens-beyond-ai-after-democratic-sweep",
+      "result": "dependent_speaker_not_independent_house_weight",
+      "reason": "Commenti del relatore Boston Partners non trasformati in una nuova allocazione Robeco."
+    }
+  ],
+  "baseline_views": 118,
+  "new_validated_asset_calls": 26,
+  "approved_views": 144,
+  "new_manager_labels": 0
+}
