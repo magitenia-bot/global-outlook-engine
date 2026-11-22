@@ -1,16 +1,52 @@
 {
-  "generated_at_utc": "2026-11-21T05:48:44+00:00",
+  "generated_at_utc": "2026-11-22T00:01:25+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
-  "sources_total": 45,
-  "sources_active": 45,
+  "sources_total": 51,
+  "sources_active": 51,
   "source_last_results": {
-    "changed_requires_review": 8,
-    "error": 12,
-    "unchanged": 99
+    "baseline_requires_review": 4,
+    "changed_requires_review": 4,
+    "error": 15,
+    "unchanged": 102
   },
-  "source_change_events_last_4d": 39,
+  "source_change_events_last_4d": 34,
   "source_changes_recent": [
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-22T00:01:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-ms",
+      "checked_at_utc": "2026-11-22T00:01:06+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-dw",
+      "checked_at_utc": "2026-11-22T00:01:06+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-pi",
+      "checked_at_utc": "2026-11-22T00:01:06+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-al",
+      "checked_at_utc": "2026-11-22T00:01:06+00:00",
+      "result": "baseline_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-bnp-monthly",
       "checked_at_utc": "2026-11-21T05:48:29+00:00",
@@ -213,80 +249,346 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-capitalgroup-outlook",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-trowe-weekly",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-blackrock-corporate-weekly",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-de",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-investments-quarterly",
-      "checked_at_utc": "2026-11-17T20:03:26+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-nuveen-outlook",
-      "checked_at_utc": "2026-11-17T05:51:23+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-loomis-oct26",
-      "checked_at_utc": "2026-11-17T05:51:23+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-census-tokio-marine-asset-management",
-      "checked_at_utc": "2026-11-17T05:51:23+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1414,
+  "candidate_documents_total": 1456,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Michael Krautzberger",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Michael Krautzberger",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Liam Wash",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Liam Wash",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Discover more",
+      "candidate_url": "https://www.allianzgi.com/en/insights/democrats-take-congress-but-sweeping-change-looks-unlikely",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Jim Dudnick",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Jim Dudnick",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Steven Gish",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Steven Gish",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Discover more",
+      "candidate_url": "https://www.allianzgi.com/en/insights/short-duration-high-yield-2026",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Arial Zhang",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Arial Zhang",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Francois Fabreges",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Francois Fabreges",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Discover more",
+      "candidate_url": "https://www.allianzgi.com/en/insights/giving-income-a-tactical-edge",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Sustainability insights",
+      "candidate_url": "https://www.allianzgi.com/en/sustainability/insights-on-sustainable-investing",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Allianz Global Investors Academy",
+      "candidate_url": "https://www.allianzgi.com/en/insights/allianz-global-investors-academy",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "The India Briefing",
+      "candidate_url": "https://www.allianzgi.com/en/insights/the-india-briefing",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "The China Briefing",
+      "candidate_url": "https://www.allianzgi.com/en/insights/the-china-briefing",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Two-minute Tech",
+      "candidate_url": "https://www.allianzgi.com/en/insights/two-minute-tech",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Sustainability Now",
+      "candidate_url": "https://www.allianzgi.com/en/insights/sustainability-blog",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "House View & Outlooks",
+      "candidate_url": "https://www.allianzgi.com/en/insights/outlook-and-commentary?Topics=House%20View%20%26%20Outlooks",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Market Insights",
+      "candidate_url": "https://www.allianzgi.com/en/insights/outlook-and-commentary",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Research",
+      "candidate_url": "https://www.allianzgi.com/en/capability-landing/research",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Validated November 2026 View",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Validated 2027 Outlook",
+      "candidate_url": "https://www.pgim.com/content/dam/pgim/us/en/pgim-center/active/documents/campaigns/PGIM_2027%20Global%20Market%20Outlook.pdf",
+      "source_page_url": "https://www.pgim.com/content/dam/pgim/us/en/pgim-center/active/documents/campaigns/PGIM_2027%20Global%20Market%20Outlook.pdf",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_pdf_unverified"
+    },
+    {
+      "institution_name": "DWS",
+      "candidate_title": "Validated November 2026 View",
+      "candidate_url": "https://funds.deutsche-am.com/en-ch/inform/markets/market-outlook/market-and-macro/",
+      "source_page_url": "https://funds.deutsche-am.com/en-ch/inform/markets/market-outlook/market-and-macro/",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "source_page_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Viewed Media Appearance Head of North America Private Credit: Ashwin Krishnan on Debt Serious Podcast Ashwin Krishnan, Head of North America Private Credit at Morgan Stanley Investment Management, joined the Debt Serious podcast where he di",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/articles/ashwin-krishnan-on-debt-serious-podcast1.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Viewed Press Release Stark Future Closes Financing Round in Excess of €150 Million in Total Transaction Value as Its Electric Motorcycles Overtake Combustion on the World Stage Round led by Highland Europe, alongside Morgan Stanley Investme",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/press-release/stark-future-closes-financing-round-in-excess-of-150m-in-total-transaction-value.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Viewed Press Release Morgan Stanley Investment Management Launches Active ETF Platform in Europe Morgan Stanley Investment Management (MSIM) this week announced the launch of its active exchange-traded fund (ETF) platform in Europe, introdu",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/press-release/msim-launches-active-etf-platform-in-europe.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Global Fixed Income Bulletin Video: A Firmer Fed",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/a-firmer-fed-video.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Global Fixed Income Bulletin Real Rates Take the Lead",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/real-rates-take-the-lead.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Global Fixed Income Bulletin Video: Real Rates Take the Lead",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/real-rates-take-the-lead-video.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "/content/dam/im/assets/publication/thought-leadership/global-fixed-income-bulletin/article_repricingtheopportunityset_ltr.pdf",
+      "candidate_url": "https://www.morganstanley.com/content/dam/im/assets/publication/thought-leadership/global-fixed-income-bulletin/article_repricingtheopportunityset_ltr.pdf",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "INSIGHTS",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Alts In Focus",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/altsinfocus.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Private Markets Perspectives",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/private-markets-perspectives.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Tales From the Emerging World",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/tales-from-the-emerging-world.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Slimmon's Take",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/slimmons-take.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Liquidity Watch",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/liquidity-watch.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Global Fixed Income Bulletin",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/global-fixed-income-bulletin.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Global Equity Observer",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/global-equity-observer.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Consilient Observer",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/consilient-observer.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Caron's Corner",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/carons-corner.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Big Picture",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/big-picture.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "The BEAT™",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/series/the-beat.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Insights",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/all-insights.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Validated November 2026 View",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-22T00:01:18+00:00",
+      "review_status": "source_page_unverified"
+    },
     {
       "institution_name": "Fidelity International",
       "candidate_title": "Why investors should watch bond yields, not just AI",
@@ -2350,342 +2652,6 @@
       "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Jupiter Global Leaders Strategy",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/jupiter-global-leaders-strategy/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Jupiter Ecology Strategy",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/jupiter-ecology-fund/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Jupiter Strategic Absolute Return Bond Strategy",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/jupiter-strategic-absolute-return-bond-strategy/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Jupiter Merian Global Equity Absolute Return Strategy",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/jupiter-merian-global-equity-absolute-return-fund/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Ruffer LLP",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.ruffer.co.uk/en/thinking/articles/the-green-line?page=0&trk=article-ssr-frontend-pulse_little-text-block",
-      "source_page_url": "https://www.ruffer.co.uk/en/thinking/articles/the-green-line?page=0&trk=article-ssr-frontend-pulse_little-text-block",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Orbis Investments",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.orbis.com/nz/adviser/insights/commentaries",
-      "source_page_url": "https://www.orbis.com/nz/adviser/insights/commentaries",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Samsung Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.samsungfund.com/eng/fund/main.do",
-      "source_page_url": "https://www.samsungfund.com/eng/fund/main.do",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Mirae Asset Global Investments",
-      "candidate_title": "From ETFs to AI: Park Hyeon-joo maps Mirae Asset’s future After building 428 trillion won global ETF business, founder bets on AI, digital assets and new ‘killer products’ Mirae Asset Group Founder and Global Strategy... Read More →",
-      "candidate_url": "https://investments.miraeasset.us/from-etfs-to-ai-park-hyeon-joo-maps-mirae-assets-future/",
-      "source_page_url": "https://investments.miraeasset.us/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Mirae Asset Global Investments",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://investments.miraeasset.us/",
-      "source_page_url": "https://investments.miraeasset.us/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "投资者权益须知",
-      "candidate_url": "https://www.jsfund.cn/plat_files/upload/png_upload/20201211/202012111607684425629.pdf",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "投资服务升级",
-      "candidate_url": "https://www.jsfund.cn/main/finance/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "多元资产配置",
-      "candidate_url": "https://www.jsfund.cn/main/InvestmentResearch/AssetAllocation/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "超级ETF",
-      "candidate_url": "https://www.jsfund.cn/main/InvestmentResearch/Spueretf/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "基石固收",
-      "candidate_url": "https://www.jsfund.cn/main/InvestmentResearch/Cornerstonefixation/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "精品股票",
-      "candidate_url": "https://www.jsfund.cn/main/InvestmentResearch/StockSelection/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "可持续投资",
-      "candidate_url": "https://www.jsfund.cn/main/InvestmentResearch/SustainableInvestment/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "养老投资",
-      "candidate_url": "https://www.jsfund.cn/main/pensions/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "机构投资",
-      "candidate_url": "https://www.jsfund.cn/main/AgencyBusiness/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "投研实力",
-      "candidate_url": "https://www.jsfund.cn/main/InvestmentResearch/InvestmentCapacity/index.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Harvest Fund Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "source_page_url": "https://www.jsfund.cn/main/a/20261027/484262.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Bosera Asset Management",
-      "candidate_title": "Latest News and Insights",
-      "candidate_url": "https://www.bosera.com.hk/en-US/esg",
-      "source_page_url": "https://www.bosera.com.hk/en-US/about",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Bosera Asset Management",
-      "candidate_title": "China Vision",
-      "candidate_url": "https://www.bosera.com.hk/en-US/infos/insights/list?id=0002000200070002",
-      "source_page_url": "https://www.bosera.com.hk/en-US/about",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Bosera Asset Management",
-      "candidate_title": "Global Vision",
-      "candidate_url": "https://www.bosera.com.hk/en-US/infos/insights/list?id=0002000200070001",
-      "source_page_url": "https://www.bosera.com.hk/en-US/about",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Bosera Asset Management",
-      "candidate_title": "INSIGHTS",
-      "candidate_url": "https://www.bosera.com.hk/en-US/infos/insights",
-      "source_page_url": "https://www.bosera.com.hk/en-US/about",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Bosera Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.bosera.com.hk/en-US/about",
-      "source_page_url": "https://www.bosera.com.hk/en-US/about",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达2022年度投资展望交流会举行 2021-12-10",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/118.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达香港连续四年获「海外基金金牛奖」，投资能力备受认可 2021-12-26",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/125.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达资产管理（香港）有限公司责任投资声明 2022-08-19",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/132.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "E路成长、与您同行！易方达（香港）美元货币市场基金规模突破10亿美元 2022-09-08",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/133.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达香港获IAMAC“最受险资欢迎境外投资机构”权威推介 2022-09-30",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/135.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达（香港）美元货币市场基金成立满五年！规模领先、业绩优异 2022-11-08",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/138.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达香港连续两年获IAMAC保险资产管理业最受欢迎投资业务合作机构推介 2023-09-08",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/2966.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "Possibilities and Opportunities Seminar held in Hong Kong about ETF Connect in China Allocation 2023-10-27",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/3023.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达香港再获2023年财资(The Asset)基准研究奖——亚洲G3债券顶级投资机构称号 2023-11-06",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/3034.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达（香港）美元货币市场基金荣获彭博商业周刊“领先基金大奖2023”卓越大奖 2024-01-19",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/3148.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达在香港成功举办“中国投资与ETF互联互通”主题交流活动 2024-02-01",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/3168.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "新资本投资者入境计划（CIES）｜易方达香港上架产品及申购攻略 2024-03-20",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/3273.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "易方达香港获香港交易所两项新科技指数授权助力跨境投资新机遇 2026-04-14",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/content/5119.html",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "Insights",
-      "candidate_url": "https://www.efunds.com.hk/insights",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "E Fund Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.efunds.com.hk/aboutus/",
-      "source_page_url": "https://www.efunds.com.hk/aboutus/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "China Southern Asset Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.southernfund.com/en/about/index.shtml",
-      "source_page_url": "https://www.southernfund.com/en/about/index.shtml",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
     }
   ],
   "views_already_recorded": 129,
