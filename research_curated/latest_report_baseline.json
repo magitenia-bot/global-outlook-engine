@@ -353,7 +353,8 @@
     "new_document_urls": 6,
     "new_manager_labels": 0,
     "comparable_stance_revisions": null,
-    "editorial_corrections": 1
+    "editorial_corrections": 1,
+    "comparison_scope": "Published edition versus preceding approved analytical snapshot; independent of additions discovered in a later same-day 05:00 run."
   },
   "report_source": "publisher/global_outlook_current.json in private publisher repository",
   "notes": [
@@ -362,5 +363,10 @@
     "21 November control HTML verified; no new calls compared with the 17 November analytical baseline.",
     "Historic off-scope and quarantined records retained; snapshot semantics and date precision preserved.",
     "Matrix also preserves already approved indications from its 17 November snapshot; it is not a one-to-one copy of the CSV archive."
-  ]
+  ],
+  "validation_registry": {
+    "per_id_ledger": "research_curated/candidate_validation_ledger.csv",
+    "approved_ledger": "research_curated/candidate_approved.csv",
+    "delivery_reconciliation": "research_curated/delivery_reconciliation_2026-11-22.json"
+  }
 }
