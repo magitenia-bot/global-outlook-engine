@@ -1,17 +1,23 @@
 {
-  "generated_at_utc": "2026-11-22T00:01:25+00:00",
+  "generated_at_utc": "2026-11-22T05:48:33+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
   "sources_active": 51,
   "source_last_results": {
-    "baseline_requires_review": 4,
     "changed_requires_review": 4,
-    "error": 15,
-    "unchanged": 102
+    "error": 14,
+    "unchanged": 107
   },
-  "source_change_events_last_4d": 34,
+  "source_change_events_last_4d": 35,
   "source_changes_recent": [
+    {
+      "source_id": "src-jpm-weekly",
+      "checked_at_utc": "2026-11-22T05:48:18+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-fidelity-markets-weekly",
       "checked_at_utc": "2026-11-22T00:01:06+00:00",
