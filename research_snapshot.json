@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-22T05:48:33+00:00",
+  "generated_at_utc": "2026-11-22T20:58:13+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
@@ -9,8 +9,15 @@
     "error": 14,
     "unchanged": 107
   },
-  "source_change_events_last_4d": 35,
+  "source_change_events_last_4d": 27,
   "source_changes_recent": [
+    {
+      "source_id": "src-validated-20261122-al",
+      "checked_at_utc": "2026-11-22T20:57:52+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-jpm-weekly",
       "checked_at_utc": "2026-11-22T05:48:18+00:00",
@@ -189,69 +196,6 @@
     {
       "source_id": "src-tranche4-05",
       "checked_at_utc": "2026-11-19T05:53:09+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-robeco-monthly",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-outlook",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-hsbc-weekly",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-robeco-2026-outlook",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-2026-midyear",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-04",
-      "checked_at_utc": "2026-11-18T13:30:52+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-07",
-      "checked_at_utc": "2026-11-18T05:53:49+00:00",
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
