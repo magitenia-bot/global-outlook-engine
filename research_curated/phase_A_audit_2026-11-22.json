@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_type": "scheduled_phase_A",
+  "date_rome": "2026-11-22",
+  "scope_managers": 30,
+  "catalog_active_sources": 51,
+  "catalog_managers": 30,
+  "monitor_last_checked_utc": "2026-11-22T00:01:06+00:00",
+  "monitor_status_counts": {
+    "unchanged": 38,
+    "error": 8,
+    "changed_requires_review": 1,
+    "baseline_requires_review": 4
+  },
+  "monitor_method": "existing source monitor output, not acquire.py executed within this run",
+  "sources_directly_read_this_run": 2,
+  "source_urls_directly_read": [
+    "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+    "https://research-center.amundi.com/publications/global-investment-views"
+  ],
+  "sources_not_directly_read": 49,
+  "documents_read_in_full": 1,
+  "index_pages_read": 1,
+  "new_documents_confirmed": 0,
+  "new_asset_calls_approved": 0,
+  "new_views_validated": 0,
+  "baseline_approved_views": 118,
+  "validation_attempts_recorded_this_run": 0,
+  "excluded_after_two_attempts_this_run": 0,
+  "duplicates_confirmed_this_run": 0,
+  "asset_class_coverage_new": "n.d.",
+  "average_view_date": "n.d.",
+  "acquire_executed_in_this_run": false,
+  "selector_executed_in_this_run": false,
+  "ledger_updated": false,
+  "publication": "phase B reserved for 07:20",
+  "notes": [
+    "Catalog expanded to 51 active URLs since previous 45 count; all 30 institutions represented",
+    "Monitor shows 8 errors and 5 changed/baseline requiring review; those are not validated views",
+    "BlackRock November 16 commentary confirms already known strategic US equity overweight and tactical neutral; not a new row",
+    "Amundi November 9 issue listed; no new document",
+    "Container network DNS failed; direct content accessed via web retrieval; no exhaustive document extraction"
+  ]
+}
