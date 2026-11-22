@@ -8,9 +8,16 @@
   "automation": {
     "automation_id": "6af0be4926fc81918dc8ce5d4b4350b2",
     "phase_a": "05:00",
-    "phase_b": "07:00",
+    "phase_b": "07:20",
     "phase_a_action": "Source verification and validation of up to 20 prioritized queue candidates; persistent audit, append-only validated dataset, no HTML/email.",
-    "phase_b_action": "read latest validated dataset, compare previous edition, produce executive-first HTML with integrated reading and 4 charts before detailed tables, QA, publish and email"
+    "phase_b_action": "Produce or reuse the latest approved report and complete delivery independently of new research; persist provider receipt.",
+    "delivery_recovery": {
+      "automation_id": "Automation_3963fcc0f7048191b10d4cace4f4a051",
+      "time": "07:40",
+      "timezone": "Europe/Rome",
+      "starts": "2026-11-23",
+      "purpose": "Check actual delivery of 07:20 slot and recover only when absent."
+    }
   },
   "repositories": {
     "research": "magitenia-bot/global-outlook-engine",
@@ -448,5 +455,24 @@
     "scope_manager_count": 30,
     "individual_house_signal_badges": false,
     "matrix_signal_badges": true
+  },
+  "delivery_policy": {
+    "version": "1.0",
+    "effective_from": "2026-11-22",
+    "primary_time": "07:20",
+    "recovery_time": "07:40",
+    "timezone": "Europe/Rome",
+    "recipient": "stefano.pari@intesasanpaoloprivate.com",
+    "independent_of_research": true,
+    "fallback": "Latest approved accessible report with actual date; otherwise status notice.",
+    "new_view_count_cannot_block": true,
+    "unknown_candidates_cannot_block_existing_approved_report": true,
+    "guard_private_path": "publisher/global_outlook_delivery_guard.py",
+    "tests_private_path": "publisher/test_global_outlook_delivery_guard.py",
+    "delivery_log_private_path": "publisher/global_outlook_delivery_log.json",
+    "dedupe": "scheduled_slot or covers_scheduled_slot + recipient + SENT + message_id",
+    "send_lease_minutes": 15,
+    "gmail_check_before_retry": true,
+    "sent_does_not_mean_recipient_inbox_delivery": true
   }
 }
