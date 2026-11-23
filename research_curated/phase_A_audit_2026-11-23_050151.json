@@ -1,0 +1,66 @@
+{
+  "run_id": "GO-20261123-050151-EUROPE-ROME",
+  "slot": "2026-11-23T05:00:00+01:00",
+  "phase": "A",
+  "status": "partial_direct_review",
+  "catalog": {
+    "active_sources": 51,
+    "approved_managers": 30,
+    "prior_monitor_status": {
+      "unchanged": 43,
+      "error": 7,
+      "changed_requires_review": 1
+    },
+    "prior_monitor_not_current_run": true
+  },
+  "direct_checks": [
+    {
+      "manager": "BlackRock",
+      "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "result": "primary_document_read",
+      "document_date": "2026-11-16",
+      "note": "Strategic overweight US equity and tactical neutral explicitly stated; already documented; no new ID validated"
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://research-center.amundi.com/publications/global-investment-views",
+      "result": "index_read",
+      "note": "November 9 edition found"
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://research-center.amundi.com/article/global-investment-views-november-2026",
+      "result": "primary_document_read",
+      "document_date": "2026-11-09",
+      "note": "Eurozone duration, EU IG, EM debt and equity regional views read; existing edition, no new candidate promoted"
+    }
+  ],
+  "direct_source_urls_checked": 3,
+  "active_urls_not_directly_checked": 49,
+  "distinct_active_catalog_urls_directly_checked": 2,
+  "primary_documents_read": 2,
+  "index_pages_read": 1,
+  "new_candidate_ids": [],
+  "new_validated_views": 0,
+  "new_asset_calls_approved": 0,
+  "validator_attempts": 0,
+  "validator_failures": 0,
+  "excluded_after_two_attempts": 0,
+  "duplicates_confirmed_in_this_run": 0,
+  "baseline": {
+    "date": "2026-11-22",
+    "view_count": 144,
+    "view_ids": "preserved",
+    "reconciled_prior_added_ids": "265-290"
+  },
+  "execution": {
+    "acquire_py": "not_executed",
+    "select_outlooks_v2_py": "not_executed",
+    "reason": "No remote script execution available via connected repository tool; direct web review partial"
+  },
+  "delivery": {
+    "email": "not_sent_phase_A",
+    "html": "not_generated_phase_A"
+  },
+  "notes": "51 active catalog URLs; 2 distinct catalog URLs checked, plus Amundi article reached through index. No claim of full catalog verification. No new candidate validated."
+}
