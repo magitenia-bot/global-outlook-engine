@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-23T07:42:27.558042+00:00",
+  "utc": "2026-11-23T09:30:52.021493+00:00",
   "issues": [
     {
       "manager": "Ninety One",
@@ -7,6 +7,13 @@
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "Fidelity Investments",
+      "source_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "category": "other_error",
+      "http_code": null,
+      "message": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "manager": "Pictet Asset Management",
