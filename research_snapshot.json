@@ -1,16 +1,23 @@
 {
-  "generated_at_utc": "2026-11-22T20:58:13+00:00",
+  "generated_at_utc": "2026-11-23T05:06:02+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
   "sources_active": 51,
   "source_last_results": {
     "changed_requires_review": 4,
-    "error": 14,
-    "unchanged": 107
+    "error": 13,
+    "unchanged": 108
   },
-  "source_change_events_last_4d": 27,
+  "source_change_events_last_4d": 28,
   "source_changes_recent": [
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-23T05:05:48+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-validated-20261122-al",
       "checked_at_utc": "2026-11-22T20:57:52+00:00",
@@ -201,8 +208,40 @@
       "error": ""
     }
   ],
-  "candidate_documents_total": 1456,
+  "candidate_documents_total": 1460,
   "candidate_documents_recent": [
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Monthly schedule of Portfolio holdings within 5 business days from month-end",
+      "candidate_url": "https://www.pgim.com/content/dam/pgim/maintenance/Money_Market_Holdings.pdf",
+      "source_page_url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "discovered_at_utc": "2026-11-23T05:05:57+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Weekly liquid Assets",
+      "candidate_url": "https://www.pgim.com/content/dam/pgim/maintenance/Daily%20MM%20All%20funds%20-%20Fund%20Names.xlsx",
+      "source_page_url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "discovered_at_utc": "2026-11-23T05:05:57+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Daily Prices",
+      "candidate_url": "https://www.pgim.com/content/dam/pgim/maintenance/ETF%20-%20Prices.pdf",
+      "source_page_url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "discovered_at_utc": "2026-11-23T05:05:57+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Outlook and investment research",
+      "candidate_url": "https://www.pgim.com/us/en/campaigns/exp/website-maintenance",
+      "source_page_url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "discovered_at_utc": "2026-11-23T05:05:57+00:00",
+      "review_status": "source_page_unverified"
+    },
     {
       "institution_name": "Allianz Global Investors",
       "candidate_title": "Michael Krautzberger",
@@ -2567,38 +2606,6 @@
       "institution_name": "Jupiter Asset Management",
       "candidate_title": "01.12.2025 10 mins Outlook 2026: Building portfolio resilience with uncorrelated assets Amadeo Alentorn, Mark Nash, Ned Naylor-Leyland Fixed Income Alternatives",
       "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/outlook-2026-building-portfolio-resilience-with-uncorrelated-assets/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "01.12.2025 5 mins Outlook 2026: UK equities for income and idiosyncratic returns Adrian Gosden, Chris Morrison, Alex Savvides, Siddharth Sukumar, Stephanie Geary Equities",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/outlook-2026-uk-equities-for-income-and-idiosyncratic-returns/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Insights",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Jupiter GEARx Strategy",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/jupiter-gear-x-strategy/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "Jupiter Global Value Strategy",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/jupiter-global-value/",
       "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"

@@ -1456,3 +1456,58 @@ Moved Temporarily"
 2026-11-22T20:58:04+00:00,src-validated-20261122-pg,pdf_candidate,1,
 2026-11-22T20:58:04+00:00,src-validated-20261122-pi,error,0,ValueError: non_html_source: application/pdf
 2026-11-22T20:58:04+00:00,src-validated-20261122-al,ok,19,
+2026-11-23T05:05:57+00:00,src-blackrock-weekly,ok,12,
+2026-11-23T05:05:57+00:00,src-amundi-monthly,ok,17,
+2026-11-23T05:05:57+00:00,src-jpm-weekly,ok,24,
+2026-11-23T05:05:57+00:00,src-robeco-monthly,ok,26,
+2026-11-23T05:05:57+00:00,src-pimco-outlook,ok,4,
+2026-11-23T05:05:57+00:00,src-schroders-outlook,ok,3,
+2026-11-23T05:05:57+00:00,src-capitalgroup-outlook,ok,31,
+2026-11-23T05:05:57+00:00,src-invesco-outlook,ok,14,
+2026-11-23T05:05:57+00:00,src-franklin-outlook,ok,1,
+2026-11-23T05:05:57+00:00,src-janus-outlook,ok,9,
+2026-11-23T05:05:57+00:00,src-statestreet-markets,ok,3,
+2026-11-23T05:05:57+00:00,src-vanguard-forecast,ok,4,
+2026-11-23T05:05:57+00:00,src-bnp-monthly,ok,12,
+2026-11-23T05:05:57+00:00,src-ubs-quarterly,ok,10,
+2026-11-23T05:05:57+00:00,src-trowe-weekly,ok,17,
+2026-11-23T05:05:57+00:00,src-gsam-monthly,ok,10,
+2026-11-23T05:05:57+00:00,src-amundi-weekly,ok,11,
+2026-11-23T05:05:57+00:00,src-jpm-weekly-brief,ok,24,
+2026-11-23T05:05:57+00:00,src-jpm-weekly-us,ok,30,
+2026-11-23T05:05:57+00:00,src-blackrock-corporate-weekly,ok,15,
+2026-11-23T05:05:57+00:00,src-amundi-weekly-de,ok,27,
+2026-11-23T05:05:57+00:00,src-amundi-weekly-fr,ok,3,
+2026-11-23T05:05:57+00:00,src-hsbc-weekly,ok,9,
+2026-11-23T05:05:57+00:00,src-allianz-week-ahead,error,0,"HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Found"
+2026-11-23T05:05:57+00:00,src-fidelity-markets-weekly,ok,41,
+2026-11-23T05:05:57+00:00,src-pictet-barometer,error,0,HTTPError: HTTP Error 403: Forbidden
+2026-11-23T05:05:57+00:00,src-robeco-2026-outlook,ok,10,
+2026-11-23T05:05:57+00:00,src-invesco-2026-midyear,ok,14,
+2026-11-23T05:05:57+00:00,src-capital-2026-cma,ok,17,
+2026-11-23T05:05:57+00:00,src-tranche3-01,ok,14,
+2026-11-23T05:05:57+00:00,src-tranche3-02,ok,4,
+2026-11-23T05:05:57+00:00,src-tranche3-03,ok,1,
+2026-11-23T05:05:57+00:00,src-tranche3-04,ok,14,
+2026-11-23T05:05:57+00:00,src-tranche3-07,ok,12,
+2026-11-23T05:05:57+00:00,src-tranche3-08,ok,3,
+2026-11-23T05:05:57+00:00,src-tranche4-03,error,0,"HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Moved Temporarily"
+2026-11-23T05:05:57+00:00,src-tranche4-04,ok,41,
+2026-11-23T05:05:57+00:00,src-tranche4-05,ok,31,
+2026-11-23T05:05:57+00:00,src-tranche4-07,ok,4,
+2026-11-23T05:05:57+00:00,src-tranche4-08,error,0,HTTPError: HTTP Error 403: Forbidden
+2026-11-23T05:05:57+00:00,src-tranche4-13,ok,9,
+2026-11-23T05:05:57+00:00,src-extended-dws,ok,1,
+2026-11-23T05:05:57+00:00,src-extended-nomura-asset-management,ok,20,
+2026-11-23T05:05:57+00:00,src-coverage-mandg-outlook,ok,6,
+2026-11-23T05:05:57+00:00,src-fidelity-investments-quarterly,ok,16,
+2026-11-23T05:05:57+00:00,src-validated-20261122-am,error,0,ValueError: non_html_source: application/pdf
+2026-11-23T05:05:57+00:00,src-validated-20261122-ms,ok,21,
+2026-11-23T05:05:57+00:00,src-validated-20261122-dw,ok,1,
+2026-11-23T05:05:57+00:00,src-validated-20261122-pg,pdf_candidate,1,
+2026-11-23T05:05:57+00:00,src-validated-20261122-pi,error,0,ValueError: non_html_source: application/pdf
+2026-11-23T05:05:57+00:00,src-validated-20261122-al,ok,19,
