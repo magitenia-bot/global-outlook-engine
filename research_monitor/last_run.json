@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-23T05:26:23.411613+00:00",
+  "utc": "2026-11-23T07:42:27.558042+00:00",
   "mode": "hourly",
   "registered_managers": 30,
   "registered_sources": 48,
@@ -11,7 +11,7 @@
   "priority2_registered": 33,
   "priority3_registered": 2,
   "source_scan_policy": "rotating catalog; each run covers up to 80 registered URLs; no view classified without source reading",
-  "new_records": 22,
+  "new_records": 24,
   "partial_scans": 11,
   "errors": 4,
   "error_categories": {
