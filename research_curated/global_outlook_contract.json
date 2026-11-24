@@ -300,6 +300,13 @@
         "required_for_every_manager": true,
         "reference": "Previous actually published report; source-backed material changes, no invented changes",
         "missing": "n.d. when not comparable"
+      },
+      "house_view_summary": {
+        "max_editorial_lines": 10,
+        "depth": "approfondita, concreta e leggibile",
+        "rule": "Per ogni casa, scrivi una sintesi della view più approfondita ma entro 10 righe editoriali brevi. Spiega scenario macro e orizzonte, preferenze per asset class e motivazioni, temi/opportunità, rischi principali e cambiamenti materiali verificabili rispetto al report precedente. Usa solo elementi sostenuti dalle fonti; distingui allocazioni, giudizi qualitativi e scenari. Non riempire le 10 righe quando le informazioni disponibili sono limitate. Data, fonte e nota variazioni restano riconoscibili. Mantieni architettura e formattazione responsive: non troncare il testo con CSS e non aggiungere dettagli per raggiungere la lunghezza massima.",
+        "applies_to": "Tutte le sintesi delle singole house view nei report futuri, richiesti o programmati",
+        "effective_from": "2026-11-24"
       }
     }
   },
