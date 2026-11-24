@@ -1913,8 +1913,8 @@
     {
       "name": "Governativi USA MLT",
       "A": 1,
-      "Q": 5,
-      "nd": 24
+      "Q": 4,
+      "nd": 25
     },
     {
       "name": "Governativi Euro BT",
@@ -1943,8 +1943,8 @@
     {
       "name": "Corporate HY USA",
       "A": 0,
-      "Q": 5,
-      "nd": 25
+      "Q": 4,
+      "nd": 26
     },
     {
       "name": "Corporate HY Euro",
@@ -1973,8 +1973,8 @@
     {
       "name": "Brent",
       "A": 0,
-      "Q": 1,
-      "nd": 29
+      "Q": 0,
+      "nd": 30
     }
   ],
   "report_date": "2026-11-24"
