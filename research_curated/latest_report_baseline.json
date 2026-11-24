@@ -1,8 +1,8 @@
 {
-  "version": 7,
+  "version": 8,
   "date": "2026-11-24",
   "edition": "editorial-30-managers-matrix-2.2",
-  "produced_at_local": "2026-11-24T10:42:59.002Z",
+  "produced_at_local": "2026-11-24T12:07:01+01:00",
   "scope": [
     "BlackRock",
     "J.P. Morgan Asset Management",
@@ -335,38 +335,31 @@
     ]
   },
   "previous_published": {
-    "date": "2026-11-22",
-    "view_count": 144
+    "date": "2026-11-24",
+    "generated_at_rome": "24/11/2026 11:41",
+    "view_count": 154,
+    "report_path": "publisher/reports/cap-b2343bdfa768a591b94a1e5c7ab9213439bd75b0f03bc0b7.html"
   },
   "deltas": {
-    "new_validated_views": 10,
-    "new_view_ids": [
-      "291",
-      "292",
-      "293",
-      "294",
-      "295",
-      "296",
-      "297",
-      "298",
-      "299",
-      "300"
-    ],
-    "new_document_urls": 6,
+    "new_validated_views": 0,
+    "new_view_ids": [],
+    "new_document_urls": 0,
     "new_manager_labels": 0,
-    "comparable_stance_revisions": null,
-    "comparison_scope": "New qualitative/forecast/theme observations vs approved 22 November edition; no new formal allocation weights."
+    "comparable_stance_revisions": 0,
+    "editorial_summaries_rewritten": 30,
+    "comparison_scope": "Same-day immediately preceding approved 11:41 edition; source dates unchanged."
   },
   "report_source": "publisher/global_outlook_current.json in private publisher repository",
   "notes": [
-    "30 selected managers checked through one initial source each and targeted followups.",
-    "6 new source documents with observations plus 1 product/context note; not exhaustive coverage.",
-    "Source dates and month-only precision preserved; no new house added.",
-    "Per-ID ledger completed from direct primary-source reading."
+    "30 initial source URLs checked anew; 29 HTTP 200 including 1 maintenance page, 1 redirect error.",
+    "All 30 house narratives rewritten within 10 editorial lines (maximum used: 6).",
+    "No new view IDs or changed allocation weights; complete 154-record archive preserved.",
+    "Source availability does not establish exhaustive review of each house's publications."
   ],
   "validation_registry": {
     "per_id_ledger": "research_curated/candidate_validation_ledger.csv",
     "approved_ledger": "research_curated/candidate_approved.csv",
     "delivery_reconciliation": "research_curated/delivery_reconciliation_2026-11-22.json"
-  }
+  },
+  "report_edition_path": "publisher/reports/cap-8e97b7720c4ae065809bc30c2d11fb61730168110930663a.html"
 }
