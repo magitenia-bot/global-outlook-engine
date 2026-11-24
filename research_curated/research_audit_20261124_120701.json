@@ -1,0 +1,307 @@
+{
+  "report_date": "2026-11-24",
+  "generated_at_rome": "24/11/2026 12:07",
+  "new_view_ids": [],
+  "new_validated_views": 0,
+  "editorial_summaries_rewritten": 30,
+  "source_checks": [
+    {
+      "manager": "BlackRock",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "checked_at_utc": "2026-11-24T11:03:16.165219+00:00",
+      "status": 200,
+      "final_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "bytes": 321946,
+      "sha256": "d27db35cb8d39a649e34077f9d222af894c7d27e791c17a38381344727296c17",
+      "title": "Weekly market commentary | BlackRock Home"
+    },
+    {
+      "manager": "J.P. Morgan Asset Management",
+      "url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "checked_at_utc": "2026-11-24T11:03:16.165960+00:00",
+      "status": 200,
+      "final_url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "bytes": 134632,
+      "sha256": "cecee323e2601ec3d63a3ee1d896341304f01dfac83ee64b5c04f52cb6fa3322",
+      "title": "\n        \n        \n        \n        \n        Weekly Market Recap\n        \n         | J.P. Morgan Asset Management\n    "
+    },
+    {
+      "manager": "Amundi",
+      "url": "https://research-center.amundi.com/publications/global-investment-views",
+      "checked_at_utc": "2026-11-24T11:03:16.166529+00:00",
+      "status": 200,
+      "final_url": "https://research-center.amundi.com/publications/global-investment-views",
+      "bytes": 157875,
+      "sha256": "4266fe18807652939f5e41bff30b21aa4c84214013187430afb88f57903d500f",
+      "title": "Global Investment Views | Amundi Research Center"
+    },
+    {
+      "manager": "PIMCO",
+      "url": "https://www.pimco.com/it/it/insights/rupture-and-resilience",
+      "checked_at_utc": "2026-11-24T11:03:16.167208+00:00",
+      "status": 200,
+      "final_url": "https://www.pimco.com/it/it/insights/rupture-and-resilience",
+      "bytes": 231245,
+      "sha256": "6f0e9b79c2fb32ee05fe1ca260966a39d70770e78ac557a6a328ab9825eef01f",
+      "title": "Outlook 2026 - Punto di rottura e resilienza: prospettive economiche globali, geopolitica e strategie di investimento obbligazionarie | PIMCO"
+    },
+    {
+      "manager": "Goldman Sachs Asset Management",
+      "url": "https://am.gs.com/en-se/institutions/insights/article/market-pulse",
+      "checked_at_utc": "2026-11-24T11:03:16.169231+00:00",
+      "status": 200,
+      "final_url": "https://am.gs.com/en-se/institutions/insights/article/market-pulse",
+      "bytes": 771055,
+      "sha256": "9991e9b6c8c66b932bd01810103c214783af688eb12d918977bcdc6655e2043a",
+      "title": "International Market Pulse November 2026 - Goldman Sachs Asset Management"
+    },
+    {
+      "manager": "Morgan Stanley Investment Management",
+      "url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "checked_at_utc": "2026-11-24T11:03:16.170026+00:00",
+      "status": 200,
+      "final_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "bytes": 212122,
+      "sha256": "c7d639ca8f6037e71562d8b43b5087605bbc680c22b0e023600096c5a47c749f",
+      "title": "Repricing the Opportunity Set | Morgan Stanley"
+    },
+    {
+      "manager": "Vanguard",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+      "checked_at_utc": "2026-11-24T11:03:16.171555+00:00",
+      "status": 200,
+      "final_url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+      "bytes": 80608,
+      "sha256": "18a3729e897f46045bfdb5fd16b2c30e4d28be0564416ba87f0d093a40d90704",
+      "title": "Vanguard Capital Markets Model® forecasts | Vanguard"
+    },
+    {
+      "manager": "Fidelity International",
+      "url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "checked_at_utc": "2026-11-24T11:03:16.172626+00:00",
+      "status": 200,
+      "final_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "bytes": 700901,
+      "sha256": "7f04bc783cb9d5fda3bd8b9d5b89bb36a8e2cf4a33f62a17e49805a174eb97c6",
+      "title": "\n            \n                \n                    \n                        Market News | Markets & Insights | Fidelity\n                    \n                \n            \n        "
+    },
+    {
+      "manager": "Fidelity Investments",
+      "url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "checked_at_utc": "2026-11-24T11:03:22.023312+00:00",
+      "status": 200,
+      "final_url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "bytes": 134108,
+      "sha256": "0a0ca61373f29459d983d44fee5109b18531e96a1f63b09f6c313de23fbc1598",
+      "title": "Quarterly Market Update"
+    },
+    {
+      "manager": "Capital Group",
+      "url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html",
+      "checked_at_utc": "2026-11-24T11:03:22.377451+00:00",
+      "status": 200,
+      "final_url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html",
+      "bytes": 240155,
+      "sha256": "d82a78123b860f6d22e3325b38926db648bc1bff5d35d8a5a0df4910259d9ed7",
+      "title": "Prospettive d'investimento di metà anno 2026 | Capital Group"
+    },
+    {
+      "manager": "State Street Investment Management",
+      "url": "https://www.ssga.com/us/en/institutional/insights/the-markets",
+      "checked_at_utc": "2026-11-24T11:03:22.394318+00:00",
+      "status": 200,
+      "final_url": "https://www.ssga.com/us/en/institutional/insights/the-markets",
+      "bytes": 154151,
+      "sha256": "6bf452b48a98016199bfbfb0b93072e41cda9750dfd1186a6437f5e9a9740982",
+      "title": "The Markets | State Street"
+    },
+    {
+      "manager": "UBS Asset Management",
+      "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+      "checked_at_utc": "2026-11-24T11:03:22.446360+00:00",
+      "status": 200,
+      "final_url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+      "bytes": 186006,
+      "sha256": "96bb6b70e6545993e850d3ffaba3e404397f9efe15d4122060f7d15aabd31f06",
+      "title": "Obbligazioni: la nuova normalità dei tassi | UBS Italia"
+    },
+    {
+      "manager": "Wellington Management",
+      "url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+      "checked_at_utc": "2026-11-24T11:03:22.695630+00:00",
+      "status": 200,
+      "final_url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+      "bytes": 293701,
+      "sha256": "c9085212e9282dc602729dd284e7044e0f2d53bdf729c25180aac7a3c75ea783",
+      "title": "\n    Prospettive di asset allocation | Wellington Italia Investitori Professionali \n  "
+    },
+    {
+      "manager": "T. Rowe Price",
+      "url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "checked_at_utc": "2026-11-24T11:03:22.946531+00:00",
+      "status": 200,
+      "final_url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "bytes": 116067,
+      "sha256": "bc98f2685fe2a030aa173e0eeadfade9e6d72f65010bc33103fa313fa8b22093",
+      "title": "Global Markets Weekly Update | T. Rowe Price"
+    },
+    {
+      "manager": "BNP Paribas Asset Management",
+      "url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "checked_at_utc": "2026-11-24T11:03:23.960800+00:00",
+      "status": 200,
+      "final_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "bytes": 435658,
+      "sha256": "9dc4d578405f199bbbcf269ca0242044b32f7334afc55f890fbcfd190bfe83d3",
+      "title": "Outlook mensile sui mercati: Il divario tecnologico, lâaumento dei rendimenti obbligazionari e la rinascita industriale della Cina - BNP Paribas Asset Management - Italia Back to top"
+    },
+    {
+      "manager": "Allianz Global Investors",
+      "url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "checked_at_utc": "2026-11-24T11:03:25.210620+00:00",
+      "status": 200,
+      "final_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "bytes": 158528,
+      "sha256": "e83966890efc8cd369c07e4ad167a0bc273f49c7eb1621708ebeedf77babf50d",
+      "title": "Bonds set to regain their (h)edge | AllianzGI"
+    },
+    {
+      "manager": "DWS",
+      "url": "https://funds.deutsche-am.com/en-ch/inform/markets/market-outlook/market-and-macro/",
+      "checked_at_utc": "2026-11-24T11:03:26.352992+00:00",
+      "status": 200,
+      "final_url": "https://funds.deutsche-am.com/en-ch/inform/markets/market-outlook/market-and-macro/",
+      "bytes": 303599,
+      "sha256": "a60bdbb26b161eaf16f7de10500a7e80d17ff07b0326f67cb789bc27bf39534d",
+      "title": "Market Outlook - November 2026 | DWS by Deutsche Asset Management"
+    },
+    {
+      "manager": "Schroders",
+      "url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+      "checked_at_utc": "2026-11-24T11:03:26.376680+00:00",
+      "status": 200,
+      "final_url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+      "bytes": 359130,
+      "sha256": "4418fc85854cc466571b84e5ad307cb8fbc254e020dbeab6a230ff7b266b68f1",
+      "title": "Outlook 2026"
+    },
+    {
+      "manager": "Pictet Asset Management",
+      "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+      "checked_at_utc": "2026-11-24T11:03:26.740190+00:00",
+      "status": 200,
+      "final_url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+      "bytes": 143638,
+      "sha256": "5732863f5727901276e0b27443048a29ff90e1415d4f2022a99de27bc3a19f58",
+      "title": "Barometro dei mercati finanziari Previsioni di novembre | Pictet Asset Management Italia"
+    },
+    {
+      "manager": "Invesco",
+      "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "checked_at_utc": "2026-11-24T11:03:26.952306+00:00",
+      "status": 200,
+      "final_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "bytes": 541940,
+      "sha256": "b48b073c0082fa1ea64edf8f2e2dc296cb8de8af8bbd043074f430abbcf76282",
+      "title": "2026 Midyear investment outlook | Invesco US"
+    },
+    {
+      "manager": "Franklin Templeton",
+      "url": "https://www.franklintempleton.com/insights/collections/global-investment-outlook-2026",
+      "checked_at_utc": "2026-11-24T11:03:27.537064+00:00",
+      "status": 200,
+      "final_url": "https://www.franklintempleton.com/insights/collections/global-investment-outlook-2026",
+      "bytes": 60880,
+      "sha256": "3112952d6867560cf957db47a50582b7cc824b7d40e21755efdde95c18039271",
+      "title": "Franklin Templeton"
+    },
+    {
+      "manager": "PGIM",
+      "url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "checked_at_utc": "2026-11-24T11:03:27.854871+00:00",
+      "status": 200,
+      "final_url": "https://www.pgim.com/us/en/campaigns/exp/website-maintenance",
+      "bytes": 92225,
+      "sha256": "92045c4086cc6dc53b7ea8fb3c4c811b9b4c002a1790fa066965f8b52beec2b4",
+      "title": "Website Maintenance | PGIM"
+    },
+    {
+      "manager": "Robeco",
+      "url": "https://www.robeco.com/en-int/themes/market-outlooks",
+      "checked_at_utc": "2026-11-24T11:03:30.218657+00:00",
+      "status": 200,
+      "final_url": "https://www.robeco.com/en-int/themes/market-outlooks",
+      "bytes": 307869,
+      "sha256": "8efb480152741d390653c49763665a298573a3b125eb52d50ce197b9ec01a1b1",
+      "title": "Market Outlooks | Robeco Global"
+    },
+    {
+      "manager": "Janus Henderson Investors",
+      "url": "https://www.janushenderson.com/corporate/insights/investment-outlook-2026/",
+      "checked_at_utc": "2026-11-24T11:03:30.719969+00:00",
+      "status": 200,
+      "final_url": "https://www.janushenderson.com/corporate/insights/investment-outlook-2026/",
+      "bytes": 462007,
+      "sha256": "38bd1cbc0e678353781729fcfa8aa49a49c5c3cf72affcb8b470a3b16ebff6bf",
+      "title": "Investment Outlook 2026 | Janus Henderson Investors Janus Henderson Investors"
+    },
+    {
+      "manager": "M&G Investments",
+      "url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "checked_at_utc": "2026-11-24T11:03:30.873662+00:00",
+      "status": 200,
+      "final_url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "bytes": 383116,
+      "sha256": "54203634852f2a00764342ce3c8195d0b081492d2a4651e6d8866aef749b08bf",
+      "title": "2026 Investment Markets Outlook | M&G for Advisers"
+    },
+    {
+      "manager": "HSBC Asset Management",
+      "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "checked_at_utc": "2026-11-24T11:03:31.143777+00:00",
+      "status": 200,
+      "final_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "bytes": 121056,
+      "sha256": "8665fe00aebcd8ff0dd12260e60d73bea43b10533880dbf97c2d4ddcc59e1961",
+      "title": "HSBC AM Investment Weekly - Profits power ahead"
+    },
+    {
+      "manager": "Ninety One",
+      "url": "https://ninetyone.com/en/insights/2026-investment-views",
+      "checked_at_utc": "2026-11-24T11:03:31.288088+00:00",
+      "status": 200,
+      "final_url": "https://ninetyone.com/en/insights/2026-investment-views",
+      "bytes": 349284,
+      "sha256": "8cd5ca93aa2edc5438aa12dfaf8fd87db0089f4e0539e190796b60f9f25800f0",
+      "title": "2026 Investment Views | Ninety One"
+    },
+    {
+      "manager": "Nomura Asset Management",
+      "url": "https://www.nomura-am.co.jp/news/20261105111133010296.html",
+      "checked_at_utc": "2026-11-24T11:03:31.511714+00:00",
+      "status": 200,
+      "final_url": "https://www.nomura-am.co.jp/news/20261105111133010296.html",
+      "bytes": 42184,
+      "sha256": "74ad2e15809a5316c5f159f4fc82e44fdca998dd33c817814bc5547d2aac79b8",
+      "title": "アメリカ中間選挙を受けた今後の市場動向について | 野村アセットマネジメント"
+    },
+    {
+      "manager": "Eurizon",
+      "url": "https://www.eurizoncapital.com/it-IT/analisi-mercati",
+      "checked_at_utc": "2026-11-24T11:03:32.409591+00:00",
+      "status": "access_error",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+    },
+    {
+      "manager": "Vontobel Asset Management",
+      "url": "https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/",
+      "checked_at_utc": "2026-11-24T11:03:34.306611+00:00",
+      "status": 200,
+      "final_url": "https://www.vontobel.com/en-us/insights/us-investment-insights/investors-outlook-november-2026/",
+      "bytes": 552147,
+      "sha256": "3b32bad3073d6805de96cf8c14f0193c559008d3af78fc3d8bead40492a4a2c8",
+      "title": "Investors’ Outlook November 2026 | Vontobel"
+    }
+  ],
+  "coverage_note": "30 initial URLs checked anew; HTTP retrieval is not source stance validation. Four current primary documents re-read in relevant passages. No new views claimed."
+}
