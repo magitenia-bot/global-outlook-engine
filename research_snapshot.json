@@ -1,16 +1,114 @@
 {
-  "generated_at_utc": "2026-11-23T05:06:02+00:00",
+  "generated_at_utc": "2026-11-24T05:53:21+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
   "sources_active": 51,
   "source_last_results": {
-    "changed_requires_review": 4,
+    "changed_requires_review": 17,
     "error": 13,
-    "unchanged": 108
+    "unchanged": 95
   },
-  "source_change_events_last_4d": 28,
+  "source_change_events_last_4d": 38,
   "source_changes_recent": [
+    {
+      "source_id": "src-blackrock-weekly",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-capitalgroup-outlook",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-corporate-weekly",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-fr",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-2026-midyear",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-capital-2026-cma",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-coverage-mandg-outlook",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-ms",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-al",
+      "checked_at_utc": "2026-11-24T05:53:06+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-tranche4-07",
       "checked_at_utc": "2026-11-23T05:05:48+00:00",
@@ -178,38 +276,106 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-19T05:53:09+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly-us",
-      "checked_at_utc": "2026-11-19T05:53:09+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-fr",
-      "checked_at_utc": "2026-11-19T05:53:09+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche4-05",
-      "checked_at_utc": "2026-11-19T05:53:09+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1460,
+  "candidate_documents_total": 1472,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Viewed Press Release Morgan Stanley Infrastructure Partners Announces Sale of StraitNZ Morgan Stanley Investment Management (MSIM), through investment funds managed by Morgan Stanley Infrastructure Partners (MSIP), its private infrastructur",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/press-release/msip-announces-sale-of-straitnz.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "PGIM",
+      "candidate_title": "Weekly liquid Assets",
+      "candidate_url": "https://www.pgim.com/content/dam/pgim/maintenance/Daily%20Retail%20MM%20Fund%20Website%20Disclosure%20Data.xlsx",
+      "source_page_url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/prospettive/articles/2016/q4/aging-gracefullythe-us-bull-market-has-further-to-run.html",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Market pessimism meets solid fundamentals November 23, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/market-pessimism-meets-solid-fundamentals.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Reassessing market concentration in the AI era November 23, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/navigating-market-concentration-wisely.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "Investors turn bearish on Big Tech",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/global/investors-turn-bearish-on-big-tech",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Download full commentary (PDF)",
+      "candidate_url": "https://www.blackrock.com/gls-download/literature/market-commentary/weekly-investment-commentary-en-us-20261123-inflation-beyond-the-mideast-energy-shock.pdf",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BNP Paribas Asset Management",
+      "candidate_title": "Articolo Prospettive d’investimento Flight to quality, rally obbligazionario e dubbi sull’AI By BNP Paribas Asset Management",
+      "candidate_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/flight-to-quality-rally-obbligazionario-e-dubbi-sull-ai/",
+      "source_page_url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Market pessimism meets solid fundamentals November 23, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/market-pessimism-meets-solid-fundamentals.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Reassessing market concentration in the AI era November 23, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/navigating-market-concentration-wisely.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Capital Group",
+      "candidate_title": "IA e credito: uno sguardo oltre la corsa tecnologica arrow_forward",
+      "candidate_url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/ai-and-credit-looking-beyond-the-technology-race.html",
+      "source_page_url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Download full commentary (PDF)",
+      "candidate_url": "https://www.blackrock.com/us/individual/literature/market-commentary/weekly-investment-commentary-en-us-20261123-inflation-beyond-the-mideast-energy-shock.pdf",
+      "source_page_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "discovered_at_utc": "2026-11-24T05:53:15+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "PGIM",
       "candidate_title": "Monthly schedule of Portfolio holdings within 5 business days from month-end",
@@ -2511,102 +2677,6 @@
       "candidate_title": "Alternative Thinking",
       "candidate_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking",
       "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Cliff's Perspectives",
-      "candidate_url": "https://www.aqr.com/Insights/Perspectives",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Research",
-      "candidate_url": "https://www.aqr.com/Insights/Research",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Polar Capital",
-      "candidate_title": "Anti-Slavery Statement",
-      "candidate_url": "https://www.polarcapitalplc.co.uk/srp/documents-id/a5035fd3-3dad-43a1-87fa-51e7c8cf03ac/Anti-SlaveryStatement.pdf",
-      "source_page_url": "https://www.polarcapitalplc.co.uk/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Polar Capital",
-      "candidate_title": "Complaints Policy",
-      "candidate_url": "https://www.polarcapitalplc.co.uk/srp/documents-id/8d7f7be6-3ddb-4945-b3b5-eaff1b1bc12b/ComplaintsHandlingPolicy.pdf",
-      "source_page_url": "https://www.polarcapitalplc.co.uk/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Polar Capital",
-      "candidate_title": "Annual report 2026",
-      "candidate_url": "https://www.polarcapitalplc.co.uk/static/literature/272936_Polar_Capital_Holdings_HiRes_PROOF_Interactive.pdf",
-      "source_page_url": "https://www.polarcapitalplc.co.uk/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Polar Capital",
-      "candidate_title": "Download PDF",
-      "candidate_url": "https://www.polarcapitalplc.co.uk/static//documents/Polar_Capital_Full_Year_Results_Presentation_31_March_2026_ZhOZkNBoC4.pdf",
-      "source_page_url": "https://www.polarcapitalplc.co.uk/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Polar Capital",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.polarcapitalplc.co.uk/",
-      "source_page_url": "https://www.polarcapitalplc.co.uk/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "01.12.2025 5 mins Outlook 2026: A diversified and flexible approach to core equities markets Niall Gallagher, Chris Legg, Christopher Sellers, Amadeo Alentorn Equities Alternatives",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/outlook-2026-a-diversified-and-flexible-approach-to-core-equities-markets/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "01.12.2025 9 mins Outlook 2026: What are the prospects for fixed income investing in the months ahead Ariel Bezalel, Harry Richards, Luca Evangelisti, Mark Nash, Adam Darling Fixed Income",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/outlook-2026-prospects-for-fixed-income-investing-in-the-months-ahead/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "01.12.2025 6 mins Outlook 2026: Where to find income from equities and bonds Adrian Gosden, Chris Morrison, Jason Pidcock, Sam Konrad, Adam Darling, Dan Carter, Mitesh Patel Equities Fixed Income",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/outlook-2026-where-to-find-income-from-equities-and-bonds/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Jupiter Asset Management",
-      "candidate_title": "01.12.2025 10 mins Outlook 2026: Building portfolio resilience with uncorrelated assets Amadeo Alentorn, Mark Nash, Ned Naylor-Leyland Fixed Income Alternatives",
-      "candidate_url": "https://www.jupiteram.com/global/en/institutional/insights/outlook-2026-building-portfolio-resilience-with-uncorrelated-assets/",
-      "source_page_url": "https://www.jupiteram.com/global/en/institutional/insights/investment-outlooks/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
