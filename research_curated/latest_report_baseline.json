@@ -1,8 +1,8 @@
 {
-  "version": 6,
-  "date": "2026-11-22",
+  "version": 7,
+  "date": "2026-11-24",
   "edition": "editorial-30-managers-matrix-2.2",
-  "produced_at_local": "2026-11-22T00:04:29.377Z",
+  "produced_at_local": "2026-11-24T10:42:59.002Z",
   "scope": [
     "BlackRock",
     "J.P. Morgan Asset Management",
@@ -179,17 +179,27 @@
     "287",
     "288",
     "289",
-    "290"
+    "290",
+    "291",
+    "292",
+    "293",
+    "294",
+    "295",
+    "296",
+    "297",
+    "298",
+    "299",
+    "300"
   ],
   "overall": {
-    "view_count": 144,
+    "view_count": 154,
     "manager_count": 28,
-    "source_count": 54
+    "source_count": 60
   },
   "period_recent": {
-    "start": "2026-10-24",
-    "end": "2026-11-22",
-    "view_count": 82,
+    "start": "2026-10-26",
+    "end": "2026-11-24",
+    "view_count": 92,
     "manager_count": 17,
     "view_ids": [
       "6",
@@ -273,7 +283,17 @@
       "281",
       "282",
       "283",
-      "290"
+      "290",
+      "291",
+      "292",
+      "293",
+      "294",
+      "295",
+      "296",
+      "297",
+      "298",
+      "299",
+      "300"
     ]
   },
   "monthly_recent": {
@@ -315,54 +335,34 @@
     ]
   },
   "previous_published": {
-    "date": "2026-11-21",
-    "type": "control_edition",
-    "analytical_baseline_date": "2026-11-17",
-    "view_count": 118
+    "date": "2026-11-22",
+    "view_count": 144
   },
   "deltas": {
-    "new_validated_views": 26,
+    "new_validated_views": 10,
     "new_view_ids": [
-      "265",
-      "266",
-      "267",
-      "268",
-      "269",
-      "270",
-      "271",
-      "272",
-      "273",
-      "274",
-      "275",
-      "276",
-      "277",
-      "278",
-      "279",
-      "280",
-      "281",
-      "282",
-      "283",
-      "284",
-      "285",
-      "286",
-      "287",
-      "288",
-      "289",
-      "290"
+      "291",
+      "292",
+      "293",
+      "294",
+      "295",
+      "296",
+      "297",
+      "298",
+      "299",
+      "300"
     ],
     "new_document_urls": 6,
     "new_manager_labels": 0,
     "comparable_stance_revisions": null,
-    "editorial_corrections": 1,
-    "comparison_scope": "Published edition versus preceding approved analytical snapshot; independent of additions discovered in a later same-day 05:00 run."
+    "comparison_scope": "New qualitative/forecast/theme observations vs approved 22 November edition; no new formal allocation weights."
   },
   "report_source": "publisher/global_outlook_current.json in private publisher repository",
   "notes": [
-    "42 unique initial catalogue URLs queried, 39 pages/indices returned, 3 access errors.",
-    "Six new source documents validated; sources catalogue expanded from 45 to 51 entries.",
-    "21 November control HTML verified; no new calls compared with the 17 November analytical baseline.",
-    "Historic off-scope and quarantined records retained; snapshot semantics and date precision preserved.",
-    "Matrix also preserves already approved indications from its 17 November snapshot; it is not a one-to-one copy of the CSV archive."
+    "30 selected managers checked through one initial source each and targeted followups.",
+    "6 new source documents with observations plus 1 product/context note; not exhaustive coverage.",
+    "Source dates and month-only precision preserved; no new house added.",
+    "Per-ID ledger completed from direct primary-source reading."
   ],
   "validation_registry": {
     "per_id_ledger": "research_curated/candidate_validation_ledger.csv",
