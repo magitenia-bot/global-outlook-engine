@@ -1,16 +1,93 @@
 {
-  "generated_at_utc": "2026-11-24T05:53:21+00:00",
+  "generated_at_utc": "2026-11-25T05:57:25+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
   "sources_active": 51,
   "source_last_results": {
-    "changed_requires_review": 17,
+    "changed_requires_review": 14,
     "error": 13,
-    "unchanged": 95
+    "unchanged": 98
   },
-  "source_change_events_last_4d": 38,
+  "source_change_events_last_4d": 33,
   "source_changes_recent": [
+    {
+      "source_id": "src-capitalgroup-outlook",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-bnp-monthly",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-de",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-2026-midyear",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-investments-quarterly",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-ms",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-pi",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-al",
+      "checked_at_utc": "2026-11-25T05:57:09+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-blackrock-weekly",
       "checked_at_utc": "2026-11-24T05:53:06+00:00",
@@ -164,122 +241,266 @@
       "result": "baseline_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-21T05:48:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-trowe-weekly",
-      "checked_at_utc": "2026-11-21T05:48:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-hsbc-weekly",
-      "checked_at_utc": "2026-11-21T05:48:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-21T05:48:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-coverage-mandg-outlook",
-      "checked_at_utc": "2026-11-21T05:48:29+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-monthly",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-outlook",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-bnp-monthly",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly-brief",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly-us",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-amundi-weekly-fr",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-invesco-2026-midyear",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-capital-2026-cma",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-tranche3-01",
-      "checked_at_utc": "2026-11-20T05:54:49+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1472,
+  "candidate_documents_total": 1504,
   "candidate_documents_recent": [
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Gregor Hirt",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Gregor Hirt",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Michael Heldmann",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Michael Heldmann",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Marta Perez",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Marta Perez",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Jenny Zeng",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Jenny Zeng",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Edouard Jozan",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Edouard Jozan",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Sebastian Schroff",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Sebastian Schroff",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "Christian Schulz",
+      "candidate_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026?q=Christian Schulz",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Allianz Global Investors",
+      "candidate_title": "DISCOVER MORE",
+      "candidate_url": "https://www.allianzgi.com/en/insights/outlook-2027",
+      "source_page_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Morgan Stanley Investment Management",
+      "candidate_title": "Viewed Article Data Centers and Municipal Credit: An Infrastructure Financing Story As AI-driven data centers increase demand for power and public infrastructure, municipal investors must consider who bears the costs. Explore how financing ",
+      "candidate_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/articles/data-centers-and-municipal-credit.html",
+      "source_page_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/de-ch/hintergrundanalysen/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/se/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Español",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/es/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/pt/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/no/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/lu/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/prospettive/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ie/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/is/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/de/hintergrundanalysen/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/fi/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/dk/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/be/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/de/hintergrundanalysen/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?PlacementGUID%27A=0",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Military conflicts mostly haven’t slowed stock growth in long term November 24, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/military-conflicts-have-not-derailed-long-term-growth-stocks.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "24/11/2026 | Weekly Market Directions Artificial intelligence faces a market reality check as inve... Market volatility is testing AI valuations and business models. Discover why artificial intelligence remains a long-term productivity driv",
+      "candidate_url": "https://www.amundi.de/institutional/article/artificial-intelligence-faces-market-reality-check-investors-demand-profitable-returns",
+      "source_page_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Invesco",
+      "candidate_title": "Markets and Economy Military conflicts mostly haven’t slowed stock growth in long term November 24, 2026",
+      "candidate_url": "https://www.invesco.com/us/en/insights/military-conflicts-have-not-derailed-long-term-growth-stocks.html",
+      "source_page_url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "discovered_at_utc": "2026-11-25T05:57:19+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Morgan Stanley Investment Management",
       "candidate_title": "Viewed Press Release Morgan Stanley Infrastructure Partners Announces Sale of StraitNZ Morgan Stanley Investment Management (MSIM), through investment funds managed by Morgan Stanley Infrastructure Partners (MSIP), its private infrastructur",
@@ -2421,262 +2642,6 @@
       "candidate_title": "Q4 2025 Private Market Chartbook",
       "candidate_url": "https://www.partnersgroup.com/%7E/media/Files/P/Partnersgroup/Universal/perspectives-document/private-markets-chartbook-%20q42025-%20strong-finish-to-a-year-of-wild-cards.ashx",
       "source_page_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Partners Group",
-      "candidate_title": "See our latest private markets perspectives",
-      "candidate_url": "https://www.partnersgroup.com/en/news-and-views/perspective",
-      "source_page_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Partners Group",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
-      "source_page_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Form CRS",
-      "candidate_url": "https://assets.cohenandsteers.com/assets/content/uploads/CSCM_Form_CRS_June_2020.pdf",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Videos",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?media=89",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Download Report",
-      "candidate_url": "https://assets-prod.cohenandsteers.com/wp-content/uploads/2026/09/21115305/The-case-for-real-assets_VP691E.pdf",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "40 Years: From REITs to Real Assets At the Cohen & Steers Investor Conference, founders Marty Cohen and Bob Steers discussed the firm’s founding, how the pair worked together, and how what began in U.S. listed real estate has expanded into ",
-      "candidate_url": "https://www.cohenandsteers.com/insights/40-years-from-reits-to-real-assets-video/",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "INVESTMENT THEME",
-      "candidate_url": "https://www.cohenandsteers.com/insights-landing-indv/",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Energy",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?assetClass=-1&topic=131&media=-1",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Real Assets",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?assetClass=124",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Preferred Securities",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?assetClass=80",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Infrastructure",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?assetClass=76",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Private real estate",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?assetClass=82",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Listed real estate",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?assetClass=75",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "View all insights",
-      "candidate_url": "https://www.cohenandsteers.com/insights",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Videos",
-      "candidate_url": "https://www.cohenandsteers.com/insights/?&media=89",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Insights",
-      "candidate_url": "https://www.cohenandsteers.com/insights-landing/",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Cohen & Steers",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "source_page_url": "https://www.cohenandsteers.com/insights/the-case-for-real-assets-glb-ind-fp/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Equal Opportunity Employer",
-      "candidate_url": "https://www.aqr.com/-/media/AQR/Documents/Global-Footer/EqualOpportunityEmployer.pdf?sc_lang=en",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "AQR Flex Form CRS",
-      "candidate_url": "https://www.aqr.com/-/media/AQR/Documents/Global-Footer/AQR-Flex-Form-CRS.pdf?sc_lang=en",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "AQR Form CRS",
-      "candidate_url": "https://www.aqr.com/-/media/AQR/Documents/Global-Footer/AQR-Form-CRS.pdf?sc_lang=en",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Honey, the Fed Shrunk the Equity Premium",
-      "candidate_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Honey-the-Fed-Shrunk-the-Equity-Premium",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Demystifying Illiquid Assets: Expected Returns for Private Real Estate",
-      "candidate_url": "https://www.aqr.com/Insights/Research/White-Papers/Demystifying-Illiquid-Assets-Expected-Returns-for-Private-Real-Estate",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Demystifying Illiquid Assets: Expected Returns for Private Equity",
-      "candidate_url": "https://www.aqr.com/Insights/Research/Journal-Article/Demystifying-Illiquid-Assets-Expected-Returns-for-Private-Equity",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "How Did We Get Here? A Brief History of Expected Returns Formation",
-      "candidate_url": "https://www.aqr.com/Insights/Research/White-Papers/How-Did-We-Get-Here-A-Brief-History-of-Expected-Returns-Formation",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "2025 Capital Market Assumptions for Major Asset Classes",
-      "candidate_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2025-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Download",
-      "candidate_url": "https://www.aqr.com/-/media/AQR/Documents/Alternative-Thinking/AQR-Alternative-Thinking---2026-Capital-Market-Assumptions.pdf?sc_lang=en",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "candidate_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes?aqrPDF=1",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Strategic Asset Allocation",
-      "candidate_url": "https://www.aqr.com/search?Topics=Strategic Asset Allocation",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Asset Allocation",
-      "candidate_url": "https://www.aqr.com/search?Topics=Asset Allocation",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Quick Takes",
-      "candidate_url": "https://www.aqr.com/Insights/Quick-Takes",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Data Sets",
-      "candidate_url": "https://www.aqr.com/Insights/Datasets",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "AQR Capital Management",
-      "candidate_title": "Alternative Thinking",
-      "candidate_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking",
-      "source_page_url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
