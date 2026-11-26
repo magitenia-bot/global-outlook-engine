@@ -1,16 +1,93 @@
 {
-  "generated_at_utc": "2026-11-25T05:57:25+00:00",
+  "generated_at_utc": "2026-11-26T05:56:28+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
   "sources_active": 51,
   "source_last_results": {
     "changed_requires_review": 14,
-    "error": 13,
-    "unchanged": 98
+    "error": 14,
+    "unchanged": 97
   },
-  "source_change_events_last_4d": 33,
+  "source_change_events_last_4d": 38,
   "source_changes_recent": [
+    {
+      "source_id": "src-amundi-monthly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-robeco-monthly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-jpm-weekly-brief",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-corporate-weekly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly-fr",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-hsbc-weekly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-coverage-mandg-outlook",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-investments-quarterly",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-ms",
+      "checked_at_utc": "2026-11-26T05:56:13+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-capitalgroup-outlook",
       "checked_at_utc": "2026-11-25T05:57:09+00:00",
@@ -199,52 +276,186 @@
       "result": "changed_requires_review",
       "http_status": "200",
       "error": ""
-    },
-    {
-      "source_id": "src-jpm-weekly",
-      "checked_at_utc": "2026-11-22T05:48:18+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-fidelity-markets-weekly",
-      "checked_at_utc": "2026-11-22T00:01:06+00:00",
-      "result": "changed_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-validated-20261122-ms",
-      "checked_at_utc": "2026-11-22T00:01:06+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-validated-20261122-dw",
-      "checked_at_utc": "2026-11-22T00:01:06+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-validated-20261122-pi",
-      "checked_at_utc": "2026-11-22T00:01:06+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
-    },
-    {
-      "source_id": "src-validated-20261122-al",
-      "checked_at_utc": "2026-11-22T00:01:06+00:00",
-      "result": "baseline_requires_review",
-      "http_status": "200",
-      "error": ""
     }
   ],
-  "candidate_documents_total": 1504,
+  "candidate_documents_total": 1526,
   "candidate_documents_recent": [
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/uk/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/de-ch/hintergrundanalysen/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ch/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/se/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Español",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/es/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/es/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/pt/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/no/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/lu/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Italiano",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/it/prospettive/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/ie/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/is/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/de/hintergrundanalysen/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/de/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/fi/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/dk/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/be/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "Deutsch",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/de/hintergrundanalysen/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/at/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "T. Rowe Price",
+      "candidate_title": "English",
+      "candidate_url": "https://www.troweprice.com/financial-intermediary/it/en/thinking/articles/2023/q3/the-outlook-for-us-smaller-companies-looks-increasingly-compelling.html?d36a0e=d36a0e&fm-li-creative-id=314090906&sf269458401=1",
+      "source_page_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Investment Event",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-event-24-november-2026",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Robeco",
+      "candidate_title": "5-year Expected Returns: The Great Rewiring",
+      "candidate_url": "https://www.robeco.com/en-int/insights/2026/09/5-year-expected-returns-the-great-rewiring",
+      "source_page_url": "https://www.robeco.com/en-int/themes/market-outlooks",
+      "discovered_at_utc": "2026-11-26T05:56:22+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "Allianz Global Investors",
       "candidate_title": "Gregor Hirt",
@@ -2466,182 +2677,6 @@
       "candidate_title": "Finland",
       "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/finland",
       "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Estonia",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/estonia",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Denmark",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/denmark",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Chile",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/chile",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Brazil",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/brazil",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Belgium",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/belgium",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Austria",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/austria",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Australia",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/australia",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "/news-insights/is-fund-size-growth-a-red-flag/",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/is-fund-size-growth-a-red-flag/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "/news-insights/market-opportunities-small-buyouts/",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/market-opportunities-small-buyouts/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "/news-insights/pe-secondaries-continuation-vehicles-2/",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/pe-secondaries-continuation-vehicles-2/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "/news-insights/the-case-for-emerging-managers/",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/the-case-for-emerging-managers/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Download",
-      "candidate_url": "https://go.stepstonegroup.com/rs/664-QRQ-541/images/StepStone-Private-Equity-House-Views-2026.PDF",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Market research",
-      "candidate_url": "https://www.stepstonegroup.com/category/market-research/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "The market the headlines missed: specialty credit",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/the-market-the-headlines-missed-specialty-credit/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Market research",
-      "candidate_url": "https://www.stepstonegroup.com/how-we-think/?category=market-research",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Hamilton Lane",
-      "candidate_title": "GmbH Complaint Handling Policy",
-      "candidate_url": "https://www.hamiltonlane.com/getmedia/fe09ff2b-1b7f-4fa0-86d5-0b76af4b5d38/hl-(germany)-gmbh-complaint-handling-policy-2025.pdf",
-      "source_page_url": "https://www.hamiltonlane.com/2026-market-overview",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Hamilton Lane",
-      "candidate_title": "Insights",
-      "candidate_url": "https://www.hamiltonlane.com/en-us/insight",
-      "source_page_url": "https://www.hamiltonlane.com/2026-market-overview",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Hamilton Lane",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.hamiltonlane.com/2026-market-overview",
-      "source_page_url": "https://www.hamiltonlane.com/2026-market-overview",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "Partners Group",
-      "candidate_title": "Unlocking Europe’s Living Opportunity",
-      "candidate_url": "https://www.partnersgroup.com/en/news-and-views/perspective/real-estate-unlocking-european-living",
-      "source_page_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Partners Group",
-      "candidate_title": "Royalties primer",
-      "candidate_url": "https://www.partnersgroup.com/~/media/Files/P/Partnersgroup/Universal/partners-group-royalties-white-paper.pdf",
-      "source_page_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "Partners Group",
-      "candidate_title": "Q4 2025 Private Market Chartbook",
-      "candidate_url": "https://www.partnersgroup.com/%7E/media/Files/P/Partnersgroup/Universal/perspectives-document/private-markets-chartbook-%20q42025-%20strong-finish-to-a-year-of-wild-cards.ashx",
-      "source_page_url": "https://www.partnersgroup.com/en/news-and-views/perspective/private-markets-outlook-2026",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
