@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-26T15:10:52.622898+00:00",
+  "utc": "2026-11-26T17:16:11.967783+00:00",
   "issues": [
     {
       "manager": "Ninety One",
@@ -7,6 +7,13 @@
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "Schroders",
+      "source_url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+      "category": "other_error",
+      "http_code": null,
+      "message": "The read operation timed out"
     },
     {
       "manager": "Pictet Asset Management",
@@ -27,7 +34,7 @@
       "source_url": "https://www.amundi.de/institutional/topics/weekly-market-directions",
       "category": "other_error",
       "http_code": null,
-      "message": "<urlopen error [Errno -2] Name or service not known>"
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "manager": "Eurizon",
