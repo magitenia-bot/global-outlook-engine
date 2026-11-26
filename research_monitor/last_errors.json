@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-26T09:16:22.335406+00:00",
+  "utc": "2026-11-26T11:04:05.114704+00:00",
   "issues": [
     {
       "manager": "Ninety One",
@@ -7,13 +7,6 @@
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
-    },
-    {
-      "manager": "Allianz Global Investors",
-      "source_url": "https://www.allianzgi.com/en/insights/fixed-income-forward-november-2026",
-      "category": "other_error",
-      "http_code": 404,
-      "message": "HTTP Error 404: Not Found"
     },
     {
       "manager": "Pictet Asset Management",
