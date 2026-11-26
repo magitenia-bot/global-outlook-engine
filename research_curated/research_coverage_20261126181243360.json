@@ -1,0 +1,238 @@
+{
+  "timestamp": "2026-11-26T18:12:43.360Z",
+  "houses_attempted": 30,
+  "full_archive_coverage_confirmed": false,
+  "checks": [
+    {
+      "house": "BlackRock",
+      "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "result": "source_page_read",
+      "evidence": "Weekly market commentary | BlackRock Investment Institute (https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary)",
+      "visible_dates": []
+    },
+    {
+      "house": "J.P. Morgan Asset Management",
+      "url": "https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/",
+      "result": "source_page_read",
+      "evidence": "Weekly Market Recap | J.P. Morgan Asset Management (https://am.jpmorgan.com/au/en/asset-management/liq/insights/market-insights/market-updates/weekly-market-recap/)",
+      "visible_dates": []
+    },
+    {
+      "house": "Amundi",
+      "url": "https://research-center.amundi.com/publications/global-investment-views",
+      "result": "source_page_read",
+      "evidence": "Global Investment Views | Amundi Research Center (https://research-center.amundi.com/publications/global-investment-views)",
+      "visible_dates": []
+    },
+    {
+      "house": "PIMCO",
+      "url": "https://www.pimco.com/it/it/insights/rupture-and-resilience",
+      "result": "source_page_read",
+      "evidence": "Outlook 2026 - Punto di rottura e resilienza: prospettive economiche globali, geopolitica e strategie di investimento obbligazionarie | PIMCO (https://www.pimco.com/it/it/insights/rupture-and-resilience)",
+      "visible_dates": []
+    },
+    {
+      "house": "Goldman Sachs Asset Management",
+      "url": "https://am.gs.com/en-se/institutions/insights/article/market-pulse",
+      "result": "source_page_read",
+      "evidence": "International Market Pulse November 2026 - Goldman Sachs Asset Management (https://am.gs.com/en-se/institutions/insights/article/market-pulse)",
+      "visible_dates": [
+        "6 November 2026",
+        "November 1, 2026"
+      ]
+    },
+    {
+      "house": "Morgan Stanley Investment Management",
+      "url": "https://www.morganstanley.com/Themes/outlooks",
+      "result": "source_page_read",
+      "evidence": "2027 Outlooks: Market and Economic Forecasts | Morgan Stanley (https://www.morganstanley.com/Themes/outlooks)",
+      "visible_dates": []
+    },
+    {
+      "house": "Vanguard",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+      "result": "source_page_read",
+      "evidence": "Vanguard Capital Markets Model® forecasts | Vanguard (https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html)",
+      "visible_dates": []
+    },
+    {
+      "house": "Fidelity International",
+      "url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "result": "source_page_read",
+      "evidence": "Market News | Markets & Insights | Fidelity (https://www.fidelity.co.uk/markets-insights/markets/)",
+      "visible_dates": [
+        "23 November 2026",
+        "24 Nov 2026",
+        "23 Nov 2026",
+        "20 Nov 2026",
+        "18 Nov 2026"
+      ]
+    },
+    {
+      "house": "Fidelity Investments",
+      "url": "https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update",
+      "result": "source_page_read",
+      "evidence": "Quarterly Market Update (https://institutional.fidelity.com/advisors/insights/series/quarterly-market-update)",
+      "visible_dates": []
+    },
+    {
+      "house": "Capital Group",
+      "url": "https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html",
+      "result": "source_page_read",
+      "evidence": "Prospettive d'investimento di metà anno 2026 | Capital Group (https://www.capitalgroup.com/intermediaries/it/it/insights/articles/2026-midyear-outlook.html)",
+      "visible_dates": []
+    },
+    {
+      "house": "State Street Investment Management",
+      "url": "https://www.ssga.com/us/en/institutional/insights/the-markets",
+      "result": "source_page_read",
+      "evidence": "The Markets | State Street (https://www.ssga.com/us/en/institutional/insights/the-markets)",
+      "visible_dates": []
+    },
+    {
+      "house": "UBS Asset Management",
+      "url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+      "result": "source_page_read",
+      "evidence": "Obbligazioni: la nuova normalità dei tassi | UBS Italia (https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html)",
+      "visible_dates": []
+    },
+    {
+      "house": "Wellington Management",
+      "url": "https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026",
+      "result": "source_page_read",
+      "evidence": "Prospettive di asset allocation | Wellington Italia Investitori Professionali (https://www.wellington.com/it-it/investitori-professionali/approfondimenti/outlook-asset-allocation-ottobre-2026)",
+      "visible_dates": []
+    },
+    {
+      "house": "T. Rowe Price",
+      "url": "https://www.troweprice.com/en/us/insights/global-markets-weekly-update",
+      "result": "source_page_read",
+      "evidence": "Global Markets Weekly Update | T. Rowe Price (https://www.troweprice.com/en/us/insights/global-markets-weekly-update)",
+      "visible_dates": [
+        "November 20, 2026"
+      ]
+    },
+    {
+      "house": "BNP Paribas Asset Management",
+      "url": "https://www.bnpparibas-am.com/it-it/portfolio-perspectives/outlook-mensile-divario-tecnologico-aumento-rendimenti-obbligazionari-rinascita-industriale-cina/",
+      "result": "access_error",
+      "evidence": "Internal Error ()",
+      "visible_dates": []
+    },
+    {
+      "house": "Allianz Global Investors",
+      "url": "https://origin-it.allianzgi.com/it-it/insights/the-week-ahead",
+      "result": "access_error",
+      "evidence": "Internal Error ()",
+      "visible_dates": []
+    },
+    {
+      "house": "DWS",
+      "url": "https://funds.deutsche-am.com/it-it/informare/mercati/market-outlook/Mercato-e-macro/",
+      "result": "source_page_read",
+      "evidence": "Prospettive di mercato - Ottobre 2026 | DWS by Deutsche Asset Management (https://funds.deutsche-am.com/it-it/informare/mercati/market-outlook/Mercato-e-macro/)",
+      "visible_dates": []
+    },
+    {
+      "house": "Schroders",
+      "url": "https://www.schroders.com/it-it/it/investitori-privati/outlook/",
+      "result": "source_page_read",
+      "evidence": "Outlook 2026 (https://www.schroders.com/it-it/it/investitori-privati/outlook/)",
+      "visible_dates": []
+    },
+    {
+      "house": "Pictet Asset Management",
+      "url": "https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre",
+      "result": "source_page_read",
+      "evidence": "Barometro dei mercati finanziari Previsioni di novembre | Pictet Asset Management Italia (https://am.pictet.com/it/it/intermediaries/analisi-di-mercato/multi-asset/2026/barometro-dei-mercati-finanziari-previsioni-di-novembre)",
+      "visible_dates": []
+    },
+    {
+      "house": "Invesco",
+      "url": "https://www.invesco.com/us/en/insights/global-investment-outlook.html",
+      "result": "source_page_read",
+      "evidence": "2026 Midyear investment outlook | Invesco US (https://www.invesco.com/us/en/insights/global-investment-outlook.html)",
+      "visible_dates": []
+    },
+    {
+      "house": "Franklin Templeton",
+      "url": "https://www.franklintempleton.com/insights/collections/global-investment-outlook-2026",
+      "result": "source_page_read",
+      "evidence": "Global Investment Outlook 2026 | Franklin Templeton (https://www.franklintempleton.com/insights/collections/global-investment-outlook-2026)",
+      "visible_dates": [
+        "November 24, 2026",
+        "November 16, 2026"
+      ]
+    },
+    {
+      "house": "PGIM",
+      "url": "https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks",
+      "result": "source_page_read",
+      "evidence": "Year Ahead 2027 - 12-Month Global Outlook (https://www.pgim.com/us/en/individual/insights/market-portfolio/outlooks)",
+      "visible_dates": []
+    },
+    {
+      "house": "Robeco",
+      "url": "https://www.robeco.com/en-int/themes/market-outlooks",
+      "result": "source_page_read",
+      "evidence": "Market Outlooks | Robeco Global (https://www.robeco.com/en-int/themes/market-outlooks)",
+      "visible_dates": []
+    },
+    {
+      "house": "Janus Henderson Investors",
+      "url": "https://www.janushenderson.com",
+      "result": "source_page_read",
+      "evidence": "www.janushenderson.com (https://www.janushenderson.com/ ; rewritten summary of https://www.janushenderson.com/en-us/)",
+      "visible_dates": []
+    },
+    {
+      "house": "M&G Investments",
+      "url": "https://www.mandg.com/adviser/services/insights/investment-markets-outlook",
+      "result": "source_page_read",
+      "evidence": "2026 Investment Markets Outlook | M&G for Advisers (https://www.mandg.com/adviser/services/insights/investment-markets-outlook)",
+      "visible_dates": []
+    },
+    {
+      "house": "HSBC Asset Management",
+      "url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "result": "source_page_read",
+      "evidence": "HSBC AM Investment Weekly - Profits power ahead (https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026)",
+      "visible_dates": []
+    },
+    {
+      "house": "Ninety One",
+      "url": "https://ninetyone.com/en/insights/2026-investment-views",
+      "result": "source_page_read",
+      "evidence": "2026 Investment Views | Ninety One (https://ninetyone.com/en/insights/2026-investment-views)",
+      "visible_dates": []
+    },
+    {
+      "house": "Nomura Asset Management",
+      "url": "https://www.nomura-am.co.jp/news/20261105111133010296.html",
+      "result": "source_page_read",
+      "evidence": "アメリカ中間選挙を受けた今後の市場動向について | 野村アセットマネジメント (https://www.nomura-am.co.jp/news/20261105111133010296.html)",
+      "visible_dates": []
+    },
+    {
+      "house": "Eurizon",
+      "url": "https://www.eurizoncapital.com",
+      "result": "access_error",
+      "evidence": "Internal Error ()",
+      "visible_dates": []
+    },
+    {
+      "house": "Vontobel Asset Management",
+      "url": "https://am.vontobel.com",
+      "result": "source_page_read",
+      "evidence": "Your global, active asset manager with a multi-boutique approach. | Site (https://am.vontobel.com/ ; rewritten summary of https://am.vontobel.com/en)",
+      "visible_dates": []
+    }
+  ],
+  "followups": [
+    "AllianzGI and BNP alternative material accessible",
+    "Eurizon market archive redirect loop",
+    "Janus Henderson alternate outlook page available",
+    "PGIM original PDF inspected",
+    "Vontobel TwentyFour original article inspected, attribution distinct"
+  ]
+}
