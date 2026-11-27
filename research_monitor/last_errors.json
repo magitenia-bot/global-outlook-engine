@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-27T21:03:59.530711+00:00",
+  "utc": "2026-11-27T23:03:45.951584+00:00",
   "issues": [
     {
       "manager": "Ninety One",
@@ -7,6 +7,13 @@
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "T. Rowe Price",
+      "source_url": "https://www.troweprice.com/financial-intermediary/it/it/lp/global-market-outlook.html?fm_li_creative_id=1486534424&placementguid=psm_UK_adv_LinkedIn_WMR_globe_gold_030826",
+      "category": "other_error",
+      "http_code": null,
+      "message": "The read operation timed out"
     },
     {
       "manager": "Pictet Asset Management",
