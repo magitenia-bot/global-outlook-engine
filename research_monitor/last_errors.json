@@ -1,9 +1,23 @@
 {
-  "utc": "2026-11-28T05:08:23.849471+00:00",
+  "utc": "2026-11-28T07:22:47.324781+00:00",
   "issues": [
     {
       "manager": "Ninety One",
       "source_url": "https://ninetyone.com/en/insights/2026-investment-views",
+      "category": "access_restricted",
+      "http_code": 403,
+      "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "UBS Asset Management",
+      "source_url": "https://www.ubs.com/it/it/assetmanagement/insights/market-updates/articles/macro-quarterly-q4-2026.html",
+      "category": "access_restricted",
+      "http_code": 403,
+      "message": "HTTP Error 403: Forbidden"
+    },
+    {
+      "manager": "Morgan Stanley Investment Management",
+      "source_url": "https://www.morganstanley.com/im/en-us/institutional-investor/insights/global-fixed-income-bulletin/repricing-the-opportunity-set.html",
       "category": "access_restricted",
       "http_code": 403,
       "message": "HTTP Error 403: Forbidden"
