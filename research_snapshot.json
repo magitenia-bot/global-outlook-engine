@@ -1,16 +1,114 @@
 {
-  "generated_at_utc": "2026-11-27T05:57:22+00:00",
+  "generated_at_utc": "2026-11-28T05:50:22+00:00",
   "purpose": "Discovery queue for ChatGPT document interpretation and report creation; not verified investment views",
   "source_institutions": 30,
   "sources_total": 51,
   "sources_active": 51,
   "source_last_results": {
-    "changed_requires_review": 8,
-    "error": 13,
-    "unchanged": 104
+    "changed_requires_review": 17,
+    "error": 15,
+    "unchanged": 93
   },
-  "source_change_events_last_4d": 41,
+  "source_change_events_last_4d": 55,
   "source_changes_recent": [
+    {
+      "source_id": "src-amundi-monthly",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-outlook",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-trowe-weekly",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-amundi-weekly",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-blackrock-corporate-weekly",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-hsbc-weekly",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-fidelity-markets-weekly",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-invesco-2026-midyear",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-capital-2026-cma",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche3-01",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-04",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-tranche4-07",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-coverage-mandg-outlook",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
+    {
+      "source_id": "src-validated-20261122-al",
+      "checked_at_utc": "2026-11-28T05:50:11+00:00",
+      "result": "changed_requires_review",
+      "http_status": "200",
+      "error": ""
+    },
     {
       "source_id": "src-capitalgroup-outlook",
       "checked_at_utc": "2026-11-27T05:57:07+00:00",
@@ -299,8 +397,56 @@
       "error": ""
     }
   ],
-  "candidate_documents_total": 1547,
+  "candidate_documents_total": 1553,
   "candidate_documents_recent": [
+    {
+      "institution_name": "PIMCO",
+      "candidate_title": "Tracciare la rotta per l’anno venturo: idee di investimento per il 2027",
+      "candidate_url": "https://www.pimco.com/it/it/insights/charting-the-year-ahead-investment-ideas-for-2027",
+      "source_page_url": "https://www.pimco.com/it/it/insights/charting-the-year-ahead-investment-ideas-for-2026",
+      "discovered_at_utc": "2026-11-28T05:50:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Fidelity International",
+      "candidate_title": "FTSE 100 or S&P 500?",
+      "candidate_url": "https://www.fidelity.co.uk/markets-insights/markets/markets/ftse-100-or-sp-500-dividends-mean-you-might-be-getting-this-wrong",
+      "source_page_url": "https://www.fidelity.co.uk/markets-insights/markets/",
+      "discovered_at_utc": "2026-11-28T05:50:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "HSBC Asset Management",
+      "candidate_title": "Investment Weekly",
+      "candidate_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-27-november-2026",
+      "source_page_url": "https://mena.assetmanagement.hsbc.com/en/intermediary/news-and-insights/investment-weekly-6-november-2026",
+      "discovered_at_utc": "2026-11-28T05:50:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "BlackRock",
+      "candidate_title": "Ireland Gender Pay Reporting 2026",
+      "candidate_url": "https://www.blackrock.com/gls-download/literature/whitepaper/2026-ireland-gender-pay-gap-report-stamped.pdf",
+      "source_page_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/global-weekly-commentary",
+      "discovered_at_utc": "2026-11-28T05:50:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Listen to the podcast",
+      "candidate_url": "https://research-center.amundi.com/article/price-power-investment-outlook-2027-outerblue-convictions",
+      "source_page_url": "https://research-center.amundi.com/publications/weekly-market-directions",
+      "discovered_at_utc": "2026-11-28T05:50:18+00:00",
+      "review_status": "candidate_unverified"
+    },
+    {
+      "institution_name": "Amundi",
+      "candidate_title": "Listen to the podcast",
+      "candidate_url": "https://research-center.amundi.com/article/price-power-investment-outlook-2027-outerblue-convictions",
+      "source_page_url": "https://research-center.amundi.com/publications/global-investment-views",
+      "discovered_at_utc": "2026-11-28T05:50:18+00:00",
+      "review_status": "candidate_unverified"
+    },
     {
       "institution_name": "T. Rowe Price",
       "candidate_title": "English",
@@ -2650,54 +2796,6 @@
       "candidate_title": "Read the Full Outlook",
       "candidate_url": "https://www.kkr.com/content/dam/kkr/insights/pdf/2026-outlook-high-grading.pdf",
       "source_page_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "KKR",
-      "candidate_title": "/content/dam/kkr/insights/pdf/2026-outlook-in-brief.pdf",
-      "candidate_url": "https://www.kkr.com/content/dam/kkr/insights/pdf/2026-outlook-in-brief.pdf",
-      "source_page_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "KKR",
-      "candidate_title": "FEATURED INSIGHT Q4 2026 Global Wealth Investment Playbook",
-      "candidate_url": "https://www.kkr.com/insights/investment-playbook",
-      "source_page_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "KKR",
-      "candidate_title": "Learn more",
-      "candidate_url": "https://www.kkr.com/insights",
-      "source_page_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "KKR",
-      "candidate_title": "KKR Global Learn about KKR's approach, solutions, and insights. This site is for clients, investors, shareholders, career seekers, individuals and portfolio companies.",
-      "candidate_url": "https://www.kkr.com/",
-      "source_page_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "candidate_unverified"
-    },
-    {
-      "institution_name": "KKR",
-      "candidate_title": "Source institutional research registry",
-      "candidate_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "source_page_url": "https://www.kkr.com/insights/in-brief-outlook-2026",
-      "discovered_at_utc": "2026-11-13T18:49:44+00:00",
-      "review_status": "source_page_unverified"
-    },
-    {
-      "institution_name": "StepStone Group",
-      "candidate_title": "United Kingdom",
-      "candidate_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/united-kingdom",
-      "source_page_url": "https://www.stepstonegroup.com/news-insights/stepstone-private-equity-2026-market-outlook/",
       "discovered_at_utc": "2026-11-13T18:49:44+00:00",
       "review_status": "candidate_unverified"
     }
